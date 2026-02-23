@@ -1006,7 +1006,6 @@ function showShareCallLinkViaSignal(
     const url = linkCallRoute
       .toWebUrl({
         key: callLink.rootKey,
-        epoch: callLink.epoch,
       })
       .toString();
     dispatch(

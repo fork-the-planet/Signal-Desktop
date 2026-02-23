@@ -3489,9 +3489,6 @@ export default class MessageReceiver
     const rootKey = Bytes.isNotEmpty(callLinkUpdate.rootKey)
       ? callLinkUpdate.rootKey
       : undefined;
-    const epoch = Bytes.isNotEmpty(callLinkUpdate.epoch)
-      ? callLinkUpdate.epoch
-      : undefined;
     const adminKey = Bytes.isNotEmpty(callLinkUpdate.adminPasskey)
       ? callLinkUpdate.adminPasskey
       : undefined;
@@ -3500,7 +3497,6 @@ export default class MessageReceiver
       {
         type: callLinkUpdateSyncType,
         rootKey,
-        epoch,
         adminKey,
       },
       this.#removeFromCache.bind(this, envelope)

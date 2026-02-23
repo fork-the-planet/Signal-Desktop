@@ -217,7 +217,6 @@ function _route<Key extends string, Args extends object>(
 }
 
 const paramSchema = z.string().min(1);
-const paramEpoch = z.nullable(z.string().min(1));
 
 /**
  * signal.me by phone number
@@ -401,25 +400,19 @@ export const linkCallRoute = _route('linkCall', {
   ],
   schema: z.object({
     key: paramSchema, // ConsonantBase16
-    epoch: paramEpoch, // ConsonantBase16
   }),
   parse(result) {
     const params = new URLSearchParams(result.hash.groups.params);
     return {
       key: params.get('key'),
-      epoch: params.get('epoch'),
     };
   },
   toWebUrl(args) {
-    const params = new URLSearchParams(
-      args.epoch ? { key: args.key, epoch: args.epoch } : { key: args.key }
-    );
+    const params = new URLSearchParams({ key: args.key });
     return new URL(`https://signal.link/call/#${params.toString()}`);
   },
   toAppUrl(args) {
-    const params = new URLSearchParams(
-      args.epoch ? { key: args.key, epoch: args.epoch } : { key: args.key }
-    );
+    const params = new URLSearchParams({ key: args.key });
     return new URL(`sgnl://signal.link/call/#${params.toString()}`);
   },
 });

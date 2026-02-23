@@ -228,7 +228,6 @@ import {
   insertOrUpdateCallLinkFromSync,
   updateCallLink,
   updateCallLinkState,
-  updateCallLinkStateAndEpoch,
   updateDefunctCallLink,
 } from './server/callLinks.node.js';
 import {
@@ -671,7 +670,6 @@ export const DataWriter: ServerWritableInterface = {
   insertOrUpdateCallLinkFromSync,
   updateCallLink,
   updateCallLinkState,
-  updateCallLinkStateAndEpoch,
   beginDeleteAllCallLinks,
   beginDeleteCallLink,
   deleteCallHistoryByRoomId,
