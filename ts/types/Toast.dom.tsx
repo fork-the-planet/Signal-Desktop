@@ -96,6 +96,8 @@ export enum ToastType {
   UnsupportedOS = 'UnsupportedOS',
   UserAddedToGroup = 'UserAddedToGroup',
   UsernameRecovered = 'UsernameRecovered',
+  ViewOnceDisabled = 'ViewOnceDisabled',
+  ViewOnceEnabled = 'ViewOnceEnabled',
   VoiceNoteLimit = 'VoiceNoteLimit',
   VoiceNoteMustBeTheOnlyAttachment = 'VoiceNoteMustBeTheOnlyAttachment',
   WhoCanFindMeReadOnly = 'WhoCanFindMeReadOnly',
@@ -250,6 +252,8 @@ export type AnyToast =
       toastType: ToastType.UsernameRecovered;
       parameters: { username: string };
     }
+  | { toastType: ToastType.ViewOnceDisabled }
+  | { toastType: ToastType.ViewOnceEnabled }
   | { toastType: ToastType.VoiceNoteLimit }
   | { toastType: ToastType.VoiceNoteMustBeTheOnlyAttachment }
   | { toastType: ToastType.WhoCanFindMeReadOnly };

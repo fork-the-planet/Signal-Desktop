@@ -112,6 +112,7 @@ export const SmartCompositionArea = memo(function SmartCompositionArea({
     attachments: draftAttachments,
     focusCounter,
     disabledCounter,
+    isViewOnce,
     linkPreviewLoading,
     linkPreviewResult,
     messageCompositionId,
@@ -202,6 +203,7 @@ export const SmartCompositionArea = memo(function SmartCompositionArea({
     processAttachments,
     setMediaQualitySetting,
     setQuoteByMessageId,
+    setViewOnce,
     cancelJoinRequest,
     sendStickerMessage,
     sendEditedMessage,
@@ -301,6 +303,9 @@ export const SmartCompositionArea = memo(function SmartCompositionArea({
       quotedMessageAuthorAci={quotedMessage?.quote?.authorAci ?? null}
       quotedMessageSentAt={quotedMessage?.quote?.id ?? null}
       setQuoteByMessageId={setQuoteByMessageId}
+      // View Once
+      isViewOnce={isViewOnce}
+      setViewOnce={setViewOnce}
       // Fun Picker
       emojiSkinToneDefault={emojiSkinToneDefault}
       onSelectEmoji={onUseEmoji}

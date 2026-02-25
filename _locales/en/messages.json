@@ -3236,6 +3236,14 @@
     "messageformat": "Only admins can add member labels in this group.",
     "description": "Shown when the user clicks on Member Label row in conversation details but they don't have permission to add a member label"
   },
+  "icu:Toast--viewOnceEnabled": {
+    "messageformat": "View once enabled",
+    "description": "Toast shown when view once mode is enabled for a message"
+  },
+  "icu:Toast--viewOnceDisabled": {
+    "messageformat": "View once disabled",
+    "description": "Toast shown when view once mode is disabled for a message"
+  },
   "icu:ToastManager__CannotEditMessage_24": {
     "messageformat": "Edits can only be applied within 24 hours from the time you sent this message.",
     "description": "Error message when you try to send an edit after message becomes too old"
@@ -6139,6 +6147,14 @@
   "icu:CompositionArea__ConfirmGifSelection__ReplaceButton": {
     "messageformat": "Replace",
     "description": "Composition Area > GIF Picker > After selecting a GIF > When you already have an attachment > Confirm Dialog > Replace Button"
+  },
+  "icu:CompositionArea--viewOnceToggle": {
+    "messageformat": "View once",
+    "description": "Aria label for the view once toggle button in the composition input"
+  },
+  "icu:CompositionArea--viewOnceMediaPlaceholder": {
+    "messageformat": "View once media",
+    "description": "Placeholder text in composition input when view once mode is active"
   },
   "icu:CompositionInput__editing-message": {
     "messageformat": "Edit message",

@@ -275,6 +275,10 @@ function getToast(toastType: ToastType): AnyToast {
           group: 'Hike Group 🏔',
         },
       };
+    case ToastType.ViewOnceDisabled:
+      return { toastType: ToastType.ViewOnceDisabled };
+    case ToastType.ViewOnceEnabled:
+      return { toastType: ToastType.ViewOnceEnabled };
     case ToastType.VoiceNoteLimit:
       return { toastType: ToastType.VoiceNoteLimit };
     case ToastType.VoiceNoteMustBeTheOnlyAttachment:

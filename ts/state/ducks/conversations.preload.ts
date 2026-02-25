@@ -167,6 +167,7 @@ import type {
   ResetComposerActionType,
   SetFocusActionType,
   SetQuotedMessageActionType,
+  SetViewOnceActionType,
 } from './composer.preload.js';
 import {
   SET_FOCUS,
@@ -175,6 +176,7 @@ import {
   setQuoteByMessageId,
   resetComposer,
   saveDraftRecordingIfNeeded,
+  setViewOnce,
 } from './composer.preload.js';
 import { ReceiptType } from '../../types/Receipt.std.js';
 import { Sound, SoundType } from '../../util/Sound.std.js';
@@ -4883,6 +4885,7 @@ function onConversationOpened(
   | ResetComposerActionType
   | SetFocusActionType
   | SetQuotedMessageActionType
+  | SetViewOnceActionType
 > {
   return async dispatch => {
     const promises: Array<Promise<void>> = [];
@@ -4974,6 +4977,13 @@ function onConversationOpened(
       )
     );
     dispatch(resetComposer(conversationId));
+    dispatch(
+      setViewOnce({
+        conversationId,
+        value: conversation.get('draftIsViewOnce') ?? false,
+        toastNotify: false,
+      })
+    );
 
     await Promise.all(promises);
     if (window.SignalCI) {

@@ -967,6 +967,22 @@ export function renderToast({
     );
   }
 
+  if (toastType === ToastType.ViewOnceEnabled) {
+    return (
+      <Toast onClose={hideToast} timeout={SHORT_TIMEOUT}>
+        {i18n('icu:Toast--viewOnceEnabled')}
+      </Toast>
+    );
+  }
+
+  if (toastType === ToastType.ViewOnceDisabled) {
+    return (
+      <Toast onClose={hideToast} timeout={SHORT_TIMEOUT}>
+        {i18n('icu:Toast--viewOnceDisabled')}
+      </Toast>
+    );
+  }
+
   throw missingCaseError(toastType);
 }
 

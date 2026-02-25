@@ -4080,6 +4080,7 @@ export class ConversationModel {
           draft: '',
           draftEditMessage: undefined,
           draftBodyRanges: [],
+          draftIsViewOnce: false,
           draftTimestamp: null,
           quotedMessageId: undefined,
         };
