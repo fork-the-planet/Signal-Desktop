@@ -28,6 +28,7 @@ node_modules/**
 packages/*/node_modules/**
 packages/lame/wrapper.mjs
 packages/lame/lame-*/
+packages/windows-ucv/dist/**
 danger/node_modules/**
 sticker-creator/node_modules/**
 components/**

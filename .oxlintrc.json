@@ -1781,6 +1781,15 @@
       }
     },
     {
+      "files": ["packages/windows-ucv/**"],
+      "env": { "node": true },
+      "globals": {
+        "window": "readonly",
+        "process": "readonly",
+        "Buffer": "readonly"
+      }
+    },
+    {
       "files": ["*.stories.tsx"],
       "rules": {
         "react/no-array-index-key": "off"

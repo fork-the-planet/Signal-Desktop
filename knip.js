@@ -110,6 +110,9 @@ const config = {
       ignoreBinaries: ['xcrun'],
       ignoreDependencies: ['node-addon-api'],
     },
+    'packages/windows-ucv': {
+      ignoreDependencies: ['node-addon-api'],
+    },
     'sticker-creator': {
       project: [
         'src/**/*.{ts,tsx}!',

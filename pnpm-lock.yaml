@@ -56,8 +56,8 @@ importers:
         specifier: 3.3.5
         version: 3.3.5
       '@signalapp/windows-ucv':
-        specifier: 1.0.1
-        version: 1.0.1
+        specifier: workspace:*
+        version: link:packages/windows-ucv
       google-libphonenumber:
         specifier: 3.2.44
         version: 3.2.44
@@ -711,6 +711,25 @@ importers:
       prettier:
         specifier: 3.6.2
         version: 3.6.2
+
+  packages/windows-ucv:
+    dependencies:
+      bindings:
+        specifier: ^1.5.0
+        version: 1.5.0
+      node-addon-api:
+        specifier: '*'
+        version: 8.5.0
+    devDependencies:
+      '@types/bindings':
+        specifier: ^1.5.5
+        version: 1.5.5
+      '@types/node':
+        specifier: 24.12.0
+        version: 24.12.0
+      typescript:
+        specifier: 6.0.3
+        version: 6.0.3
 
   sticker-creator:
     dependencies:
@@ -4258,9 +4277,6 @@ packages:
   '@signalapp/sqlcipher@3.3.5':
     resolution: {integrity: sha512-0kkHQixiaFOFYCXP6J8zsvXeq7REf5nucX+BMY8Gy5E6F2BEM2Ap9NsDNaB+wHZ6QqqsItQRvSE4PaYhTtWGIg==, tarball: https://registry.npmjs.org/@signalapp/sqlcipher/-/sqlcipher-3.3.5.tgz}
 
-  '@signalapp/windows-ucv@1.0.1':
-    resolution: {integrity: sha512-tArRaDzAFXQ6BcYseUtd9bp52/sb5C/zbCIoNkDH+FUoxnZRvX25Fv2HHbH7Xe2+bcdb4+DQmyoUeHMhTUxAmA==, tarball: https://registry.npmjs.org/@signalapp/windows-ucv/-/windows-ucv-1.0.1.tgz}
-
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==, tarball: https://registry.npmjs.org/@sinclair/typebox/-/typebox-0.27.8.tgz}
 
@@ -4735,6 +4751,9 @@ packages:
 
   '@types/babel__traverse@7.20.6':
     resolution: {integrity: sha512-r1bzfrm0tomOI8g1SzvCaQHo6Lcv6zu0EA+W2kHrt8dyrHQxGzBBL4kdkzIS+jBMV+EYcMAEAqXqYaLJq5rOZg==, tarball: https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.20.6.tgz}
+
+  '@types/bindings@1.5.5':
+    resolution: {integrity: sha512-y59PRZBTo2/HuN94qRjyJD+465vGoXMsqz9MMJDbtJL9oT5/B+tAL6c3k10epIinC2/BBkLqKzKC6keukl8wdQ==, tarball: https://registry.npmjs.org/@types/bindings/-/bindings-1.5.5.tgz}
 
   '@types/blueimp-load-image@5.16.6':
     resolution: {integrity: sha512-e7s6CdDCUoBQdCe62Q6OS+DF68M8+ABxCEMh2Isjt4Fl3xuddljCHMN8mak48AMSVGGwUUtNRaZbkzgL5PEWew==, tarball: https://registry.npmjs.org/@types/blueimp-load-image/-/blueimp-load-image-5.16.6.tgz}
@@ -14730,11 +14749,6 @@ snapshots:
       node-addon-api: 8.5.0
       node-gyp-build: 4.8.4
 
-  '@signalapp/windows-ucv@1.0.1':
-    dependencies:
-      bindings: 1.5.0
-      node-addon-api: 8.5.0
-
   '@sinclair/typebox@0.27.8': {}
 
   '@sindresorhus/is@4.6.0': {}
@@ -15317,6 +15331,10 @@ snapshots:
   '@types/babel__traverse@7.20.6':
     dependencies:
       '@babel/types': 7.29.0
+
+  '@types/bindings@1.5.5':
+    dependencies:
+      '@types/node': 24.12.0
 
   '@types/blueimp-load-image@5.16.6': {}
 
