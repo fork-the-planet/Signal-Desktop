@@ -101,6 +101,8 @@ export type StickerPackPointerType = Readonly<{
   key: string;
 }>;
 
+export type StickerManagerTabType = 'all' | 'my-stickers';
+
 export const STICKERPACK_ID_BYTE_LEN = 16;
 export const STICKERPACK_KEY_BYTE_LEN = 32;
 
@@ -193,6 +195,7 @@ export async function load(): Promise<void> {
     recentStickers,
     blessedPacks,
     installedPack: null,
+    stickerManagerTab: 'all',
   };
 
   packsToDownload = capturePacksToDownload(packs);

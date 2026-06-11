@@ -141,6 +141,7 @@ window.testUtilities = {
         packs: {},
         recentStickers: [],
         blessedPacks: {},
+        stickerManagerTab: 'all',
       },
       theme: ThemeType.dark,
     });

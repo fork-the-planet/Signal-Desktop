@@ -12,11 +12,18 @@ import {
   sticker1,
   sticker2,
 } from '../../test-helpers/stickersMocks.std.ts';
+import type { StickerPackType } from '../../state/ducks/stickers.preload.ts';
 
 const { i18n } = window.SignalContext;
 
 export default {
   title: 'Components/Stickers/StickerManager',
+  argTypes: {
+    tab: {
+      options: ['all', 'my-stickers'],
+      control: { type: 'select' },
+    },
+  },
 } satisfies Meta<Props>;
 
 const receivedPacks = [
@@ -31,11 +38,21 @@ const installedPacks = [
 
 const blessedPacks = [
   createPack(
-    { id: 'blessed-pack-1', status: 'downloaded', isBlessed: true },
+    {
+      id: 'blessed-pack-1',
+      status: 'downloaded',
+      isBlessed: true,
+      author: 'Ann Chovy',
+    },
     sticker1
   ),
   createPack(
-    { id: 'blessed-pack-2', status: 'downloaded', isBlessed: true },
+    {
+      id: 'blessed-pack-2',
+      status: 'downloaded',
+      isBlessed: true,
+      author: 'Tom Ato',
+    },
     sticker2
   ),
 ];
@@ -54,36 +71,51 @@ const createProps = (overrideProps: Partial<Props> = {}): Props => ({
   installedPacks: overrideProps.installedPacks || [],
   knownPacks: overrideProps.knownPacks || [],
   receivedPacks: overrideProps.receivedPacks || [],
+  tab: overrideProps.tab || 'all',
+  setTab: action('setTab'),
   showToast: action('showToast'),
   uninstallStickerPack: action('uninstallStickerPack'),
 });
 
-export function Full(): JSX.Element {
-  const props = createProps({ installedPacks, receivedPacks, blessedPacks });
+export function Full(args: Props): JSX.Element {
+  const props = createProps({ blessedPacks, installedPacks, receivedPacks });
 
-  return <StickerManager {...props} />;
+  return <StickerManager {...props} {...args} />;
 }
 
-export function InstalledPacks(): JSX.Element {
-  const props = createProps({ installedPacks });
+export function ReceivedPacks(args: Props): JSX.Element {
+  const props = createProps({ blessedPacks, receivedPacks });
 
-  return <StickerManager {...props} />;
+  return <StickerManager {...props} {...args} />;
 }
 
-export function ReceivedPacks(): JSX.Element {
-  const props = createProps({ receivedPacks });
+export function InstalledPacks(args: Props): JSX.Element {
+  const blessedPacksWithInstalled = [
+    { ...blessedPacks[0], status: 'installed' },
+    blessedPacks[1],
+  ] as Array<StickerPackType>;
+  const props = createProps({
+    blessedPacks: blessedPacksWithInstalled,
+    installedPacks,
+    receivedPacks: installedPacks,
+  });
 
-  return <StickerManager {...props} />;
+  return <StickerManager {...props} {...args} />;
 }
 
-export function InstalledAndKnownPacks(): JSX.Element {
-  const props = createProps({ installedPacks, knownPacks });
+export function InstalledAndKnownPacks(args: Props): JSX.Element {
+  const props = createProps({
+    blessedPacks,
+    knownPacks,
+    installedPacks,
+    receivedPacks: installedPacks,
+  });
 
-  return <StickerManager {...props} />;
+  return <StickerManager {...props} {...args} />;
 }
 
-export function Empty(): JSX.Element {
+export function Empty(args: Props): JSX.Element {
   const props = createProps();
 
-  return <StickerManager {...props} />;
+  return <StickerManager {...props} {...args} />;
 }

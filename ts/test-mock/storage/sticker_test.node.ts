@@ -190,8 +190,8 @@ describe('stickers', function (this: Mocha.Suite) {
       '[data-testid=StickerManager]'
     );
 
-    debug('switching to Installed tab');
-    await stickerManager.locator('.Tabs__tab >> "Installed"').click();
+    debug('switching to My Stickers tab');
+    await window.getByText('My Stickers').click();
 
     {
       debug('installing first sticker pack via storage service');

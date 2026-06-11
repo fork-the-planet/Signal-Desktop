@@ -12,6 +12,7 @@ import { DataReader, DataWriter } from '../../sql/Client.preload.ts';
 import type {
   ActionSourceType,
   RecentStickerType,
+  StickerManagerTabType,
 } from '../../types/Stickers.preload.ts';
 import {
   downloadStickerPack as externalDownloadStickerPack,
@@ -42,6 +43,7 @@ export type StickersStateType = ReadonlyDeep<{
   packs: Dictionary<StickerPackDBType>;
   recentStickers: Array<RecentStickerType>;
   blessedPacks: Dictionary<boolean>;
+  stickerManagerTab: StickerManagerTabType;
 }>;
 
 // These are for the React components
@@ -138,10 +140,16 @@ type UseStickerFulfilledAction = ReadonlyDeep<{
   payload: UseStickerPayloadType;
 }>;
 
+type SetStickerManagerTabAction = ReadonlyDeep<{
+  type: 'stickers/SET_STICKER_MANAGER_TAB';
+  payload: StickerManagerTabType;
+}>;
+
 export type StickersActionType = ReadonlyDeep<
   | ClearInstalledStickerPackAction
   | InstallStickerPackFulfilledAction
   | NoopActionType
+  | SetStickerManagerTabAction
   | StickerAddedAction
   | StickerPackAddedAction
   | StickerPackRemovedAction
@@ -157,6 +165,7 @@ export const actions = {
   downloadStickerPack,
   installStickerPack,
   removeStickerPack,
+  setStickerManagerTab,
   stickerAdded,
   stickerPackAdded,
   stickerPackUpdated,
@@ -381,6 +390,15 @@ async function doUseSticker(
   };
 }
 
+function setStickerManagerTab(
+  tab: StickerManagerTabType
+): SetStickerManagerTabAction {
+  return {
+    type: 'stickers/SET_STICKER_MANAGER_TAB',
+    payload: tab,
+  };
+}
+
 // Reducer
 
 export function getEmptyState(): StickersStateType {
@@ -389,6 +407,7 @@ export function getEmptyState(): StickersStateType {
     packs: {},
     recentStickers: [],
     blessedPacks: {},
+    stickerManagerTab: 'all',
   };
 }
 
@@ -554,6 +573,15 @@ export function reducer(
           },
         },
       },
+    };
+  }
+
+  if (action.type === 'stickers/SET_STICKER_MANAGER_TAB') {
+    const { payload: stickerManagerTab } = action;
+
+    return {
+      ...state,
+      stickerManagerTab,
     };
   }
 

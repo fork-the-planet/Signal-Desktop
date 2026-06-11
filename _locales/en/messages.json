@@ -3698,6 +3698,14 @@
     "messageformat": "No stickers installed",
     "description": "Shown in the sticker pack manager when you don't have any installed sticker packs."
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends.",
+    "description": "Text shown in the sticker pack manager on the installed stickers tab when you don't have any installed sticker packs."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers",
+    "description": "Button in the sticker pack manager on the installed stickers tab when you don't have any installed sticker packs. The button takes you to the All Stickers tab where you can install stickers."
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Artist Series",
     "description": "Shown in the sticker pack manager above the default sticker packs."
@@ -3710,6 +3718,14 @@
     "messageformat": "Stickers You Received",
     "description": "Shown in the sticker pack manager above sticker packs which you have received in messages."
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You",
+    "description": "Shown in the sticker pack manager above sticker packs which you have received in messages."
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here.",
+    "description": "Section description shown in the sticker pack manager above sticker packs which you have received in messages."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Stickers from incoming messages will appear here",
     "description": "Shown in the sticker pack manager when you have not received any sticker packs in messages."
@@ -3718,6 +3734,10 @@
     "messageformat": "Install",
     "description": "Shown in the sticker pack manager next to sticker packs which can be installed."
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed",
+    "description": "Accessibility label in the sticker pack manager next to sticker packs which are already installed."
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Uninstall",
     "description": "Shown in the sticker pack manager next to sticker packs which are already installed."
@@ -3725,6 +3745,22 @@
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "You may not be able to re-install this sticker pack if you no longer have the source message.",
     "description": "Shown in the sticker pack manager next to sticker packs which are already installed."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All",
+    "description": "Shown in the sticker pack manager in the navigation tabs. This tab shows all sticker packs available to install."
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers",
+    "description": "Shown in the sticker pack manager in the navigation tabs. This tab shows all sticker packs you have currently installed."
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add",
+    "description": "Context menu item to add a sticker pack. Shown in the sticker pack manager when right clicking a sticker pack."
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove",
+    "description": "Context menu item to remove a sticker pack. Shown in the sticker pack manager when right clicking a sticker pack."
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Sticker Pack",

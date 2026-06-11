@@ -7,12 +7,16 @@ import {
   useCallback,
   type MouseEvent,
   type KeyboardEvent,
+  type ReactNode,
 } from 'react';
 import type { LocalizerType } from '../../types/Util.std.ts';
 import type { StickerPackType } from '../../state/ducks/stickers.preload.ts';
-import { Button, ButtonVariant } from '../Button.dom.tsx';
 import { UserText } from '../UserText.dom.tsx';
 import { AxoConfirmDialog } from '../../axo/AxoConfirmDialog.dom.tsx';
+import { AxoIconButton } from '../../axo/AxoIconButton.dom.tsx';
+import { tw } from '../../axo/tw.dom.tsx';
+import { OfficialChatInlineBadge } from '../conversation/OfficialChatInlineBadge.dom.tsx';
+import { AxoContextMenu } from '../../axo/AxoContextMenu.dom.tsx';
 
 export type OwnProps = {
   readonly i18n: LocalizerType;
@@ -47,7 +51,7 @@ export const StickerManagerPackRow = memo(function StickerManagerPackRowInner({
   }, [setUninstalling]);
 
   const handleInstall = useCallback(
-    (e: MouseEvent) => {
+    (e: Event | MouseEvent) => {
       e.stopPropagation();
       if (installStickerPack) {
         installStickerPack(id, key, { actionSource: 'ui' });
@@ -57,7 +61,7 @@ export const StickerManagerPackRow = memo(function StickerManagerPackRowInner({
   );
 
   const handleUninstall = useCallback(
-    (e: MouseEvent) => {
+    (e: Event) => {
       e.stopPropagation();
       if (isBlessed && uninstallStickerPack) {
         uninstallStickerPack(id, key, { actionSource: 'ui' });
@@ -116,55 +120,98 @@ export const StickerManagerPackRow = memo(function StickerManagerPackRowInner({
           {i18n('icu:stickers--StickerManager--Uninstall')}
         </AxoConfirmDialog.Action>
       </AxoConfirmDialog.Root>
-      <div
-        tabIndex={0}
-        // This can't be a button because we have buttons as descendants
-        role="button"
-        onKeyDown={handleKeyDown}
-        onClick={handleClickPreview}
-        className="module-sticker-manager__pack-row"
-        data-testid={id}
+      <PackContextMenu
+        i18n={i18n}
+        handleInstall={handleInstall}
+        handleUninstall={handleUninstall}
+        isInstalled={pack.status === 'installed'}
       >
-        {pack.cover ? (
-          <img
-            src={pack.cover.url}
-            alt={pack.title}
-            className="module-sticker-manager__pack-row__cover"
-          />
-        ) : (
-          <div className="module-sticker-manager__pack-row__cover-placeholder" />
-        )}
-        <div className="module-sticker-manager__pack-row__meta">
-          <div className="module-sticker-manager__pack-row__meta__title">
-            <UserText text={pack.title} />
-            {pack.isBlessed ? (
-              <span className="module-sticker-manager__pack-row__meta__blessed-icon" />
-            ) : null}
-          </div>
-          <div className="module-sticker-manager__pack-row__meta__author">
-            {pack.author}
-          </div>
-        </div>
-        <div className="module-sticker-manager__pack-row__controls">
-          {pack.status === 'installed' ? (
-            <Button
-              aria-label={i18n('icu:stickers--StickerManager--Uninstall')}
-              variant={ButtonVariant.Secondary}
-              onClick={handleUninstall}
-            >
-              {i18n('icu:stickers--StickerManager--Uninstall')}
-            </Button>
+        <div
+          tabIndex={0}
+          // This can't be a button because we have buttons as descendants
+          role="button"
+          onKeyDown={handleKeyDown}
+          onClick={handleClickPreview}
+          className="module-sticker-manager__pack-row"
+          data-testid={id}
+        >
+          {pack.cover ? (
+            <img
+              src={pack.cover.url}
+              alt={pack.title}
+              className="module-sticker-manager__pack-row__cover"
+            />
           ) : (
-            <Button
-              aria-label={i18n('icu:stickers--StickerManager--Install')}
-              variant={ButtonVariant.Secondary}
-              onClick={handleInstall}
-            >
-              {i18n('icu:stickers--StickerManager--Install')}
-            </Button>
+            <div className="module-sticker-manager__pack-row__cover-placeholder" />
           )}
+          <div className="module-sticker-manager__pack-row__meta">
+            <div
+              className={tw(
+                'mb-0.5 flex flex-1 type-body-medium text-label-primary'
+              )}
+            >
+              <UserText text={pack.title} />
+              {pack.isBlessed ? (
+                <span className={tw('ms-1')}>
+                  <OfficialChatInlineBadge />
+                </span>
+              ) : null}
+            </div>
+            <div
+              className={tw('flex flex-1 type-body-small text-label-secondary')}
+            >
+              {pack.author}
+            </div>
+          </div>
+          <div className="module-sticker-manager__pack-row__controls">
+            {pack.status === 'installed' ? (
+              <AxoIconButton.Root
+                variant="secondary"
+                size="md"
+                symbol="check"
+                label={i18n('icu:stickers--StickerManager--Installed')}
+                tooltip={false}
+                disabled
+              />
+            ) : (
+              <AxoIconButton.Root
+                variant="secondary"
+                size="md"
+                symbol="plus"
+                label={i18n('icu:stickers--StickerManager--Install')}
+                onClick={handleInstall}
+              />
+            )}
+          </div>
         </div>
-      </div>
+      </PackContextMenu>
     </>
   );
 });
+
+function PackContextMenu(props: {
+  i18n: LocalizerType;
+  isInstalled: boolean;
+  handleInstall: (e: Event) => void;
+  handleUninstall: (e: Event) => void;
+  children: ReactNode;
+}) {
+  const { i18n, isInstalled, handleInstall, handleUninstall } = props;
+
+  return (
+    <AxoContextMenu.Root>
+      <AxoContextMenu.Trigger>{props.children}</AxoContextMenu.Trigger>
+      <AxoContextMenu.Content>
+        {isInstalled ? (
+          <AxoContextMenu.Item symbol="minus-circle" onSelect={handleUninstall}>
+            {i18n('icu:stickers--StickerManagerPackContextMenu--Remove')}
+          </AxoContextMenu.Item>
+        ) : (
+          <AxoContextMenu.Item symbol="plus-circle" onSelect={handleInstall}>
+            {i18n('icu:stickers--StickerManagerPackContextMenu--Add')}
+          </AxoContextMenu.Item>
+        )}
+      </AxoContextMenu.Content>
+    </AxoContextMenu.Root>
+  );
+}

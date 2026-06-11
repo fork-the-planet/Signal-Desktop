@@ -10,6 +10,7 @@ import {
   getInstalledStickerPacks,
   getKnownStickerPacks,
   getReceivedStickerPacks,
+  getStickerManagerTab,
 } from '../selectors/stickers.std.ts';
 import { useStickersActions } from '../ducks/stickers.preload.ts';
 import { useGlobalModalActions } from '../ducks/globalModals.preload.ts';
@@ -21,11 +22,13 @@ export const SmartStickerManager = memo(function SmartStickerManager() {
   const receivedPacks = useSelector(getReceivedStickerPacks);
   const installedPacks = useSelector(getInstalledStickerPacks);
   const knownPacks = useSelector(getKnownStickerPacks);
+  const tab = useSelector(getStickerManagerTab);
 
   const { downloadStickerPack, installStickerPack, uninstallStickerPack } =
     useStickersActions();
   const { closeStickerPackPreview } = useGlobalModalActions();
   const { showToast } = useToastActions();
+  const { setStickerManagerTab } = useStickersActions();
 
   return (
     <StickerManager
@@ -39,6 +42,8 @@ export const SmartStickerManager = memo(function SmartStickerManager() {
       receivedPacks={receivedPacks}
       uninstallStickerPack={uninstallStickerPack}
       showToast={showToast}
+      setTab={setStickerManagerTab}
+      tab={tab}
     />
   );
 });
