@@ -606,7 +606,7 @@ function LocalBackupsBackupKeyViewer({
 
   const learnMorePhishingLink = (parts: Array<string | JSX.Element>) => (
     <a
-      className={tw('text-color-label-primary')}
+      className={tw('whitespace-nowrap text-color-label-primary')}
       href={SIGNAL_USER_SAFETY_LINK}
       rel="noreferrer"
       target="_blank"
@@ -696,8 +696,8 @@ function LocalBackupsBackupKeyViewer({
               <AxoAlertDialog.Description>
                 <div className={tw('mb-3 text-center type-body-medium')}>
                   <I18n
-                    id="icu:Preferences__recovery-key__do-not-share-description"
                     i18n={i18n}
+                    id="icu:CompositionInput__recovery-key-warning--description"
                     components={{
                       strong: Strong,
                       learnMoreLink: learnMorePhishingLink,

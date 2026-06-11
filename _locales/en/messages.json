@@ -8612,6 +8612,10 @@
     "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal.",
     "description": "Body of the second confirmation dialog shown before allowing the user to paste their recovery key into a chat."
   },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>",
+    "description": "Body of the confirmation dialog shown before allowing the user to paste their recovery key into a chat."
+  },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Don't share",
     "description": "Button to cancel pasting the recovery key into a chat on the second confirmation dialog."
