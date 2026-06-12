@@ -6,7 +6,6 @@ import { useState, type JSX } from 'react';
 import type { LocalizerType, ThemeType } from '../../../types/Util.std.ts';
 
 import { Avatar, AvatarSize } from '../../Avatar.dom.tsx';
-import { Emojify } from '../Emojify.dom.tsx';
 
 import {
   ConversationDetailsIcon,
@@ -21,6 +20,9 @@ import { AriaClickable } from '../../../axo/AriaClickable.dom.tsx';
 import type { ContactModalStateType } from '../../../types/globalModals.std.ts';
 import type { ContactNameColorType } from '../../../types/Colors.std.ts';
 import type { Emoji } from '../../../axo/emoji.std.ts';
+import { UserText } from '../../UserText.dom.tsx';
+import { isInSystemContacts } from '../../../util/isInSystemContacts.std.ts';
+import { InContactsIcon } from '../../InContactsIcon.dom.tsx';
 
 export type GroupV2Membership = {
   isAdmin: boolean;
@@ -153,9 +155,15 @@ export function ConversationDetailsMembershipList({
               label={
                 <div>
                   <div>
-                    <Emojify
+                    <UserText
                       text={member.isMe ? i18n('icu:you') : member.title}
                     />
+                    &nbsp;
+                    {isInSystemContacts(member) ? (
+                      <AriaClickable.SubWidget>
+                        <InContactsIcon i18n={i18n} />
+                      </AriaClickable.SubWidget>
+                    ) : null}
                   </div>
                   {labelString && contactNameColor && (
                     <div className="ConversationDetails-membership-list__member-label">
