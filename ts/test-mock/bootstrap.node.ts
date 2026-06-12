@@ -181,6 +181,7 @@ const DEFAULT_REMOTE_CONFIG = [
   ['global.backups.mediaTierFallbackCdnNumber', { enabled: true, value: '3' }],
   ['global.groupsv2.groupSizeHardLimit', { enabled: true, value: '64' }],
   ['global.groupsv2.maxGroupSize', { enabled: true, value: '32' }],
+  ['global.pinnedChatLimit', { enabled: true, value: '4' }],
   [
     'desktop.libsignalNet.grpc.AccountsAnonymousLookupUsernameHash',
     { enabled: true },

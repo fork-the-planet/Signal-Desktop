@@ -218,7 +218,10 @@ export type AnyToast =
       parameters: { enabled: boolean; name: string };
     }
   | { toastType: ToastType.OriginalMessageNotFound }
-  | { toastType: ToastType.PinnedConversationsFull }
+  | {
+      toastType: ToastType.PinnedConversationsFull;
+      maxPinnedConversations: number;
+    }
   | { toastType: ToastType.PinnedMessageNotFound }
   | { toastType: ToastType.PollNotFound }
   | { toastType: ToastType.ReactionFailed }

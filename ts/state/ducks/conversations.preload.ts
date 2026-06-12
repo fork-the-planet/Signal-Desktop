@@ -255,7 +255,10 @@ import {
   getPanels,
   getSelectedConversationId,
 } from '../selectors/nav.std.ts';
-import { computeGroupNameHash } from '../../util/Conversation.preload.ts';
+import {
+  computeGroupNameHash,
+  getPinnedConversationLimit,
+} from '../../util/Conversation.preload.ts';
 import type { Emoji } from '../../axo/emoji.std.ts';
 import { isSignalConversation } from '../../util/isSignalConversation.dom.ts';
 
@@ -1824,12 +1827,14 @@ function setPinned(
       'pinnedConversationIds',
       new Array<string>()
     );
+    const maxPinnedConversations = getPinnedConversationLimit();
 
-    if (pinnedConversationIds.length >= 4) {
+    if (pinnedConversationIds.length >= maxPinnedConversations) {
       return {
         type: SHOW_TOAST,
         payload: {
           toastType: ToastType.PinnedConversationsFull,
+          maxPinnedConversations,
         },
       };
     }

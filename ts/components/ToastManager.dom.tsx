@@ -787,7 +787,13 @@ function renderToast({
 
   if (toastType === ToastType.PinnedConversationsFull) {
     return (
-      <Toast onClose={hideToast}>{i18n('icu:pinnedConversationsFull')}</Toast>
+      <Toast onClose={hideToast}>
+        <I18n
+          i18n={i18n}
+          id="icu:pinnedConversations--max"
+          components={{ maxPinnedConversations: toast.maxPinnedConversations }}
+        />
+      </Toast>
     );
   }
 

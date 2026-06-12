@@ -615,6 +615,10 @@
     "messageformat": "You can only pin up to 4 chats",
     "description": "Shown in a toast when a user attempts to pin more than the maximum number of chats"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "You can only pin up to {maxPinnedConversations, plural, one {# chat} other {# chats}}",
+    "description": "Shown in a toast when a user attempts to pin more than the maximum number of chats"
+  },
   "icu:view": {
     "messageformat": "View",
     "description": "Used as a label on a button allowing user to see more information"
