@@ -27,13 +27,15 @@ const LOCAL_ASSETS = new Set([
   'fonts/inter-v3.19/Inter-Italic.woff2',
   'fonts/inter-v3.19/Inter-SemiBoldItalic.woff2',
   'fonts/mono-special/MonoSpecial-Regular.woff2',
-  'fonts/emoji.woff2',
 ]);
 
 // pathname to optional resource name
-const OPTIONAL_ASSETS = new Map([
-  ['optional-fonts/emoji-large.woff2', 'emoji-font.woff2'],
-]);
+const OPTIONAL_ASSETS = new Map<string, string>([]);
+
+if (!process.mas) {
+  LOCAL_ASSETS.add('fonts/emoji.woff2');
+  OPTIONAL_ASSETS.set('optional-fonts/emoji-large.woff2', 'emoji-font.woff2');
+}
 
 export class AssetService {
   readonly #resourceService: OptionalResourceService;

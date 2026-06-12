@@ -21,7 +21,7 @@ patchedDependencies:
   '@types/chai': b1cea4e432957039e7f72a32140d7a718258944078c5d5bdb40ad62b8717cb97
   '@types/fabric@4.5.3': e5f339ecf72fbab1c91505e7713e127a7184bfe8164aa3a9afe9bf45a0ad6b89
   '@vitest/expect@2.0.5': e8a96f71e52bf903c9f1eadba4740489a0beb48da33db52354adca484fe1f495
-  app-builder-lib: 4b0b6a075db66810319028f6784bd5bb11cd9bb38570800f1fff0d80f90c44d8
+  app-builder-lib: 02fa41bb6c77d0ecc2b4c7a03b1d16089baaeadf948fcab1d63b2bb12404c1d6
   casual@1.6.2: b88b5052437cbdc1882137778b76ca5037f71b2a030ae9ef39dc97f51670d599
   dmg-builder: 75ddbdfdce4e9fad4f5e7d3e2ac0d29fc920006584534018bf560c486e0642ec
   fabric@4.6.0: 259e6eff3d60c4a453f7815fca6aa0d3a81842f4efdc4051836812fc1e711e00
@@ -50,8 +50,8 @@ importers:
         specifier: workspace:*
         version: link:packages/mute-state-change
       '@signalapp/ringrtc':
-        specifier: 2.69.3
-        version: 2.69.3
+        specifier: 2.69.4
+        version: 2.69.4
       '@signalapp/sqlcipher':
         specifier: 3.3.5
         version: 3.3.5
@@ -4270,8 +4270,8 @@ packages:
     resolution: {integrity: sha512-y2sgqdivlrG41J4Zvt/82xtH/PZjDlgItqlD2g/Cv3ZbjlR6cGhTNXbfNygCJB8nXj+C7I28pjt1Zm3k0pv2mg==, tarball: https://registry.npmjs.org/@signalapp/quill-cjs/-/quill-cjs-2.1.2.tgz}
     engines: {npm: '>=8.2.3'}
 
-  '@signalapp/ringrtc@2.69.3':
-    resolution: {integrity: sha512-QZE9SUj0pCPAJWEjQO3W3/2BnZcX8Md7y4K4pnTQssHis72qhppZeXxZrvbnwkeQmvRvGHsRGwsspj812JXzMw==, tarball: https://registry.npmjs.org/@signalapp/ringrtc/-/ringrtc-2.69.3.tgz}
+  '@signalapp/ringrtc@2.69.4':
+    resolution: {integrity: sha512-OLavGfCzfYuqUVoAtTeHi7QrXpVNmT8LxzOI9XOPId29bn5gJNrAG31IPVw7Fw7vvWpZwZHFi5MTmcmZGibs4A==, tarball: https://registry.npmjs.org/@signalapp/ringrtc/-/ringrtc-2.69.4.tgz}
     hasBin: true
 
   '@signalapp/sqlcipher@3.3.5':
@@ -14737,7 +14737,7 @@ snapshots:
       lodash: 4.18.1
       quill-delta: 5.1.0
 
-  '@signalapp/ringrtc@2.69.3':
+  '@signalapp/ringrtc@2.69.4':
     dependencies:
       https-proxy-agent: 7.0.6
       tar: 7.5.15
@@ -15969,7 +15969,7 @@ snapshots:
 
   app-builder-bin@5.0.0-alpha.12: {}
 
-  app-builder-lib@26.11.1(patch_hash=4b0b6a075db66810319028f6784bd5bb11cd9bb38570800f1fff0d80f90c44d8)(dmg-builder@26.11.1)(electron-builder-squirrel-windows@26.11.1):
+  app-builder-lib@26.11.1(patch_hash=02fa41bb6c77d0ecc2b4c7a03b1d16089baaeadf948fcab1d63b2bb12404c1d6)(dmg-builder@26.11.1)(electron-builder-squirrel-windows@26.11.1):
     dependencies:
       '@develar/schema-utils': 2.6.5
       '@electron/asar': 3.4.1
@@ -17042,7 +17042,7 @@ snapshots:
 
   dmg-builder@26.11.1(patch_hash=75ddbdfdce4e9fad4f5e7d3e2ac0d29fc920006584534018bf560c486e0642ec)(electron-builder-squirrel-windows@26.11.1):
     dependencies:
-      app-builder-lib: 26.11.1(patch_hash=4b0b6a075db66810319028f6784bd5bb11cd9bb38570800f1fff0d80f90c44d8)(dmg-builder@26.11.1)(electron-builder-squirrel-windows@26.11.1)
+      app-builder-lib: 26.11.1(patch_hash=02fa41bb6c77d0ecc2b4c7a03b1d16089baaeadf948fcab1d63b2bb12404c1d6)(dmg-builder@26.11.1)(electron-builder-squirrel-windows@26.11.1)
       builder-util: 26.11.1
       fs-extra: 10.1.0
       iconv-lite: 0.6.3
@@ -17184,7 +17184,7 @@ snapshots:
 
   electron-builder-squirrel-windows@26.11.1(dmg-builder@26.11.1):
     dependencies:
-      app-builder-lib: 26.11.1(patch_hash=4b0b6a075db66810319028f6784bd5bb11cd9bb38570800f1fff0d80f90c44d8)(dmg-builder@26.11.1)(electron-builder-squirrel-windows@26.11.1)
+      app-builder-lib: 26.11.1(patch_hash=02fa41bb6c77d0ecc2b4c7a03b1d16089baaeadf948fcab1d63b2bb12404c1d6)(dmg-builder@26.11.1)(electron-builder-squirrel-windows@26.11.1)
       builder-util: 26.11.1
       electron-winstaller: 5.4.0
     transitivePeerDependencies:
@@ -17193,7 +17193,7 @@ snapshots:
 
   electron-builder@26.11.1(electron-builder-squirrel-windows@26.11.1):
     dependencies:
-      app-builder-lib: 26.11.1(patch_hash=4b0b6a075db66810319028f6784bd5bb11cd9bb38570800f1fff0d80f90c44d8)(dmg-builder@26.11.1)(electron-builder-squirrel-windows@26.11.1)
+      app-builder-lib: 26.11.1(patch_hash=02fa41bb6c77d0ecc2b4c7a03b1d16089baaeadf948fcab1d63b2bb12404c1d6)(dmg-builder@26.11.1)(electron-builder-squirrel-windows@26.11.1)
       builder-util: 26.11.1
       builder-util-runtime: 9.6.1
       chalk: 4.1.2

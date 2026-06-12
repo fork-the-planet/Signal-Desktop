@@ -19587,7 +19587,7 @@ For more information on this, and how to apply and follow the GNU AGPL, see
 
 ```
 
-## libsignal-account-keys 0.1.0, libsignal-core 0.1.0, libsignal-debug 0.89.2, mrp 2.69.3, protobuf 2.69.3, ringrtc 2.69.3, regex-aot 0.1.0, partial-default-derive 0.1.0, partial-default 0.1.0
+## libsignal-account-keys 0.1.0, libsignal-core 0.1.0, libsignal-debug 0.89.2, mrp 2.69.4, protobuf 2.69.4, ringrtc 2.69.4, regex-aot 0.1.0, partial-default-derive 0.1.0, partial-default 0.1.0
 
 ```
 GNU AFFERO GENERAL PUBLIC LICENSE
@@ -20682,7 +20682,7 @@ THIS SOFTWARE.
 
 ```
 
-## cubeb-core 0.34.0, cubeb-sys 0.34.0, cubeb 0.34.0
+## cubeb-core 0.35.3, cubeb-sys 0.35.3, cubeb 0.35.3
 
 ```
 Copyright © 2017 Mozilla Foundation

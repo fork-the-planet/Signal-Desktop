@@ -42,6 +42,7 @@
     "prepare-staging-build": "node scripts/prepare_staging_build.mjs",
     "prepare-no-delay-release": "node scripts/prepare-no-delay-release.mjs",
     "prepare-linux-build": "node scripts/prepare_linux_build.mjs",
+    "prepare-mas-build": "node scripts/prepare_mas_build.mjs",
     "test": "run-s test-node test-electron test-lint-intl test-oxlint",
     "test-electron": "node scripts/test-electron.mjs",
     "test-release": "node scripts/test-release.mjs",
@@ -104,6 +105,7 @@
     "build:styles:tailwind:prod": "pnpm run build:styles:tailwind --minify",
     "build:electron": "cross-env NODE_OPTIONS='--import=tsx' electron-builder --config.extraMetadata.environment=$SIGNAL_ENV",
     "build:release": "cross-env SIGNAL_ENV=production pnpm run build:electron --config.directories.output=release",
+    "build:release:mas": "pnpm run build:release --mac mas --universal",
     "build:mas-dev": "bash ./scripts/build-mas-dev.sh",
     "build:release-win32-all": "pnpm run build:release --arm64 --x64",
     "build:preload-cache": "node scripts/generate-preload-cache.mjs",
@@ -120,7 +122,7 @@
     "@indutny/simple-windows-notifications": "2.0.16",
     "@signalapp/libsignal-client": "0.95.0",
     "@signalapp/mute-state-change": "workspace:*",
-    "@signalapp/ringrtc": "2.69.3",
+    "@signalapp/ringrtc": "2.69.4",
     "@signalapp/sqlcipher": "3.3.5",
     "@signalapp/windows-ucv": "workspace:*",
     "google-libphonenumber": "3.2.44"
@@ -359,6 +361,7 @@
       ],
       "mergeASARs": true,
       "sign": "scripts/sign-macos.mjs",
+      "signInstaller": "scripts/sign-mas-installer.mjs",
       "releaseInfo": {
         "vendor": {
           "minOSVersion": "21.0.1"
@@ -416,6 +419,15 @@
       "entitlementsInherit": "./build/entitlements.mas-dev.inherit.plist",
       "preAutoEntitlements": false,
       "extendInfo": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "ElectronTeamID": "U68MSDN6DR",
+        "NSCameraUsageDescription": "Signal uses your camera for video calling.",
+        "NSMicrophoneUsageDescription": "Signal uses your microphone for voice and video calling."
+      }
+    },
+    "mas": {
+      "extendInfo": {
+        "ITSAppUsesNonExemptEncryption": false,
         "ElectronTeamID": "U68MSDN6DR",
         "NSCameraUsageDescription": "Signal uses your camera for video calling.",
         "NSMicrophoneUsageDescription": "Signal uses your microphone for voice and video calling."
