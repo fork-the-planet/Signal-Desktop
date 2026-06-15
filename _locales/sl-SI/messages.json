@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Delno poslano. Kliknite za več informacij."
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Delno izbrisano, kliknite za nov poskus"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Delno izbrisano, kliknite za podrobnosti"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Sporočilo je bilo izbrisano."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Administrator_ka {admin} je izbrisal_a to sporočilo"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Razširi"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Dodajanje datoteke"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotografije in videoposnetki"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Posreduj izbrana sporočila"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Izbrišem sporočilo?} two {Izbrišem {count,number} sporočili?} few {Izbrišem {count,number} sporočila?} other {Izbrišem {count,number} sporočil?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Želite izbrisati izbrano sporočilo?} two {Želite izbrisati {count,number} izbrani sporočili?} few {Želite izbrisati {count,number} izbrana sporočila?} other {Želite izbrisati {count,number} izbranih sporočil?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Za koga želite izbrisati to sporočilo?} two {Za koga želite izbrisati ti sporočili?} few {Za koga želite izbrisati ta sporočila?} other {Za koga želite izbrisati ta sporočila?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Iz katerih naprav želite izbrisati to sporočilo?} two {Iz katerih naprav želite izbrisati ti sporočili?} few {Iz katerih naprav želite izbrisati ta sporočila?} other {Iz katerih naprav želite izbrisati ta sporočila?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {To sporočilo bo izbrisano iz vseh vaših naprav.} two {Ti sporočili bosta izbrisani iz vseh vaših naprav.} few {Ta sporočila bodo izbrisana iz vseh vaših naprav.} other {Ta sporočila bodo izbrisana iz vseh vaših naprav.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Izbriši zame"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Izbriši iz te naprave"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Izbriši za vse"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Člani skupine, ki uporabljajo zadnjo različico Signala, bodo videli, da ste izbrisali to sporočilo.} two {Člani skupine, ki uporabljajo zadnjo različico Signala, bodo videli, da ste izbrisali ti dve sporočili.} few {Člani skupine, ki uporabljajo zadnjo različico Signala, bodo videli, da ste izbrisali ta sporočila.} other {Člani skupine, ki uporabljajo zadnjo različico Signala, bodo videli, da ste izbrisali ta sporočila.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Izbriši iz vseh naprav"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Izbriši"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Tipka Enter"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Zapišite svoj obnovitveni ključ"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Vaš obnovitveni ključ"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Ta ključ je potreben za obnovitev računa in podatkov. Ta ključ shranite na varnem mestu. Če ga izgubite, računa ne boste mogli obnoviti. <learnMoreLink>Preberite več.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Vaše povezave lahko vidijo vaše ime in fotografijo ter vaše objave pod \"Moja zgodba\", razen če jih skrijete pred njimi"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Brisanje je sinhronizirano v vseh napravah"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Ko izbrišete sporočila ali klepete, se izbrišejo iz vseh vaših naprav."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Razumem"
   },
   "icu:Stories__title": {
     "messageformat": "Zgodbe"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Vaši podatki so zasebni"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal ne zbira ali shranjuje nobenih vaših osebnih podatkov, ko naredite donacijo.</paragraph><paragraph>Za prejemanje vaših donacij uporabljamo plačilni sistem Stripe. Ne dostopamo do nobenih podatkov, ki jih posredujete temu sistemu, niti jih ne shranjujemo ali hranimo.</paragraph><paragraph>Signal ne povezuje in ne more povezati vaše donacije z vašim Signal računom.</paragraph><paragraph>Hvala za vašo podporo!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Kot neodvisna neprofitna organizacija je Signal zavezan zasebnim sporočilom in klicem. Brez oglasov, brez sledilnikov, brez nadzora. Donirajte in podprite Signal."

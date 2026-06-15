@@ -57,7 +57,13 @@ const headers = await authenticate({
   userSecret: SMARTLING_SECRET,
 });
 
-const FILES = ['_locales/en/messages.json', 'mas-title.txt', 'mas-description.txt'];
+const FILES = [
+  '_locales/en/messages.json',
+  'mas-title.txt',
+  'mas-subtitle.txt',
+  'mas-description.txt',
+  'mas-keywords.txt',
+];
 
 console.log('Cleaning _locales directory...');
 const dirEntries = await fastGlob(['_locales/*', '!_locales/en'], {

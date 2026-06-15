@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "আংশিক পাঠানো হয়েছে, বিস্তারিত জানতে ক্লিক করুন"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "আংশিক মুছে ফেলা হয়েছে, আবার চেষ্টা করতে ক্লিক করুন"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "আংশিকভাবে মুছে ফেলা হয়েছে, বিস্তারিত জানার জন্য ক্লিক করুন"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "এই মেসেজটি মুছে ফেলা হয়েছে।"
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "অ্যাডমিন {admin} এই মেসেজটি মুছে ফেলেছেন"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "প্রসারিত করুন"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "ফাইল সংযুক্ত করুন"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "ছবি ও ভিডিও"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "নির্বাচিত ম্যাসেজগুলো ফরোয়ার্ড করুন"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {ম্যাসেজ মুছবেন?} other {{count,number}টি ম্যাসেজ মুছবেন?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {নির্বাচিত মেসেজটি মুছে ফেলবেন?} other {নির্বাচিত {count,number}-টি মেসেজ মুছে ফেলবেন?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {আপনি কার জন্য ম্যাসেজটি মুছে ফেলতে চান?} other {আপনি কার জন্য ম্যাসেজগুলো মুছে ফেলতে চান?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {কোন কোন ডিভাইস থেকে আপনি এই ম্যাসেজটি মুছে ফেলতে চান?} other {কোন কোন ডিভাইস থেকে আপনি এই ম্যাসেজগুলো মুছে ফেলতে চান?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {এই মেসেজটি আপনার সকল ডিভাইস থেকে মুছে ফেলা হবে।} other {এই মেসেজগুলি আপনার সকল ডিভাইস থেকে মুছে ফেলা হবে।}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "আমার জন্য মুছে ফেলুন"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "এই ডিভাইস থেকে মুছে ফেলুন"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "সবার জন্য মুছে ফেলুন"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Signal-এর সর্বশেষ সংস্করণের গ্রুপ সদস্যরা দেখতে পাবেন যে আপনি এই মেসেজ মুছে ফেলেছেন।} other {Signal-এর সর্বশেষ সংস্করণের গ্রুপ সদস্যরা দেখতে পাবেন যে আপনি এই মেসেজগুলি মুছে ফেলেছেন।}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "সকল ডিভাইস থেকে মুছে ফেলুন"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "মুছে ফেলুন"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "'কি' লিখুন"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "আপনার পুনরুদ্ধার 'কি' সংরক্ষণ করুন"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "আপনার পুনরুদ্ধার 'কি'"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "আপনার অ্যাকাউন্ট এবং ডেটা পুনরুদ্ধার করতে এই 'কি' প্রয়োজন। এই 'কি'-টি নিরাপদ কোথাও সংরক্ষণ করুন। এটি হারিয়ে ফেললে, আপনি আপনার অ্যাকাউন্টের ব্যাকআপ পুনরুদ্ধার করতে পারবেন না। <learnMoreLink>আরো জানুন।</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "আপনার কানেকশনরা আপনার নাম এবং ছবি দেখতে পারেন এবং \"আমার স্টোরি\"-এর পোস্টগুলো দেখতে পারেন যদি না আপনি এটি তাদের কাছ থেকে লুকিয়ে রাখেন"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "মুছে ফেলার বিষয়টি আপনার সকল ডিভাইসেই সিঙ্ক করা হয়েছে"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "আপনি মেসেজ বা চ্যাট মুছে ফেললে, সেগুলো আপনার ফোন এবং সকল ডিভাইস থেকে মুছে যাবে।"
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "বুঝতে পেরেছি"
   },
   "icu:Stories__title": {
     "messageformat": "স্টোরি"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "আপনার তথ্য গোপনীয়"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>আপনি যখন ডোনেট করেন তখন Signal আপনার কোনো ব্যক্তিগত তথ্য সংগ্রহ বা সংরক্ষণ করে না।</paragraph><paragraph>আমরা আপনার পাঠানো ডোনেশন গ্রহণ করার জন্য পেমেন্ট প্রক্রিয়াকারী মাধ্যম হিসাবে Stripe ব্যবহার করি। আপনি তাদেরকে যেসব তথ্য প্রদান করেন তা আমরা অ্যাক্সেস, সংরক্ষণ বা সেভ করি না।</paragraph><paragraph>Signal আপনার Signal অ্যাকাউন্টে আপনার ডোনেশনকে সংযুক্ত করে না এবং করতে পারে না।</paragraph><paragraph>আপনার সহায়তার জন্য ধন্যবাদ!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "একটি স্বাধীন অলাভজনক প্রতিষ্ঠান হিসেবে, Signal ব্যক্তিগত মেসেজ ও কলের সার্ভিস প্রদানের জন্য প্রতিশ্রুতিবদ্ধ। নেই কোনো বিজ্ঞাপন, নেই কোনো ট্র্যাকার, নেই কোনো নজরদারি। Signal-কে সহায়তা করার জন্য আজই ডোনেট করুন।"

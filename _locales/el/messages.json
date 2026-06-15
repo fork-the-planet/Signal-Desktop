@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Στάλθηκε εν μέρει, κλικ για λεπτομέρειες"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Διαγράφηκε εν μέρει, πάτα για επανάληψη"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Διαγράφηκε μερικώς, πάτα για λεπτομέρειες"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Αυτό το μήνυμα διαγράφτηκε."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Ο διαχειριστής {admin} διέγραψε αυτό το μήνυμα"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Ανάπτυξη"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Επισύναψη αρχείου"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Φωτογραφίες και βίντεο"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Προώθηση επιλεγμένων μηνυμάτων"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Διαγραφή μηνύματος;} other {Διαγραφή {count,number} μηνυμάτων;}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Διαγραφή επιλεγμένου μηνύματος;} other {Διαγραφή {count,number} επιλεγμένων μηνυμάτων;}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Για ποια άτομα θα ήθελες να διαγράψεις αυτό το μήνυμα;} other {Για ποια άτομα θα ήθελες να διαγράψεις αυτά τα μηνύματα;}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Από ποιες συσκευές θέλεις να διαγράψεις αυτό το μήνυμα;} other {Από ποιες συσκευές θέλεις να διαγράψεις αυτά τα μηνύματα;}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Αυτό το μήνυμα θα διαγραφεί από όλες τις συσκευές σου.} other {Αυτά τα μηνύματα θα διαγραφούν από όλες τις συσκευές σου.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Διαγραφή για μένα"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Διαγραφή από αυτή τη συσκευή"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Διαγραφή για όλους"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Τα μέλη της ομάδας που χρησιμοποιούν τις πιο πρόσφατες εκδόσεις του Signal θα δουν ότι διέγραψες αυτό το μήνυμα.} other {Τα μέλη της ομάδας που χρησιμοποιούν τις πιο πρόσφατες εκδόσεις του Signal θα δουν ότι διέγραψες αυτά τα μηνύματα.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Διαγραφή από όλες τις συσκευές"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Διαγραφή"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Εισαγωγή κλειδιού"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Κατάγραψε το κλειδί ανάκτησης"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Το κλειδί ανάκτησής σου"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Αυτό το κλειδί απαιτείται για την ανάκτηση του λογαριασμού και των δεδομένων σου. Αποθήκευσε αυτό το κλειδί με ασφάλεια. Εάν το χάσεις, δεν θα μπορείς να ανακτήσεις τον λογαριασμό σου. <learnMoreLink>Μάθε περισσότερα.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Αυτό το κλειδί απαιτείται για την ανάκτηση του λογαριασμού και των δεδομένων σου. Αποθήκευσε το με ασφάλεια και μην το κοινοποιήσεις ποτέ σε κανέναν. Το Signal δεν θα επικοινωνήσει ποτέ μαζί σου για το κλειδί ανάκτησής σου. <learnMoreLink>Μάθε περισσότερα.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Οι επαφές σου μπορούν να δουν το όνομα και τη φωτογραφία σου, και μπορούν να δουν δημοσιεύσεις στην ενότητα \"Η ιστορία μου\", εκτός αν την κρύψεις από αυτές."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Η διαγραφή έχει συγχρονιστεί με όλες τις συσκευές σου"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Όταν διαγράφεις μηνύματα ή συνομιλίες, θα διαγραφούν από όλες τις συσκευές σου."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Εντάξει"
   },
   "icu:Stories__title": {
     "messageformat": "Ιστορίες"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Τα στοιχεία σου είναι ιδιωτικά"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Το Signal δεν συλλέγει ούτε αποθηκεύει τα προσωπικά στοιχεία σου όταν κάνεις δωρεά.</paragraph><paragraph>Χρησιμοποιούμε τη Stripe για την επεξεργασία πληρωμών, ώστε να λαμβάνουμε τις δωρεές μας. Δεν επεξεργαζόμαστε ούτε αποθηκεύουμε κανένα από τα στοιχεία που της παρέχεις.</paragraph><paragraph>Το Signal δεν μπορεί να συνδέσει τη δωρεά με τον λογαριασμό σου στο Signal.</paragraph><paragraph>Ευχαριστούμε για την υποστήριξή σου!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Ως ανεξάρτητος μη κερδοσκοπικός οργανισμός, το Signal έχει δεσμευτεί για ιδιωτικά μηνύματα και κλήσεις. Χωρίς διαφημίσεις, παρακολούθηση, επιτήρηση. Κάνε σήμερα μια δωρεά για να στηρίξεις το Signal."

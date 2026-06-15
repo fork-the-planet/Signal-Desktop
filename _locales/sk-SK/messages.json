@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Čiastočne odoslané, kliknite pre detaily"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Čiastočne odstránená, kliknutím to skúsite znova"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Čiastočne vymazané, kliknite pre podrobnosti"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Táto správa bola odstránená."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Administrátor {admin} vymazal túto správu"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Rozbaliť"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Pripojiť súbor"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotky a videá"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Preposlať vybrané správy"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Vymazať {count,number} správu?} few {Vymazať {count,number} správy?} many {Vymazať {count,number} správy?} other {Vymazať {count,number} správ?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Vymazať vybranú správu?} few {Vymazať {count,number} vybrané správy?} many {Vymazať {count,number} vybranej správy?} other {Vymazať {count,number} vybraných správ?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Pre koho by ste chceli túto správu vymazať?} few {Pre koho by ste chceli tieto správy vymazať?} many {Pre koho by ste chceli tieto správy vymazať?} other {Pre koho by ste chceli tieto správy vymazať?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Z ktorých zariadení by ste chceli túto správu odstrániť?} few {Z ktorých zariadení by ste chceli tieto správy odstrániť?} many {Z ktorých zariadení by ste chceli tieto správy odstrániť?} other {Z ktorých zariadení by ste chceli tieto správy odstrániť?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Táto správa bude vymazaná zo všetkých vašich zariadení.} few {Tieto správy budú vymazané zo všetkých vašich zariadení.} many {Tieto správy budú vymazané zo všetkých vašich zariadení.} other {Tieto správy budú vymazané zo všetkých vašich zariadení.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Vymazať pre mňa"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Vymazať z tohto zariadenia"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Vymazať pre všetkých"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Členovia skupiny v najnovších verziách Signalu uvidia, že ste túto správu vymazali.} few {Členovia skupiny v najnovších verziách Signalu uvidia, že ste tieto správy vymazali.} many {Členovia skupiny v najnovších verziách Signalu uvidia, že ste tieto správy vymazali.} other {Členovia skupiny v najnovších verziách Signalu uvidia, že ste tieto správy vymazali.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Vymazať zo všetkých zariadení"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Vymazať"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Zadajte kód kľúča"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Zaznamenajte si kľúč na obnovenie"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Váš kľúč na obnovenie"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Tento kľúč je potrebný na obnovenie vášho účtu a údajov. Uložte ho na bezpečné miesto. Ak ho stratíte, nebudete môcť svoj účet obnoviť. <learnMoreLink>Zistiť viac.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Tento kľúč je potrebný na obnovenie vášho účtu a údajov. Uschovajte si ho na bezpečnom mieste a nikdy ho s nikým nezdieľajte. Signal vám nikdy nepošle správu s požiadavkou o poskytnutie kľúča na obnovenie. <learnMoreLink>Zistiť viac.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Vaše kontakty môžu vidieť vaše meno a fotografiu, ako aj príspevky v časti „Môj príbeh“, pokiaľ ich pred nimi neskryjete"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Vymazávanie je synchronizované na vašich zariadeniach"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Keď vymažete správy alebo čety, vymažú sa zo všetkých vašich zariadení."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Rozumiem"
   },
   "icu:Stories__title": {
     "messageformat": "Príbehy"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Vaše údaje sú súkromné"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Počas vášho prispievania na Signal nezhromažďujeme ani neukladáme žiadne vaše osobné údaje.</paragraph><paragraph>Na prijímanie vašich príspevkov a spracovanie platieb používame službu Stripe. K údajom, ktoré v rámci tejto platobnej brány poskytnete, nemáme prístup ani ich neukladáme.</paragraph><paragraph>Signal si nespája a ani si nemôže spojiť váš príspevok s vaším Signal účtom.</paragraph><paragraph>Ďakujeme za vašu podporu!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Ako nezávislá nezisková organizácia Signal zaisťuje maximálne súkromie pre správy a hovory. Žiadne reklamy, žiadne sledovače, žiadne monitorovanie. Prispejte ešte dnes a podporte Signal."

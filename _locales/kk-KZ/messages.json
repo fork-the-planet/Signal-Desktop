@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Ішінара жіберілді, толық мәлімет алу үшін басыңыз"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Ішінара жойылды, қайталап көру үшін басыңыз"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Ішінара жойылды, толық мәлімет алу үшін басыңыз"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Бұл хат жойылды."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "{admin} атты әкімші бұл хабарды жойды"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Кеңейту"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Файл тіркеу"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Фотосуреттер және бейнелер"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Таңдалған хаттарды басқа біреуге жіберу"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Хатты жою керек пе?} other {{count,number} хатты жою керек пе?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Таңдалған хабарды жою керек пе?} other {Таңдалған {count,number} хабарды жою керек пе?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Бұл хаттың кімде жойылғанын қалайсыз?} other {Бұл хаттардың кімде жойылғанын қалайсыз?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Бұл хатты қай құрылғылардан жойып тастағыңыз келеді?} other {Бұл хаттарды қай құрылғылардан жойып тастағыңыз келеді?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Бұл хат барлық құрылғыңыздан жойылады.} other {Бұл хаттар барлық құрылғыңыздан жойылады.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Меннен ғана жою"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Осы құрылғыдан жою"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Барлығынан жою"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Signal-дың соңғы нұсқаларындағы топ мүшелері осы хабарды жойғаныңызды көреді.} other {Signal-дың соңғы нұсқаларындағы топ мүшелері осы хабарларды жойғаныңызды көреді.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Барлық құрылғыдан жою"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Жою"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Кілтті енгізу"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Қалпына келтіру кілтін жазыңыз"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Қалпына келтіру кілтіңіз"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Бұл кілт аккаунт пен деректерді қалпына келтіру үшін қажет. Бұл кілтті қауіпсіз жерде сақтаңыз. Оны жоғалтсаңыз, аккаунтыңызды қалпына келтіре алмайсыз. <learnMoreLink>Толығырақ.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Бұл кілт аккаунт пен деректерді қалпына келтіру үшін қажет. Оны қауіпсіз бір жерде сақтаңыз және оны ешкіммен бөліспеңіз. Signal ешқашан сізге хабарласып, қалпына келтіру кілтін сұрамайды. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Сіздің контактілеріңіз сіздің аты-жөніңізді және фотосуретіңізді көре алады, сондай-ақ олардан жасырып қоймаған болсаңыз, \"Стористерім\" бөліміне салған стористеріңізді көре алады"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Жою процесі барлық құрылғыңызда орындалады"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Хаттарды немесе чаттарды жойғанда, олар сіздің барлық құрылғыңыздан жойылады."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Түсінікті"
   },
   "icu:Stories__title": {
     "messageformat": "Стористер"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Ақпаратыңыз құпия сақталады"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Сіз демеушілік жасағанда, Signal сіздің ешқандай жеке ақпаратыңызды жинамайды немесе сақтамайды.</paragraph><paragraph>Демеу мақсатында жіберген қаражатыңызды қабылдау үшін Stripe төлем операторын қолданамыз. Оларға берген ақпаратыңыздың ешқайсысын пайдаланбаймыз немесе сақтамаймыз.</paragraph><paragraph>Signal сіздің демеушілігіңізді Signal аккаунтыңызбен байланыстырмайды.</paragraph><paragraph>Қолдау көрсеткеніңіз үшін рақмет!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Тәуелсіз коммерциялық емес жоба ретінде Signal хабар алмасу мен қоңыраулардың құпия болуын міндет көреді. Жарнамалар жоқ, трекерлер жоқ, бақылау жоқ. Signal-ға бүгін қаржылай қолдау көрсетіңіз."

@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Gedeeltelijk verzonden, klik hier voor details"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Gedeeltelijk verwijderd, klik hier om het opnieuw te proberen"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Gedeeltelijk verwijderd, klik voor details"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Dit bericht is verwijderd."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Beheerder {admin} heeft dit bericht verwijderd"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Vergroten"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Bestand bijvoegen"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Foto's en video's"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Geselecteerde berichten doorsturen"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {{count,number} bericht verwijderen?} other {{count,number} berichten verwijderen?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Geselecteerd bericht verwijderen?} other {Geselecteerde {count,number} berichten verwijderen?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Voor wie wil je dit bericht verwijderen?} other {Voor wie wil je deze berichten verwijderen?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Van welk apparaat wil je dit bericht verwijderen?} other {Van welke apparaten wil je deze berichten verwijderen?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Dit bericht wordt op al je apparaten verwijderd.} other {Deze berichten worden op al je apparaten verwijderd.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Verwijderen voor mezelf"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Verwijderen van dit apparaat"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Verwijderen voor iedereen"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Groepsleden die een recente versie van Signal gebruiken, kunnen zien dat je dit bericht hebt verwijderd.} other {Groepsleden die een recente versie van Signal gebruiken, kunnen zien dat je deze berichten hebt verwijderd.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Verwijderen van alle apparaten"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Verwijderen"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Sleutel invoeren"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Je herstelsleutel vastleggen"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Je herstelsleutel"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Deze sleutel is nodig om je account en gegevens te herstellen. Bewaar deze sleutel op een veilige manier. Als je hem kwijtraakt, kun je je account niet meer herstellen. <learnMoreLink>Meer informatie.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Deze sleutel is nodig om je account en gegevens te herstellen. Bewaar de sleutel op een veilige manier en deel hem niet met anderen. Signal zal je nooit een bericht sturen om je herstelsleutel te vragen. <learnMoreLink>Meer informatie.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Je Signal-contacten kunnen jouw profielnaam, -foto en -omschrijving zien en kunnen zien wat je deelt in ‘Mijn verhaal’ tenzij je dat voor hen verbergt."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Verwijderen wordt gesynchroniseerd op al je apparaten"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Wanneer je berichten of chats verwijdert, worden deze verwijderd van al je apparaten."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Begrepen"
   },
   "icu:Stories__title": {
     "messageformat": "Verhalen"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Jouw informatie is privé"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal verzamelt of bewaart geen persoonlijke gegevens wanneer je een donatie doet.</paragraph><paragraph>Wij gebruiken Stripe als onze betalingsverwerker om je donaties te ontvangen. Wij hebben geen toegang tot de informatie die je aan hen verstrekt en slaan die ook niet op.</paragraph><paragraph>Signal koppelt je donatie niet aan je Signal-account en kan dat ook niet.</paragraph><paragraph>Bedankt voor je steun!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Als onafhankelijke non-profitorganisatie richt Signal zich volledig op veilige privéberichten en -oproepen. Geen advertenties, geen trackers, geen toezicht. Doneer vandaag nog om Signal te steunen."

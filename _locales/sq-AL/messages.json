@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Dërguar pjesërisht, prekeni për hollësi"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Fshirë pjesërisht, kliko për ta provuar sërish"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Është fshirë pjesërisht, kliko për detaje"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Ky mesazh u fshi."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Administratori {admin} e fshiu këtë mesazh"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Zgjeroje"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Bashkëngjitni kartelë"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Foto dhe video"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Përcill mesazhet e përzgjedhura"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Dëshiron të fshish mesazhin?} other {Dëshiron të fshish {count,number} mesazhe?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Të fshihet mesazhi i përzgjedhur?} other {Të fshihen {count,number} mesazhet e përzgjedhura?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Për kë do të donit të fshihet ky mesazh?} other {Për kë do të donit të fshihen këto mesazhe?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Nga cilat pajisje do të donit ta fshini këtë mesazh?} other {Nga cilat pajisje do të donit t'i fshini këto mesazhe?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Ky mesazh do të fshihet nga të gjitha pajisjet.} other {Këto mesazhe do të fshihen nga të gjitha pajisjet.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Fshije për mua"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Fshije nga kjo pajisje"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Fshije për të gjithë"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Në versionet më të fundit të Signal, anëtarët e grupit do të shohin që e ke fshirë këtë mesazh.} other {Në versionet më të fundit të Signal, anëtarët e grupit do të shohin që i ke fshirë këto mesazhe.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Fshi nga të gjitha pajisjet"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Fshije"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Shkruaj kodin"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Regjistro kodin e rikthimit"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Kodi i rikthimit"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Ky kod kërkohet për të rikuperuar llogarinë dhe të dhënat e tua. Ruaje kodin në një vend të sigurt. Nëse e humb, nuk do të mund të rikuperosh llogarinë. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Kontaktet mund të shohin emrin e fotografinë tënde, si dhe postimet e përkohshme, nëse nuk ua fsheh"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Fshirja është sinkronizuar në të gjitha pajisjet"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Kur fshin mesazhet apo bisedat, ato do të fshihen nga të gjitha pajisjet e tua."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "E kuptova"
   },
   "icu:Stories__title": {
     "messageformat": "Postimet e përkohshme"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Informacioni yt është privat"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal nuk mbledh apo ruan asnjë nga të dhënat e tua personale kur bën një dhurim.</paragraph><paragraph>Ne përdorim Stripe si përpunues të pagesave për të marrë dhurimet. Nuk kemi qasje, nuk mbledhim apo ruajmë asnjë nga informacionet që ti u jep atyre.</paragraph><paragraph>Signal nuk e lidh dhe nuk mund ta lidhë dhurimin tënd me llogarinë Signal.</paragraph><paragraph>Faleminderit për mbështetjen!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Si një ent jofitimprurës i pavarur, Signal është i përkushtuar ndaj mesazheve dhe thirrjeve private. Pa reklama, pa gjurmues, pa mbikëqyrje. Dhuro sot për të mbështetur Signal."

@@ -1,6 +1,6 @@
 • Signal és una aplicació de missatgeria centrada en la privacitat. És gratuïta i fàcil d'utilitzar, amb un fort xifratge d'extrem a extrem que manté els teus xats i trucades completament privats. Ni Signal ni ningú més pot llegir els teus missatges o escoltar les teves trucades. 
 
-• Signal on MacOS links with Signal on your phone. 
+• El Signal de macOS s'enllaça amb el Signal del teu telèfon. 
 
 • Envia de manera gratuïta missatges, notes de veu, fotos, vídeos, GIFs i arxius xifrats d'extrem a extrem. 
 

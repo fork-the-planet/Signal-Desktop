@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "ส่งแล้วบางส่วน คลิกเพื่อดูรายละเอียด"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "ลบแล้วบางส่วน คลิกเพื่อลองอีกครั้ง"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "ลบแล้วบางส่วน คลิกเพื่อดูรายละเอียด"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "ข้อความนี้ถูกลบ"
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "ผู้ดูแล {admin} ลบข้อความนี้"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "ขยาย"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "แนบแฟ้ม"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "รูปภาพและวิดีโอ"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "ส่งต่อข้อความที่เลือก"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, other {ลบข้อความ {count,number} รายการหรือไม่}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, other {ลบ {count,number} ข้อความที่เลือกใช่หรือไม่}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, other {คุณต้องการลบข้อความนี้สำหรับใคร}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, other {คุณต้องการลบข้อความนี้จากอุปกรณ์เครื่องใด}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, other {ข้อความนี้จะถูกลบออกจากอุปกรณ์ทุกเครื่องของคุณ}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "ลบของฉัน"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "ลบจากอุปกรณ์เครื่องนี้"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "ลบสำหรับทุกคน"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, other {สมาชิกกลุ่มที่ใช้ Signal เวอร์ชันล่าสุดจะเห็นว่าคุณลบข้อความเหล่านี้}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "ลบจากอุปกรณ์ทุกเครื่อง"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "ลบ"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "ใส่กุญแจ"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "บันทึกกุญแจกู้คืนของคุณ"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "กุญแจกู้คืนของคุณ"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "คุณจำเป็นต้องใช้กุญแจนี้ในการกู้คืนบัญชีและข้อมูล โปรดเก็บกุญแจนี้ไว้ในที่ปลอดภัย คุณจะไม่สามารถกู้คืนบัญชีได้หากทำกุญแจหาย <learnMoreLink>เรียนรู้เพิ่มเติม</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "คุณจำเป็นต้องใช้กุญแจนี้ในการกู้คืนบัญชีและข้อมูล โปรดเก็บกุญแจของคุณไว้ในที่ปลอดภัย รวมถึงไม่บอกรหัสนี้กับใคร Signal จะไม่ส่งข้อความหาคุณเพื่อขอกุญแจกู้คืน <learnMoreLink>เรียนรู้เพิ่มเติม</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "เครือข่ายของคุณจะสามารถมองเห็นชื่อและรูปภาพของคุณ รวมถึงโพสต์ใน \"สตอรี่ของฉัน\" เว้นแต่ว่าคุณจะซ่อนสตอรี่นั้นจากพวกเขา"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "การลบซิงค์เข้ากับอุปกรณ์ทุกเครื่องของคุณแล้ว"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "เมื่อคุณลบข้อความหรือแชท ข้อมูลนั้นจะถูกลบออกจากอุปกรณ์ทุกเครื่องของคุณ"
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "เข้าใจแล้ว"
   },
   "icu:Stories__title": {
     "messageformat": "สตอรี่"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "ข้อมูลของคุณเป็นส่วนตัว"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>เมื่อคุณบริจาคเงิน Signal ไม่ได้รวบรวมหรือจัดเก็บข้อมูลส่วนบุคคลใดๆ ของคุณ</paragraph><paragraph>เราใช้ Stripe เป็นผู้ให้บริการการชำระเงินในการรับเงินบริจาคของคุณโดยเราจะไม่เข้าถึง จัดเก็บ หรือบันทึกข้อมูลใดๆ ที่คุณกรอกระหว่างทำธุรกรรม</paragraph><paragraph>Signal จะไม่เชื่อมโยงการบริจาคของคุณเข้ากับบัญชี Signal ของคุณ (และนี่เป็นสิ่งที่เราไม่สามารถทำได้อีกด้วย)</paragraph><paragraph>ขอบคุณสำหรับการสนับสนุนของคุณ!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Signal เป็นแอปอิสระที่ไม่แสวงหาผลกำไร เรามุ่งมั่นให้บริการการส่งข้อความและการโทรที่เป็นส่วนตัว ไม่มีโฆษณา ไม่มีการติดตาม และไม่มีการเก็บข้อมูล บริจาควันนี้เพื่อร่วมสนับสนุน Signal"

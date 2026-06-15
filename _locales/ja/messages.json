@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "一部だけ送信しました。タップして詳細を表示"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "一部だけ消去済み、クリックして再実行"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "一部消去されました。詳細を表示"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "このメッセージは消去されました。"
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "管理者の{admin}がこのメッセージを消去しました"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "大きく"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "ファイルを添付する"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "写真と動画"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "選択したメッセージを転送"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, other {{count,number} 件のメッセージを消去しますか？}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, other {選択した{count,number}件のメッセージを削除しますか？}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, other {このメッセージを誰に対して消去しますか？}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, other {これらのメッセージを消去する端末を選んでください}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, other {これらのメッセージはご利用のすべての端末から消去されます。}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "自分の分だけ消去"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "この端末から消去する"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "全員分を消去"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, other {Signalの最新版を使用しているグループメンバーは、あなたがこれらのメッセージを消去したことを確認できます。}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "すべての端末から消去する"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "消去"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "キーを入力"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "回復キーを記録する"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "回復キーとは"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "このキーは、アカウントとデータを復元する際に必要です。このキーを安全な場所に保管してください。紛失した場合、アカウントを復元できなくなります。 <learnMoreLink>さらに詳しく。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "このキーは、アカウントとデータを復元する際に必要です。キーは安全な場所に保存し、決して、誰とも共有しないでください。Signalは決して、回復キーについて皆さんにメッセージしません。<learnMoreLink>さらに詳しく。</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "あなたのコネクションの人たちは、あなたの名前や写真を見ることができ、あなたが非表示にしない限り「マイストーリー」への投稿を見ることができます。"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "消去機能は端末間で同期されます"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "メッセージやチャットを消去すると、ご利用のすべての端末から消去されます。"
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "わかりました"
   },
   "icu:Stories__title": {
     "messageformat": "ストーリー"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "お客様の個人情報は保護されています"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signalは、寄付を受ける際に、お客様のいかなる個人情報も収集したり保存したりすることはありません。</paragraph><paragraph>Signalでは寄付を受け取る決済処理にStripeを使用しています。Signalは、お客様から提供されたいかなる情報にもアクセスすることはありません。また保管・保存したりすることもありません。</paragraph><paragraph>Signalは、寄付からお客様のSignalアカウントを特定することはありません。特定はできない仕組みになっています。</paragraph><paragraph>ご支援ありがとうございます！</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Signalは、独立した非営利団体としてメッセージと通話のプライバシーを守ることに取り組んでいます。広告なし、トラッキングなし、監視なし。Signalのこの取り組みのために、ご支援をお願いします。"

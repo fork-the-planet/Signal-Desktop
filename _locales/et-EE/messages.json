@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Osaliselt saadetud, üksikasjade nägemiseks klõpsa"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Osaliselt kustutatud, klõpsa uuesti proovimiseks"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Osaliselt kustutatud, üksikasjade nägemiseks klõpsa"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "See sõnum kustutati."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Administraator {admin} kustutas selle sõnumi"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Laienda"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Lisa fail"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotod ja videod"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Edasta valitud sõnumid"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Kas kustutada sõnum?} other {Kas kustutada {count,number} sõnumit?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Kas kustutada valitud sõnum?} other {Kas kustutada valitud {count,number} sõnumit?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Kelle jaoks soovid seda sõnumit kustutada?} other {Kelle jaoks soovid neid sõnumeid kustutada?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Millistest seadmetest soovid seda sõnumit kustutada?} other {Millistest seadmetest soovid neid sõnumeid kustutada?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {See sõnum kustutatakse kõigist sinu seadmetest.} other {Need sõnumid kustutatakse kõigist sinu seadmetest.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Kustuta minu jaoks"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Kustuta sellest seadmest"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Kustuta kõigi jaoks"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Signali uuemates versioonides näevad grupiliikmed, et sa kustutasid selle sõnumi.} other {Signali uuemates versioonides näevad grupiliikmed, et sa kustutasid need sõnumid.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Kustuta kõigist seadmetest"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Kustuta"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Sisesta võti"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Pane oma varukoopia võti kirja"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Sinu varukoopia võti"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Seda võtit on vaja sinu andmete ja konto taastamiseks. Hoia seda turvalises kohas. Kui selle kaotad, ei ole sul võimalik oma kontot taastada. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Seda võtit on vaja sinu andmete ja konto taastamiseks. Hoia seda turvalises kohas ning ära jaga seda kunagi teistega. Signal ei palu sinult kunagi sõnumi teel taastevõtit. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Sinu kontaktid näevad sinu nime ja fotot ning postitusi „Minu loosse“, kui sa seda infot nende eest ei peida"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Kustutamine on su seadmete üleselt sünkroniseeritud"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Kui kustutad sõnumid või vestlused, kustutatakse need kõigist sinu seadmetest."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Sain aru"
   },
   "icu:Stories__title": {
     "messageformat": "Lood"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Sinu andmed on privaatsed"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal ei kogu ega salvesta annetuse tegemisel sinu isikuandmeid.</paragraph><paragraph>Kasutame sinu annetuse vastuvõtmisel makse töötlemiseks Stripe'i. Meil ei ole ligipääsu andmetele, mida sa nendega jagad; me ei kogu ega salvesta neid andmeid.</paragraph><paragraph>Signal ei saa ega soovi seostada sinu annetust sinu Signali kontoga.</paragraph><paragraph>Täname sind toetuse eest!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Sõltumatu mittetulundusühinguna  on Signal pühendunud privaatsõnumitele ja kõnedele. Ei mingeid reklaame, jälgijaid ega järelevalvet. Anneta nüüd, et Signalit toetada."

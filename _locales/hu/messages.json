@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Részlegesen elküldve, kattints a részletekért"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Csak részben törölve, kattints a teljeshez"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Részben törölve. Kattints a részletekért!"
   },
@@ -2690,9 +2687,6 @@
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
   },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Ez az üzenet ki lett törölve."
-  },
   "icu:message--deletedByAdmin": {
     "messageformat": "{admin} adminisztrátor törölte ezt az üzenetet"
   },
@@ -2865,10 +2859,10 @@
     "messageformat": "Matrica emoji nélkül"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Matricacsomag tőle: {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Csomag megtekintése"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Bővítés"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Fájl csatolása"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotók és videók"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Kijelölt üzenetek továbbítása"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Üzenet törlése?} other {{count,number} üzenet törlése?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Kiválasztott üzenet törlése?} other {Kiválasztott {count,number} üzenet törlése?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Ki számára törölnéd az üzenetet?} other {Ki számára törölnéd az üzeneteket?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Milyen eszközökről szeretnéd törölni ezt az üzenetet?} other {Milyen eszközökről szeretnéd törölni ezeket az üzeneteket?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Ez az üzenet minden eszközödön törlésre kerül.} other {Ezek az üzenetek minden eszközödön törlésre kerülnek.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Törlés számomra"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Törlés erről az eszközről"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Törlés mindenki számára"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {A Signal legújabb verzióit használó csoporttagok látni fogják, hogy törölted ezt az üzenetet.} other {A Signal legújabb verzióit használó csoporttagok látni fogják, hogy törölted ezeket az üzeneteket.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Törlés az összes eszközről"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Törlés"
@@ -6451,38 +6430,44 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Kulcs megadása"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Jegyezd fel a helyreállítási kulcsodat"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "A helyreállítási kulcsod"
   },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Ez a kulcs szükséges a fiók és az adatok helyreállításához. Tárold biztonságos helyen ezt a kulcsot. Ha elveszíted, nem tudod helyreállítani a fiókodat. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+  },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Ez a kulcs szükséges a fiókod és az adataid helyreállításához. Tárold biztonságos helyen és soha ne oszd meg senkivel. A Signal soha nem fog üzenetet küldeni a helyreállítási kulcsod miatt. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Ne oszd meg a helyreállítási kulcsot"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>A Signal soha nem fog üzenetet küldeni</strong> a helyreállítási kulcsod miatt. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a Signal nevében írnának. A helyreállítási kulcsodat tárold biztonságos helyen, és soha ne oszd meg senkivel. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "Rendben"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Kulcs megosztása"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Ne oszd meg a kulcsot"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Ne oszd meg senkivel a helyreállítási kulcsodat. Ezzel lehetővé teszed, hogy átvegyék az irányítást a fiókod felett. <strong>A Signal soha nem fog üzenetet küldeni</strong> a helyreállítási kulcsod miatt. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a Signal nevében írnának."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
     "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Ne oszd meg"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Kulcs másolása"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Erősítsd meg a helyreállítási kulcsodat"
@@ -6548,7 +6533,7 @@
     "messageformat": "Ez a művelet nem hajtható végre, mert a rendszer hitelesítése sikertelen volt. Kérjük, próbáld újra, vagy nyisd meg a Signal alkalmazást a mobileszközödön, és a Biztonsági mentés beállításainál nézd meg a helyreállítási kulcsot."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Hiba történt a művelethez szükséges rendszerhitelesítés lekérésénél."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Kulcs megtekintése"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "A névjegyeid láthatják a neved és a képed, valamint megtekinthetik a „Történeteim” részt, kivéve, ha elrejted előlük"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "A törlés szinkronizálva van az összes eszközön"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Amikor üzeneteket vagy csevegéseket törölsz, azok az összes kapcsolt eszközről is törlésre kerülnek."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Rendben"
   },
   "icu:Stories__title": {
     "messageformat": "Történetek"
@@ -7841,9 +7817,6 @@
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Az adataid privátak"
   },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>A Signal nem gyűjti és nem tárolja a személyes adataidat, amikor adományozol.</paragraph><paragraph>A Stripe-ot használjuk fizetésfeldolgozóként az adományok fogadására. Nem férünk hozzá, nem tárolunk és nem mentünk el semmilyen információt, amelyet megadsz számukra.</paragraph><paragraph>A Signal nem fogja és nem is tudja összekapcsolni az adományodat a Signal-fiókoddal.</paragraph><paragraph>Köszönjük a támogatásodat!</paragraph>"
-  },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Független nonprofit szervezetként a Signal elkötelezett a privát üzenetek és hívások iránt. Nincsenek hirdetések, nincsenek nyomkövetők és nincs megfigyelés. Adományozz még ma, és támogasd a Signalt!"
   },
@@ -8287,9 +8260,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "A JPEG-képek alapértelmezett fájlkiterjesztését jpg-re módosítottuk. Örömmel teljesítettük a kérést (a módosítás gyerekjáték volt), és mostantól a JPEG-fájlok mentésekor az alapértelmezett fájlnév – ahogyan kell – .jpg kiterjesztéssel fog végződni."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Támogatás a sötét ikonstílushoz a macOS rendszerben."
   }
 }

@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Odesláno částečně, klepněte pro zobrazení podrobností"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Částečně odstraněno, kliknutím pokus zopakujete"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Odstraněno částečně, kliknutím zobrazíte podrobnosti"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Tato zpráva byla odstraněna."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Správce {admin} tuto zprávu odstranil"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Rozbalit"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Připojit soubor"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotky a videa"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Přeposlat vybrané zprávy"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Odstranit zprávu?} few {Odstranit {count,number} zprávy?} many {Odstranit {count,number} zpráv?} other {Odstranit {count,number} zpráv?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Odstranit vybranou zprávu?} few {Odstranit {count,number} vybrané zprávy?} many {Odstranit {count,number} vybraných zpráv?} other {Odstranit {count,number} vybraných zpráv?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Pro koho chcete tuto zprávu odstranit?} few {Pro koho chcete tyto zprávy odstranit?} many {Pro koho chcete tyto zprávy odstranit?} other {Pro koho chcete tyto zprávy odstranit?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Z jakých zařízení chcete tuto zprávu odstranit?} few {Z jakých zařízení chcete tyto zprávy odstranit?} many {Z jakých zařízení chcete tyto zprávy odstranit?} other {Z jakých zařízení chcete tyto zprávy odstranit?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Tato zpráva bude odstraněna ze všech vašich zařízení.} few {Tyto zprávy budou odstraněny ze všech vašich zařízení.} many {Tyto zprávy budou odstraněny ze všech vašich zařízení.} other {Tyto zprávy budou odstraněny ze všech vašich zařízení.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Odstranit pro mě"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Odstranit z tohoto zařízení"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Odstranit pro všechny"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Členové skupiny s nejnovější verzí aplikace Signal uvidí, že jste tuto zprávu odstranili.} few {Členové skupiny s nejnovější verzí aplikace Signal uvidí, že jste tyto zprávy odstranili.} many {Členové skupiny s nejnovější verzí aplikace Signal uvidí, že jste tyto zprávy odstranili.} other {Členové skupiny s nejnovější verzí aplikace Signal uvidí, že jste tyto zprávy odstranili.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Odstranit ze všech zařízení"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Odstranit"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Zadat klíč"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Nahrajte svůj klíč pro obnovení"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Váš klíč pro obnovení"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Tento klíč je nutný k obnovení vašeho účtu a dat. Uložte tento klíč na bezpečné místo. Pokud jej ztratíte, nebudete moci svůj účet obnovit. <learnMoreLink>Víc informací.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Tento klíč je nutný k obnovení vašeho účtu a dat. Uložte jej na bezpečném místě a s nikým jej nikdy nesdílejte. Signal od vás nikdy nebude ve zprávě vyžadovat váš klíč pro obnovení. <learnMoreLink>Víc informací.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Vaše spojení vidí vaše jméno a fotografii a mohou vidět příspěvky v sekci „Můj příběh“, pokud je před nimi neskryjete."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Odstraňování zpráv je synchronizováno ve všech vašich zařízeních"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Pokud odstraníte zprávy nebo chaty, budou odstraněny ze všech vašich zařízení."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Rozumím"
   },
   "icu:Stories__title": {
     "messageformat": "Příběhy"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Vaše informace jsou soukromé"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal při poskytnutí příspěvku neshromažďuje ani neukládá žádné vaše osobní údaje.</paragraph> <paragraph>K přijímání vašich příspěvků používáme jako zpracovatele plateb službu Stripe. K žádným informacím, které jim poskytnete, nemáme přístup, neshromažďujeme je, ani je neukládáme. </paragraph><paragraph>Signal nepropojuje a nemůže propojit váš příspěvek s vaším účtem Signal. </paragraph><paragraph>Děkujeme za vaši podporu!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Jako nezávislá nezisková organizace se společnost  Signal zavázala k ochraně soukromí zpráv a hovorů. Žádné reklamy, žádné sledování, žádný dohled. Přispějte ještě dnes na podporu služby Signal."

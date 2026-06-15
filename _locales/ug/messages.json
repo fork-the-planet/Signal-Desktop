@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "قىسمەن ئەۋەتىلدى، تەپسىلاتلارنى چېكىپ كۆرۈڭ"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "قىسمەن ئۆچۈرۈلدى، چېكىپ قايتا سىناڭ"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "قىسمەن ئۆچۈرۈلدى، تەپسىلاتلارنى چېكىپ كۆرۈڭ"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "بۇ ئۇچۇر ئۆچۈرۈلگەن"
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "باشقۇرغۇچى {admin} بۇ ئۇچۇرنى ئۆچۈردى"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "كېڭەيتىش"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "قوشۇمچە ھۆججەت"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "رەسىملەر ۋە سىنلار"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "تاللانغان ئۇچۇرلارنى ئۇلاپ يوللاش"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, other {{count,number} ئۇچۇرنى ئۆچۈرەمسىز؟}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, other {تاللانغان {count,number} ئۇچۇرلارنى ئۆچۈرەمسىز؟}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, other {بۇ ئۇچۇرنى كىم ئۈچۈن ئۆچۈرمەكچىسىز؟}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, other {بۇ ئۇچۇرلارنى قايسى ئۈسكۈنىلەردىن ئ‍ۆچۈرمەكچى؟}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, other {بۇ ئۇچۇرلار بارلىق ئۈسكۈنىڭىزدىن ئۆچۈرۈلىدۇ.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "مەن ئۈچۈن ئ‍ۆچۈرۈش"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "بۇ ئۈسكۈنىدىن ئۆچۈرۈش"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "ھەممەيلەن ئۈچۈن ئۆچۈرۈش"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, other {Signal نىڭ ئەڭ يېڭى نەشىرىنى ئىشلىتىۋاتقان گۇرۇپپا ئەزالىرى، سىزنىڭ بۇ ئۇچۇرلارنى ئۆچۈرۈۋەتكىنىڭىزنى كۆرەلەيدۇ.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "بارلىق ئۈسكۈنىلەردىن ئ‍ۆچۈرۈش"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "ئۆچۈر"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "ئاچقۇچنى كىرگۈزۈش"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىزنى خاتىرىلەڭ"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىز"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "بۇ ئاچقۇچ ھېساباتىڭىز ۋە سانلىق مەلۇماتلىرىڭىزنى ئەسلىگە كەلتۈرۈش ئۈچۈن تەلەپ قىلىنىدۇ. بۇ ئاچقۇچنى بىخەتەر جايدا ساقلاڭ. ئەگەر ئۇنى يوقىتىپ قويسىڭىز ، ھېساباتىڭىزنى ئەسلىگە كەلتۈرەلمەيسىز. <learnMoreLink>تەپسىلاتى.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "بۇ ئاچقۇچ ھېساباتىڭىز ۋە سانلىق مەلۇماتلىرىڭىزنى ئەسلىگە كەلتۈرۈش ئۈچۈن تەلەپ قىلىنىدۇ. ئۇنى بىخەتەر يەردە ساقلاڭ ھەمدە باشقىلار بىلەن ھەرگىز ئورتاقلاشماڭ. Signal ھەرگىز ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىزنى سوراپ سىزگە ئۇچۇر يوللىمايدۇ. <learnMoreLink>تەپسىلاتى.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "ئالاقىداشلىرىڭىز سىزنىڭ ئىسمىڭىز ۋە رەسىمىڭىزنى كۆرەلەيدۇ. ئەگەر «ھېكايەم» دىكى يازمىلارنى ئۇلاردىن يوشۇرۇپ قويمىغان بولسىڭىز ئۇلارنىمۇ كۆرەلەيدۇ"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "ئۆچۈرۈش بارلىق ئۈسكۈنىلەردە ماسقەدەملىنىدۇ"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "ئۇچۇر ياكى پاراڭنى ئۆچۈرسىڭىز، ئۇلار بارلىق ئۈسكۈنىلىرىڭىزدىن ئۆچۈرۈلىدۇ."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "بىلدىم"
   },
   "icu:Stories__title": {
     "messageformat": "ھېكايىلەر"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "ئۇچۇرلىرىڭىز شەخسىي"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>سىز ئىئانە قىلغاندا Signal شەخسىي ئۇچۇرلىرىڭىزنى توپلىمايدۇ ياكى ساقلىمايدۇ.</paragraph> <paragraph>ئىئانىڭىزنى تاپشۇرۇۋېلىش ئۈچۈن Stripe نى پۇل تۆلەش بىر تەرەپ قىلغۇچىسى ئورنىدا ئىشلىتىمىز.سىز ئۇلارغا تەمىنلىگەن ئۇچۇرلارنى بىز كۆرەلمەيمىز ياكى ساقلىيالمايمىز</paragraph>.<paragraph>Signal سىزنىڭ ئىئانىڭىزنى Signal ھېساباتىڭىزغا باغلىمايدۇ ۋە ئۇنداقمۇ قىلالمايدۇ.</paragraph><paragraph>قوللىغىنىڭىزغا رەھمەت!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "مۇستەقىل پايدا ئالمايدىغان تەشكىلات بولۇش سۈپىتى بىلەن،   Signal شەخسىي ئۇچۇر ۋە تېلېفونلىشىشقا كاپالەتلىك قىلىدۇ. ئېلان، ئىز قوغلاش، نازارەت قىلىنىشتىن خالىي. Signalنى قوللاش ئۈچۈن بۈگۈنلا ئىئانە قىلىڭ."

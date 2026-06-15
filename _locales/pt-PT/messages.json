@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Enviada parcialmente, clique para mais detalhes"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Eliminada parcialmente, clique para tentar de novo"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Parcialmente eliminado, clique para ver detalhes"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Esta mensagem foi eliminada."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Administrador {admin} eliminou esta mensagem"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Expandir"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Anexar ficheiro"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotos e vídeos"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Encaminhar as mensagens selecionadas"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Eliminar mensagem?} other {Eliminar {count,number} mensagens?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Eliminar mensagem selecionada?} other {Eliminar as {count,number} mensagens selecionadas?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Para quem deseja eliminar esta mensagem?} other {Para quem deseja eliminar estas mensagens?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {De que dispositivos gostaria de apagar esta mensagem?} other {De que dispositivos gostaria de apagar estas mensagens?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Esta mensagem será eliminada de todos os dispositivos.} other {Estas mensagens serão eliminadas de todos os dispositivos.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Eliminar para mim"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Eliminar deste dispositivo"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Eliminar para todos"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Os membros do grupo nas versões mais recentes do Signal poderão ver que eliminou esta mensagem.} other {Os membros do grupo nas versões mais recentes do Signal poderão ver que eliminou estas mensagens.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Eliminar de todos os dispositivos"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Eliminar"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Introduza a chave"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Guarde a sua chave de recuperação"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "A sua chave de recuperação"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Esta chave é necessária para recuperar a sua conta e dados. Guarde esta chave num local seguro. Se a perder, não poderá recuperar a sua conta. <learnMoreLink>Saiba mais.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Os seus contactos podem ver o seu nome, foto e posts no \"A minha história\", a não ser que as esconda deles."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "A eliminação está sincronizada nos seus dispositivos"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Quando eliminar mensagens ou chats, estes são eliminados de todos os seus dispositivos."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Entendido"
   },
   "icu:Stories__title": {
     "messageformat": "Histórias"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "As suas informações são privadas"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>O Signal não recolhe nem armazena nenhuma das suas informações pessoais quando faz um donativo.</paragraph><paragraph>Usamos o Stripe como o nosso processador de pagamentos para receber os seus donativos. Não acedemos, armazenamos ou guardamos quaisquer informações que lhes seja fornecida por si.</paragraph><paragraph>O Signal não liga nem consegue ligar o seu donativo à sua conta do Signal.</paragraph><paragraph>Obrigado pelo seu apoio!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Como uma organização sem fins lucrativos independente, o Signal compromete-se a defender a privacidade de mensagens e chamadas. Sem anúncios, sem rastreadores, sem vigilância. Faça um donativo hoje para apoiar o Signal."

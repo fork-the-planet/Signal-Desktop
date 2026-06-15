@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "部分傳送，點擊以獲得詳細資訊"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "部分已刪除，點擊以重試"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "已部分刪除，點擊以獲得詳細資訊"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "動態圖檔"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "這則訊息已被刪除。"
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "管理員{admin}已刪除此訊息"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "擴充"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "附上檔案"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "相片和影片"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "轉寄選取的訊息"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, other {要刪除 {count,number} 則訊息嗎？}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, other {要刪除選取的 {count,number} 則訊息嗎？}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, other {你想對誰刪除這些訊息？}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, other {你想從哪些裝置刪除這些訊息？}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, other {這些訊息將會從你所有裝置中永久刪除。}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "為我刪除"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "從此裝置刪除"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "為所有人刪除"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, other {使用 Signal 最新版本的群組成員將會看到你已刪除這些訊息。}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "從所有裝置中刪除"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "刪除"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "輸入金鑰"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "記錄你的恢復金鑰"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "你的恢復金鑰"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "需要此金鑰才能恢復你的帳戶和資料。將此金鑰存放在安全的地方。如果你將其遺失，你將會無法恢復帳戶。 <learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "需要此金鑰才能恢復你的帳戶和資料。將它存放在安全可靠的地方，並且不要與任何人分享。Signal 絕不會透過訊息向你索取恢復金鑰。<learnMoreLink>了解更多。</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "除非你選擇隱藏，否則你的聯絡人將可看到你的名稱、相片和「我的限時動態」貼文"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "在你的裝置上同步刪除"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "當你刪除訊息或聊天時，它們將從你所有裝置中刪除。"
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "我知道了"
   },
   "icu:Stories__title": {
     "messageformat": "限時動態"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "你的資料已保密"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>當你捐款時，Signal 不會收集或儲存任何個人資料。</paragraph><paragraph>我們使用 Stripe 作為接收捐款的付款處理商。我們不會存取、保存或儲存你向他們提供的任何資料。</paragraph><paragraph>Signal 不會也無法將你的捐款連結到你的 Signal 帳戶。</paragraph><paragraph>感謝你的支持！</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "作為一個獨立的非營利組織， Signal 致力於提供私密訊息和通話。無廣告、無追蹤、無監控。請立即捐款支持 Signal。"

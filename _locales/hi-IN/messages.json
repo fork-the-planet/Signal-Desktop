@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "पूरी तरह नहीं भेजा जा सका, जानकारी के लिए क्लिक करें"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "पूरी तरह डिलीट नहीं हुआ, दोबारा कोशिश करने के लिए क्लिक करें"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "पूरा डिलीट नहीं हो पाया। जानकारी के लिए क्लिक करें"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "यह मैसेज डिलीट कर दिया गया है।"
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "ऐडमिन {admin} ने यह मैसेज डिलीट कर दिया है"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "बड़ा करें"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "फ़ाइल अटैच करें"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "फ़ोटो और वीडियो"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "चुने गए मैसेज फ़ॉरवर्ड करें"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {मैसेज डिलीट करना है?} other {{count,number} मैसेज डिलीट करने हैं?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {चुना गया मैसेज डिलीट करना है?} other {चुने गए {count,number} मैसेज डिलीट करने हैं?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {आपको यह मैसेज किनके लिए डिलीट करना है?} other {आपको ये मैसेज किनके लिए डिलीट करने हैं?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {आपको यह मैसेज किन डिवाइस से डिलीट करना है?} other {आपको ये मैसेज किन डिवाइस से डिलीट करने हैं?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {यह मैसेज आपके सभी डिवाइस से डिलीट हो जाएगा।} other {ये मैसेज आपके सभी डिवाइस से डिलीट हो जाएंगे।}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "मेरे लिए डिलीट करें"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "इस डिवाइस से डिलीट करें"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "सभी के लिए डिलीट करें"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {जिन ग्रुप मेंबर के पास Signal के सबसे नए वर्ज़न होंगे, उन्हें यह पता चल जाएगा कि यह मैसेज आपने डिलीट किया है।} other {जिन ग्रुप मेंबर के पास Signal के सबसे नए वर्ज़न होंगे, उन्हें यह पता चल जाएगा कि ये मैसेज आपने डिलीट किए हैं।}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "सभी डिवाइस से डिलीट करें"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "डिलीट करें"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "'की' डालें"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "अपनी 'रिकवरी की' सहेजें"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "आपकी 'रिकवरी की'"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "आपके अकाउंट और डेटा को रिकवर करने के लिए यह 'की' ज़रूरी है। इस 'की' को किसी सुरक्षित जगह पर स्टोर करें। इसके खोने पर आपको अकाउंट रिकवर करने में परेशानी होगी। <learnMoreLink>और जानें।</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "आपके कनेक्शन को आपका नाम और फ़ोटो दिखेगा। उन्हें आपकी \"मेरी स्टोरी\" पोस्ट भी दिखेंगी, जब तक आप उन्हें उनसे छिपा न दें"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "डिलीट करने पर सभी डिवाइस से डिलीट हो जाएगा"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "कोई भी मैसेज या चैट डिलीट करने पर, वह सभी डिवाइस से डिलीट हो जाएगी।"
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "ठीक है"
   },
   "icu:Stories__title": {
     "messageformat": "स्टोरी"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "आपकी जानकारी गोपनीय रहती है"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>डोनेट करने पर, Signal आपकी कोई भी निजी जानकारी न तो इकट्ठा करता है और न ही उसे स्टोर करता है।</paragraph><paragraph>हम आपसे डोनेशन पाने के लिए Stripe को अपने पेमेंट प्रोसेसर के रूप में इस्तेमाल करते हैं। आपकी ओर से उसे दी गई किसी भी जानकारी को न तो ऐक्सेस करते हैं, न स्टोर और न ही उसे सेव करते हैं।</paragraph><paragraph>Signal आपके डोनेशन को आपके Signal अकाउंट से न तो कनेक्ट करता है, न ही वह ऐसा कर सकता है।</paragraph><paragraph>आपके सहयोग के लिए धन्यवाद!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "एक स्वतंत्र गैर-लाभकारी संस्था के तौर पर, Signal मैसेज और कॉल की जानकारी को गोपनीय बनाए रखने के लिए प्रतिबद्ध है। न कोई विज्ञापन, न कोई ट्रैकर, न ही निगरानी। Signal को सहयोग करने के लिए आज ही डोनेट करें।"

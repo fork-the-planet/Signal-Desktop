@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "పాక్షికంగా పంపబడింది, వివరాల కోసం క్లిక్ చేయండి"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "పాక్షికంగా తొలగించబడింది, మళ్ళీ ప్రయత్నించడానికి క్లిక్ చేయండి"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "పాక్షికంగా తొలగించబడింది, వివరాల కోసం క్లిక్ చేయండి"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "గిఫ్"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "ఈ సందేశం తొలగించబడింది."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "అడ్మిన్ {admin} ఈ సందేశాన్ని తొలగించారు"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "విస్తరించండి"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "ఫైలు జత చేయుము"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "ఫోటోలు & వీడియోలు"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "ఎంచుకున్న సందేశాలను ఫార్వార్డ్ చేయండి"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {సందేశం తొలగించేదా?} other {{count,number} సందేశాలు తొలగించేదా?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {ఎంచుకున్న సందేశాన్ని తొలగించాలా?} other {ఎంచుకున్న {count,number} సందేశాలను తొలగించాలా?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {ఈ సందేశాన్ని మీరు ఎవరి కోసం తొలగించాలని అనుకుంటున్నారు?} other {ఈ సందేశాలను మీరు ఎవరి కోసం తొలగించాలని అనుకుంటున్నారు?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {ఈ సందేశాన్ని మీరు ఏ పరికరాల నుంచి తొలగించాలని అనుకుంటున్నారు?} other {ఈ సందేశాలను మీరు ఏ పరికరాల నుంచి తొలగించాలని అనుకుంటున్నారు?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {ఈ సందేశం మీ పరికరాలన్నింటి నుండి తొలగించబడుతుంది.} other {ఈ సందేశాలు మీ పరికరాలన్నింటి నుండి తొలగించబడతాయి.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "నా కోసం తొలగించండి"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "ఈ పరికరం నుంచి తొలగించండి"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "ప్రతి ఒక్కరి కొరకు తొలగించండి"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Signal యొక్క తాజా వెర్షన్‌లలోని గ్రూప్ సభ్యులు మీరు ఈ సందేశాన్ని తొలగించారని చూస్తారు.} other {Signal యొక్క తాజా వెర్షన్‌లలోని గ్రూప్ సభ్యులు మీరు ఈ సందేశాలను తొలగించారని చూస్తారు.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "అన్ని పరికరాాల నుంచి తొలగించండి"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "తొలగించండి"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "కీ ఎంటర్ చేయండి"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "మీ రికవరీ కీని రికార్డ్ చేయండి"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "మీ రికవరీ కీ"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "మీ ఖాతా మరియు డేటాను తిరిగి పొందడానికి ఈ కీ అవసరం. ఈ కీని ఎక్కడైనా సురక్షితంగా నిల్వ చేయండి. ఒకవేళ మీరు దీన్ని పోగొట్టుకుంటే, మీరు మీ ఖాతాను తిరిగి పొందలేరు. <learnMoreLink>మరింత తెలుసుకోండి.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "మీ ఖాతా మరియు డేటాను తిరిగి పొందడానికి ఈ కీ అవసరం. దానిని సురక్షితమైన చోట భద్రపరచండి మరియు దానిని ఎవరితోనూ పంచుకోవద్దు. మీ రికవరీ కీ కోసం Signal మీకు ఎప్పటికీ సందేశం పంపదు. <learnMoreLink>మరింత తెలుసుకోండి.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "మీ కనెక్షన్స్ మీ పేరు మరియు ఫోటోను చూడగలరు, మరియు దాన్ని వారి నుంచి మీరు దాచిపెడితే తప్ప, ‘‘నా కథ’’ కు పోస్ట్‌లను చూడగలరు"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "మీ పరికరాలు అన్నింటిలో తొలగించడం సింక్ చేయబడింది"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "మీరు సందేశాలు లేదా చాట్‌లు తొలగించినప్పుడు, అవి మీ అన్ని పరికరాలలో తొలగించబడతాయి."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "అర్థమైంది"
   },
   "icu:Stories__title": {
     "messageformat": "కథలు"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "మీ సమాచారం రహస్యమైనది"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>మీరు విరాళం ఇచ్చినప్పుడు Signal మీ వ్యక్తిగత సమాచారంలో దేనినీ సేకరించదు లేదా నిల్వ చేయదు.</paragraph><paragraph>మీ విరాళాలను అందుకోవడానికి మేము Stripe ను మా చెల్లింపు ప్రాసెసర్‌గా ఉపయోగిస్తాము. మీరు వారికి అందించే ఏ సమాచారాన్ని మేము యాక్సెస్ చేయము, నిల్వ చేయము లేదా సేవ్ చేయము.</paragraph><paragraph>Signal మీ విరాళాన్ని మీ Signal ఖాతాకు కనెక్ట్ చేయదు మరియు చేయలేదు.</paragraph><paragraph>మీ మద్దతుకు ధన్యవాదాలు!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "ఒక స్వతంత్ర లాభాపేక్షలేని సంస్థగా, Signal ప్రైవేట్ సందేశాలు పంపడం మరియు కాల్స్‌కు కట్టుబడి ఉంది. ప్రకటనలు లేవు, ట్రాకర్‌లు లేవు, నిఘా లేదు. Signal కు మద్దతు ఇవ్వడానికి ఈరోజే విరాళం ఇవ్వండి."

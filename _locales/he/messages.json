@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "נשלח חלקית, לחץ לפרטים"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "נמחקה חלקית, אפשר ללחוץ כדי לנסות שוב"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "נמחק חלקית, יש ללחוץ לפרטים"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "הודעה זו נמחקה."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "ההודעה הזו נמחקה על ידי מנהל/ת הקבוצה {admin}"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "הרחב"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "צרף קובץ"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "תמונות וסרטונים"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "העברת הודעות נבחרות"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {למחוק הודעה?} two {למחוק {count,number} הודעות?} many {למחוק {count,number} הודעות?} other {למחוק {count,number} הודעות?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {למחוק הודעה שנבחרה?} two {למחוק {count,number} הודעות שנבחרו?} many {למחוק {count,number} הודעות שנבחרו?} other {למחוק {count,number} הודעות שנבחרו?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {עבור מי בא לך למחוק את ההודעה זו?} two {עבור מי בא לך למחוק את ההודעות האלה?} many {עבור מי בא לך למחוק את ההודעות האלה?} other {עבור מי בא לך למחוק את ההודעות האלה?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {מאילו מכשירים בא לך למחוק את ההודעה הזו?} two {מאילו מכשירים בא לך למחוק את ההודעות האלה?} many {מאילו מכשירים בא לך למחוק את ההודעות האלה?} other {מאילו מכשירים בא לך למחוק את ההודעות האלה?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {ההודעה הזו תימחק מכל המכשירים שלך.} two {ההודעות האלה יימחקו מכל המכשירים שלך.} many {ההודעות האלה יימחקו מכל המכשירים שלך.} other {ההודעות האלה יימחקו מכל המכשירים שלך.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "מחיקה עבורי"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "מחיקה ממכשיר זה"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "מחיקה עבור כולם"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {חברי קבוצה בגרסאות העדכניות ביותר של Signal יוכלו לראות שמחקת את ההודעה הזו.} two {חברי קבוצה בגרסאות העדכניות ביותר של Signal יוכלו לראות שמחקת את ההודעות האלה.} many {חברי קבוצה בגרסאות העדכניות ביותר של Signal יוכלו לראות שמחקת את ההודעות האלה.} other {חברי קבוצה בגרסאות העדכניות ביותר של Signal יוכלו לראות שמחקת את ההודעות האלה.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "מחיקה מכל המכשירים"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "מחיקה"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "הזנת מפתח"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "תיעוד מפתח השחזור שלך"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "מפתח השחזור שלך"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "המפתח הזה נדרש כדי לשחזר את החשבון והנתונים שלך. חשוב לאחסן את המפתח הזה במקום בטוח. אם הוא נאבד, אי אפשר לשחזר את החשבון שלך. <learnMoreLink>מידע נוסף.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "המפתח הזה נדרש כדי לשחזר את החשבון והנתונים שלך. חשוב לאחסן אותו במקום בטוח ולעולם לא לשתף אותו עם אף אחד. Signal לעולם לא תשלח לך הודעה כדי לבקש את מפתח השחזור שלך. <learnMoreLink>למידע נוסף.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "חברי ה-Signal שלך יכולים לראות את השם והתמונה שלך, והם יכולים גם לראות פוסטים תחת ״הסטורי שלי״ אלא אם כן בחרת להסתיר אותם מהם"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "המחיקה מסונכרנת בכל המכשירים שלך"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "בעת מחיקת הודעות או צ׳אטים, הם יימחקו מכל המכשירים שלך."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "הבנתי"
   },
   "icu:Stories__title": {
     "messageformat": "סטוריז"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "המידע שלך פרטי"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal לא אוספת או מאחסנת את המידע האישי שלך בעת ביצוע תרומה.</paragraph><paragraph>אנחנו משתמשים ב–Stripe בתור מעבד התשלומים שלנו כדי לקבל את התרומות שלך. אנחנו לא ניגשים לשום מידע שהם מקבלים ממך ולא מאחסנים או שומרים אותו.</paragraph><paragraph>Signal אינה מקשרת את התרומה שלך לחשבון Signal שלך ואין לה אפשרות לעשות זאת.</paragraph><paragraph>תודה על התמיכה שלך!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "כעמותה עצמאית ללא מטרות רווח, Signal מחויבת להודעות ולשיחות פרטיות. בלי פרסומות, בלי מעקב, בלי ריגול. תרמו היום כדי לתמוך ב-Signal."

@@ -1,6 +1,6 @@
 A Signal egy olyan üzenetküldő alkalmazás, amelynek középpontjában az adatvédelem áll. Ingyenes és könnyen használható, erős végpontok közötti titkosítással, amely gondoskodik róla, hogy a csevegések és a hívások teljesen privátak legyenek. A Signal nem tudja elolvasni az üzeneteidet vagy lehallgatni a hívásaidat, és senki más sem. 
 
-• Signal on MacOS links with Signal on your phone. 
+• A MacOS-en futó Signal összekapcsolódik a telefonodon futó Signal alkalmazással. 
 
 • Küldj ingyenesen végponttól végpontig titkosított szöveges üzeneteket, hangüzeneteket, fényképeket, videókat, GIF-eket és fájlokat. 
 

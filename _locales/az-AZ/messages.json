@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Qismən göndərildi, təfsilatlar üçün klikləyin"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Qismən silindi, yenidən sınamaq üçün klikləyin"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Qismən silindi, təfərrüatlar üçün klikləyin"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Mesaj silindi."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Admin {admin} bu mesajı sildi"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Genişləndir"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Fayl əlavə et"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotolar və videolar"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Seçilən mesajları yönləndir"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {{count,number} mesaj silinsin?} other {{count,number} mesaj silinsin?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Seçilmiş mesaj silinsin?} other {Seçilmiş {count,number} mesaj silinsin?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Bu mesajı kimdən silmək istəyirsiniz?} other {Bu mesajları kimdən silmək istəyirsiniz?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Bu mesajı hansı cihazlardan silmək istəyirsiniz?} other {Bu mesajları hansı cihazlardan silmək istəyirsiniz?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Bu mesaj bütün cihazlarınızdan silinəcək.} other {Bu mesajlar bütün cihazlarınızdan silinəcək.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Məndən sil"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Bu cihazdan sil"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Hər kəsdən sil"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Signal-ın ən son versiyalarından istifadə edən qrup üzvləri bu mesajı sildiyinizi görəcək.} other {Signal-ın ən son versiyalarından istifadə edən qrup üzvləri bu mesajları sildiyinizi görəcək.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Bütün cihazlardan sil"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Sil"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Şifrəni daxil et"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Bərpa şifrənizi qeyd edin"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Bərpa şifrəniz"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Bu şifrə hesabınızı və verilənlərinizi bərpa etmək üçün tələb olunur. Bu şifrəni etibarlı bir yerdə saxlayın. Onu itirsəniz, hesabınızı bərpa edə bilməyəcəksiniz. <learnMoreLink>Daha ətraflı.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Bu şifrə hesabınızı və verilənlərinizi bərpa etmək üçün tələb olunur. Onu etibarlı yerdə saxlayın və əsla heç kimlə paylaşmayın. Signal bərpa şifrənizi tələb etmək üçün sizə əsla mesaj göndərmir. <learnMoreLink>Daha ətraflı.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Kontaktlarınız adınızı və fotoşəklinizi, o cümlədən onlardan gizlətməmisinizsə, \"Hekayəm\" səhifəsindəki yazılarınızı görə bilər."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Silmə əməliyyatı cihazlarınızda sinxronlaşdırılıb"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Mesajları və çatları sildiyiniz zaman onlar bütün cihazlarınızdan silinəcək."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Anladım"
   },
   "icu:Stories__title": {
     "messageformat": "Hekayələr"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Məlumatınız məxfidir"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>İanə etdiyiniz zaman Signal şəxsi məlumatlarınızı toplamır və saxlamır.</paragraph><paragraph>Biz ianələrinizi qəbul etmək üçün ödəniş prosessorumuz kimi Stripe-dan istifadə edirik. Ona göndərdiyiniz hər hansı məlumatı əldə etmir, saxlamır və ya yaddaşa vermirik.</paragraph><paragraph>Signal etdiyiniz ianəni Signal hesabınızla əlaqələndirmir və bunu edə bilməz.</paragraph><paragraph>Dəstəyiniz üçün təşəkkür edirik!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Müstəqil qeyri-kommersiya təşkilatı kimi Signal mesajlaşma və zənglərin məxfiliyini qoruyur. Reklamsız, təqibsiz və nəzarətsiz. Signal-ı dəstəkləmək üçün bu gün ianə verin."

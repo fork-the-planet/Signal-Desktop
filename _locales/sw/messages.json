@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Ujumbe wote haujatumwa, bonyeza upate maelezo"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Imefutika nusu, bonyeza kujaribu tena"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Haijafutwa yote, bofya kwa maelezo"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Ujumbe huu umefutwa."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Admin {admin} amefuta ujumbe huu"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Panua"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Ambatisha faili"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Picha na Video"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Sambaza jumbe zilizochaguliwa"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Futa ujumbe {count,number}?} other {Futa jumbe {count,number}?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Futa ujumbe uliochaguliwa?} other {Futa jumbe {count,number} zilizochaguliwa?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Ungependa kufuta ujumbe huu kwa nani?} other {Ungependa kufuta jumbe hizi kwa nani?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Ungependa kufuta ujumbe huu kutoka kwenye vifaa gani?} other {Ungependa kufuta jumbe hizi kutoka kwenye vifaa gani?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Ujumbe huu utafutwa kwenye vifaa vyako vyote.} other {Jumbe hizi zitafutwa kwenye vifaa vyako vyote.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Futa kwangu"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Futa kwenye kifaa hiki"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Futa kwa kila mtu"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Wanakikundi wanaotumia matoleo mapya ya Signal wataona kuwa ulifuta ujumbe huu.} other {Wanakikundi wanaotumia matoleo mapya ya Signal wataona kuwa ulifuta jumbe hizi.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Futa kwenye vifaa vyote"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Futa"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Ingiza ufunguo"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Rekodi ufunguo wako wa kurejesha akaunti"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Ufunguo wako wa kurejesha akaunti"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Ufunguo huu unahitajika kurejesha akaunti na data yako. Hifadhi ufunguo huu mahali salama. Ukiipoteza, hutaweza kurejesha akaunti yako. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Ufunguo huu unahitajika kurejesha akaunti na data yako. Uhifadhi mahali ambapo ni salama na usimpe mtu yeyote idhini ya kuufikia. Signal haiwezi kukutumia ujumbe kuhusu ufunguo wako wa kurejesha akaunti. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Connections wako wanaweza kuona jina lako na picha, na wanaweza kuona \"Stori Yangu\" labda kama utawaficha"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Ufutaji umesawazishwa kwenye vifaa vyako vyote"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Unapofuta jumbe au gumzo, zitafutwa kabisa kwenye vifaa vyako vyote."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Nimeelewa"
   },
   "icu:Stories__title": {
     "messageformat": "Stori"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Taarifa zako ni za kibinafsi"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal haikusanyi wala kuhifadhi taarifa zako zozote binafsi unapotoa mchango.</paragraph><paragraph>Tunatumia Stripe kama kichakataji chetu cha malipo ili kupokea michango yako. Hatufikii, hatuweki au kuhifadhi maelezo yoyote unayowapa</paragraph><paragraph>Signal haina na haiwezi kuunganisha mchango wako kwenye akaunti yako ya Signal.</paragraph><paragraph>Asante kwa kutuunga mkono!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Kama shirika lisilo la faida linalojitegemea, Signal imejikita katika kuhakikisha faragha ya ujumbe na simu. Hakuna matangazo, hakuna vifuatilizi, hakuna ufuatiliaji. Changia leo ili kuiunga mkono Signal."

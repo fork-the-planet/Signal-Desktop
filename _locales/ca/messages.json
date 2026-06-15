@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Enviat parcialment. Cliqueu per a més detalls."
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Suprimit parcialment. Cliqueu per tornar-ho a provar."
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Parcialment eliminat, fes clic per obtenir més informació"
   },
@@ -2690,9 +2687,6 @@
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
   },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Aquest missatge s'ha suprimit."
-  },
   "icu:message--deletedByAdmin": {
     "messageformat": "{admin} (admin) ha eliminat aquest missatge"
   },
@@ -2865,10 +2859,10 @@
     "messageformat": "Sticker sense emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Paquet d'stickers de {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Veure paquet"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoticones"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Expandeix"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Adjunta un fitxer"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotos i vídeos"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Reenvia els missatges seleccionats"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Vols eliminar {count,number} missatge?} other {Vols eliminar {count,number} missatges?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Vols eliminar el missatge seleccionat?} other {Vols eliminar els {count,number} missatges seleccionats?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Per a qui vols eliminar aquest missatge?} other {Per a qui vols eliminar aquests missatges?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {De quins dispositius t'agradaria eliminar aquest missatge?} other {De quins dispositius t'agradaria eliminar aquests missatges?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Aquest missatge s'eliminarà de tots els teus dispositius.} other {Aquests missatges s'eliminaran de tots els teus dispositius.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Eliminar per a mi"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Eliminar d'aquest dispositiu"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Eliminar per a tothom"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Els membres del grup que tinguin la versió més recent de Signal podran veure que has eliminat aquest missatge.} other {Els membres del grup que tinguin la versió més recent de Signal podran veure que has eliminat aquests missatges.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Eliminar de tots els dispositius"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Suprimeix"
@@ -6451,38 +6430,44 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Introduir clau"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Registra la teva clau de recuperació"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "La teva clau de recuperació"
   },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Aquesta clau és necessària per recuperar el teu compte i les teves dades. Guarda-la en un lloc segur. Si la perds, no podràs recuperar el teu compte. <learnMoreLink>Més informació.</learnMoreLink>"
+  },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Aquesta clau és necessària per recuperar el teu compte i les teves dades. Guarda-la en un lloc segur i no la comparteixis mai amb ningú. Signal no t'enviarà mai un missatge per demanar-te la teva clau de recuperació. <learnMoreLink>Més informació.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "No comparteixis la clau de recuperació"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal no t'enviarà mai un missatge</strong> per demanar-te la teva clau de recuperació. No responguis mai a missatges que es facin passar per Signal. Guarda la clau de recuperació en un lloc segur i no la comparteixis mai amb ningú. <learnMoreLink>Més informació.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "Entesos"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Compartir la clau"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "No compartir la clau"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "No comparteixis la teva clau de recuperació amb ningú. Això li permetria prendre el control del teu compte. <strong>Signal no t'enviarà mai un missatge</strong> per demanar-te la teva clau de recuperació. No responguis mai a missatges que es facin passar per Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
     "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "No compartir"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Enganxar clau"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Confirma la teva clau de recuperació"
@@ -6548,7 +6533,7 @@
     "messageformat": "No s'ha pogut completar aquesta acció perquè el sistema d'autentificació ha fallat. Torna-ho a provar o obre l'app de Signal al teu dispositiu mòbil i ves als Ajustos de còpia de seguretat per veure la teva clau de recuperació."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Hi ha hagut un error en sol·licitar l'autentificació del sistema per a aquesta acció."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Veure clau"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Els teus contactes poden veure el teu nom i la teva foto, i poden veure el que pugis a \"La meva història\" tret que decideixis ocultar-los-hi."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "L'eliminació de continguts es sincronitza a tots els teus dispositius"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Quan elimines missatges o xats, s'eliminen de tots els teus dispositius connectats."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Entesos"
   },
   "icu:Stories__title": {
     "messageformat": "Històries"
@@ -7841,9 +7817,6 @@
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "La teva informació és privada"
   },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal no recopila ni emmagatzema la teva informació personal quan fas una donació.</paragraph><paragraph>Utilitzem Stripe com a processador de pagaments per rebre les teves donacions. No accedim, emmagatzemem ni desem la informació que els proporciones.</paragraph><paragraph>Signal no connecta i no pot connectar la teva donació al teu compte de Signal.</paragraph><paragraph>Gràcies per comptar amb nosaltres!</paragraph>"
-  },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Com a organització independent sense ànim de lucre, Signal té un compromís amb la privacitat en missatges i trucades. Sense anuncis, ni rastrejadors, ni vigilància. Fes avui una donació per ajudar a Signal."
   },
@@ -8287,9 +8260,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Hem actualitzat l'extensió d'arxiu per defecte de les imatges JPEG a .jpg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Compatibilitat amb macOS de les icones de mode fosc."
   }
 }

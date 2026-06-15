@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Cuid di seolta, cliceáil le sonraí a fháil"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Cuid di scriosta, cliceáil lena atriail"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Cuid di scriosta, cliceáil le sonraí a fháil"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Scriosadh an teachtaireacht seo."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Scrios an riarthóir {admin} an teachtaireacht seo"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Fairsingigh"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Cuir comhad i gceangal"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Grianghraif agus físeáin"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Seol na teachtaireachtaí roghnaithe ar aghaidh"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Scrios an teachtaireacht?} two {Scrios {count,number} theachtaireacht?} few {Scrios {count,number} theachtaireacht?} many {Scrios {count,number} dteachtaireacht?} other {Scrios {count,number} teachtaireacht?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Scrios an teachtaireacht roghnaithe?} two {Scrios {count,number} theachtaireacht roghnaithe?} few {Scrios {count,number} theachtaireacht roghnaithe?} many {Scrios {count,number} dteachtaireacht roghnaithe?} other {Scrios {count,number} teachtaireacht roghnaithe?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Cé dó ar mhaith leat an teachtaireacht seo a scriosadh?} two {Cé dó ar mhaith leat na teachtaireachtaí seo a scriosadh?} few {Cé dó ar mhaith leat na teachtaireachtaí seo a scriosadh?} many {Cé dó ar mhaith leat na teachtaireachtaí seo a scriosadh?} other {Cé dó ar mhaith leat na teachtaireachtaí seo a scriosadh?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Cé acu gléasanna ar mhaith leat an teachtaireacht seo a scriosadh uathu?} two {Cé acu gléasanna ar mhaith leat na teachtaireachtaí seo a scriosadh uathu?} few {Cé acu gléasanna ar mhaith leat na teachtaireachtaí seo a scriosadh uathu?} many {Cé acu gléasanna ar mhaith leat na teachtaireachtaí seo a scriosadh uathu?} other {Cé acu gléasanna ar mhaith leat na teachtaireachtaí seo a scriosadh uathu?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Scriosfar an teachtaireacht seo ó do ghléasanna uile.} two {Scriosfar na teachtaireachtaí seo ó do ghléasanna uile.} few {Scriosfar na teachtaireachtaí seo ó do ghléasanna uile.} many {Scriosfar na teachtaireachtaí seo ó do ghléasanna uile.} other {Scriosfar na teachtaireachtaí seo ó do ghléasanna uile.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Scrios domsa"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Scrios ón ngléas seo"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Scrios do chách"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Signal gur scrios tú an teachtaireacht sin.} two {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Signal gur scrios tú na teachtaireachtaí sin.} few {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Signal gur scrios tú na teachtaireachtaí sin.} many {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Signal gur scrios tú na teachtaireachtaí sin.} other {Feicfidh baill den ghrúpa ar na leaganacha is déanaí de Signal gur scrios tú na teachtaireachtaí sin.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Scrios ó na gléasanna uile"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Scrios"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Cuir isteach an eochair"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Taifead d'eochair athshlánaithe"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "D'eochair athshlánaithe"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Tá an eochair seo ag teastáil chun do chuntas agus do shonraí a athshlánú. Stóráil an eochair in áit shábháilte. Má chailleann tú í, ní bheidh tú in ann do chuntas a athshlánú. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Is féidir le do theagmhálaithe d'ainm agus do ghrianghraf, agus postálacha \"Mo Scéal\", a fheiceáil, mura gcuireann tú na rudaí sin i bhfolach orthu"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Tá scriosadh sioncronaithe thar raon do ghléasanna go léir"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Nuair a scriosann tú teachtaireachtaí nó comhráite, scriosfar ó do ghléasanna go léir iad."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Tuigim"
   },
   "icu:Stories__title": {
     "messageformat": "Scéalta"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Tá d'fhaisnéis príobháideach"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Ní dhéanann Signal d'fhaisnéis phearsanta a bhailiú ná a stóráil nuair a thugann tú tabhartas.</paragraph><paragraph>Úsáidimid Stripe mar ár bpróiseálaí íocaíochtaí chun do thabhartais a fháil. Ní dhéanaimid aon fhaisnéis a thugann tú dóibh a rochtain, a stóráil ná a shábháil.</paragraph><paragraph>Níl cead ag Signal do thabhartas a cheangal le do chuntas Signal agus ní déanann sé amhlaidh.</paragraph><paragraph>Go raibh maith agat as do thacaíocht!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Mar eagraíocht neamhbhrabúis neamhspleách, tá Signal tiomanta do theachtaireachtaí agus do ghlaonna príobháideacha. Gan aon fhógraí, gan aon rianairí, gan aon fhaireachas. Tabhair airgead inniu chun tacú le Signal."

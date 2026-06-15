@@ -33,8 +33,16 @@ const FILES = [
     name: 'mas-title.txt',
   },
   {
+    path: '_locales/en/mas-subtitle.txt',
+    name: 'mas-subtitle.txt',
+  },
+  {
     path: '_locales/en/mas-description.txt',
     name: 'mas-description.txt',
+  },
+  {
+    path: '_locales/en/mas-keywords.txt',
+    name: 'mas-keywords.txt',
   },
 ];
 

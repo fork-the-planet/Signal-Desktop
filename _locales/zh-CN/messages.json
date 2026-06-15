@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "部分发送，点击查看详情"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "已部分删除，请点击重试"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "已部分删除，点击查看详情"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "消息已删除。"
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "管理员{admin}删除了此消息"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "扩展"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "附加文件"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "照片和视频"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "转发已选消息"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, other {要删除 {count,number} 条消息吗？}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, other {删除已选中的 {count,number} 条消息？}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, other {您想要对谁删除这些消息？}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, other {您想要从哪些设备上删除这些消息？}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, other {这些消息将会从您的所有设备上删除。}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "为我删除"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "从该设备中删除"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "对所有人删除"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, other {使用最新版本 Signal 的群组成员将能看到您删除了这些消息。}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "从所有设备中删除"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "删除"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "输入密钥"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "记录您的恢复密钥"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "您的恢复密钥"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "这是恢复您的账户和数据时所需的密钥，请将其保存在安全的地方。如果密钥丢失，您将无法恢复您的账户。 <learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "这是恢复您的账户和数据时所需的密钥，请将其储存在安全的地方，并避免与任何人分享该密钥。Signal 绝不会发消息向您索要恢复密钥。<learnMoreLink>了解更多。</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "您的密友能看到您的名称和照片，还能看到您在“我的动态”中发布的帖子，除非您向对方隐藏动态。"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "删除操作可在多个设备上同步进行"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "当您删除消息或聊天时，它们在您的所有设备上将会被同步删除。"
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "知道了"
   },
   "icu:Stories__title": {
     "messageformat": "动态"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "个人信息安全无忧"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>当您捐款时，Signal 不会收集或储存您的任何个人信息。</paragraph><paragraph>我们使用 Stripe 作为接收捐款的付款处理方。我们不会访问、储存或保存您向 Stripe 提供的任何信息。</paragraph><paragraph>Signal 不会也无法关联您的捐款至您的 Signal 账户。</paragraph><paragraph>感谢您的赞助！</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "作为独立的非营利组织， Signal 致力于保护消息和通话的私密性。这里无广告，无跟踪，无监视。立即捐款支持 Signal 吧。"

@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Gửi một phần, nhấn vào để xem chi tiết"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Đã xóa một phần, bấm để thử lại"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Đã xóa một phần, bấm để xem chi tiết"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "Ảnh GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Tin nhắn này đã bị xóa."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Quản trị viên {admin} đã xóa tin nhắn này"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Mở rộng"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Đính kèm tệp"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Ảnh & video"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Chuyển tiếp các tin nhắn đã chọn"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, other {Xóa {count,number} tin nhắn?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, other {Xóa {count,number} tin nhắn đã chọn?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, other {Bạn muốn xoá các tin nhắn này cho ai?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, other {Bạn muốn xóa các tin nhắn này trên thiết bị nào?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, other {Những tin nhắn này sẽ được xóa trên tất cả thiết bị của bạn.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Xóa cho tôi"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Xóa trên thiết bị này"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Xóa cho mọi người"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, other {Thành viên nhóm sử dụng phiên bản Signal mới nhất sẽ thấy bạn đã xóa các tin nhắn này.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Xóa trên tất cả thiết bị"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Xóa"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Nhập mã khóa"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Lưu mã khóa khôi phục"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Mã khóa khôi phục"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Cần có mã khóa này để khôi phục tài khoản và dữ liệu của bạn. Lưu mã này ở nơi an toàn. Nếu để mất, bạn sẽ không thể khôi phục tài khoản của mình. <learnMoreLink>Tìm hiểu thêm.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Các liên hệ của bạn có thể thấy tên và ảnh của bạn, và có thể thấy các bài đăng lên \"Story của tôi\" trừ khi bạn ẩn story với các liên hệ"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Việc xóa được đồng bộ trên các thiết bị của bạn"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Khi bạn xóa tin nhắn hoặc cuộc trò chuyện, chúng sẽ được xóa trên tất cả thiết bị của bạn."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Đã hiểu"
   },
   "icu:Stories__title": {
     "messageformat": "Các Story"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Thông tin của bạn là riêng tư"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal không thu thập hay lưu trữ thông tin cá nhân của bạn khi bạn gửi khoản ủng hộ.</paragraph><paragraph>Chúng tôi sử dụng Stripe làm hệ thống xử lý thanh toán để nhận các khoản ủng hộ. Chúng tôi không truy cập, lưu trữ, hoặc lưu bất kỳ thông tin nào bạn cung cấp cho phía hệ thống.</paragraph><paragraph>Signal không và không thể liên kết thông tin thanh toán với tài khoản Signal của bạn.</paragraph><paragraph>Cảm ơn sự đóng góp của bạn!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Là một tổ chức phi lợi nhuận độc lập, Signal cam kết cung cấp dịch vụ nhắn tin và cuộc gọi riêng tư. Không quảng cáo, không trình theo dấu, không theo dõi. Ủng hộ ngay hôm nay để hỗ trợ Signal."

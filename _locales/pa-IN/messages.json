@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "ਅਧੂਰਾ ਭੇਜਿਆ, ਵੇਰਵੇ ਲਈ ਕਲਿਕ ਕਰੋ"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "ਅੰਸ਼ਕ ਤੌਰ 'ਤੇ ਮਿਟਾਇਆ ਗਿਆ, ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਲਈ ਕਲਿੱਕ ਕਰੋ"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "ਅੰਸ਼ਕ ਤੌਰ 'ਤੇ ਮਿਟਾਇਆ ਗਿਆ, ਵੇਰਵਿਆਂ ਲਈ ਕਲਿੱਕ ਕਰੋ"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "ਇਹ ਸੁਨੇਹਾ ਮਿਟਾ ਦਿੱਤਾ ਗਿਆ ਸੀ।"
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "ਐਡਮਿਨ {admin} ਨੇ ਇਹ ਸੁਨੇਹਾ ਮਿਟਾ ਦਿੱਤਾ ਹੈ"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "ਫੈਲਾਓ"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "ਫ਼ਾਈਲ ਅਟੈਚ ਕਰੋ"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "ਫ਼ੋਟੋਆਂ ਜਾਂ ਵੀਡੀਓ"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "ਚੁਣੇ ਗਏ ਸੁਨੇਹਿਆਂ ਨੂੰ ਅੱਗੇ ਭੇਜੋ"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {ਕੀ ਸੁਨੇਹਾ ਹਟਾਉਣਾ ਹੈ?} other {ਕੀ {count,number} ਸੁਨੇਹੇ ਹਟਾਉਣੇ ਹਨ?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {ਕੀ ਚੁਣੇ ਹੋਏ ਸੁਨੇਹੇ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?} other {ਕੀ ਚੁਣੇ ਹੋੲੈ {count,number} ਸੁਨੇਹਿਆਂ ਨੂੰ ਮਿਟਾਉਣਾ ਹੈ?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {ਤੁਸੀਂ ਇਹ ਸੁਨੇਹਾ ਕਿਸ ਲਈ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?} other {ਤੁਸੀਂ ਇਹ ਸੁਨੇਹੇ ਕਿਸ ਲਈ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {ਤੁਸੀਂ ਇਹ ਸੁਨੇਹਾ ਕਿਹੜੇ ਡਿਵਾਈਸਾਂ ਵਿੱਚੋਂ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?} other {ਤੁਸੀਂ ਇਹਨਾਂ ਸੁਨੇਹਿਆਂ ਨੂੰ ਕਿਹੜੇ ਡਿਵਾਈਸਾਂ ਵਿੱਚੋਂ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {ਇਹ ਸੁਨੇਹਾ ਤੁਹਾਡੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਵਿੱਚੋਂ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।} other {ਇਹ ਸੁਨੇਹੇ ਤੁਹਾਡੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਵਿੱਚੋਂ ਮਿਟਾ ਦਿੱਤੇ ਜਾਣਗੇ।}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "ਮੇਰੇ ਲਈ ਮਿਟਾਓ"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "ਇਸ ਡਿਵਾਈਸ ਵਿੱਚੋਂ ਮਿਟਾਓ"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "ਹਰੇਕ ਲਈ ਮਿਟਾਓ"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Signal ਦੇ ਨਵੇਂ ਵਰਜ਼ਨਾਂ ਉੱਤੇ ਗਰੁੱਪ ਮੈਂਬਰ ਇਹ ਦੇਖ ਸਕਣਗੇ ਕਿ ਤੁਸੀਂ ਇਸ ਸੁਨੇਹੇ ਨੂੰ ਮਿਟਾ ਦਿੱਤਾ ਹੈ।} other {Signal ਦੇ ਨਵੇਂ ਵਰਜ਼ਨਾਂ ਉੱਤੇ ਗਰੁੱਪ ਮੈਂਬਰ ਇਹ ਦੇਖ ਸਕਣਗੇ ਕਿ ਤੁਸੀਂ ਇਹਨਾਂ ਸੁਨੇਹਿਆਂ ਨੂੰ ਮਿਟਾ ਦਿੱਤਾ ਹੈ।}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਵਿੱਚੋਂ ਮਿਟਾਓ"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "ਮਿਟਾਓ"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "ਕੁੰਜੀ ਦਰਜ ਕਰੋ"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "ਆਪਣੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਰਿਕਾਰਡ ਕਰੋ"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "ਤੁਹਾਡੀ ਰਿਕਵਰੀ ਕੁੰਜੀ"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "ਇਹ ਕੁੰਜੀ ਤੁਹਾਡੇ ਖਾਤੇ ਅਤੇ ਡੇਟਾ ਨੂੰ ਰਿਕਵਰ ਕਰਨ ਲਈ ਲੋੜੀਂਦੀ ਹੈ। ਇਸ ਕੁੰਜੀ ਨੂੰ ਕਿਤੇ ਸੁਰੱਖਿਅਤ ਰੱਖੋ। ਜੇਕਰ ਤੁਸੀਂ ਇਸਨੂੰ ਗੁਆ ਦਿੰਦੇ ਹੋ, ਤਾਂ ਤੁਸੀਂ ਆਪਣਾ ਖਾਤਾ ਰਿਕਵਰ ਨਹੀਂ ਕਰ ਸਕੋਗੇ। <learnMoreLink>ਹੋਰ ਜਾਣੋ।</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "ਇਹ ਕੀ ਤੁਹਾਡੇ ਖਾਤੇ ਅਤੇ ਡੇਟਾ ਨੂੰ ਰਿਕਵਰ ਕਰਨ ਲਈ ਲੋੜੀਂਦੀ ਹੈ। ਇਸਨੂੰ ਕਿਸੇ ਸੁਰੱਖਿਅਤ ਥਾਂ 'ਤੇ ਸਟੋਰ ਕਰੋ ਅਤੇ ਕਦੇ ਵੀ ਇਸਨੂੰ ਦੂਜਿਆਂ ਨਾਲ ਸਾਂਝਾ ਨਾ ਕਰੋ। Signal ਕਦੇ ਵੀ ਤੁਹਾਡੇ ਤੋਂ ਰਿਕਵਰੀ ਕੁੰਜੀ ਪੁੱਛਣ ਲਈ ਤੁਹਾਨੂੰ ਸੁਨੇਹਾ ਨਹੀਂ ਭੇਜੇਗਾ। <learnMoreLink>ਹੋਰ ਜਾਣੋ।</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "ਤੁਹਾਡੇ ਕਨੈਕਸ਼ਨ ਤੁਹਾਡਾ ਨਾਮ ਅਤੇ ਫ਼ੋਟੋ ਦੇਖ ਸਕਦੇ ਹਨ ਅਤੇ \"ਮੇਰੀ ਸਟੋਰੀ\" ਵਿਚਲੀਆਂ ਪੋਸਟਾਂ ਦੇਖ ਸਕਦੇ ਹਨ, ਬਸ਼ਰਤੇ ਤੁਸੀਂ ਉਹਨਾਂ ਕੋਲੋਂ ਇਸ ਨੂੰ ਲੁਕਾਇਆ ਨਾ ਹੋਵੇ"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "ਮਿਟਾਉਣਾ ਦੀ ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਤੁਹਾਡੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਨਾਲ ਸਿੰਕ ਕੀਤਾ ਜਾਂਦਾ ਹੈ"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "ਜਦੋਂ ਤੁਸੀਂ ਸੁਨੇਹੇ ਜਾਂ ਚੈਟਾਂ ਨੂੰ ਮਿਟਾਉਂਦੇ ਹੋ, ਤਾਂ ਉਹਨਾਂ ਨੂੰ ਤੁਹਾਡੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ਤੋਂ ਵੀ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।"
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "ਸਮਝ ਗਏ"
   },
   "icu:Stories__title": {
     "messageformat": "ਸਟੋਰੀਆਂ"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਪ੍ਰਾਈਵੇਟ ਹੈ"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>ਜਦੋਂ ਤੁਸੀਂ ਦਾਨ ਦਿੰਦੇ ਹੋ ਤਾਂ Signal ਤੁਹਾਡੀ ਕੋਈ ਵੀ ਨਿੱਜੀ ਜਾਣਕਾਰੀ ਇਕੱਠੀ ਜਾਂ ਸਟੋਰ ਨਹੀਂ ਕਰਦਾ ਹੈ।</paragraph><paragraph>ਤੁਹਾਡਾ ਦਾਨ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਅਸੀਂ Stripe ਨੂੰ ਆਪਣੇ ਪੇਮੈਂਟ ਪ੍ਰੋਸੈਸਰ ਦੇ ਤੌਰ 'ਤੇ ਵਰਤਦੇ ਹਾਂ। ਅਸੀਂ ਤੁਹਾਡੇ ਦੁਆਰਾ ਉਹਨਾਂ ਨੂੰ ਪ੍ਰਦਾਨ ਕੀਤੀ ਕਿਸੇ ਵੀ ਜਾਣਕਾਰੀ ਦੀ ਵਰਤੋਂ, ਉਸ ਨੂੰ ਸਟੋਰ ਜਾਂ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਕਰਦੇ ਹਾਂ।</paragraph><paragraph>Signal ਤੁਹਾਡੇ ਦਾਨ ਨੂੰ ਤੁਹਾਡੇ Signal ਖਾਤੇ ਨਾਲ ਨਾ ਹੀ ਕਨੈਕਟ ਕਰਦਾ ਹੈ ਅਤੇ ਨਾ ਹੀ ਕਨੈਕਟ ਕਰ ਸਕਦਾ ਹੈ।</paragraph><paragraph>ਸਹਿਯੋਗ ਦੇਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ! </paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "ਇੱਕ ਸੁਤੰਤਰ ਗੈਰ-ਲਾਭਕਾਰੀ ਸੰਸਥਾ ਹੋਣ ਦੇ ਨਾਤੇ, Signal ਸੁਨੇਹਿਆਂ ਅਤੇ ਕਾਲਾਂ ਨੂੰ ਪ੍ਰਾਈਵੇਟ ਰੱਖਣ ਲਈ ਵਚਨਬੱਧ ਹੈ। ਕੋਈ ਇਸ਼ਤਿਹਾਰ ਨਹੀਂ, ਕੋਈ ਟ੍ਰੈਕਰ ਨਹੀਂ, ਕੋਈ ਜਸੂਸੀ ਨਹੀਂ। ਅੱਜ ਹੀ ਦਾਨ ਦੇ ਕੇ Signal ਨੂੰ ਸਹਿਯੋਗ ਦਿਓ।"

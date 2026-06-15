@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "جزوی طور پر بھیجا گیا ہے ، تفصیلات کے لئے کلک کریں"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "جزوی طور پر حذف کر دیا گیا، دوبارہ کوشش کرنے کے لیے کلک کریں"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "جزوی طور پر حذف کیا گیا، تفصیلات کے لیے کلک کریں"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "گِف"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "یہ پیغام حذف کردیا گیا تھا۔"
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "ایڈمن {admin} نے یہ میسج حذف کر دیا"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "پھیلائیں"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "فائل منسلک"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "تصاویر اور ویڈیوز"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "منتخب کردہ میسجز فارورڈ کریں"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {میسج حذف کریں؟} other {{count,number} میسجز حذف کریں؟}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {منتخب شدہ میسج کو حذف کریں؟} other {منتخب شدہ {count,number} میسجز کو حذف کریں؟}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {آپ یہ میسج کس کے لیے حذف کرنا چاہتے ہیں؟} other {آپ یہ میسجز کس کے لیے حذف کرنا چاہتے ہیں؟}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {آپ کون سی ڈیوائسز سے یہ میسج حذف کرنا چاہتے ہیں؟} other {آپ کون سی ڈیوائسز سے یہ میسجز حذف کرنا چاہتے ہیں؟}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {یہ میسج آپ کی تمام ڈیوائسز سے حذف کر دیا جائے گا۔} other {یہ میسجز آپ کی تمام ڈیوائسز سے حذف کر دیے جائیں گے۔}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "میرے لیے حذف کریں"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "اس ڈیوائس سے حذف کریں"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "سب کے لیے حذف کریں"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Signal کے تازہ ترین ورژنز پر موجود گروپ ممبرز دیکھ سکیں گے کہ آپ نے یہ میسج حذف کر دیا ہے۔} other {Signal کے تازہ ترین ورژنز پر موجود گروپ ممبرز دیکھ سکیں گے کہ آپ نے یہ میسجز حذف کر دیے ہیں۔}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "تمام ڈیوائسز سے حذف کریں"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "حذف کریں"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "کیی درج کریں"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "اپنی ریکوری کیی کو ریکارڈ کریں"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "آپ کی ریکوری کیی"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "یہ کیی آپ کے اکاؤنٹ اور ڈیٹا کو بحال کرنے کے لیے درکار ہوتی ہے۔ اس کیی کو کسی محفوظ جگہ پر اسٹور کریں۔ اگر آپ اسے کھو دیتے ہیں، تو آپ اپنا اکاؤنٹ بحال نہیں کر سکیں گے۔ <learnMoreLink>مزید جانیں۔</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "یہ کیی آپ کے اکاؤنٹ اور ڈیٹا کو بحال کرنے کے لیے درکار ہے۔ اسے کسی محفوظ جگہ پر اسٹور کریں اور کبھی کسی کے ساتھ شیئر نہ کریں۔ Signal آپ کو آپ کی بحالی کی کیی کے لیے کبھی میسج نہیں کرے گا۔ <learnMoreLink>مزید جانیں۔</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "آپ کے کنکشنز آپ کا نام اور تصویر دیکھ سکتے ہیں، اور \"میری سٹوری\" پر موجود تصاویر دیکھ سکتے ہیں تاوقتیکہ آپ اسے ان سے چھپائیں"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "حذف کرنا آپ کی ڈیوائسز پر سنک کر دیا گیا ہے"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "جب آپ میسیجز یا چیٹس حذف کرتے ہیں، تو وہ آپ کی تمام ڈیوائسز سے حذف کر دیے جائیں گے۔"
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "سمجھ گیا"
   },
   "icu:Stories__title": {
     "messageformat": "سٹوریز"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "آپ کی معلومات پرائیویٹ ہے"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>جب آپ عطیہ کرتے ہیں تو Signal آپ کی کوئی بھی ذاتی معلومات جمع یا محفوظ نہیں کرتا۔</paragraph><paragraph>ہم آپ کے عطیات موصول کرنے کے لیے Stripe کو اپنی پیمنٹس کے پروسیسر کے طور پر استعمال کرتے ہیں۔ آپ وہاں جو بھی معلومات فراہم کرتے ہیں ہم ان تک رسائی نہیں رکھتے، اسٹور، یا محفوظ نہیں کرتے۔</paragraph><paragraph>Signal آپ کے عطیے کو آپ کے Signal کے اکاؤنٹ کے ساتھ منسلک نہیں کرتا اور نہ ہی کر سکتا ہے۔</paragraph><paragraph>آپ کی سپورٹ کے لیے آپ کا شکریہ!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "ایک خود مختار غیر منافع بخش ایپ کے طور پر، Signal نجی میسجنگ اور کالز کی فراہمی کے لیے پُرعزم ہے۔ کوئی اشتہارات، کوئی ٹریکرز، کوئی نگرانی نہیں۔ Signal کو سپورٹ کرنے کے لیے ابھی عطیہ کریں۔"

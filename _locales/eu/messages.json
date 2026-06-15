@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Partzialki bidalia, ukitu xehetasunetarako"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Partzialki ezabatu da. Egin klik berriro saiatzeko."
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Partzialki ezabatuta; sakatu xehetasunak ikusteko"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Mezu hau ezabatu egin da."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "{admin} adminak mezu hau ezabatu du"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Zabaldu"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Erantsi fitxategia"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Argazki eta bideoak"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Birbidali hautatutako mezuak"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Mezua ezabatu nahi duzu?} other {{count,number} mezu ezabatu nahi dituzu?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Hautatutako mezua ezabatu nahi duzu?} other {Hautatutako {count,number} mezuak ezabatu nahi dituzu?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Norentzat ezabatu nahi duzu mezu hau?} other {Norentzat ezabatu nahi dituzu mezu hauek?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Zein gailutatik ezabatu nahi duzu mezu hau?} other {Zein gailutatik ezabatu nahi dituzu mezu hauek?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Mezu hau gailu guztietatik ezabatu da.} other {Mezu hauek gailu guztietatik ezabatuko dira.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Ezabatu niretzat"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Ezabatu gailu honetatik"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Ezabatu guztientzat"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Signal-eko azken bertsioetako taldeko kideek mezu hau ezabatu duzula ikusiko dute.} other {Signal-eko azken bertsioetako taldeko kideek mezu hauek ezabatu dituzula ikusiko dute.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Ezabatu gailu guztietatik"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Ezabatu"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Idatzi gakoa"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Gorde berreskuratze-gakoa"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Zure berreskuratze-gakoa"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Zure kontua eta datuak berreskuratzeko behar da gako hori. Gorde gakoa toki seguru batean. Galduz gero, ezingo duzu berreskuratu kontua.<learnMoreLink>Gehiago ikasi.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Zure kontua eta datuak berreskuratzeko behar da gako hori. Gorde ezazu toki seguru batean, eta ez ezazu inorekin partekatu. Signal-ek ez dizu inoiz mezurik bidaliko berreskuratze-gakoa eskatzeko. <learnMoreLink>Lortu informazio gehiago</learnMoreLink>."
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Konexioek zure izena eta argazkia ikus ditzakete, bai eta \"Nire istorioa\" ataleko argitalpenak ere, zuk eskuz ezkutatu ezean."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Ezabatzea zure gailu guztietan sinkronizatuta dago"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Mezu edo txatak ezabatzean, gailu guztietan ezabatuko dira."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Ulertu dut"
   },
   "icu:Stories__title": {
     "messageformat": "Istorioak"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Zure informazioa pribatua da"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal-ek ez du zure informazio pertsonalik biltzen edo gordetzen dohaintza bat egiten duzunean.</paragraph><paragraph>Stripe erabiltzen dugu ordainketa-prozesadore gisa zure dohaintzak jasotzeko. Ez dugu ematen diezun informaziorik atzitzen edo gordetzen.</paragraph><paragraph>Signal-ek ez du zure dohaintza zure Signal kontuarekin lotzen eta ezin du lotu.</paragraph><paragraph>Eskerrik asko zure babesagatik!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Irabazi asmorik gabeko erakunde independente gisa, Signal-ek konpromisoa du mezu pribatuekiko. Iragarkirik gabe, jarraipen-tresnarik gabe, zaintzarik gabe. Egin dohaintza bat gaur Signal-i laguntzeko."

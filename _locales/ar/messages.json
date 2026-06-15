@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "تمَّ الإرسال جزئيًا. انقر للمزيد من التفاصيل."
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "تمَّ الحذف جزئيًا. يُرجى الضغط لإعادة المحاولة."
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "حذف جزئي، انقر لعرض التفاصيل"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "صورة متحركة (GIF)"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "حُذِفَت هذه الرسالة."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "حذفَ المُشرِف {admin} هذه الرسالة."
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "توسيع"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "إرفاق ملف"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "الصور والفيديوهات"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "إعادة توجيه الرسائل المُحدَّدة"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, zero {هل ترغبُ بحذف {count,number} رسائل؟} one {هل ترغبُ بحذف {count,number} رسالة واحدة؟} two {هل ترغبُ بحذف {count,number} رسالتين؟} few {هل ترغبُ بحذف {count,number} رسائل؟} many {هل ترغبُ بحذف {count,number} رسالة؟} other {هل ترغبُ بحذف {count,number} رسالة؟}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, zero {هل ترغبُ بحذف الـ {count,number} رسائل المُحدَّدة؟} one {هل ترغبُ بحذف الرسالة المُحدَّدة؟} two {هل ترغبُ بحذف الـ {count,number} رسالتين المُحدَّدتين؟} few {هل ترغبُ بحذف الـ {count,number} رسائل المُحدَّدة؟} many {هل ترغبُ بحذف الـ {count,number} رسالة المُحدَّدة؟} other {هل ترغبُ بحذف الـ {count,number} رسالة المُحدَّدة؟}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, zero {من هم الأشخاص الذين تريد حذف هذه الرسائل لديهم؟} one {من هم الأشخاص الذين تريد حذف هذه الرسالة لديهم؟} two {من هم الأشخاص الذين تريد حذف هاتين الرسالتين لديهم؟} few {من هم الأشخاص الذين تريد حذف هذه الرسائل لديهم؟} many {من هم الأشخاص الذين تريد حذف هذه الرسائل لديهم؟} other {من هم الأشخاص الذين تريد حذف هذه الرسائل لديهم؟}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, zero {ما هي الأجهزة التي تريد حذف هذه الرسائل منها؟} one {ما هي الأجهزة التي تريد حذف هذه الرسالة منها؟} two {ما هي الأجهزة التي تريد حذف هاتين الرسالتين منها؟} few {ما هي الأجهزة التي تريد حذف هذه الرسائل منها؟} many {ما هي الأجهزة التي تريد حذف هذه الرسائل منها؟} other {ما هي الأجهزة التي تريد حذف هذه الرسائل منها؟}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, zero {سيتمُّ حذف هذه الرسائل من كل أجهزتك.} one {سيتمُّ حذف هذه الرسائل من جهازك.} two {سيتمُّ حذف هذه الرسائل من كلا جهازيك.} few {سيتمُّ حذف هذه الرسائل من كل أجهزتك.} many {سيتمُّ حذف هذه الرسائل من كل أجهزتك.} other {سيتمُّ حذف هذه الرسائل من كل أجهزتك.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "احذف من عندي"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "احذف من هذا الجهاز"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "احذف للجميع"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, zero {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هذه الرسائل.} one {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هذه الرسالة.} two {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هتين الرسالتين.} few {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هذه الرسائل.} many {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هذه الرسائل.} other {سيرى أعضاء المجموعة الذين يستخدمون آخر الإصدارات من سيجنال أنك حذفت هذه الرسائل.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "احذف من كل الأجهزة"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "حذف"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "أدخِل المفتاح"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "قُم بتسجيل مفتاح الاستعادة الخاص بك"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "مفتاح الاستعادة الخاص بك"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "هذا المفتاح مطلوب لاسترجاع بياناتك وحسابك. احتفِظ بهذا المفتاح في مكانٍ آمن. إذا فقدته، لن تتمكّن من استرجاع حسابك. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "هذا المفتاح مطلوب لاسترجاع بياناتك وحسابك. احتفِظ بمفتاح الاستعادة الخاص بك في مكانٍ آمن ولا تشارِكه مع أي أحد. لن يُرسِل لك سيجنال أبدًا رسالة يطلب فيها مفتاح الاستعادة. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "يُمكن لِمعارفك رؤية اسمك وصورتك، كما يُمكنهم الاطِّلاع على منشوراتك في \"قِصتي\" إلاّ إذا أخفيتها عنهم."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "تُجرى عملية الحذف في تزامن عبر جميع أجهزتك"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "عندما تحذف رسائل أو دردشات، سيتمُّ حذفها من هاتفك وكل أجهزتك."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "تم"
   },
   "icu:Stories__title": {
     "messageformat": "القِصص"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "ستتمُّ المحافظة على خصوصية معلوماتك."
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>لا يقوم سيجنال بجمع أو تخزين معلوماتك الشخصية عند قيامك بتبرُّع.</paragraph><paragraph>نستخدم Stripe كمعالج عمليات الدفع الخاصة بنا لتلقي تبرُّعاتك. لا يُمكننا الوصول إلى أو تخزين أو حفظ أي من المعلومات التي تُقدمها.</paragraph><paragraph>لا يقوم تطبيق سيجنال ولا يمكنه ربط تبرُّعاتك بحسابك على سيجنال.</paragraph><paragraph>شكرًا لدعمك!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "بصفتها شركة غير ربحية، سيجنال مُلتزمة بدعم المراسلة والمكالمات الخاصة. بدون إعلانات، وبدون تعقُّب، وبدون مراقبة. تبرَّع اليوم لدعم سيجنال."

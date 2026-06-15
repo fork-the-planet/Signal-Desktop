@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Delvist sendt, klik for detaljer"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Delvist slettet, klik for at forsøge igen"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Delvist slettet, tryk for flere oplysninger"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Beskeden blev slettet."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Administratoren {admin} slettede denne besked"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Udvid"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Vedhæft fil"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Billeder og videoer"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Videresend valgte beskeder"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Slet besked?} other {Slet {count,number} beskeder?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Vil du slette den valgte besked?} other {Vil du slette de valgte {count,number} beskeder?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Hvem vil du gerne slette denne besked for?} other {Hvem vil du gerne slette disse beskeder for?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Hvilke enheder vil du slette denne besked fra?} other {Hvilke enheder vil du slette disse beskeder fra?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Denne besked slettes fra alle dine enheder.} other {Disse beskeder slettes fra alle dine enheder.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Slet for mig"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Slet fra denne enhed"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Slet for alle"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Gruppemedlemmer på de nyeste versioner af Signal vil se, at du har slettet denne besked.} other {Gruppemedlemmer på de nyeste versioner af Signal vil se, at du har slettet disse beskeder.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Slet fra alle enheder"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Slet"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Angiv nøgle"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Skriv din gendannelsesnøgle ned"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Din gendannelsesnøgle"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Denne nøgle er påkrævet for at gendanne din konto og dine data. Opbevar denne nøgle et sikkert sted. Hvis du mister den, vil du ikke kunne gendanne din konto. <learnMoreLink>Få mere at vide.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Denne nøgle er påkrævet for at gendanne din konto og dine data. Opbevar den et sikkert sted, og del den aldrig med nogen. Signal kontakter dig aldrig for at bede om din gendannelsesnøgle. <learnMoreLink>Få mere at vide.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Dine kontakter kan se dit navn og billede, og de kan se det, du lægger op på \"Min historie\", medmindre du skjuler din historie fra dem"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Sletning synkroniseret på alle dine enheder"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Når du sletter beskeder eller chats, slettes de fra alle dine enheder."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Forstået"
   },
   "icu:Stories__title": {
     "messageformat": "Historier"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Dine oplysninger er private"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal indsamler eller opbevarer ingen af dine personlige oplysninger, når du donerer.</paragraph><paragraph>Vi bruger Stripe som vores betalingssystem til at modtage dine donationer. Vi tilgår, opbevarer eller gemmer ikke nogen af de oplysninger, du giver dem.</paragraph><paragraph>Signal kan ikke og forbinder ikke din donation til din Signal-konto.</paragraph><paragraph>Tak for din støtte!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Som en uafhængig nonprofitorganisation arbejder Signal for private beskeder og opkald. Ingen annoncer, ingen trackere, ingen overvågning. Donér i dag for at støtte Signal."

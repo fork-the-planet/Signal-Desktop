@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Daļēji nosūtīts; noklikšķiniet, lai skatītu datus"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Daļēji dzēsta, noklikšķiniet, lai mēģinātu vēlreiz"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Daļēji dzēsts, klikšķiniet, lai skatītu sīkāku informāciju"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Ziņojums ir izdzēsts."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Administrators {admin} izdzēsa šo ziņu"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Izvērst"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Pievienot failu"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotoattēli un video"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Pārsūtīt atlasītās ziņas"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, zero {Vai izdzēst {count,number} ziņas?} one {Vai izdzēst ziņu?} other {Vai izdzēst {count,number} ziņas?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, zero {Vai dzēst atlasītās {count,number} ziņas?} one {Vai dzēst atlasīto ziņu?} other {Vai dzēst atlasītās {count,number} ziņas?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, zero {Kuram šīs ziņas izdzēst?} one {Kuram šo ziņu izdzēst?} other {Kuram šīs ziņas izdzēst?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, zero {No kurām ierīcēm vēlaties dzēst šīs ziņas?} one {No kurām ierīcēm vēlaties dzēst šo ziņu?} other {No kurām ierīcēm vēlaties dzēst šīs ziņas?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, zero {Šīs ziņas tiks dzēstas no visām jūsu ierīcēm.} one {Šī ziņa tiks dzēsta no visām jūsu ierīcēm.} other {Šīs ziņas tiks dzēstas no visām jūsu ierīcēm.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Dzēst man"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Dzēst no šīs ierīces"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Dzēst visiem"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, zero {Grupas biedri, kuri izmanto jaunāko Signal versiju, redzēs, ka izdzēsāt šīs ziņas.} one {Grupas biedri, kuri izmanto jaunāko Signal versiju, redzēs, ka izdzēsāt šo ziņu.} other {Grupas biedri, kuri izmanto jaunāko Signal versiju, redzēs, ka izdzēsāt šīs ziņas.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Dzēst no visām ierīcēm"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Dzēst"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Ievadīt atslēgu"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Saglabājiet savu atkopšanas atslēgu"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Jūsu atkopšanas atslēga"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Šī atslēga ir nepieciešama, lai atgūtu jūsu kontu un datus. Noglabājiet šo atslēgu drošā vietā. Ja to pazaudēsiet, nevarēsiet atgūt savu kontu. <learnMoreLink>Uzziniet vairāk.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Šī atslēga ir nepieciešama jūsu konta un datu atgūšanai. Glabājiet atslēgu drošā vietā un nevienam neizpaudiet. Signal darbinieki jums nekad nerakstīs un neprasīs atkopšanas atslēgu. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Jūsu kontakti var redzēt jūsu vārdu un attēlu, kā arī sadaļā \"Mani stāsti\" publicēto, ja šis saturs nav paslēpts no viņiem"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Dzēšana tiek sinhronizēta visās jūsu ierīcēs"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Dzēšot ziņas vai sarunas, tās tiks dzēstas no visām jūsu ierīcēm."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Skaidrs"
   },
   "icu:Stories__title": {
     "messageformat": "Stāsti"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Jūsu informācija ir konfidenciāla"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Veicot ziedojumu, Signal nevāc un neuzglabā jūsu personas informāciju.</paragraph><paragraph>Mēs izmantojam Stripe kā maksājumu apstrādātāju ziedojumu saņemšanai. Mēs nepiekļūstam, neuzglabājam un nesaglabājam nekādu informāciju, ko jūs tam sniedzat.</paragraph><paragraph>Signal nesaista un nevar sasaistīt jūsu ziedojumu ar jūsu Signal kontu.</paragraph><paragraph>Paldies par jūsu atbalstu!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Signal ir neatkarīga bezpeļņas organizācija, kas ir apņēmusies nodrošināt privātu ziņojumapmaiņu un zvanu pakalpojumu. Bez reklāmām, bez izsekotājiem, bez novērošanas. Ziedojiet šodien, lai atbalstītu Signal."

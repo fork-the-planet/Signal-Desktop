@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Trimis parțial, fă click pentru detalii"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Șters parțial, fă click pentru a reîncerca"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Eliminat parțial, dă clic pentru detalii"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Acest mesaj a fost șters."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Administratorul {admin} a eliminat acest mesaj"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Extinde"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Atașare fișier"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotografii și videoclipuri"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Redirecționează mesajele selectate"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Ștergi {count,number} mesaj?} few {Ștergi {count,number} mesaje?} other {Ștergi {count,number} de mesaje?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Ștergi mesajul selectat?} few {Ștergi cele {count,number} mesaje selectate?} other {Ștergi cele {count,number} de mesaje selectate?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Pentru cine vrei să ștergi acest mesaj?} few {Pentru cine vrei să ștergi aceste mesaje?} other {Pentru cine vrei să ștergi aceste mesaje?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {De pe ce dispozitive ai dori să ștergi acest mesaj?} few {De pe ce dispozitive ai dori să ștergi acest mesaje?} other {De pe ce dispozitive ai dori să ștergi aceste mesaje?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Acest mesaj va fi eliminat de pe toate dispozitivele tale.} few {Acest mesaje vor fi eliminate de pe toate dispozitivele tale.} other {Aceste mesaje vor fi eliminate de pe toate dispozitivele tale.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Șterge doar pentru mine"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Șterge de pe acest dispozitiv"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Șterge pentru toată lumea"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Membrii grupurilor cu cele mai recente versiuni Signal vor vedea că ai eliminat acest mesaj.} few {Membrii grupurilor cu cele mai recente versiuni Signal vor vedea că ai eliminat aceste mesaje.} other {Membrii grupurilor cu cele mai recente versiuni Signal vor vedea că ai eliminat aceste mesaje.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Șterge de pe toate dispozitivele"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Șterge"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Introdu codul"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Înregistrează-ți codul de recuperare"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Codul tău de recuperare"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Codul e necesar ca să-ți recuperezi contul și datele. Păstrează codul într-un loc sigur. Dacă îl pierzi, nu îți vei putea recupera contul. <learnMoreLink>Află mai multe.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Conexiunile tale îți pot vedea numele și fotografia și pot vedea postările din „Povestea Mea” cu excepția cazului în care le ascunzi"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Eliminarea este sincronizată pe toate dispozitivele tale"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Atunci când elimini mesaje sau conversații, acestea vor fi șterse de pe toate dispozitivele tale."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Am înțeles"
   },
   "icu:Stories__title": {
     "messageformat": "Povești"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Informațiile sunt private"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal nu colectează sau stochează informațiile personale când faci o donație.</paragraph><paragraph>Folosim Stripe ca procesator de plăți ca să primim donațiile tale. Nu accesăm, stocăm sau salvăm niciuna dintre informațiile pe care le oferi către ei.</paragraph><paragraph>Signal nu conectează donația ta cu contul Signal și nici nu poate să o facă.</paragraph><paragraph>Îți mulțumim pentru sprijinul tău!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Ca organizație non-profit independentă, Signal se angajează să ofere mesaje și apeluri private. Fără reclame, fără sisteme de urmărire. Donează astăzi și susține Signal."

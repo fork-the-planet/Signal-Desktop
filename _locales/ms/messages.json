@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Dihantar sebahagian, klik untuk maklumat lanjut"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Sebahagiannya telah dipadamkan, klik untuk cuba semula"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Sebahagiannya dipadam, klik untuk butiran"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Mesej ini telah dipadam."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Pentadbir {admin} memadam mesej ini"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Kembangkan"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Lampirkan fail"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Foto & video"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Majukan mesej yang dipilih"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, other {Padam {count,number} mesej?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, other {Padamkan {count,number} mesej yang dipilih?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, other {Untuk siapa anda mahu memadamkan mesej ini?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, other {Peranti apakah yang ingin anda padamkan mesej ini?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, other {Mesej ini akan dipadamkan daripada semua peranti anda.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Padam untuk saya"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Padam daripada peranti ini"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Padam untuk semua orang"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, other {Ahli kumpulan yang menggunakan versi terkini Signal akan melihat bahawa anda telah memadam mesej ini.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Padam daripada semua peranti"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Padam"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Masukkan kunci"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Rekodkan kunci pemulihan anda"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Kunci pemulihan anda"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Kunci ini diperlukan untuk memulihkan akaun dan data anda. Simpan kunci ini di tempat yang selamat. Jika anda kehilangannya, anda tidak akan dapat memulihkan akaun anda. <learnMoreLink>Ketahui lebih lanjut.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Hubungan anda boleh melihat nama dan foto anda, dan boleh melihat hantaran anda ke \"Cerita Saya\" kecuali anda menyembunyikannya daripada mereka."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Pemadaman disegerakkan merentas peranti anda"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Apabila anda memadam mesej atau sembang, ia akan dipadamkan daripada semua peranti anda."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Faham"
   },
   "icu:Stories__title": {
     "messageformat": "Cerita"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Maklumat anda adalah peribadi"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal tidak mengumpul atau menyimpan sebarang maklumat peribadi anda semasa anda menderma.</paragraph><paragraph>Kami menggunakan Stripe sebagai pemproses pembayaran untuk menerima derma anda. Kami tidak mengakses atau menyimpan sebarang maklumat yang anda berikan kepada mereka.</paragraph><paragraph>Signal tidak akan dan tidak boleh menyambung derma anda kepada akaun Signal anda.</paragraph><paragraph>Terima kasih atas sokongan anda!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Sebagai organisasi bukan untung yang bebas, Signal komited terhadap pemesejan dan panggilan peribadi. Tiada iklan, tiada penjejak, tiada pengawasan. Derma hari ini untuk menyokong Signal."

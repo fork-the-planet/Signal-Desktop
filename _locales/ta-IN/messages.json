@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "சிலருக்கு அனுப்பப்பட்டது, விவரங்களுக்கு இங்கே தட்டவும்"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "ஓரளவு நீக்கப்பட்டது, மீண்டும் முயற்சிக்க கிளிக் செய்யவும்"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "பகுதியளவு நீக்கப்பட்டது, விவரங்களுக்குக் கிளிக் செய்யவும்"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "இந்த மெசேஜ் நீக்கப்பட்டது."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "நிர்வாகி {admin} இந்த மெசேஜை நீக்கினார்"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "விரிவாக்கு"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "கோப்பினை இணைக்கவும்"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "படங்கள் & காணொளிகள்"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "தேர்ந்தெடுக்கப்பட்ட மெசேஜ்களை முன்னனுப்பு"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {{count,number} மெசேஜை நீக்க வேண்டுமா?} other {{count,number} மெசேஜ்களை நீக்க வேண்டுமா?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {தேர்ந்தெடுக்கப்பட்ட மெசேஜை நீக்கவா?} other {தேர்ந்தெடுக்கப்பட்ட {count,number} மெசேஜ்களை நீக்கவா?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {இந்த மெசேஜை யாருக்காக நீக்க விரும்புகிறீர்கள்?} other {இந்த மெசேஜ்களை யாருக்காக நீக்க விரும்புகிறீர்கள்?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {எந்த டிவைஸ்களிலிருந்து இந்த மெசேஜை நீக்க விரும்புகிறீர்கள்?} other {எந்த டிவைஸ்களிலிருந்து இந்த மெசேஜ்களை நீக்க விரும்புகிறீர்கள்?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {இந்த மெசேஜ் உங்களின் அனைத்து சாதனங்களிலிருந்தும் அழிக்கப்படும்.} other {இந்த மெசேஜ்கள் உங்களின் அனைத்து சாதனத்திலிருந்தும் அழிக்கப்படும்.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "எனக்கு மட்டும் நீக்குக"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "இந்த டிவைஸிலிருந்து நீக்குக"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "அனைவருக்கும் நீக்குக"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {நீங்கள் இந்த மெசேஜை நீக்கியதை சிக்னலின் அண்மைய பதிப்புகளில் உள்ள தொகுப்பு உறுப்பினர்கள் காண்பார்கள்.} other {நீங்கள் இந்த மெசேஜ்களை நீக்கியதை சிக்னலின் அண்மைய பதிப்புகளில் உள்ள தொகுப்பு உறுப்பினர்கள் காண்பார்கள்.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "அனைத்து டிவைஸ்களிலிருந்தும் நீக்குக"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "நீக்கு"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "குறியீட்டை உள்ளிடுங்கள்"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "உங்கள் மீட்புக் குறியீட்டைப் பதிவுசெய்க"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "உங்களின் மீட்புக் குறியீடு"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "உங்கள் கணக்கு மற்றும் தரவை மீட்டெடுக்க இந்தக் குறியீடு தேவை. இந்தக் குறியீட்டைப் பாதுகாப்பான இடத்தில் சேமித்து வைக்கவும். நீங்கள் அதை இழந்துவிட்டால், உங்கள் கணக்கை மீட்டெடுக்க முடியாது. <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "உங்கள் கணக்கு மற்றும் தரவை மீட்டெடுக்க இந்தக் குறியீடு தேவை. அதனைப் பாதுகாப்பான இடத்தில் சேமித்து வைக்கவும், அதை ஒருபோதும் யாருடனும் பகிராதீர்கள். உங்கள் மீட்புக் குறியீட்டைக் கேட்டு சிக்னல் ஒருபோதும் உங்களுக்குச் செய்தி அனுப்பாது. <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "உங்கள் இணைப்புகள் உங்கள் பெயரையும் புகைப்படத்தையும் பார்க்க முடியும், மேலும் \"மை ஸ்டோரி\"க்கான போஸ்டுகளை நீங்கள் அவர்களிடம் இருந்து மறைக்காதவரை பார்க்க முடியும்"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "உங்கள் சாதனங்களில் அழித்தல் அம்சம் ஒத்திசைக்கப்படுகிறது"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "நீங்கள் மெசேஜ்கள் அல்லது சாட்ஸை அழிக்கும்போது, அவை உங்கள் எல்லா சாதனங்களிலிருந்தும் அழிக்கப்படும்."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "அறிந்துகொண்டேன்"
   },
   "icu:Stories__title": {
     "messageformat": "ஸ்டோரீஸ்"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "உங்கள் தகவல் தனிப்பட்டது"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>நீங்கள் நன்கொடை அளிக்கும்போது உங்கள் தனிப்பட்ட தகவல்களைச் சிக்னல் சேகரிக்கவோ அல்லது சேமிக்கவோ செய்யாது.</paragraph><paragraph>உங்கள் நன்கொடைகளைப் பெற எங்கள் கட்டணச் செயலியாக நாங்கள் ஸ்ட்ரைபை பயன்படுத்துகிறோம். நீங்கள் அவற்றில் வழங்கும் எந்தவொரு தகவலையும் நாங்கள் அணுகவோ, சேமிக்கவோ அல்லது பத்திரப்படுத்தவோ மாட்டோம்.</paragraph><paragraph>சிக்னலால் உங்கள் நன்கொடையை சிக்னல் கணக்கில் இணைக்க முடியாது.</paragraph><paragraph>உங்கள் ஆதரவுக்கு நன்றி!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "சுதந்திரமான இலாப நோக்கற்ற அமைப்பாக, தனிப்பட்ட மெசேஜிங் மற்றும் அழைப்புச் சேவையை வழங்க சிக்னல் உறுதிபூண்டுள்ளது. விளம்பரங்கள் இல்லை, டிராக்கர்கள் இல்லை, கண்காணிப்பு இல்லை. சிக்னலை ஆதரிக்க இன்றே நன்கொடை அளியுங்கள்."

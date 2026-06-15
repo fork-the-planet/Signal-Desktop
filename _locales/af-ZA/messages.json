@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Gedeeltelik gestuur, klik vir besonderhede"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Gedeeltelik geskrap, klik om weer te probeer"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Gedeeltelik geskrap, klik hier vir besonderhede"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Hierdie boodskap is geskrap."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Admin {admin} het hierdie boodskap geskrap"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Vou uit"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Heg lêer aan"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Foto's en video's"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Stuur geselekteerde boodskappe aan"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Skrap boodskap?} other {Delete {count,number} boodskappe?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Skrap geselekteerde boodskap?} other {Skrap {count,number} geselekteerde boodskappe?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Vir wie wil jy hierdie boodskap skrap?} other {Vir wie wil jy hierdie boodskappe skrap?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Van watter toestelle wil jy hierdie boodskap skrap?} other {Van watter toestelle wil jy hierdie boodskappe skrap?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Hierdie boodskap sal van al jou toestelle geskrap word.} other {Hierdie boodskappe sal van al jou toestelle geskrap word.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Skrap vir my"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Skrap van hierdie toestel"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Skrap vir almal"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Groeplede op die jongste weergawe van Signal sal sien jy het hierdie boodskap geskrap.} other {Groeplede op die jongste weergawe van Signal sal sien jy het hierdie boodskappe geskrap.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Skrap van alle toestelle"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Skrap"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Voer sleutel in"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Maak 'n aantekening van jou herwinsleutel"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Jou herwinsleutel"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Hierdie sleutel is nodig om jou rekening en data te herstel. Bewaar hierdie sleutel iewers waar dit veilig is. As jy dit verloor, sal jy nie jou rekening kan herstel nie. <learnMoreLink>Vind meer uit.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Hierdie sleutel is nodig om jou rekening en data te herstel. Bêre dit iewers op ’n veilige plek en moet dit nooit met enigiemand deel nie. Signal sal nooit vir jou 'n boodskap vir jou herwinsleutel stuur nie. <learnMoreLink>Vind meer uit.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Jou verbindings kan jou naam en foto sien, en kan plasings in \"My Storie\" sien, tensy jy dit vir hulle versteek."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Skrapping is oor jou toestelle heen gesinchroniseer"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Wanneer jy boodskappe of kletse skrap, sal dit van al jou toestelle af geskrap word."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Ek verstaan"
   },
   "icu:Stories__title": {
     "messageformat": "Stories"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Jou inligting is privaat"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal versamel of stoor geen van jou persoonlike inligting wanneer jy 'n skenking maak nie.</paragraph><paragraph>Ons gebruik Stripe as ons betalingsverwerker om jou skenkings te ontvang. Ons verkry nie toegang tot, bewaar of stoor enige van die inligting wat jy aan hulle verskaf nie.</paragraph><paragraph>Signal koppel nie jou skenking aan jou Signal-rekening nie, en kan dit ook nie doen nie.</paragraph><paragraph>Dankie vir jou ondersteuning!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "As 'n onafhanklike niewinsgewende organisasie is Signal verbind tot privaat boodskappe en oproepe. Geen advertensies, geen naspoorders, geen observasie nie. Maak vandag 'n skenking om Signal te ondersteun."

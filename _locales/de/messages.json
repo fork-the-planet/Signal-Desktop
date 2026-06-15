@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Teilweise versendet, für Details anklicken"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Teilweise gelöscht. Anklicken, um es erneut zu versuchen."
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Teilweise gelöscht, für Details klicken"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Diese Nachricht wurde gelöscht."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Admin {admin} hat diese Nachricht gelöscht"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Erweitern"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Datei anhängen"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Fotos und Videos"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Ausgewählte Nachrichten weiterleiten"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Nachricht löschen?} other {{count,number} Nachrichten löschen?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Ausgewählte Nachricht löschen?} other {Die ausgewählten {count,number} Nachrichten löschen?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Für wen möchtest du diese Nachricht löschen?} other {Für wen möchtest du diese Nachrichten löschen?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Von welchen Geräten möchtest du diese Nachricht löschen?} other {Von welchen Geräten möchtest du diese Nachrichten löschen?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Diese Nachricht wird von all deinen Geräten gelöscht.} other {Diese Nachrichten werden von all deinen Geräten gelöscht.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Für mich löschen"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Von diesem Gerät löschen"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Für alle löschen"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Gruppenmitglieder mit der neuesten Version von Signal sehen, dass du diese Nachricht gelöscht hast.} other {Gruppenmitglieder mit der neuesten Version von Signal sehen, dass du diese Nachrichten gelöscht hast.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Von allen Geräten löschen"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Löschen"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Schlüssel eingeben"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Speichere deinen Wiederherstellungsschlüssel"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Dein Wiederherstellungsschlüssel"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Dieser Schlüssel wird benötigt, um dein Konto und deine Daten wiederherzustellen. Bewahre diesen Schlüssel sicher auf. Wenn du ihn verlierst, kannst du dein Konto nicht wiederherstellen. <learnMoreLink>Mehr erfahren.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Deine Kontakte können deinen Namen und dein Foto sowie Beiträge unter »Meine Story« sehen, es sei denn, du verbirgst sie vor ihnen."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Der Löschvorgang ist auf all deinen Geräten synchronisiert"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Wenn du Nachrichten oder Chats löschst, werden sie von all deinen Geräten gelöscht."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Verstanden"
   },
   "icu:Stories__title": {
     "messageformat": "Storys"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Deine Daten sind vertraulich"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Deine persönlichen Daten werden von Signal nicht erfasst oder gespeichert, wenn du einen Betrag spendest. </paragraph><paragraph>Wir nutzen den Zahlungsdienstleister Stripe, um deine Spenden zu erhalten.Wir haben keinen Zugriff auf die Informationen, die du ihm zur Verfügung stellst, und speichern diese auch nicht.</paragraph><paragraph>Signal kann und wird deine Spende nicht mit deinem Signal-Konto in Verbindung bringen.</paragraph><paragraph>Danke für deine Unterstützung!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Als unabhängige Non-Profit-Organisation schützt Signal deine privaten Nachrichten und Anrufe. Keine Werbung, kein Tracking, keine Überwachung. Unterstütze Signal noch heute mit einer Spende."

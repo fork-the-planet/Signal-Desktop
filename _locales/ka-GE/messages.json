@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "ნაწილობრივ გაიგზავნა, დააჭირე დეტალებისთვის"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "ნაწილობრივ წაიშალა, დააჭირე თავიდან საცდელად"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "ნაწილობრივ წაიშალა, დეტალებისთვის დააჭირე"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "ეს შეტყობინება იქნა წაშლილი."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "ადმინისტრატორმა {admin} წაშალა ეს წერილი"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "გაფართოება"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "ფაილის მიმაგრება"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "ფოტოები & ვიდეოები"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "არჩეული შეტყობინების გადაგზავნა"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {წავშალოთ შეტყობინება?} other {წავშალოთ {count,number} შეტყობინება?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {გსურს, არჩეული წერილი წაშალო?} other {გსურს, არჩეული {count,number} წერილი წაშალო?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {ვისთვის გსურს ამ შეტყობინების წაშლა?} other {ვისთვის გსურს ამ წერილების წაშლა?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {რომელი მოწყობილობებიდან გსურს ამ წერილის წაშლა?} other {რომელი მოწყობილობებიდან გსურს ამ წერილების წაშლა?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {ეს წერილი შენი ყველა მოწყობილობიდან წაიშლება.} other {ეს წერილები შენი ყველა მოწყობილობიდან წაიშლება.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "ჩემთან წაშლა"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "წაშლა ამ მოწყობილობიდან"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "ყველასთან წაშლა"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Signal-ის ბოლო ვერსიის მქონე ჯგუფის წევრები ნახავენ, რომ ეს წერილი წაშალე.} other {Signal-ის ბოლო ვერსიის მქონე ჯგუფის წევრები ნახავენ, რომ ეს წერილები წაშალე.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "ყველა მოწყობილობიდან წაშლა"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "წაშლა"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "შეიყვანე გასაღები"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "ჩაიწერე შენი აღდგენის გასაღები"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "შენი აღდგენის გასაღები"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "ეს გასაღები საჭიროა შენი ანგარიშისა და მონაცემების აღსადგენად. შეინახე გასაღები უსაფრთხო ადგილას. თუ მას დაკარგავ, შენი ანგარიშის აღდგენას ვეღარ შეძლებ. <learnMoreLink>გაიგე მეტი.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "ეს გასაღები საჭიროა შენი ანგარიშისა და მონაცემების აღსადგენად. სადმე უსაფრთხო ადგილას შეინახე და არავის გაუზიარო. Signal-ი არასდროს მოგწერს შენი აღდგენის გასაღების მოთხოვნით. <learnMoreLink>გაიგე მეტი.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "შენს კონტაქტებს შეუძლიათ ნახონ შენი სახელი და ფოტო, და “ჩემი Story-ი”-ს პოსტები მანამ, სანამ ამას მათთვის არ დამალავ"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "წაშლა შენს ყველა მოწყობილობაზეა დასინქრონიზებული"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "როცა შეტყობინებებს ან ჩატებს შლი, ისინი შენს ყველა მოწყობილობაზე იშლება."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "გასაგებია"
   },
   "icu:Stories__title": {
     "messageformat": "Stories-ები"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "შენი ინფორმაცია კონფიდენციალურია"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal-ი არ აგროვებს და არ ინახავს შენს პირად ინფორმაციას, როცა დონაციას აკეთებ.</paragraph><paragraph>შენი დონაციების მისაღებად Stripe-ს ვიყენებთ, როგორც გადახდის დამმუშავებელს. ჩვენ არ გვაქვს წვდომა შენ მიერ მათთვის მიწოდებულ ინფორმაციაზე და მას არ ვინახავთ.</paragraph><paragraph>Signal-ი არ და ვერ აკავშირებს შენს დონაციას შენს Signal-ის ანგარიშთან.</paragraph><paragraph>მადლობა მხარდაჭერისთვის!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "როგორც დამოუკიდებელი არაკომერციული ორგანიზაცია, Signal-ი კონფიდენციალურ მიმოწერასა და ზარებს უზრუნველყოფს. არანაირი რეკლამა, არანაირი ტრეკერები, არანაირი თვალთვალი. გააკეთე დონაცია დღეს, რომ Signal-ს მხარი დაუჭირო."

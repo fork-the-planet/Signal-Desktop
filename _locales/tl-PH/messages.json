@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Partially sent, i-click para sa iba pang detalye"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Hindi nabura lahat, i-click para masubukan ulit"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Hindi lahat nabura, i-click para sa detalye"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Nabura na ang mensaheng ito."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Binura ni admin {admin} ang message na ito"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "I-expand"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Attach file"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Photos at videos"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "I-forward ang piniling messages"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Gusto mo bang burahin ang message?} other {Gusto mo bang burahin ang {count,number} messages?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Burahin ang piniling message?} other {Burahin ang {count,number} piniling messages?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Para kanino mo gustong burahin ang message na ito?} other {Para kanino mo gustong burahin ang messages na ito?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Saang devices mo gustong burahin ang message na ito?} other {Saang devices mo gustong burahin ang messages na ito?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Ang message na ito'y buburahin sa lahat ng devices mo.} other {Ang messages na ito'y buburahin sa lahat ng devices mo.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Burahin sa 'kin"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Burahin mula sa device na ito"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Burahin sa lahat"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Makikita ng group member na may pinakabagong version ng Signal na binura mo ang message na ito.} other {Makikita ng group members na may pinakabagong versions ng Signal na binura mo ang message na ito.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Burahin sa lahat ng devices"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Burahin"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Ilagay ang key"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "I-record ang iyong recovery key"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Ang iyong recovery key"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Kailangan ang key para ma-recover mo ang iyong account at data. Itago ang key na ito sa ligtas na lugar. Kapag nawala mo ito, hindi mo mare-recover ang iyong account. <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Makikita ng connections mo ang pangalan at photo mo, pati na rin ang posts sa \"My Story\" maliban na lang kung pinili mong i-hide ito mula sa kanila"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Ang pagbubura ay naka-sync sa devices mo"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Kapag nagbura ka ng messages o chats, mabubura ang mga ito sa lahat ng devices mo."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "OK"
   },
   "icu:Stories__title": {
     "messageformat": "Stories"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Pribado ang iyong impormasyon"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Hindi kinokolekta o sine-save ng Signal ang anumang personal na impormasyon mo kapag nag-donate ka.</paragraph><paragraph>Ginagamit namin ang Stripe bilang aming tagaproseso ng pagbabayad upang matanggap ang mga donasyon mo. Hindi namin ina-access, itinatago, o sine-save ang anumang impormasyong ibinibigay mo sa kanila.</paragraph><paragraph>Hindi kinokonekta at hindi maikokonekta ng Signal ang iyong donasyon sa Signal account mo.</paragraph><paragraph>Maraming salamat sa iyong suporta!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Bilang isang independent nonprofit, ang Signal ay committed sa private messaging and calls. Walang ads, walang trackers, at walang surveillance. Mag-donate ngayon para suportahan ang Signal."

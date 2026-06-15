@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Delvis skickat, klicka för mer information"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Delvis borttagen, klicka för att försöka igen"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Delvis raderad, klicka för mer information"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Det här meddelandet togs bort."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Admin {admin} tog bort detta meddelande"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Fäll ut"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Bifoga fil"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Foton och videor"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Vidarebefordra valda meddelanden"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {Ta bort meddelande?} other {Ta bort {count,number} meddelanden?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {Radera valt meddelande?} other {Radera {count,number} valda meddelanden?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {Vem vill du ta bort detta meddelande för?} other {Vilka vill du ta bort de här meddelandena för?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {Vilka enheter vill du ta bort det här meddelandet från?} other {Vilka enheter vill du ta bort de här meddelandena från?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {Detta meddelande kommer att raderas från alla dina enheter.} other {Dessa meddelanden kommer att raderas från alla dina enheter.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Ta bort för mig"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Ta bort från den här enheten"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Ta bort för alla"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Gruppmedlemmar med de senaste versionerna av Signal kommer att se att du raderade det här meddelandet.} other {Gruppmedlemmar med de senaste versionerna av Signal kommer att se att du raderade dessa meddelanden.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Ta bort från alla enheter"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Ta bort"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Ange nyckel"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Spara din återställningsnyckel"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Din återställningsnyckel"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Denna nyckel krävs för att återställa ditt konto och dina data. Förvara den här nyckeln på ett säkert ställe. Om du förlorar den kommer du inte att kunna återställa ditt konto.<learnMoreLink>Läs mer.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "Denna nyckel krävs för att återställa ditt konto och dina data. Förvara den någonstans säkert och dela den aldrig med någon. Signal kommer aldrig att skicka meddelanden till dig för att be om din återställningsnyckel. <learnMoreLink>Läs mer.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Dina förbindelser kan se ditt namn och foto, och kan se inlägg på \"Min Story\" om du inte döljer det från dem."
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Borttagning synkroniseras mellan dina enheter"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "När du tar bort meddelanden eller chattar tas de bort från alla dina enheter."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Uppfattat"
   },
   "icu:Stories__title": {
     "messageformat": "Stories"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Dina uppgifter är privata"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal samlar inte in eller lagrar någon av dina personuppgifter när du gör en donation.</paragraph><paragraph>Vi använder Stripe som vår betalningstjänst för att ta emot dina donationer. Vi kommer varken åt, lagrar eller sparar någon av de uppgifter du lämnar till dem.</paragraph><paragraph>Signal kopplar inte och kan inte koppla din donation till ditt Signal-konto.</paragraph><paragraph>Tack för ditt stöd!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Som en oberoende ideell organisation är Signal engagerad i privata meddelanden och samtal. Inga annonser, inga spårare, ingen övervakning. Donera idag för att stödja Signal."

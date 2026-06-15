@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "တစ်စိတ်တစ်ပိုင်း ပို့ပြီး၊ အသေးစိတ်အတွက် နှိပ်ပါ"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "တစ်စိတ်တစ်ပိုင်း ဖျက်ပြီး၊ ပြန်ကြိုးစားရန် နှိပ်ပါ"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "တစ်စိတ်တစ်ပိုင်း ဖျက်ထားသည်၊ အသေးစိတ်သိရှိရန် နှိပ်ပါ"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "ဤမက်ဆေ့အား ဖျက်ပြီးပါပြီ။"
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "အက်ဒ်မင် {admin} မှ ဤမက်ဆေ့ချ်ကို ဖျက်လိုက်ပါသည်"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "ဖြန့်ရန်"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "ဖိုင် တွဲရန်"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "ဓာတ်ပုံနှင့် ဗီဒီယိုများ"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "ရွေးထားသော မက်ဆေ့ချ်များကို ထပ်ဆင့်ပို့ရန်"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, other {မက်ဆေ့ချ် {count,number} စောင်ကို ဖျက်မည်လား။}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, other {ရွေးချယ်ထားသော မက်ဆေ့ချ် {count,number} ကိုဖျက်မည်လား။}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, other {ထိုမက်ဆေ့ချ်များကို မည်သူ့အတွက် ဖျက်ချင်သနည်း။}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, other {ထိုမက်ဆေ့ချ်များကို မည်သည့်စက်များမှ ဖျက်ချင်သနည်း။}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, other {ဤမက်ဆေ့ချ်များကို သင့်စက်အားလုံးမှ ဖျက်လိုက်ပါမည်။}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "ကျွန်ုပ်အတွက် ဖျက်ရန်"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "ဤစက်မှ ဖျက်ရန်"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "လူတိုင်းအတွက် ဖျက်ရန်"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, other {Signal ၏ နောက်ဆုံးထွက်ဗားရှင်း အသုံးပြုသော အဖွဲ့ဝင်များသည် ဤမက်ဆေ့ချ်အား သင်ဖျက်လိုက်သည်ဆိုသည်ကို မြင်တွေ့ရပါမည်။}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "စက်အားလုံးမှ ဖျက်ရန်"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "ဖျက်ရန်"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "ကီးထည့်ရန်"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "ပြန်လည်ရယူရေးကီးကို မှတ်တမ်းတင်ပါ"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "သင့် ပြန်လည်ရယူရေးကီး"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "သင့်အကောင့်နှင့် ဒေတာကို ပြန်လည်ရယူရန် ဤကီးလိုအပ်ပါသည်။ ဤကီးကို လုံခြုံသောနေရာတွင် သိမ်းဆည်းပါ။ ၎င်းကိုဆုံးရှုံးသွားပါက သင့်အကောင့်ကို ပြန်လည်ရယူနိုင်မည်မဟုတ်ပါ။ <learnMoreLink>ပိုမိုလေ့လာပါ။</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "သင့်အကောင့်နှင့် ဒေတာကို ပြန်လည်ရယူရန် ဤကီးလိုအပ်ပါသည်။ ၎င်းကို ဘေးကင်းလုံခြုံသောနေရာတွင် သိမ်းဆည်းထားပြီး မည်သူနှင့်မျှ မျှဝေခြင်းမပြုပါနှင့်။ သင့် ပြန်လည်ရယူရေးကီးအတွက် Signal သည် မည််သည့်အခါမျှ မက်ဆေ့ချ်မပို့ပါ။ <learnMoreLink>ပိုမိုလေ့လာရန်။</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "သင့်အဆက်အသွယ်များက သင့်အမည်နှင့် ဓာတ်ပုံကို မြင်နိုင်ပြီး ၎င်းတို့အတွက် မဝှက်ထားပါက \"ကျွန်ုပ်၏ စတိုရီ\" ရှိ ပို့စ်များကို မြင်နိုင်ပါသည်"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "သင့်စက်များအားလုံးတွင် ချိန်ကိုက်ပြီး ဖျက်လိုက်ပါမည်"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "မက်ဆေ့ချ်များ သို့မဟုတ် ချက်(တ်)များကို ဖျက်လိုက်သောအခါ ၎င်းတို့ကို သင့်ဖုန်းနှင့် အခြားချိတ်ထားသော စက်များအားလုံးမှ ဖျက်လိုက်ပါမည်။"
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "ရပြီ"
   },
   "icu:Stories__title": {
     "messageformat": "စတိုရီများ"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "သင့်အချက်အလက်ကို လျှို့ဝှက်ထားပါသည်"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal သည် သင်လှူဒါန်းသည့်အခါတွင် သင့်ကိုယ်ရေးကိုယ်တာအချက်အလက်များကို စုဆောင်းခြင်း သို့မဟုတ် သိမ်းဆည်းထားခြင်းမရှိပါ။</paragraph><paragraph>သင်၏လှူဒါန်းမှုများကို လက်ခံရရှိရန် ကျွန်ုပ်တို့၏ ငွေပေးချေမှု စီမံဆောင်ရွက်သူအဖြစ် Stripe ကို အသုံးပြုပါသည်။ ကျွန်ုပ်တို့သည် ၎င်းတို့အား သင်ပေးထားသော အချက်အလက်များကို အသုံးပြုခြင်း၊ ထားသိုခြင်း သို့မဟုတ် သိမ်းဆည်းခြင်းမပြုပါ။</paragraph><paragraph>Signal သည် သင်၏လှူဒါန်းမှုကို သင်၏ Signal အကောင့်နှင့် ချိတ်ဆက်၍မရပါ။</paragraph><paragraph>သင်၏ပံ့ပိုးမှုအတွက် ကျေးဇူးတင်ပါသည်။</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "မှီခိုမှုကင်းသည့် အကျိုးအမြတ်မယူသော အဖွဲ့အစည်းတစ်ခုအနေဖြင့်  Signal သည် သီးသန့်မက်ဆေ့ချ်ပေးပို့ခြင်းနှင့် ဖုန်းခေါ်ဆိုမှုများကို အလေးအနက်ထားပါသည်။ ကြော်ငြာများ မရှိ၊ ခြေရာခံခြင်း မရှိ၊ စောင့်ကြည့်ခြင်း မရှိ။ Signal ကို ပံ့ပိုးရန် ယနေ့ပင် လှူဒါန်းလိုက်ပါ။"

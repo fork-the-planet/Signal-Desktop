@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "अर्धवट पाठविले, तपशीलांसाठी क्लिक करा"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "अंशतः हटवले, पुन्हा प्रयत्न करा"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "अंशतः हटवले, तपशील पाहण्यासाठी क्लिक करा"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "हा संदेश हटविला गेला होता."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "ॲडमिन {admin} यांनी हा संदेश हटवला"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "विस्तारित करा"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "फाईल संलग्न करा"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "फोटोस आणि व्हिडिओस"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "निवडलेले संदेश अग्रेषित करा"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, one {संदेश {count,number} हटवायचा?} other {संदेश {count,number} हटवायचे?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, one {निवडलेला संदेश हटवायचा का?} other {निवडलेले {count,number} संदेश हटवायचे का?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, one {हा संदेश आपणाला कुणासाठी हटवणे आवडेल?} other {हे संदेश आपणाला कुणासाठी हटवणे आवडेल?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, one {हा संदेश आपणाला कोणत्या डिव्हाइसेस वरून हटवणे आवडेल?} other {हे संदेश आपणाला कोणत्या डिव्हाइसेस वरून हटवणे आवडेल?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {हा संदेश आपल्या सर्व डिव्हाइसेसवरून हटवला जाईल.} other {हे संदेश आपल्या सर्व डिव्हाइसेसवरून हटविले जातील.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "माझ्यासाठी हटवा"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "या डिव्हाइस वरून हटवा"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "प्रत्येकासाठी हटवा"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, one {Signalच्या नवीन आवृत्तीवरील गट सदस्यांना तुम्ही हा संदेश हटवल्याचे दिसेल.} other {Signalच्या नवीन आवृत्तीवरील गट सदस्यांना तुम्ही हे संदेश हटवल्याचे दिसेल.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "सर्व डिव्हाइसेस वरून हटवा"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "हटवा"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "की प्रविष्ट करा"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "तुमची रीकव्हरी की नोंदवा"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "तुमची रीकव्हरी की"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "ही की आपले अकाऊंट आणि डेटा पुर्नप्राप्त करण्यासाठी आवश्यक आहे. ही की कोठेतरी सुरक्षित ठेवा. आपण जी ती गहाळ केल्यास, आपण आपले अकाऊंट पुर्नप्राप्त करू शकणार नाही. <learnMoreLink>अधिक जाणा.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "ही की तुमचे खाते आणि डेटा पुन्हा मिळवण्यासाठी आवश्यक आहे. ती कुठेतरी सुरक्षित ठिकाणी साठवून ठेवा आणि कधीही कोणालाही देऊ नका. Signal कधीही तुमची रीकव्हरी की मागण्यासाठी तुम्हाला संदेश पाठवणार नाही. <learnMoreLink>अधिक जाणून घ्या.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "आपले कनेक्शन्स आपले नाव आणि फोटो पाहू शकतात, आपण त्यांच्यापासून लपवत नाही तोपर्यंत ते \"माझ्या स्टोरी\" वर पोस्ट्स पाहू शकतात"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "आपल्या डिव्हाइसेस वर हटवणे आता सिंक केले आहे"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "जेव्हा आपण संदेश किंवा चॅट हटवता, तेव्हा त्यांना आपल्या सर्व डिव्हाइसेसवरून हटवले जाईल."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "कळले"
   },
   "icu:Stories__title": {
     "messageformat": "स्टोरीज"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "आपली माहिती गोपनीय आहे"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>तुम्ही जेव्हा देणगी देता तेव्हा Signal तुमची कोणतीही वैयक्तिक माहिती संग्रहित किंवा संकलित करत नाही.</paragraph> <paragraph>तुमच्या देणग्या प्राप्त करण्यासाठी आम्ही आमचा पेमेंट्स प्रोसेसर म्हणून स्ट्राईपचा वापर करतो. तुम्ही त्यांना प्रदान करत असलेली कोणतीही माहिती आम्ही मिळवत नाही, किंवा ती संग्रहित किंवा जतन करत नाही.</paragraph> <paragraph>Signal तुमच्या देणग्या तुमच्या Signal खात्याशी जोडत नाही आणि जोडू शकत नाही.</paragraph><paragraph>तुमच्या सपोर्टबद्दल धन्यवाद!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "एक स्वतंत्र ना-नफा संस्था असणारी Signal खासगी संदेशवहन आणि कॉल्ससाठी कायम कटिबद्ध आहे. कोणत्याही जाहिराती नाहीत, कोणतेही ट्रॅकर्स नाहीत, कोणावरही पाळत नाही. Signal ला सपोर्ट करण्यासाठी आजच देणगी द्या."

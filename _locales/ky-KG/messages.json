@@ -2264,9 +2264,6 @@
   "icu:partiallySent": {
     "messageformat": "Жарым-жартылай жөнөтүлдү. Кененирээк маалымат үчүн басыңыз."
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Жарым-жартылай өчүрүлдү. Кайра аракет кылуу үчүн басыңыз."
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Жарым-жартылай өчтү, себебин билүү үчүн басыңыз"
   },
@@ -2689,9 +2686,6 @@
   },
   "icu:message--getDescription--gif": {
     "messageformat": "GIF"
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "Бул билдирүү өчүрүлгөн."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Админ {admin} бул билдирүүнү өчүрдү"
@@ -4754,9 +4748,6 @@
   "icu:CompositionArea--expand": {
     "messageformat": "Кеңейтүү"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Файлды тиркөө"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Сүрөттөр/Видеолор"
   },
@@ -5207,26 +5198,17 @@
   "icu:SelectModeActions--forwardSelectedMessages": {
     "messageformat": "Тандалган билдирүүлөрдү башка дарекке жөнөтүү"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "{count, plural, other {{count,number} билдирүүнү өчүрөсүзбү?}}"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "{count, plural, other {Тандалган {count,number} билдирүүнү өчүрөсүзбү?}}"
   },
   "icu:DeleteMessagesModal--description": {
     "messageformat": "{count, plural, other {Бул билдирүүлөрдү кимдер үчүн өчүрөсүз?}}"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "{count, plural, other {Бул билдирүүлөрдү кайсы түзмөктөрдөн өчүрөсүз?}}"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, other {Бул билдирүүлөр бардык түзмөктөрүңүздөн өчүрүлөт.}}"
   },
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Өзүмдө эле өчсүн"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Ушул түзмөктөн өчсүн"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Бардык жерде өчсүн"
@@ -5240,9 +5222,6 @@
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "{count, plural, other {Signal'дын соңку версияларындагы топтун катышуучулары ушул билдирүүлөрдү өчүргөнүңүздү көрүшөт.}}"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Бардык түзмөктөрдөн өчүрүү"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Өчүрүү"
@@ -6451,8 +6430,14 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Ачкычты киргизүү"
   },
+  "icu:Preferences--local-backups-record-recovery-key": {
+    "messageformat": "Калыбына келтирүү ачкычыңызды жаздырып алыңыз"
+  },
   "icu:Preferences--local-backups-recovery-key--title": {
     "messageformat": "Калыбына келтирүү ачкычыңыз"
+  },
+  "icu:Preferences--local-backups-record-backup-key-description": {
+    "messageformat": "Бул ачкыч менен аккаунтуңузду жана андагы нерселерди калыбына келтиресиз. Аны коопсуз жерде сактаңыз. Жоготуп алсаңыз, аккаунтуңузду калыбына келтире албай каласыз. <learnMoreLink>Кененирээк маалымат.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
     "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -6999,15 +6984,6 @@
   },
   "icu:SignalConnectionsModal__footer": {
     "messageformat": "Байланыштарыңыз аты-жөнүңүздү жана сүрөтүңүздү, \"Менин окуям\" бөлүмүндөгү постторду көрө алышат (эгер аларды жашырып койбосоңуз)"
-  },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Бардык түзмөктөрүңүздө өчүрүлөт"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "Билдирүүлөрдү же маектерди өчүргөнүңүздө, алар бардык түзмөктөрүңүздөн өчүп калат."
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Түшүндүм"
   },
   "icu:Stories__title": {
     "messageformat": "Окуялар"
@@ -7840,9 +7816,6 @@
   },
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Маалыматыңыз купуя сакталууда"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Салым кошкондо, Signal сизге байланыштуу эч кандай жеке маалымат чогултпайт же сактабайт.</paragraph><paragraph>Салым түрүндөгү төлөмдөрүңүздү Stripe кызматы аркылуу алабыз. Аларга берген бир дагы маалыматыңызды албайбыз, сактабайбыз же жазып албайбыз.</paragraph><paragraph>Signal салымыңызды Signal аккаунтуңузга байланыштыра албайт жана байланыштырбайт.</paragraph><paragraph>Колдоо көрсөткөнүңүз үчүн чоң рахмат!</paragraph>"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "Көзкарандысыз коммерциялык эмес уюм катары Signal жазышуулар менен чалуулардын купуялыгын камсыз кылганга аракет кылат. Жарнамалар жок, эч ким сизге көз салбайт жана аңдыбайт. Signal'га колдоо көрсөтүп, бүгүн салым кошуңуз."
