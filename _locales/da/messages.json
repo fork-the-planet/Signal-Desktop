@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "Du kan kun fastgøre op til 4 chats"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "Vis"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "Ingen klistermærker er installeret"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Artist serie"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Klistermærker, du har modtaget"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Klistermærker fra indgående beskeder vises her"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Installér"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Afinstallér"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Du kan muligvis ikke installere pakken med klistermærke igen, hvis du ikke længere har kildebeskeden."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Klistermærkepakke"
@@ -2835,10 +2865,10 @@
     "messageformat": "Klistermærke uden emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Klistermærkepakke af {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Vis pakke"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Smiley"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Angiv nøgle"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "Skriv din gendannelsesnøgle ned"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "Denne nøgle er påkrævet for at gendanne din konto og dine data. Opbevar denne nøgle et sikkert sted. Hvis du mister den, vil du ikke kunne gendanne din konto. <learnMoreLink>Få mere at vide.</learnMoreLink>"
+    "messageformat": "Din gendannelsesnøgle"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Denne nøgle er påkrævet for at gendanne din konto og dine data. Opbevar den et sikkert sted, og del den aldrig med nogen. Signal kontakter dig aldrig for at bede om din gendannelsesnøgle. <learnMoreLink>Få mere at vide.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Del ikke gendannelsesnøglen"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal kontakter dig aldrig</strong> for at bede om din gendannelsesnøgle. Svar aldrig på en chat, der udgiver sig for at være fra Signal. Opbevar din gendannelsesnøgle et sikkert sted, og del den aldrig med nogen. <learnMoreLink>Få mere at vide.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "Forstået"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Del nøgle"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Del ikke nøgle"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Del ikke din gendannelsesnøgle med nogen. Dette giver dem mulighed for at overtage din konto. <strong>Signal kontakter dig aldrig</strong> for at bede om din gendannelsesnøgle. Svar aldrig på en chat, der udgiver sig for at være fra Signal."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Del ikke"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Indsæt nøgle"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Bekræft din gendannelsesnøgle"
@@ -6521,7 +6548,7 @@
     "messageformat": "Handlingen kunne ikke gennemføres, da systemautentificeringen mislykkedes. Prøv igen, eller åbn Signal-appen på din mobil og gå til Sikkerhedskopi-indstillinger for at se din gendannelsesnøgle."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Der opstod en fejl ved anmodning om systemgodkendelse til denne handling."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Se sikkerhedskopieringsnøgle"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "\"Dette ekstra E plager mig\", lød protesterne fra de utilfredse, som ikke kunne forlige sig med, at deres yndlingsfilendelse insisterede på at være fire bogstaver lang i stedet for tre. Vi er glade for at imødekomme ønsket (ændringen var en leg), og nu vil du se, at standardfilnavnet ved lagring af et JPEG-billede ender, som det bør: med .jpg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Hvis du vil omfavne din indre goth, har vi også tilføjet understøttelse af den mørke ikonstil i macOS."
   }
 }

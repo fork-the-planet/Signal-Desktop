@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "Voit kiinnittää enintään 4 keskustelua"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "Näytä"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "Tarroja ei ole asennettu"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Artist -sarja"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Vastaanotetut tarrat"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Vastaanotetut tarrat näytetään tässä"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Asenna"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Poista"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Tarrapakettia ei voi asentaa uudelleen, jos sen lähdeviesti on poistettu."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Tarrapaketti"
@@ -2835,10 +2865,10 @@
     "messageformat": "Tarra ilman emojia"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Tarrapaketti, tekijä {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Näytä paketti"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Anna avain"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "Tallenna palautusavain"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "Tätä avainta tarvitaan tilisi ja tietojesi palauttamiseen. Säilytä avain turvallisessa paikassa. Jos kadotat sen, et voi palauttaa tiliäsi. <learnMoreLink>Lue lisää.</learnMoreLink>"
+    "messageformat": "Palautusavaimesi"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Tätä avainta tarvitaan tilisi ja tietojesi palauttamiseen. Säilytä sitä turvallisessa paikassa, äläkä koskaan jaa sitä kenellekään. Signal ei koskaan lähetä viestejä pyytääkseen palautusavainta. <learnMoreLink>Lue lisää.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Älä jaa palautusavainta"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal ei koskaan lähetä viestejä</strong> pyytääkseen palautusavainta. Älä vastaa keskusteluihin, joissa lähettäjä esittää edustavansa Signalia. Säilytä palautusavainta turvallisessa paikassa, äläkä koskaan jaa sitä kenellekään. <learnMoreLink>Lue lisää.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "Selvä"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Jaa avain"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Älä jaa avainta"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Älä koskaan jaa palautusavaintasi kenellekään. Palautusavaimen avulla toinen voi ottaa tilisi hallintaansa. <strong>Signal ei koskaan lähetä viestejä</strong> pyytääkseen palautusavainta. Älä vastaa keskusteluihin, joissa lähettäjä esittää edustavansa Signalia."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Älä jaa"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Liitä avain"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Vahvista palautusavain"
@@ -6521,7 +6548,7 @@
     "messageformat": "Tätä toimintoa ei voitu suorittaa, koska järjestelmän todennus epäonnistui. Yritä uudelleen tai avaa Signal-sovellus mobiililaitteellasi ja avaa varmuuskopiointiasetukset nähdäksesi palautusavaimesi."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Toiminnon järjestelmätodennusta pyydettäessä tapahtui virhe."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Näytä avain"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Päivitimme JPEG-kuvatiedostojen oletuspäätteen muotoon jpg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Tuki tummille kuvakkeille macOS:ssa."
   }
 }

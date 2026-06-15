@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "Unaweza kubandika hadi gumzo 4 tu"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "Tazama"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "Hakuna vibandiko vilivyosimikwa"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Mfululizo wa Sanaa za Signal"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Vibandiko Ulivyovipokea"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Vibandiko kutoka kwa ujumbe unaoingia vitaonekana hapa"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Simika"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Sakinusha"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Unaweza shindwa kusimika upya pakiti hii ya vibandiko kama tena hauna chanzo cha ujumbe."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Pakiti ya Vibandiko"
@@ -2835,10 +2865,10 @@
     "messageformat": "Kibandiko bila emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Kifurushi cha Vibandiko vya {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Tazama Kifurushi"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Ingiza ufunguo"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "Rekodi ufunguo wako wa kurejesha akaunti"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "Ufunguo huu unahitajika kurejesha akaunti na data yako. Hifadhi ufunguo huu mahali salama. Ukiipoteza, hutaweza kurejesha akaunti yako. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
+    "messageformat": "Ufunguo wako wa kurejesha akaunti"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Ufunguo huu unahitajika kurejesha akaunti na data yako. Uhifadhi mahali ambapo ni salama na usimpe mtu yeyote idhini ya kuufikia. Signal haiwezi kukutumia ujumbe kuhusu ufunguo wako wa kurejesha akaunti. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Usiruhusu ufunguo wa kurejesha akaunti ufikiwe"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal haiwezi kukutumia ujumbe</strong>kuhusu ufunguo wako wa kurejesha akaunti. Usijibu gumzo linaloiga kuwa Signal. Hifadhi ufunguo wako wa kurejesha akaunti mahali salama na usiruhusu ufikiwe na mtu yeyote. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "Nimeelewa"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Shiriki ufunguo"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Usishiriki ufunguo"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Usishiriki ufunguo wa kurejesha akaunti na mtu yeyote. Hii itawawezesha waidhibiti akaunti yako. <strong>Signal haiwezi kukutumia ujumbe</strong> kuhusu ufunguo wako wa kurejesha akaunti. Usijibu gumzo linaloiga kuwa Signal."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Usishiriki"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Bandika ufunguo"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Thibitisha ufunguo wako wa kurejesha akaunti"
@@ -6521,7 +6548,7 @@
     "messageformat": "Kitendo hiki hakikuweza kukamilishwa kwa sababu imeshindwa kuthibitisha mfumo. Tafadhali jaribu tena au fungua programu ya Signal kwenye kifaa chako cha mkononi kisha uende katika Mipangilio ya Nakala Zilizohifadhiwa kutazama ufunguo wako wa kurejesha akaunti."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Hitilafu imetokea wakati wa kuomba uthibitishaji wa mfumo kwa kitendo hiki."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Tazama ufunguo"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "\"Hii E ya ziada inanikera,\" vilikuwa vilio na masikitiko ya watu ambao hawajafurahishwa na ukweli kwamba kiendelezi chao wanachokipenda cha faili kilikuwa na herufi nne badala ya tatu. Tunafurahi kuwaridhisha (mabadiliko yenyewe yalikuwa rahisi sana), na sasa utaona kwamba jina la faili chaguomsingi unapohifadhi picha ya JPEG litaishia kama inavyopaswa kwa kiendelezi cha .jpg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Ikiwa ungependa kuonyesha upande wako wa goth, pia tumeongeza uwezo wa kutumia mtindo wa aikoni za hali ya giza katika macOS."
   }
 }

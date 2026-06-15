@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "Gali prisegti daugiausiai 4 pokalbius"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "Žiūrėti"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "Nėra jokių įdiegtų lipdukų"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal menininkų serija"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Jūsų gauti lipdukai"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Čia bus rodomi lipdukai iš gaunamų žinučių"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Įdiegti"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Pašalinti"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Jei neturite pradinės žinutės, gali būti, kad negalėsite iš naujo įdiegti šio lipdukų paketo."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Lipdukų paketas"
@@ -2835,10 +2865,10 @@
     "messageformat": "Lipdukas be jaustuko"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "{author} lipdukų paketas"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Peržiūrėti paketą"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Šypsenėlės"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Įvesti raktą"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "Užsirašykite savo atkūrimo raktą"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "Šis raktas reikalingas norint atkurti paskyrą ir duomenis. Išsaugokite jį saugioje vietoje. Pamiršę raktą savo paskyros atkurti negalėsite. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
+    "messageformat": "Jūsų atkūrimo raktas"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Šis raktas reikalingas norint atkurti paskyrą ir duomenis. Išsaugokite jį saugioje vietoje ir niekada nesidalykite juo su kitais. „Signal“ niekada neprašys jūsų pateikti atkūrimo raktą. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Nesidalinkite atkūrimo raktu"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>„Signal“ niekada neprašys jūsų</strong> pateikti atkūrimo raktą. Niekada neatsakykite į pokalbius, kuriuose apsimetama „Signal“. Išsaugokite atkūrimo raktą saugioje vietoje ir niekada nesidalykite juo su kitais. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "Supratau"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Dalintis raktu"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Nesidalinkite raktu"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Su niekuo nesidalinkite savo atkūrimo raktu. Antraip šie asmenys galės perimti jūsų paskyrą. <strong>„Signal“ niekada neprašys jūsų</strong> pateikti atkūrimo raktą. Niekada neatsakykite į pokalbius, kuriuose apsimetama „Signal“."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Nesidalinkite"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Įklijuoti raktą"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Patvirtinkite atkūrimo raktą"
@@ -6521,7 +6548,7 @@
     "messageformat": "Šio veiksmo atlikti nepavyko, nes nepavyko sistemos autentifikavimas. Bandykite dar kartą arba atverkite „Signal“ programėlę mobiliajame įrenginyje ir norėdami peržiūrėti atkūrimo raktą eikite į „Atsarginės kopijos nustatymai“."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Prašant sistemos patvirtinti šį veiksmą įvyko klaida."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Peržiūrėti raktą"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Atnaujinome numatytąjį JPEG failų plėtinį į „jpg“."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Tamsaus piktogramų stiliaus palaikymas „macOS“."
   }
 }

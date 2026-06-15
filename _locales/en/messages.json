@@ -613,7 +613,7 @@
   },
   "icu:pinnedConversationsFull": {
     "messageformat": "You can only pin up to 4 chats",
-    "description": "Shown in a toast when a user attempts to pin more than the maximum number of chats"
+    "description": "(Deleted 2026/06/15) Shown in a toast when a user attempts to pin more than the maximum number of chats"
   },
   "icu:pinnedConversations--max": {
     "messageformat": "You can only pin up to {maxPinnedConversations, plural, one {# chat} other {# chats}}",
@@ -3684,15 +3684,15 @@
   },
   "icu:stickers--StickerManager--Available": {
     "messageformat": "Available",
-    "description": "Shown in the sticker pack manager as a tab for available stickers"
+    "description": "(Deleted 2026/06/15) Shown in the sticker pack manager as a tab for available stickers"
   },
   "icu:stickers--StickerManager--InstalledPacks": {
     "messageformat": "Installed",
-    "description": "Shown in the sticker pack manager above your installed sticker packs."
+    "description": "(Deleted 2026/06/15) Shown in the sticker pack manager above your installed sticker packs."
   },
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "No stickers installed",
-    "description": "Shown in the sticker pack manager when you don't have any installed sticker packs."
+    "description": "(Deleted 2026/06/15) Shown in the sticker pack manager when you don't have any installed sticker packs."
   },
   "icu:stickers--StickerManager--MyStickers--None": {
     "messageformat": "No sticker packs, add stickers to send to your friends.",
@@ -3712,7 +3712,7 @@
   },
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Stickers You Received",
-    "description": "Shown in the sticker pack manager above sticker packs which you have received in messages."
+    "description": "(Deleted 2026/06/15) Shown in the sticker pack manager above sticker packs which you have received in messages."
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Shared With You",
@@ -3724,7 +3724,7 @@
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Stickers from incoming messages will appear here",
-    "description": "Shown in the sticker pack manager when you have not received any sticker packs in messages."
+    "description": "(Deleted 2026/06/15) Shown in the sticker pack manager when you have not received any sticker packs in messages."
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Install",
@@ -8570,7 +8570,7 @@
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
     "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>",
-    "description": "Body of the dialog warning the user not to share their recovery key, shown after copying the recovery key."
+    "description": "(Deleted 2026/06/15) Body of the dialog warning the user not to share their recovery key, shown after copying the recovery key."
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "Got it",
@@ -8586,7 +8586,7 @@
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
     "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal.",
-    "description": "Body of the second confirmation dialog shown before allowing the user to paste their recovery key into a chat."
+    "description": "(Deleted 2026/06/15) Body of the second confirmation dialog shown before allowing the user to paste their recovery key into a chat."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
     "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>",
@@ -8594,11 +8594,11 @@
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Don't share",
-    "description": "Button to cancel pasting the recovery key into a chat on the second confirmation dialog."
+    "description": "(Deleted 2026/06/15) Button to cancel pasting the recovery key into a chat on the second confirmation dialog."
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
     "messageformat": "Paste key",
-    "description": "Button to confirm pasting the recovery key into a chat on the second confirmation dialog."
+    "description": "(Deleted 2026/06/15) Button to confirm pasting the recovery key into a chat on the second confirmation dialog."
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Confirm your recovery key",

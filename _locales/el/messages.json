@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "Μπορείς να καρφιτσώσεις μέχρι 4 συνομιλίες"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "Εμφάνιση"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "Δεν υπάρχουν εγκατεστημένα αυτοκόλλητα"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Σειρά καλλιτεχνών Signal"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Αυτοκόλλητα που έχεις λάβει"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Αυτοκόλλητα από εισερχόμενα μηνύματα θα εμφανίζονται εδώ"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Εγκατάσταση"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Απεγκατάσταση"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Ίσως να μη μπορέσεις να επανεγκαταστήσεις αυτό το πακέτο αυτοκολλήτων αν δεν έχεις πια το αρχικό μήνυμα."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Πακέτο αυτοκολλήτων"
@@ -2835,10 +2865,10 @@
     "messageformat": "Αυτοκόλλητο χωρίς emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Πακέτο αυτοκόλλητων από τον χρήστη {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Προβολή πακέτου"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Εισαγωγή κλειδιού"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "Κατάγραψε το κλειδί ανάκτησης"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "Αυτό το κλειδί απαιτείται για την ανάκτηση του λογαριασμού και των δεδομένων σου. Αποθήκευσε αυτό το κλειδί με ασφάλεια. Εάν το χάσεις, δεν θα μπορείς να ανακτήσεις τον λογαριασμό σου. <learnMoreLink>Μάθε περισσότερα.</learnMoreLink>"
+    "messageformat": "Το κλειδί ανάκτησής σου"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Αυτό το κλειδί απαιτείται για την ανάκτηση του λογαριασμού και των δεδομένων σου. Αποθήκευσε το με ασφάλεια και μην το κοινοποιήσεις ποτέ σε κανέναν. Το Signal δεν θα επικοινωνήσει ποτέ μαζί σου για το κλειδί ανάκτησής σου. <learnMoreLink>Μάθε περισσότερα.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Μην κοινοποιήσεις το κλειδί ανάκτησής σου"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Το Signal δεν θα επικοινωνήσει ποτέ μαζί σου</strong> για το κλειδί ανάκτησής σου. Μην απαντάς ποτέ σε μηνύματα από το Signal. Αποθήκευσε το κλειδί ανάκτησης με ασφάλεια και μην το κοινοποιήσεις ποτέ σε κανέναν. <learnMoreLink>Μάθε περισσότερα.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "Εντάξει"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Κοινοποίηση κλειδιού"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Μην κοινοποιήσεις το κλειδί"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Μην κοινοποιείς το κλειδί ανάκτησής σου σε κανέναν. Αυτό θα τους επιτρέψει να αποκτήσουν πρόσβαση στον λογαριασμό σου <strong>Το Signal δεν θα επικοινωνήσει ποτέ μαζί σου</strong> για το κλειδί ανάκτησής σου. Μην απαντάς ποτέ σε μηνύματα από το Signal."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Μην το κοινοποιείς"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Επικόλληση κλειδιού"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Επιβεβαίωσε το κλειδί ανάκτησης"
@@ -6521,7 +6548,7 @@
     "messageformat": "Η ενέργεια αυτή δεν μπόρεσε να ολοκληρωθεί λόγω αποτυχίας της επαλήθευσης συστήματος. Δοκίμασε ξανά ή άνοιξε την εφαρμογή Signal στο κινητό σου και πήγαινε στις «Ρυθμίσεις αντιγράφων ασφαλείας» για να δεις το κλειδί ανάκτησης."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Παρουσιάστηκε σφάλμα κατά την αίτηση επαλήθευσης συστήματος για αυτήν την ενέργεια."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Προβολή κλειδιού"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Ενημερώσαμε την προεπιλεγμένη επέκταση αρχείου για τις εικόνες JPEG σε jpg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Υποστήριξη για το στυλ «σκοτεινά εικονίδια» στο macOS."
   }
 }

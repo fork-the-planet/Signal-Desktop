@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "Var piespraust 4 sarunas"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "Skatīt"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "Nav instalētu uzlīmju"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Mākslas Sērija"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Jūsu saņemtās Uzlīmes"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Šeit parādīsies uzlīmes no ienākošajām ziņām"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Instalēt"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Atinstalēt"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Iespējams, nevarēsiet atkārtoti instalēt šo uzlīmju komplektu, ja jums vairs nebūs avota ziņojuma."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Uzlīmju komplekts"
@@ -2835,10 +2865,10 @@
     "messageformat": "Uzlīme bez emocijzīmes"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Uzlīmju komplekts, ko izstrādājis {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Skatīt komplektu"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emocijzīme"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Ievadīt atslēgu"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "Saglabājiet savu atkopšanas atslēgu"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "Šī atslēga ir nepieciešama, lai atgūtu jūsu kontu un datus. Noglabājiet šo atslēgu drošā vietā. Ja to pazaudēsiet, nevarēsiet atgūt savu kontu. <learnMoreLink>Uzziniet vairāk.</learnMoreLink>"
+    "messageformat": "Jūsu atkopšanas atslēga"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Šī atslēga ir nepieciešama jūsu konta un datu atgūšanai. Glabājiet atslēgu drošā vietā un nevienam neizpaudiet. Signal darbinieki jums nekad nerakstīs un neprasīs atkopšanas atslēgu. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Neizpaudiet savu atkopšanas atslēgu"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal darbinieki jums nekad nerakstīs</strong> un neprasīs atkopšanas atslēgu. Nekad neatbildiet uz sarunu, kurā lietotājs uzdodas par Signal darbinieku. Glabājiet savu atkopšanas atslēgu drošā vietā un nevienam neizpaudiet. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "Skaidrs"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Norādīt atslēgu"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Nenorādīt atslēgu"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Nevienam neizpaudiet savu atkopšanas atslēgu. Tādējādi jūsu konts var tikt pārņemts. <strong>Signal darbinieki nekad jums nerakstīs</strong> un neprasīs jūsu atkopšanas atslēgu. Nekad neatbildiet uz sarunu, kurā lietotājs uzdodas par Signal darbinieku."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Nenorādīt"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Ielīmēt atslēgu"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Apstipriniet atkopšanas atslēgu"
@@ -6521,7 +6548,7 @@
     "messageformat": "Šo darbību nevarēja pabeigt, jo sistēmas autentifikācija neizdevās. Lūdzu, mēģini vēlreiz vai atver Signal lietotni savā mobilajā ierīcē un dodies uz rezerves kopiju iestatījumiem, lai skatītu savu atkopšanas atslēgu."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Pieprasot sistēmas autentifikāciju šai darbībai, radās kļūda."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Skatīt atslēgu"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "“Šis liekais E burts mūs kaitina,” pikti sauca ļaudis, jo viņu iecienītākais faila paplašinājums sastāvēja no četriem burtiem, nevis trim. Mēs ar prieku to labojām (tas nebija sarežģīti), tāpēc tagad redzēsiet, ka noklusējuma faila nosaukums, saglabājot JPEG failu, beigsies tā, kā tam jābūt, proti, kā jpg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Ja vēlaties atbrīvot savu iekšējo gotu, operētājsistēmā macOS tagad atbalstām arī tumšo ikonu stilu."
   }
 }

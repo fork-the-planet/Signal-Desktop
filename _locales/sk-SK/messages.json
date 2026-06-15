@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "Môžete pripnúť najviac 4 čety"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "Zobraziť"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "Žiadne nainštalované nálepky"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Zbierka od výtvarníkov Signalu"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Prijaté nálepky"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Tu uvidíte nálepky z prichádzajúcich správ"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Inštalovať"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Odinštalovať"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Ak viac nemáte zdrojovú správu, možno nebudete môcť preinštalovať balík nálepiek."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Balík nálepiek"
@@ -2835,10 +2865,10 @@
     "messageformat": "Nálepka bez emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Balíček nálepiek od {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Zobraziť balíček"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emotikony"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Zadajte kód kľúča"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "Zaznamenajte si kľúč na obnovenie"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "Tento kľúč je potrebný na obnovenie vášho účtu a údajov. Uložte ho na bezpečné miesto. Ak ho stratíte, nebudete môcť svoj účet obnoviť. <learnMoreLink>Zistiť viac.</learnMoreLink>"
+    "messageformat": "Váš kľúč na obnovenie"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Tento kľúč je potrebný na obnovenie vášho účtu a údajov. Uschovajte si ho na bezpečnom mieste a nikdy ho s nikým nezdieľajte. Signal vám nikdy nepošle správu s požiadavkou o poskytnutie kľúča na obnovenie. <learnMoreLink>Zistiť viac.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Nezdieľajte kľúč na obnovenie"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal vám nikdy nepošle správu</strong> s požiadavkou o poskytnutie kľúča na obnovenie. Nikdy neodpovedajte na správy, ktoré sa vydávajú za Signal. Uschovajte si kľúč na obnovenie na bezpečnom mieste a nikdy ho s nikým nezdieľajte. <learnMoreLink>Zistiť viac.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "Rozumiem"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Zdieľať kľúč"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Nezdieľať kľúč"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Nezdieľajte svoj kľúč na obnovenie s nikým. V opačnom prípade umožníte iným prevziať kontrolu nad vaším účtom. <strong>Signal vám nikdy nepošle správu</strong> s požiadavkou o poskytnutie kľúča na obnovenie. Nikdy neodpovedajte na správy, ktoré sa vydávajú za Signal."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Nezdieľať"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Vložiť kľúč"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Potvrďte kľúč na obnovenie"
@@ -6521,7 +6548,7 @@
     "messageformat": "Túto akciu nebolo možné dokončiť, pretože overenie systému zlyhalo. Skúste to znova alebo otvorte aplikáciu Signal na svojom mobilnom zariadení a prejdite do nastavení zálohovania, kde nájdete svoj kľúč na obnovenie."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Pri žiadaní o systémové overenie pre túto akciu došlo k chybe."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Zobraziť kľúč"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Zmenili sme predvolenú príponu súboru pre obrázky JPEG na jpg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Podpora pre tmavý režim ikon v systéme macOS."
   }
 }

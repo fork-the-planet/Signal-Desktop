@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "ನೀವು ಕೇವಲ ಗರಿಷ್ಠ 4 ಚಾಟ್‌ಗಳನ್ನು ಪಿನ್ ಮಾಡಬಹುದು"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "ವೀಕ್ಷಿಸಿ"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "ಇಲ್ಲ ಸ್ಟಿಕ್ಕರ್‌ಗಳು ಸ್ಥಾಪಿಸಲಾಗಿದೆ"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal ಕಲಾವಿದ ಸರಣಿ"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "ಸ್ಟಿಕ್ಕರ್‌ಗಳು ನೀವು ಸ್ವೀಕರಿಸಲಾಗಿದೆ"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "ಸ್ಟಿಕ್ಕರ್‌ಗಳು ಒಳಬರುವ ಸಂದೇಶಗಳಿಂದ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "ಸ್ಥಾಪಿಸಿ"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "ಅನ್‌‌ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "ನೀವು ಇನ್ನು ಮೂಲ ಸಂದೇಶವನ್ನು ಹೊಂದಿಲ್ಲದಿದ್ದರೆ ಈ ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್ ಅನ್ನು ನೀವು ಪುನಃ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್"
@@ -2835,10 +2865,10 @@
     "messageformat": "ಎಮೋಜಿ ಇಲ್ಲದ ಸ್ಟಿಕ್ಕರ್"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "{author} ಅವರಿಂದ ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "ಪ್ಯಾಕ್ ವೀಕ್ಷಿಸಿ"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "ಎಮೋಜಿ"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "ಕೀ ನಮೂದಿಸಿ"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀಯನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಿ"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "ನಿಮ್ಮ ಖಾತೆ ಮತ್ತು ಡೇಟಾವನ್ನು ರಿಕವರ್ ಮಾಡಲು ಈ ಕೀ ಅಗತ್ಯವಿದೆ. ಈ ಕೀಯನ್ನು ಎಲ್ಲಾದರೂ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹಿಸಿ. ನೀವು ಅದನ್ನು ಕಳೆದುಕೊಂಡರೆ, ನಿಮ್ಮ ಖಾತೆಯನ್ನು ರಿಕವರ್ ಮಾಡಲು ನಿಮಗೆ ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
+    "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀ"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "ನಿಮ್ಮ ಖಾತೆ ಮತ್ತು ಡೇಟಾವನ್ನು ರಿಕವರ್ ಮಾಡಲು ಈ ಕೀ ಅಗತ್ಯವಿದೆ. ಇದನ್ನು ಸುರಕ್ಷಿತವಾದ ಕಡೆ ಸಂಗ್ರಹಿಸಿ ಮತ್ತು ಯಾರೊಂದಿಗೂ ಅದನ್ನು ಹಂಚಿಕೊಳ್ಳಬೇಡಿ. ನಿಮ್ಮ ರಿಕವರಿ ಕೀಗಾಗಿ Signal ಎಂದಿಗೂ ನಿಮಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದಿಲ್ಲ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "ರಿಕವರಿ ಕೀ ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಬೇಡಿ"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀಗಾಗಿ <strong>Signal ಎಂದಿಗೂ ನಿಮಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದಿಲ್ಲ</strong>. Signal ಎಂದು ಸೋಗುಹಾಕುವ ಚಾಟ್‌ಗೆ ಎಂದಿಗೂ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ. ನಿಮ್ಮ ರಿಕವರಿ ಕೀ ಅನ್ನು ಸುರಕ್ಷಿತವಾದ ಕಡೆ ಸಂಗ್ರಹಿಸಿ ಮತ್ತು ಯಾರೊಂದಿಗೂ ಅದನ್ನು ಹಂಚಿಕೊಳ್ಳಬೇಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "ಅರ್ಥವಾಯಿತು"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "ಕೀ ಹಂಚಿಕೊಳ್ಳಿ"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "ಕೀ ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಬೇಡಿ"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀ ಅನ್ನು ಯಾರೊಂದಿಗೂ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ. ಇದು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅವರ ನಿಯಂತ್ರಣಕ್ಕೆ ತೆಗೆದುಕೊಳ್ಳಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ. ನಿಮ್ಮ ರಿಕವರಿ ಕೀಗಾಗಿ <strong>Signal ಎಂದಿಗೂ ನಿಮಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದಿಲ್ಲ</strong>. Signal ಎಂದು ಸೋಗುಹಾಕುವ ಚಾಟ್‌ಗೆ ಎಂದಿಗೂ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "ಹಂಚಿಕೊಳ್ಳಬೇಡಿ"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "ಕೀ ಪೇಸ್ಟ್ ಮಾಡಿ"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀಯನ್ನು ದೃಢೀಕರಿಸಿ"
@@ -6521,7 +6548,7 @@
     "messageformat": "ಸಿಸ್ಟಂ ದೃಢೀಕರಣ ವಿಫಲವಾದ ಕಾರಣ ಈ ಕ್ರಿಯೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲಾಗಲಿಲ್ಲ. ಪುನಃ ಪ್ರಯತ್ನಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಾಧನದಲ್ಲಿ Signal ಆ್ಯಪ್ ತೆರೆಯಿರಿ ಮತ್ತು ನಿಮ್ಮ ರಿಕವರಿ ಕೀ ಅನ್ನು ವೀಕ್ಷಿಸಲು ಬ್ಯಾಕಪ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಹೋಗಿ."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "ಈ ಕ್ರಿಯೆಗಾಗಿ ಸಿಸ್ಟಂ ದೃಢೀಕರಣವನ್ನು ವಿನಂತಿಸುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ."
   },
   "icu:Preferences__view-key": {
     "messageformat": "ಕೀ ವೀಕ್ಷಿಸಿ"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "\"ಈ ಹೆಚ್ಚುವರಿ E ನನ್ನನ್ನು ಕಿರಿಕಿರಿಗೊಳಿಸುತ್ತಿದೆ\" ಎಂದು, ತಮ್ಮ ಮೆಚ್ಚಿನ ಫೈಲ್ ಎಕ್ಸ್‌ಟೆನ್ಷನ್ ಮೂರು ಅಕ್ಷರಗಳ ಬದಲು ನಾಲ್ಕು ಅಕ್ಷರಗಳಾಗಿರುವುದರಿಂದ ಅಸಮಾಧಾನಗೊಂಡ ಜನರ ಕೂಗು ಮತ್ತು ಮನವಿಗಳು ಕೇಳಿಬಂದವು. ನಿಮ್ಮನ್ನು ಸಂತೋಷಪಡಿಸಲು ನಾವು ಈ ಬದಲಾವಣೆಯನ್ನು ಮಾಡಿದ್ದೇವೆ (ಇದು ತುಂಬಾ ಸುಲಭವಾದ ಬದಲಾವಣೆ ಆಗಿತ್ತು), ಮತ್ತು ಈಗ JPEG ಅನ್ನು ಉಳಿಸುವಾಗ ಡೀಫಾಲ್ಟ್ ಫೈಲ್ ಹೆಸರಿನ ಅಂತ್ಯವು ನೀವು ನಿರೀಕ್ಷಿಸಿದಂತೆ ಸರಿಯಾಗಿ ಡಾಟ್jpg ಎಂದಿರುತ್ತದೆ."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "ನೀವು ಗಾಢ ಥೀಮ್‌ಗಳನ್ನು ಇಷ್ಟಪಡುವವರಾಗಿದ್ದರೆ, macOS ನಲ್ಲಿ ಡಾರ್ಕ್ ಐಕಾನ್ ಶೈಲಿಯ ಬೆಂಬಲವನ್ನೂ ನಾವು ಸೇರಿಸಿದ್ದೇವೆ."
   }
 }

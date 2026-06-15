@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "Puoi fissare un massimo di 4 chat"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "Mostra"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "Nessun pacchetto di adesivi installato"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Serie artisti di Signal"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Adesivi che hai ricevuto"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Gli adesivi dei messaggi in arrivo appariranno qui"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Installa"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Disinstalla"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Potresti non essere più in grado di reinstallare questo pacchetto di adesivi se non hai più il messaggio di origine."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Pacchetto di adesivi"
@@ -2835,10 +2865,10 @@
     "messageformat": "Adesivo senza emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Pacchetto di sticker di {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Vedi pacchetto"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Inserisci chiave"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "Salva la tua chiave di ripristino"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "Questa chiave ti servirà per recuperare il tuo account e i tuoi dati. Salvala in un posto sicuro. Se la perdi, non potremo aiutarti a ripristinare il tuo account. <learnMoreLink>Scopri di più.</learnMoreLink>"
+    "messageformat": "La tua chiave di ripristino"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Questa chiave ti servirà per recuperare il tuo account e i tuoi dati. Salvala in un posto sicuro e non condividerla mai con altre persone. Signal non ti invierà mai un messaggio per chiederti la chiave di ripristino. <learnMoreLink>Scopri di più.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Non condividere la chiave di ripristino"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal non ti invierà mai un messaggio</strong> per chiederti la chiave di ripristino. Non rispondere mai a una chat che cerca di impersonare il team di Signal. Salva la tua chiave di ripristino in un posto sicuro e non condividerla mai con altre persone. <learnMoreLink>Scopri di più.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "Capito"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Condividi la chiave"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Non condividere la chiave"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Non condividere la tua chiave di ripristino con altre persone. Se ne entrano in possesso, potranno prendere controllo del tuo account. <strong>Signal non ti invierà mai un messaggio</strong> per chiederti la chiave di ripristino. Non rispondere mai a una chat che cerca di impersonare il team di Signal."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Non condividere"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Copia la chiave"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Conferma la tua chiave di ripristino"
@@ -6521,7 +6548,7 @@
     "messageformat": "Non è stato possibile completare quest'azione per via di un errore nel sistema di autenticazione. Riprova oppure apri l'app di Signal sul tuo dispositivo mobile, vai nelle Impostazioni del backup e vedi la tua chiave di ripristino."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Si è verificato un errore durante la richiesta di autenticazione da parte del sistema per questo processo."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Visualizza chiave"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "\"Questa E di troppo mi rovina proprio la giornata\" - disse chiunque vedeva l'estensione preferita di un file con quattro lettere anziché tre, strappandosi i capelli dalla disperazione. Siamo quindi qui per riportare l'ordine e la pace nella vita quotidiana dei nostri utenti: da ora vedrai che l'estensione standard quando si salva un file JPEG terminerà con \"jpg.\""
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Se la tua fase \"goth\" adolescenziale non è mai finita, o se vorresti ritornarci per un po', puoi iniziare con l'icona di Signal, che ora supporta lo stile del tema scuro di macOS."
   }
 }

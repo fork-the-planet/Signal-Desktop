@@ -1,0 +1,21 @@
+Signal is a messaging app with privacy at its core. It is free and easy to use, with strong end-to-end encryption that keeps your chats and calls completely private. Signal can't read your messages or listen to your calls, and no one else can either. 
+
+• Signal on MacOS links with Signal on your phone. 
+
+• Send end-to-end encrypted texts, voice messages, photos, videos, GIFs, and files for free. 
+
+• Fan nasctha le grúpchomhráite le suas le 1,000 duine. Rialaigh na daoine a bhfuil cead acu postáil a dhéanamh agus bainistigh baill den ghrúpa le socruithe ceadanna riarthóra.
+
+• Call your friends with crystal-clear end-to-end encrypted voice and video calls. Group calls support up to 75 people.
+
+• Dearadh Signal ar mhaithe le do phríobháideachas. Níl aon eolas againn ort ná ar na daoine lena mbíonn tú ag caint. Ciallaíonn ár bPrótacal foinse oscailte Signal nach féidir linn do theachtaireachtaí a léamh ná éisteacht le do glaonna. Ní féidir le duine ar bith eile é sin a dhéanamh ach oiread. Gan aon chúldoirse, bailiú sonraí ná comhghéilleadh. 
+
+• Share photo, text, and video Stories that disappear after 24 hours. Privacy settings keep you in charge of exactly who can see each Story.
+
+• Tá Signal neamhspleách seachbhrabúsach; cineál eile teicneolaíochta ó chineál eile eagraíochta. Mar eagraíocht neamhbhrabúis 501c3 faighimid tacaíocht le do thabhartais, ní ó fhógróirí ná infheisteoirí. 
+
+• Chun ceist a chur nó tacaíocht nó tuilleadh faisnéise a fháil, téigh chuig https://support.signal.org/
+
+Chun eolas a chur ar ár gcód foinse, téigh chuig https://github.com/signalapp 
+
+Follow us on X @signalapp and Instagram @signal_app

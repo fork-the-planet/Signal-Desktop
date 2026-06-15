@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "คุณปักหมุดแชทได้ 4 รายการเท่านั้น"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "ดู"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "ยังไม่ได้ติดตั้งสติกเกอร์"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "ซีรีส์สติกเกอร์โดยศิลปิน Signal"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "สติกเกอร์ที่คุณได้รับ"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "สติกเกอร์จากข้อความเข้าจะปรากฏที่นี่"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "ติดตั้ง"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "ลบ"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "คุณอาจไม่สามารถติดตั้งชุดสติกเกอร์นี้ได้อีก หากคุณไม่มีข้อความต้นทางอีกแล้ว"
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "ชุดสติกเกอร์"
@@ -2835,10 +2865,10 @@
     "messageformat": "สติกเกอร์ที่ไม่มีอีโมจิ"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "ผู้สร้างชุดสติกเกอร์: {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "ดูชุดสติกเกอร์"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "อีโมจิ"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "ใส่กุญแจ"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "บันทึกกุญแจกู้คืนของคุณ"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "คุณจำเป็นต้องใช้กุญแจนี้ในการกู้คืนบัญชีและข้อมูล โปรดเก็บกุญแจนี้ไว้ในที่ปลอดภัย คุณจะไม่สามารถกู้คืนบัญชีได้หากทำกุญแจหาย <learnMoreLink>เรียนรู้เพิ่มเติม</learnMoreLink>"
+    "messageformat": "กุญแจกู้คืนของคุณ"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "คุณจำเป็นต้องใช้กุญแจนี้ในการกู้คืนบัญชีและข้อมูล โปรดเก็บกุญแจของคุณไว้ในที่ปลอดภัย รวมถึงไม่บอกรหัสนี้กับใคร Signal จะไม่ส่งข้อความหาคุณเพื่อขอกุญแจกู้คืน <learnMoreLink>เรียนรู้เพิ่มเติม</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "อย่าแชร์กุญแจกู้คืน"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal จะไม่ส่งข้อความหาคุณ</strong>เพื่อขอกุญแจกู้คืน โปรดอย่าตอบกลับแชทที่แอบอ้างว่าเป็น Signal และโปรดเก็บกุญแจกู้คืนของคุณไว้ในที่ปลอดภัย รวมถึงไม่บอกรหัสนี้กับใคร <learnMoreLink>เรียนรู้เพิ่มเติม</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "เข้าใจแล้ว"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "แชร์กุญแจ"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "อย่าแชร์กุญแจ"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "อย่าเปิดเผยกุญแจกู้คืนของคุณกับใคร ข้อมูลนี้จะทำให้บุคคลอื่นสามารถเข้าถึงบัญชีคุณ <strong>Signal จะไม่ส่งข้อความหาคุณ</strong>เพื่อขอกุญแจกู้คืน โปรดอย่าตอบกลับแชทที่แอบอ้างว่าเป็น Signal"
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "ยกเลิกการแชร์"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "วางกุญแจ"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "ยืนยันกุญแจกู้คืนของคุณ"
@@ -6521,7 +6548,7 @@
     "messageformat": "ไม่สามารถดำเนินการให้เสร็จสมบูรณ์ได้เนื่องจากรับรองความถูกต้องของระบบไม่สำเร็จ โปรดลองอีกครั้งหรือเปิดแอป Signal บนอุปกรณ์เคลื่อนที่ของคุณ แล้วไปที่การตั้งค่าข้อมูลสำรองเพื่อดูกุญแจกู้คืนของคุณ"
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "เกิดข้อผิดพลาดขณะส่งคำขอรับรองความถูกต้องของระบบสำหรับการดำเนินการนี้"
   },
   "icu:Preferences__view-key": {
     "messageformat": "ดูกุญแจ"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "อัปเดตให้แอปบันทึกไฟล์ภาพ JPEG ด้วยนามสกุล jpg แบบอัตโนมัติ"
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "เพิ่มการรองรับไอคอนแบบมืดบน macOS"
   }
 }

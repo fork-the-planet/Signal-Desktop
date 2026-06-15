@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "നിങ്ങൾക്ക് 4 ചാറ്റുകൾ വരെ മാത്രമേ പിൻ ചെയ്യാൻ കഴിയൂ"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "കാണുക"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "സ്റ്റിക്കറുകളൊന്നും ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal ആർട്ടിസ്റ്റ് സീരീസ്"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "നിങ്ങൾക്ക് ലഭിച്ച സ്റ്റിക്കറുകൾ"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "വരുന്ന സന്ദേശങ്ങളിൽ നിന്നുള്ള സ്റ്റിക്കറുകൽ ഇവിടെ ദൃശ്യമാകും"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "ഇൻസ്റ്റാൾ"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "അൺഇൻസ്റ്റാൾ ചെയ്യുക"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "നിങ്ങൾക്ക് ഇനി ഉറവിട സന്ദേശം ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സ്റ്റിക്കർ പായ്ക്ക് വീണ്ടും ഇൻസ്റ്റാൾ ചെയ്യാൻ കഴിഞ്ഞേക്കില്ല."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "സ്റ്റിക്കർ പാക്ക്"
@@ -2835,10 +2865,10 @@
     "messageformat": "ഇമോജി ഇല്ലാത്ത സ്റ്റിക്കർ"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "{author} രൂപകൽപ്പന ചെയ്ത സ്റ്റിക്കർ പായ്ക്ക്"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "പായ്ക്ക് കാണുക"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "ഇമോജി"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "കീ നൽകുക"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീ രേഖപ്പെടുത്തുക"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "നിങ്ങളുടെ അക്കൗണ്ടും ഡാറ്റയും വീണ്ടെടുക്കാൻ ഈ കീ ആവശ്യമാണ്. ഈ കീ സുരക്ഷിതമായ ഒരിടത്ത് സൂക്ഷിക്കുക. നിങ്ങൾക്കത് നഷ്‌ടപ്പെടുകയാണെങ്കിൽ, നിങ്ങളുടെ അക്കൗണ്ട് വീണ്ടെടുക്കാൻ നിങ്ങൾക്ക് കഴിയില്ല. <learnMoreLink>കൂടുതലറിയുക.</learnMoreLink>"
+    "messageformat": "നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീ"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "നിങ്ങളുടെ അക്കൗണ്ടും ഡാറ്റയും വീണ്ടെടുക്കാൻ ഈ കീ ആവശ്യമാണ്. ഇത് സുരക്ഷിതമായ എവിടെയെങ്കിലും സൂക്ഷിക്കുക, അത് ഒരിക്കലും ആരുമായും പങ്കിടരുത്. Signal ഒരിക്കലും നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീയ്ക്കായി നിങ്ങൾക്ക് സന്ദേശം അയയ്ക്കില്ല. <learnMoreLink>കൂടുതലറിയുക.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "വീണ്ടെടുക്കൽ കീ പങ്കിടരുത്"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal ഒരിക്കലും നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീയ്ക്കായി നിങ്ങൾക്ക് സന്ദേശം അയയ്ക്കില്ല</strong>. Signal ആണെന്ന് നടിച്ച് വരുന്ന ചാറ്റുകളോട് ഒരിക്കലും പ്രതികരിക്കരുത്. നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീ സുരക്ഷിതമായ എവിടെയെങ്കിലും സൂക്ഷിക്കുക, അത് ഒരിക്കലും ആരുമായും പങ്കിടരുത്. <learnMoreLink>കൂടുതലറിയുക.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "മനസ്സിലായി"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "കീ പങ്കിടുക"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "കീ പങ്കിടരുത്"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീ ആരുമായും പങ്കിടരുത്. ഇത് നിങ്ങളുടെ അക്കൗണ്ട് കൈക്കലാക്കാൻ അവരെ അനുവദിക്കും. <strong>Signal ഒരിക്കലും നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീയ്ക്കായി നിങ്ങൾക്ക് സന്ദേശം അയയ്ക്കില്ല.</strong> Signal ആണെന്ന് നടിച്ച് വരുന്ന ചാറ്റുകളോട് ഒരിക്കലും പ്രതികരിക്കരുത്."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "പങ്കിടരുത്"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "കീ പേസ്റ്റ് ചെയ്യുക"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീ സ്ഥിരീകരിക്കുക"
@@ -6521,7 +6548,7 @@
     "messageformat": "സിസ്റ്റം ഓതന്റിക്കേഷൻ പരാജയപ്പെട്ടതിനാൽ ഈ പ്രവർത്തനം പൂർത്തിയാക്കാൻ കഴിഞ്ഞില്ല. ദയവായി വീണ്ടും ശ്രമിക്കുക അല്ലെങ്കിൽ നിങ്ങളുടെ മൊബൈലിലെ Signal ആപ്പ് തുറന്ന് വീണ്ടെടുക്കൽ കീ കാണുന്നതിനായി ബാക്കപ്പ് ക്രമീകരണങ്ങൾ സന്ദർശിക്കുക."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "ഈ നടപടിയ്ക്കായി സിസ്റ്റം പരിശോധിച്ചുറപ്പിക്കൽ അഭ്യർത്ഥിക്കുന്നതിനിടയിൽ ഒരു പിശക് സംഭവിച്ചു."
   },
   "icu:Preferences__view-key": {
     "messageformat": "കീ കാണുക"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "തങ്ങൾക്ക് ഏറ്റവും പ്രിയപ്പെട്ട ഫയൽ എക്സ്റ്റൻഷൻ മൂന്ന് അക്ഷരങ്ങൾക്ക് പകരം നാല് അക്ഷരങ്ങളായതിൽ അതൃപ്തരായ ആളുകളുടെ പരാതികളും അഭ്യർത്ഥനകളും ആയിരുന്നു, \"ഈ അധികമായി വന്ന E എന്നെ അലോസരപ്പെടുത്തുന്നു\" എന്നത്. ആ ആഗ്രഹം നിറവേറ്റാൻ കഴിഞ്ഞതിൽ ഞങ്ങൾക്ക് സന്തോഷമുണ്ട് (ഈ മാറ്റം വളരെ എളുപ്പമായിരുന്നു), ഇനി മുതൽ ഒരു JPEG ഫയൽ സേവ് ചെയ്യുമ്പോൾ അതിന്റെ ഡിഫോൾട്ട് ഫയൽ നാമം പ്രതീക്ഷിക്കുന്നത് പോലെ തന്നെ .jpg എന്ന് അവസാനിക്കുന്നത് നിങ്ങൾക്ക് കാണാം."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "നിങ്ങൾക്ക് ഡാർക്ക് തീം കൂടുതൽ ഇഷ്ടമാണെങ്കിൽ, macOS-ലെ ഡാർക്ക് ഐക്കൺ ശൈലിക്കുള്ള പിന്തുണയും ഞങ്ങൾ ഇതിൽ ചേർത്തിട്ടുണ്ട്."
   }
 }

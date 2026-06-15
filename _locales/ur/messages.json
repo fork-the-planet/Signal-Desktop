@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "آپ صرف 4 چیٹس تک پن کر سکتے ہیں"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "ویو"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "اسٹیکر انسٹال نہیں ہوئے"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal آرٹسٹ سیریز"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "اسٹیکرز جو آپ کو ملے ہیں"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "آنے والے پیغامات سے اسٹیکرز یہاں ظاہر ہونگے"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "انسٹال"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "ان انسٹال"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "اگر آپ کے پاس پیغام کا ذریعہ نہیں ہے تو آپ اس اسٹیکر پیک کو دوبارہ انسٹال نہیں کرسکتے ہیں۔"
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "اسٹیکر پیک"
@@ -2835,10 +2865,10 @@
     "messageformat": "ایموجی کے بغیر اسٹیکر"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "اسٹیکر پیک منجانب {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "پیک دیکھیں"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "ایموجی"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "کیی درج کریں"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "اپنی ریکوری کیی کو ریکارڈ کریں"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "یہ کیی آپ کے اکاؤنٹ اور ڈیٹا کو بحال کرنے کے لیے درکار ہوتی ہے۔ اس کیی کو کسی محفوظ جگہ پر اسٹور کریں۔ اگر آپ اسے کھو دیتے ہیں، تو آپ اپنا اکاؤنٹ بحال نہیں کر سکیں گے۔ <learnMoreLink>مزید جانیں۔</learnMoreLink>"
+    "messageformat": "آپ کی ریکوری کیی"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "یہ کیی آپ کے اکاؤنٹ اور ڈیٹا کو بحال کرنے کے لیے درکار ہے۔ اسے کسی محفوظ جگہ پر اسٹور کریں اور کبھی کسی کے ساتھ شیئر نہ کریں۔ Signal آپ کو آپ کی بحالی کی کیی کے لیے کبھی میسج نہیں کرے گا۔ <learnMoreLink>مزید جانیں۔</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "بحالی کی کیی شیئر مت کریں"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal آپ کو آپ کی بحالی کی کیی کے لیے کبھی میسج نہیں</strong> کرے گا۔ ایسی چیٹ کا کبھی جواب نہ دیں جو Signal بننے کا ڈھونگ کر رہی ہو۔ اپنی بحالی کی کیی کسی محفوظ جگہ پر اسٹور کریں اور اسے کسی کے ساتھ شیئر مت کریں۔ <learnMoreLink>مزید جانیں۔</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "سمجھ گیا"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "کیی شیئر کریں"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "کیی شیئر مت کریں"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "اپنی بحالی کی کیی کسی کے ساتھ شیئر نہ کریں۔ اس سے وہ آپ کا اکاؤنٹ اپنے قبضے میں لے سکتے ہیں۔ <strong>Signal آپ کو آپ کی بحالی کی کیی کے لیے کبھی میسج نہیں</strong> کرے گا۔ ایسی چیٹ کا کبھی جواب نہ دیں جو Signal بننے کا ڈھونگ کر رہی ہو۔"
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "شیئر مت کریں"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "کیی پیسٹ کریں"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "اپنی ریکوری کیی کی تصدیق کریں"
@@ -6521,7 +6548,7 @@
     "messageformat": "یہ کارروائی مکمل نہیں ہو سکی کیونکہ سسٹم کی توثیق ناکام ہو گئی ہے۔ براہ کرم دوبارہ کوشش کریں یا اپنی موبائل ڈیوائس پر Signal ایپ کھولیں اور اپنی بحالی کی کیی دیکھنے کے لیے بیک اپ سیٹنگز پر جائیں۔"
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "اس عمل کے لیے سسٹم کی توثیق کی درخواست کرتے وقت ایک خرابی پیش آئی۔"
   },
   "icu:Preferences__view-key": {
     "messageformat": "کیی دیکھیں"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "\"یہ ایکسٹرا E مجھے بہت تنگ کر رہا ہے\" یہ ان لوگوں کی چیخ و پکار ہے جن کی سب سے فیورٹ فائل ایکسٹنشن تین کی بجائے چار حروف کی ہو گئی۔ لیکن اب ہمیں خوشی ہے کہ ایک بار پھر JPEG فائل محفوظ کرتے ہوئے ڈیفالٹ فائل نام اسی طرح محفوظ ہو گا جیسے ڈاٹ jpg میں ہونا چاہیے (اور یہ تبدیلی چٹکیوں میں ہو گئی)۔"
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "اگر آپ اپنے اندر کے گوتھ کو قبول کرنا چاہتے ہیں کہ تو ہم macOS میں گہرے آئیکن اسٹائل کے لیے سپورٹ بھی شامل کر دی ہے۔"
   }
 }

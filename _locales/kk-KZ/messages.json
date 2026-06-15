@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "Сіз тек 4 чатқа дейін бекіте аласыз"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "Көру"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "Стикерлер орнатылмады"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Artist топтамасы"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Алынған стикерлер"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Кіріс хаттардағы стикерлер осы жерде пайда болады"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Орнату"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Орнатылғанды жою"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Бастапқы хат болмаса, бұл стикерлер жинағын қайта орната алмауыңыз мүмкін."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Стикерлер жинағы"
@@ -2835,10 +2865,10 @@
     "messageformat": "Эмоджиі жоқ стикер"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "{author} ұсынған стикерлер жинағы"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Жинақты көру"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Эмодзи"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Кілтті енгізу"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "Қалпына келтіру кілтін жазыңыз"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "Бұл кілт аккаунт пен деректерді қалпына келтіру үшін қажет. Бұл кілтті қауіпсіз жерде сақтаңыз. Оны жоғалтсаңыз, аккаунтыңызды қалпына келтіре алмайсыз. <learnMoreLink>Толығырақ.</learnMoreLink>"
+    "messageformat": "Қалпына келтіру кілтіңіз"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Бұл кілт аккаунт пен деректерді қалпына келтіру үшін қажет. Оны қауіпсіз бір жерде сақтаңыз және оны ешкіммен бөліспеңіз. Signal ешқашан сізге хабарласып, қалпына келтіру кілтін сұрамайды. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Қалпына келтіру кілтін бөлісуге болмайды"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal ешқашан сізге хабарласып,</strong> қалпына келтіру кілтін сұрамайды. Signal-дың атын жамылған чаттарға ешқашан жауап бермеңіз. Қалпына келтіру кілтіңізді қауіпсіз бір жерде сақтаңыз және оны ешкіммен бөліспеңіз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "Түсінікті"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Кілтті бөлісу"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Кілтті бөліспеу"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Қалпына келтіру кілтін ешкіммен бөліспеңіз. Әйтпесе аккаунтыңызды басқалар иеленіп алуы мүмкін. <strong>Signal ешқашан сізге хабарласып,</strong> қалпына келтіру кілтін сұрамайды. Signal-дың атын жамылған чаттарға ешқашан жауап бермеңіз."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Бөліспеу"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Кілтті қою"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Қалпына келтіру кілтін растау"
@@ -6521,7 +6548,7 @@
     "messageformat": "Бұл әрекетті орындау мүмкін емес, себебі жүйе аутентификациясы орындалмады. Әрекетті қайталап көріңіз немесе мобильдік құрылғыңыздағы Signal қолданбасын ашып, қалпына келтіру кілтін көру үшін сақтық көшірме параметрлеріне кіріңіз."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Бұл әрекет үшін жүйе рұқсатын сұрау кезінде қате шықты."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Кілтті көру"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "«Мына артық E әрпі мені әбден мезі етті», — деп пайдаланушылар үш емес, төрт әріптен тұратын сүйікті файл кеңейтіміне қатысты наразылық танытты. Бұл пайдаланушылардың тілегін орындағанымызға қуаныштымыз (өзгерісті енгізу қиын болған жоқ). Енді JPEG файлын сақтағанда, әдепкі файл атауы .jpeg емес, .jpg кеңейтімімен сақталады."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Қараңғы түстер стилін ұнататын болсаңыз, енді macOS-тағы қараңғы белгіше стилін де пайдалана аласыз."
   }
 }

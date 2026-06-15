@@ -452,6 +452,9 @@
   "icu:pinnedConversationsFull": {
     "messageformat": "Jy kan slegs tot 4 kletse merk met 'n speld"
   },
+  "icu:pinnedConversations--max": {
+    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+  },
   "icu:view": {
     "messageformat": "Bekyk"
   },
@@ -2789,6 +2792,12 @@
   "icu:stickers--StickerManager--InstalledPacks--Empty": {
     "messageformat": "Geen plakkers geïnstalleer nie"
   },
+  "icu:stickers--StickerManager--MyStickers--None": {
+    "messageformat": "No sticker packs, add stickers to send to your friends."
+  },
+  "icu:stickers--StickerManager--AddStickers": {
+    "messageformat": "Add stickers"
+  },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Kunstenaarreeks"
   },
@@ -2798,17 +2807,38 @@
   "icu:stickers--StickerManager--ReceivedPacks": {
     "messageformat": "Plakkers wat jy ontvang het"
   },
+  "icu:stickers--StickerManager--ReceivedPacks2": {
+    "messageformat": "Shared With You"
+  },
+  "icu:stickers--StickerManager--ReceivedPacksDescription": {
+    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+  },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Plakkers van inkomende boodskappe sal hier verskyn"
   },
   "icu:stickers--StickerManager--Install": {
     "messageformat": "Installeer"
   },
+  "icu:stickers--StickerManager--Installed": {
+    "messageformat": "Installed"
+  },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Deïnstalleer"
   },
   "icu:stickers--StickerManager--UninstallWarning": {
     "messageformat": "Jy mag dalk nie in staat wees om hierdie plakkerpakket weer te installeer as jy nie meer die bronboodskap het nie."
+  },
+  "icu:stickers--StickerManagerHeader--All": {
+    "messageformat": "All"
+  },
+  "icu:stickers--StickerManagerHeader--MyStickers": {
+    "messageformat": "My Stickers"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Add": {
+    "messageformat": "Add"
+  },
+  "icu:stickers--StickerManagerPackContextMenu--Remove": {
+    "messageformat": "Remove"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Plakkerpakket"
@@ -2835,10 +2865,10 @@
     "messageformat": "Plakker sonder 'n emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Plakkerpakket deur {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Besigtig pakket"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -6421,41 +6451,38 @@
   "icu:Preferences--local-backups-enter-backup-key": {
     "messageformat": "Voer sleutel in"
   },
-  "icu:Preferences--local-backups-record-recovery-key": {
-    "messageformat": "Maak 'n aantekening van jou herwinsleutel"
-  },
   "icu:Preferences--local-backups-recovery-key--title": {
-    "messageformat": "Your recovery key"
-  },
-  "icu:Preferences--local-backups-record-backup-key-description": {
-    "messageformat": "Hierdie sleutel is nodig om jou rekening en data te herstel. Bewaar hierdie sleutel iewers waar dit veilig is. As jy dit verloor, sal jy nie jou rekening kan herstel nie. <learnMoreLink>Vind meer uit.</learnMoreLink>"
+    "messageformat": "Jou herwinsleutel"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Hierdie sleutel is nodig om jou rekening en data te herstel. Bêre dit iewers op ’n veilige plek en moet dit nooit met enigiemand deel nie. Signal sal nooit vir jou 'n boodskap vir jou herwinsleutel stuur nie. <learnMoreLink>Vind meer uit.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Moenie die herwinsleutel deel nie"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal sal nooit vir jou 'n boodskap</strong> vir jou herwinsleutel stuur nie. Moet nooit reageer op 'n klets wat voorgee dat dit van Signal af is nie. Bêre jou herwinsleutel iewers op ’n veilige plek en moet dit nooit met enigiemand deel nie. <learnMoreLink>Vind meer uit.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
-    "messageformat": "Got it"
+    "messageformat": "Ek verstaan"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Deel sleutel"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Moenie sleutel deel nie"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Moenie jou herwinsleutel met enigiemand deel nie. Dit sal hulle toelaat om jou rekening oor te neem. <strong>Signal sal nooit vir jou 'n boodskap</strong> vir jou herwinsleutel stuur nie. Moet nooit reageer op 'n klets wat voorgee dat dit van Signal af is nie."
+  },
+  "icu:CompositionInput__recovery-key-warning--description": {
+    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Moenie deel nie"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Plak sleutel"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Bevestig jou herwinsleutel"
@@ -6521,7 +6548,7 @@
     "messageformat": "Hierdie aksie kon nie voltooi word nie, omdat stelselbevestiging misluk het. Probeer asseblief weer of maak die Signal-toepassing op jou mobiele toestel oop en gaan na Rugsteuninstellings om jou herwinsleutel te besigtig."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "'n Fout het voorgekom toe die stelsel om bevestiging vir hierdie handeling aangevra is."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Besigtig sleutel"
@@ -8260,9 +8287,9 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Ons het die verstek-lêeruitbreiding vir JPEG-beelde na jpg verander."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Ondersteuning vir die donker ikoonstyl in macOS."
   }
 }
