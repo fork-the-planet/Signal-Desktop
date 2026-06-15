@@ -323,7 +323,6 @@ const {
   omit,
   partition,
   pick,
-  sortBy,
 } = lodash;
 
 type ConversationRow = Readonly<{
@@ -5818,13 +5817,15 @@ function getSortedDocuments(
       type: 'contacts',
     }) as Array<ContactMediaItemDBType>;
 
-    return sortBy(
-      (documents as Array<MediaItemDBType | ContactMediaItemDBType>).concat(
-        contacts
-      ),
-      [raw => raw.message.receivedAt, raw => raw.message.sentAt],
-      ['DESC', 'DESC']
-    ).slice(0, options.limit);
+    return lodash
+      .orderBy(
+        (documents as Array<MediaItemDBType | ContactMediaItemDBType>).concat(
+          contacts
+        ),
+        [raw => raw.message.receivedAt, raw => raw.message.sentAt],
+        ['desc', 'desc']
+      )
+      .slice(0, options.limit);
   })();
 }
 
