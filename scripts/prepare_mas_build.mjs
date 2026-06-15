@@ -10,12 +10,14 @@ import { getBuildCreationTimestamp } from './utils/getBuildCreationTimestamp.mjs
 import packageJson from '../package.json' with { type: 'json' };
 
 const version = parseVersion(packageJson.version);
-if (version.channel !== 'alpha') {
-  console.error('Only alpha versions can be published as MAS builds');
+if (version.channel !== 'alpha' && version.channel !== 'prod') {
+  console.error('Only alpha or prod versions can be published as MAS builds');
   process.exit(1);
 }
 
 console.log('prepare_mas_build: updating package.json');
+
+const buildCreationTimestamp = getBuildCreationTimestamp();
 
 // -------
 
@@ -29,9 +31,11 @@ const PRODUCTION_PRODUCT_NAME = 'Signal';
 const APP_ID_PATH = 'build.appId';
 const PRODUCTION_APP_ID = 'org.whispersystems.signal-desktop';
 
+const BUNDLE_SHORT_VERSION_PATH = 'build.mac.bundleShortVersion';
 const BUNDLE_VERSION_PATH = 'build.mac.bundleVersion';
+const NON_MAS_BUNDLE_SHORT_VERSION = undefined;
 const NON_MAS_BUNDLE_VERSION = '1';
-const MAS_BUNDLE_VERSION = moment(getBuildCreationTimestamp()).format('YYYY.MM.DDHHMM');
+const MAS_BUNDLE_VERSION = moment(buildCreationTimestamp).format('YYYY.MM.DDHHmm');
 
 const FILE_EXCLUSION_LIST = ['!fonts/emoji.woff2'];
 
@@ -40,7 +44,7 @@ const FILE_EXCLUSION_LIST = ['!fonts/emoji.woff2'];
 /**
  * @param {object} object
  * @param {string} objectPath
- * @param {string} expected
+ * @param {string | undefined} expected
  */
 function checkValue(object, objectPath, expected) {
   const actual = _.get(object, objectPath);
@@ -54,6 +58,7 @@ function checkValue(object, objectPath, expected) {
 checkValue(packageJson, NAME_PATH, PRODUCTION_NAME);
 checkValue(packageJson, PRODUCT_NAME_PATH, PRODUCTION_PRODUCT_NAME);
 checkValue(packageJson, APP_ID_PATH, PRODUCTION_APP_ID);
+checkValue(packageJson, BUNDLE_SHORT_VERSION_PATH, NON_MAS_BUNDLE_SHORT_VERSION);
 checkValue(packageJson, BUNDLE_VERSION_PATH, NON_MAS_BUNDLE_VERSION);
 for (const file of FILE_EXCLUSION_LIST) {
   if (packageJson.build.files.includes(file)) {
@@ -63,7 +68,16 @@ for (const file of FILE_EXCLUSION_LIST) {
 
 // -------
 
-_.set(packageJson, VERSION_PATH, `${version.major}.${version.minor}.${version.patch}`);
+if (version.channel === 'alpha') {
+  const { major, minor, patch } = version;
+  const tag = moment(buildCreationTimestamp).format('YYYYMMDDHHmm');
+  _.set(
+  packageJson,
+    VERSION_PATH,
+    `${major}.${minor}.${patch}-alpha.${tag}`
+  );
+}
+_.set(packageJson, BUNDLE_SHORT_VERSION_PATH, `${version.major}.${version.minor}.${version.patch}`);
 _.set(packageJson, BUNDLE_VERSION_PATH, MAS_BUNDLE_VERSION);
 for (const file of FILE_EXCLUSION_LIST) {
   packageJson.build.files.push(file);
