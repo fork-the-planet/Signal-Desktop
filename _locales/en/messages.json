@@ -3008,10 +3008,6 @@
     "messageformat": "Partially sent, click for details",
     "description": "Shown on outgoing message if it is partially sent"
   },
-  "icu:partiallyDeleted": {
-    "messageformat": "Partially deleted, click to retry",
-    "description": "(Deleted 2026/03/04) Shown on a message which was deleted for everyone if the delete wasn't successfully sent to everyone"
-  },
   "icu:partiallyDeleted--clickForDetails": {
     "messageformat": "Partially deleted, click for details",
     "description": "Shown on a message which was deleted for everyone if the delete wasn't successfully sent to everyone"
@@ -3565,10 +3561,6 @@
   "icu:message--getDescription--gif": {
     "messageformat": "GIF",
     "description": "Shown when quoting a GIF."
-  },
-  "icu:message--deletedForEveryone": {
-    "messageformat": "This message was deleted.",
-    "description": "(Deleted 2026/03/04) Shown in a message's bubble when the message has been deleted for everyone."
   },
   "icu:message--deletedByAdmin": {
     "messageformat": "Admin {admin} deleted this message",
@@ -6314,10 +6306,6 @@
     "messageformat": "Expand",
     "description": "Aria label for expanding composition area"
   },
-  "icu:CompositionArea--attach-file": {
-    "messageformat": "Attach file",
-    "description": "(Deleted 2026/03/04) Aria label for file attachment button in composition area"
-  },
   "icu:CompositionArea__AttachMenu__PhotosAndVideos": {
     "messageformat": "Photos & videos",
     "description": "Menu item to attach photos and videos"
@@ -6918,10 +6906,6 @@
     "messageformat": "Forward selected messages",
     "description": "conversation > in select mode > composition area actions > forward selected messsages action > accessibility label"
   },
-  "icu:DeleteMessagesModal--title": {
-    "messageformat": "Delete {count, plural, one {message} other {# messages}}?",
-    "description": "(Deleted 2026/03/04) delete selected messages > confirmation modal > title"
-  },
   "icu:DeleteMessagesModal--title-2": {
     "messageformat": "Delete selected {count, plural, one {message} other {# messages}}?",
     "description": "delete selected messages > confirmation modal > title"
@@ -6930,10 +6914,6 @@
     "messageformat": "Who would you like to delete {count, plural, one {this message} other {these messages}} for?",
     "description": "delete selected messages > confirmation modal > description"
   },
-  "icu:DeleteMessagesModal--description--noteToSelf": {
-    "messageformat": "What devices would you like to delete {count, plural, one {this message} other {these messages}} from?",
-    "description": "(Deleted 2026/03/04) within note to self conversation > delete selected messages > confirmation modal > description"
-  },
   "icu:DeleteMessagesModal--description--noteToSelf--deleteSync": {
     "messageformat": "{count, plural, one {This message} other {These messages}} will be deleted from all your devices.",
     "description": "within note to self conversation > delete selected messages > confirmation modal > description"
@@ -6941,10 +6921,6 @@
   "icu:DeleteMessagesModal--deleteForMe": {
     "messageformat": "Delete for me",
     "description": "delete selected messages > confirmation modal > delete for me"
-  },
-  "icu:DeleteMessagesModal--deleteFromThisDevice": {
-    "messageformat": "Delete from this device",
-    "description": "(Deleted 2026/03/04) within note to self conversation > delete selected messages > confirmation modal > delete from this device (same as delete for me)"
   },
   "icu:DeleteMessagesModal--deleteForEveryone": {
     "messageformat": "Delete for everyone",
@@ -6962,10 +6938,6 @@
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
     "messageformat": "Group members on the latest versions of Signal will see that you deleted {count, plural, one {this message} other {these messages}}.",
     "description": "delete selected messages > admin delete confirmation modal > description"
-  },
-  "icu:DeleteMessagesModal--deleteFromAllDevices": {
-    "messageformat": "Delete from all devices",
-    "description": "(Deleted 2026/03/04) within note to self conversation > delete selected messages > confirmation modal > delete from all devices (same as delete for everyone)"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Delete",
@@ -9314,18 +9286,6 @@
     "messageformat": "Your connections can see your name and photo, and can see posts to \"My Story\" unless you hide it from them",
     "description": "Additional information about signal connections and the stories they can see"
   },
-  "icu:LocalDeleteWarningModal__header": {
-    "messageformat": "Deleting is synced across your devices",
-    "description": "(Deleted 2026/02/18) Emphasized text at the top of the explainer dialog you get when you first delete a message or conversation"
-  },
-  "icu:LocalDeleteWarningModal__description": {
-    "messageformat": "When you delete messages or chats, they will be deleted from all of your devices.",
-    "description": "(Deleted 2026/02/18) More detailed description of new delete behavior shown in explainer dialog"
-  },
-  "icu:LocalDeleteWarningModal__confirm": {
-    "messageformat": "Got it",
-    "description": "(Deleted 2026/02/18) Button to dismiss the dialog explaining that 'delete for me' now syncs between devices"
-  },
   "icu:Stories__title": {
     "messageformat": "Stories",
     "description": "Title for the stories list"
@@ -10433,10 +10393,6 @@
   "icu:PreferencesDonations__privacy-modal-title": {
     "messageformat": "Your information is private",
     "description": "Title for the modal that explains donation privacy information"
-  },
-  "icu:PreferencesDonations__privacy-modal-content": {
-    "messageformat": "<paragraph>Signal does not collect or store any of your personal information when you make a donation.</paragraph><paragraph>We use Stripe as our payment processor to receive your donations. We don't access, store, or save any of the information you provide to them.</paragraph><paragraph>Signal does not and cannot connect your donation to your Signal account.</paragraph><paragraph>Thank you for your support!</paragraph>",
-    "description": "(Deleted 2026/02/12) Content for the modal that explains donation privacy information"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
     "messageformat": "As an independent nonprofit, Signal is committed to private messaging and calls. No ads, no trackers, no surveillance. Donate today to support Signal.",
