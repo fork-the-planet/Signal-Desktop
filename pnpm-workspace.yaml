@@ -43,7 +43,7 @@ auditConfig:
     - GHSA-2w69-qvjg-hvjx # sticker-creator > @remix-run/router
 
 overrides:
-  '@electron/rebuild@3.7.2>@electron/node-gyp': '10.2.0-electron.2'
+  '@electron/rebuild>node-gyp': '12.4.0'
   'canvas': '-'
   'jsdom': '-'
   'react-popper@2.3.0>react-dom': '19.2.4'
