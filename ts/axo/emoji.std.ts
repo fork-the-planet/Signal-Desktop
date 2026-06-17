@@ -644,12 +644,26 @@ export namespace Emoji {
    * -------------------
    */
 
+  type GetEmojiOnlyCountOptions = Readonly<{
+    limit: number;
+    ignoreWhitespace: boolean;
+  }>;
+
+  const NON_WHITESPACE_REGEX = /\S/;
+
+  function isWhitespaceOnly(input: string): boolean {
+    return !NON_WHITESPACE_REGEX.test(input);
+  }
+
   /**
    * Count the number of emoji in some text, returns 0 if there is non-emoji
    * text, or there is too many emoji
    * @internal
    */
-  function getEmojiOnlyCount(input: string, limit: number): number {
+  function getEmojiOnlyCount(
+    input: string,
+    options: GetEmojiOnlyCountOptions
+  ): number {
     if (isEmptyString(input)) {
       return 0; // fast path
     }
@@ -660,12 +674,15 @@ export namespace Emoji {
     // oxlint-disable-next-line typescript/no-unnecessary-qualifier
     for (const segment of Emoji.getSegments(input)) {
       if (segment.kind === 'text') {
+        if (options.ignoreWhitespace && isWhitespaceOnly(segment.value)) {
+          continue;
+        }
         return 0; // found other text
       }
       if (segment.kind === 'emoji') {
         count += 1;
       }
-      if (count > limit) {
+      if (count > options.limit) {
         return 0; // too many
       }
     }
@@ -679,7 +696,10 @@ export namespace Emoji {
    */
 
   export function isLoneEmoji(input: string): boolean {
-    const count = getEmojiOnlyCount(input, 1);
+    const count = getEmojiOnlyCount(input, {
+      limit: 1,
+      ignoreWhitespace: false,
+    });
     return count === 1;
   }
 
@@ -693,7 +713,10 @@ export namespace Emoji {
   export const MAX_JUMBO_EMOJI_COUNT = 5 satisfies JumboEmojiCount;
 
   export function getJumboEmojiCount(input: string): JumboEmojiCount {
-    const count = getEmojiOnlyCount(input, MAX_JUMBO_EMOJI_COUNT);
+    const count = getEmojiOnlyCount(input, {
+      limit: MAX_JUMBO_EMOJI_COUNT,
+      ignoreWhitespace: true,
+    });
     if (count === 0) {
       return null;
     }

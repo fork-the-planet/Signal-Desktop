@@ -690,6 +690,12 @@ describe('Emoji', () => {
       check('😀 a', false);
     });
 
+    it('returns false with whitespace', () => {
+      check('😀 ', false);
+      check(' 😀', false);
+      check('😀\n', false);
+    });
+
     describe('EMOJI_EDGE_CASES', () => {
       for (const test of EMOJI_EDGE_CASES) {
         it(test.label, () => {
@@ -733,6 +739,13 @@ describe('Emoji', () => {
     it('returns null for mixed text and emoji', () => {
       check('😀a', null);
       check('a😀', null);
+    });
+
+    it('returns count of emoji with spaces', () => {
+      check(' 😀 ', 1);
+      check('😀 😀', 2);
+      check('😀   😀', 2);
+      check('😀\n😀', 2);
     });
   });
 
