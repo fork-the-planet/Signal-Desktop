@@ -3624,15 +3624,6 @@ class CallingClass {
     });
     log.info(logId);
 
-    if (callRejectReason === CallRejectReason.ReceivedOfferWhileActive) {
-      // This is a special case where we won't update our local call, because we have
-      // an ongoing active call. The ended call would stomp on the active call.
-      log.info(
-        `${logId}: Got offer while active for conversation ${conversation?.idForLogging()}`
-      );
-      return;
-    }
-
     // Attempt to translate the rejection reason to its CallEndedReason
     // counterpart.
     const callEndedReason =
@@ -3664,16 +3655,24 @@ class CallingClass {
       'CallingClass.handleRejectedIncomingCallRequest'
     );
 
-    if (!this.#reduxInterface) {
-      log.error(`${logId}: Unable to update redux for call`);
-    }
+    if (callRejectReason === CallRejectReason.ReceivedOfferWhileActive) {
+      // This is a special case where we won't update our local call, because we have
+      // an ongoing active call. The ended call would stomp on the active call.
+      log.info(
+        `${logId}: Got offer while active for conversation ${conversation?.idForLogging()}`
+      );
+    } else {
+      if (!this.#reduxInterface) {
+        log.error(`${logId}: Unable to update redux for call`);
+      }
 
-    this.#reduxInterface?.callStateChange({
-      acceptedTime: null,
-      callEndedReason,
-      callState: CallState.Ended,
-      conversationId: conversation.id,
-    });
+      this.#reduxInterface?.callStateChange({
+        acceptedTime: null,
+        callEndedReason,
+        callState: CallState.Ended,
+        conversationId: conversation.id,
+      });
+    }
 
     await updateCallHistoryFromLocalEvent({
       callEvent,
