@@ -10988,5 +10988,9 @@
   "icu:WhatsNew__8.15--1": {
     "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS.",
     "description": "Release notes for 8.15"
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too.",
+    "description": "Release notes for 8.16"
   }
 }
