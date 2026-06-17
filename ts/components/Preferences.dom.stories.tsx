@@ -474,7 +474,6 @@ export default {
     isContentProtectionSupported: true,
     isContentProtectionNeeded: true,
     isMinimizeToAndStartInSystemTraySupported: true,
-    isPlaintextExportEnabled: true,
     lastLocalBackup: undefined,
     lastSyncTime: Date.now(),
     localeOverride: null,
@@ -744,13 +743,6 @@ DataUsage.args = {
 export const Donations = Template.bind({});
 Donations.args = {
   settingsLocation: { page: SettingsPage.Donations },
-};
-export const ChatsWithDisabledPlaintextExport = Template.bind({});
-ChatsWithDisabledPlaintextExport.args = {
-  settingsLocation: {
-    page: SettingsPage.Chats,
-  },
-  isPlaintextExportEnabled: false,
 };
 export const NotificationsPageWithThreeProfiles = Template.bind({});
 const threeProfiles = [

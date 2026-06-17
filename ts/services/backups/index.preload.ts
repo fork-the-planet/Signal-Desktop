@@ -118,7 +118,6 @@ import {
   StoragePermissionsError,
 } from '../../types/LocalExport.std.ts';
 import { getFreeDiskSpace } from '../../util/getFreeDiskSpace.node.ts';
-import { isFeaturedEnabledNoRedux } from '../../util/isFeatureEnabled.dom.ts';
 
 const { ensureFile, exists } = fsExtra;
 
@@ -661,14 +660,6 @@ export class BackupsService {
       exportDir = join(targetPath, `signal-export-${getTimestampForFolder()}`);
 
       await mkdir(exportDir, { recursive: true });
-
-      strictAssert(
-        isFeaturedEnabledNoRedux({
-          betaKey: 'desktop.plaintextExport.beta',
-          prodKey: 'desktop.plaintextExport.prod',
-        }),
-        'Plaintext export must be enabled'
-      );
 
       if (isOnline()) {
         await this.#waitForEmptyQueues('backups.exportPlaintext');

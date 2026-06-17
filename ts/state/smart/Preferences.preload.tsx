@@ -627,13 +627,6 @@ export function SmartPreferences(): JSX.Element | null {
   });
   const backupFreeMediaDays = getMessageQueueTime(items.remoteConfig) / DAY;
 
-  const isPlaintextExportEnabled = isFeaturedEnabledSelector({
-    betaKey: 'desktop.plaintextExport.beta',
-    currentVersion: version,
-    remoteConfig: items.remoteConfig,
-    prodKey: 'desktop.plaintextExport.prod',
-  });
-
   const isKeyTransparencyAvailable = isFeaturedEnabledSelector({
     betaKey: 'desktop.keyTransparency.beta',
     prodKey: 'desktop.keyTransparency.prod',
@@ -980,7 +973,6 @@ export function SmartPreferences(): JSX.Element | null {
           isMinimizeToAndStartInSystemTraySupported
         }
         isNotificationAttentionSupported={isNotificationAttentionSupported}
-        isPlaintextExportEnabled={isPlaintextExportEnabled}
         isSyncSupported={isSyncSupported}
         isSystemTraySupported={isSystemTraySupported}
         isInternalUser={isInternalUser}

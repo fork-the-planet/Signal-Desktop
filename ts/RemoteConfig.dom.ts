@@ -44,8 +44,6 @@ const SemverKeys = [
   'desktop.keyTransparency.prod',
   'desktop.localBackups.beta',
   'desktop.localBackups.prod',
-  'desktop.plaintextExport.beta',
-  'desktop.plaintextExport.prod',
   'desktop.pollSend1to1.beta',
   'desktop.pollSend1to1.prod',
   'desktop.remoteMute.send.beta',

@@ -204,7 +204,6 @@ export type PropsDataType = {
   isHideMenuBarSupported: boolean;
   isKeyTransparencyAvailable: boolean;
   isNotificationAttentionSupported: boolean;
-  isPlaintextExportEnabled: boolean;
   isSyncSupported: boolean;
   isSystemTraySupported: boolean;
   isMinimizeToAndStartInSystemTraySupported: boolean;
@@ -482,7 +481,6 @@ export function Preferences({
   isHideMenuBarSupported,
   isKeyTransparencyAvailable,
   isNotificationAttentionSupported,
-  isPlaintextExportEnabled,
   isSyncSupported,
   isSystemTraySupported,
   isMinimizeToAndStartInSystemTraySupported,
@@ -1307,33 +1305,29 @@ export function Preferences({
           />
         </SettingsRow>
 
-        {isPlaintextExportEnabled && (
-          <SettingsRow>
-            <Control
-              left={
-                <>
-                  <div>
-                    {i18n('icu:PlaintextExport--PreferencesRow--Header')}
-                  </div>
-                  <div className="Preferences__description">
-                    {i18n('icu:PlaintextExport--PreferencesRow--Description')}
-                  </div>
-                </>
-              }
-              right={
-                <div className="Preferences__right-button">
-                  <AxoButton.Root
-                    variant="secondary"
-                    size="lg"
-                    onClick={startPlaintextExport}
-                  >
-                    {i18n('icu:PlaintextExport--ActionButton')}
-                  </AxoButton.Root>
+        <SettingsRow>
+          <Control
+            left={
+              <>
+                <div>{i18n('icu:PlaintextExport--PreferencesRow--Header')}</div>
+                <div className="Preferences__description">
+                  {i18n('icu:PlaintextExport--PreferencesRow--Description')}
                 </div>
-              }
-            />
-          </SettingsRow>
-        )}
+              </>
+            }
+            right={
+              <div className="Preferences__right-button">
+                <AxoButton.Root
+                  variant="secondary"
+                  size="lg"
+                  onClick={startPlaintextExport}
+                >
+                  {i18n('icu:PlaintextExport--ActionButton')}
+                </AxoButton.Root>
+              </div>
+            }
+          />
+        </SettingsRow>
 
         {isSyncSupported && (
           <SettingsRow>
