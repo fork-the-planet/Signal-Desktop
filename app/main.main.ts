@@ -253,53 +253,51 @@ function showWindow() {
   }
 }
 
-if (!process.mas) {
-  log.info('making app single instance');
-  const gotLock = app.requestSingleInstanceLock();
-  if (!gotLock) {
-    log.info('quitting; we are the second instance');
-    app.exit();
-  } else {
-    app.on('second-instance', (_e: Electron.Event, argv: Array<string>) => {
-      // Workaround to let AllowSetForegroundWindow succeed.
-      // See https://www.npmjs.com/package/@signalapp/windows-dummy-keystroke for a full explanation of why this is needed.
-      if (OS.isWindows()) {
-        sendDummyKeystroke();
+log.info('making app single instance');
+const gotLock = app.requestSingleInstanceLock();
+if (!gotLock) {
+  log.info('quitting; we are the second instance');
+  app.exit();
+} else {
+  app.on('second-instance', (_e: Electron.Event, argv: Array<string>) => {
+    // Workaround to let AllowSetForegroundWindow succeed.
+    // See https://www.npmjs.com/package/@signalapp/windows-dummy-keystroke for a full explanation of why this is needed.
+    if (OS.isWindows()) {
+      sendDummyKeystroke();
+    }
+
+    // Someone tried to run a second instance, we should focus our window
+    if (mainWindow) {
+      if (mainWindow.isMinimized()) {
+        mainWindow.restore();
       }
 
-      // Someone tried to run a second instance, we should focus our window
-      if (mainWindow) {
-        if (mainWindow.isMinimized()) {
-          mainWindow.restore();
-        }
+      showWindow();
+    }
 
-        showWindow();
+    const route = maybeGetIncomingSignalRoute(argv);
+    if (route != null) {
+      handleSignalRoute(route);
+    }
+    return true;
+  });
+
+  // This event is received in macOS packaged builds.
+  app.on('open-url', (event, incomingHref) => {
+    event.preventDefault();
+    const route = parseSignalRoute(incomingHref);
+
+    if (route != null) {
+      // When the app isn't open and you click a signal link to open the app, then
+      // this event will emit before mainWindow is ready. We save the value for later.
+      if (mainWindow == null || !mainWindow.webContents) {
+        macInitialOpenUrlRoute = route;
+        return;
       }
 
-      const route = maybeGetIncomingSignalRoute(argv);
-      if (route != null) {
-        handleSignalRoute(route);
-      }
-      return true;
-    });
-
-    // This event is received in macOS packaged builds.
-    app.on('open-url', (event, incomingHref) => {
-      event.preventDefault();
-      const route = parseSignalRoute(incomingHref);
-
-      if (route != null) {
-        // When the app isn't open and you click a signal link to open the app, then
-        // this event will emit before mainWindow is ready. We save the value for later.
-        if (mainWindow == null || !mainWindow.webContents) {
-          macInitialOpenUrlRoute = route;
-          return;
-        }
-
-        handleSignalRoute(route);
-      }
-    });
-  }
+      handleSignalRoute(route);
+    }
+  });
 }
 
 let sqlInitTimeStart = 0;
