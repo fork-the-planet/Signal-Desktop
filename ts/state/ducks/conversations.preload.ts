@@ -534,6 +534,7 @@ export type ConversationPreloadDataType = ReadonlyDeep<{
 export type MessagesResetDataType = ReadonlyDeep<
   ConversationPreloadDataType & {
     scrollToMessageId?: string;
+    shouldHighlight?: boolean;
     selectedConversationId: string | undefined;
   }
 >;
@@ -3433,6 +3434,7 @@ function messagesReset({
   metrics,
   pinnedMessagesPreloadData,
   scrollToMessageId,
+  shouldHighlight,
   unboundedFetch,
 }: MessagesResetOptionsType): ThunkAction<
   void,
@@ -3460,6 +3462,7 @@ function messagesReset({
         pinnedMessagesPreloadData,
         selectedConversationId,
         scrollToMessageId,
+        shouldHighlight,
       },
     });
   };
@@ -4459,7 +4462,7 @@ export function scrollToMessage(
       return;
     }
 
-    drop(conversation.loadAndScroll(messageId));
+    drop(conversation.loadAndScroll(messageId, { shouldHighlight: true }));
   };
 }
 
@@ -5599,6 +5602,7 @@ function updateMessageLookup(
     metrics,
     selectedConversationId,
     scrollToMessageId,
+    shouldHighlight,
     unboundedFetch,
     pinnedMessagesPreloadData,
   }: MessagesResetDataType
@@ -5648,7 +5652,9 @@ function updateMessageLookup(
       ? {
           targetedMessage: scrollToMessageId,
           targetedMessageCounter: state.targetedMessageCounter + 1,
-          targetedMessageSource: TargetedMessageSource.Reset,
+          targetedMessageSource: shouldHighlight
+            ? TargetedMessageSource.NavigateToMessage
+            : TargetedMessageSource.Reset,
         }
       : {}),
     messagesLookup: {

@@ -2001,7 +2001,11 @@ export class ConversationModel {
 
   async loadAndScroll(
     messageId: string,
-    options: { disableScroll?: boolean; onFinish?: () => void } = {}
+    options: {
+      disableScroll?: boolean;
+      onFinish?: () => void;
+      shouldHighlight?: boolean;
+    } = {}
   ): Promise<void> {
     const { messagesReset, setMessageLoadingState } =
       window.reduxActions.conversations;
@@ -2051,6 +2055,7 @@ export class ConversationModel {
         metrics,
         pinnedMessagesPreloadData,
         scrollToMessageId,
+        shouldHighlight: options.shouldHighlight,
       });
     } catch (error) {
       setMessageLoadingState(conversationId, undefined);
