@@ -215,7 +215,7 @@ describe('AttachmentDownloadManager', () => {
         forceSave: true,
       }
     );
-    await downloadManager?.addJob({
+    return downloadManager?.addJob({
       urgency,
       ...job,
       isManualDownload: Boolean(job.isManualDownload),
@@ -818,6 +818,96 @@ describe('AttachmentDownloadManager', () => {
         },
         { uploadTimestamp: 0 }
       );
+
+      const savedJobs = await DataWriter.getNextAttachmentDownloadJobs({
+        limit: 100,
+      });
+      assert.strictEqual(savedJobs.length, 0);
+    });
+  });
+
+  describe('attachments with no download information', () => {
+    // An attachment with no key/digest/cdn/localKey info (e.g. an imported errored
+    // attachment) is not downloadable from any tier and can't be reliably identified
+    // via addAttachmentToMessage, so addJob should request backfill immediately rather
+    // than queueing a job that could never succeed.
+    const noInfoOverrides: Partial<AttachmentType> = {
+      key: undefined,
+      plaintextHash: undefined,
+      digest: undefined,
+      cdnKey: undefined,
+      cdnNumber: undefined,
+      localKey: undefined,
+      path: undefined,
+    };
+
+    beforeEach(() => {
+      sandbox
+        .stub(window.ConversationController, 'areWePrimaryDevice')
+        .returns(false);
+    });
+
+    it('requests backfill and skips queueing for manual downloads', async () => {
+      const requestBackfill = sandbox
+        .stub(AttachmentDownloadManager, 'requestBackfill')
+        .resolves();
+      const job = composeJob({
+        messageId: 'messageId',
+        receivedAt: Date.now(),
+        attachmentOverrides: noInfoOverrides,
+        jobOverrides: { isManualDownload: true },
+      });
+
+      const result = await addJob(job, AttachmentDownloadUrgency.STANDARD);
+
+      assert.strictEqual(requestBackfill.callCount, 1);
+      assert.strictEqual(requestBackfill.getCall(0).args[0].id, job.messageId);
+      // Returned attachment is marked pending so the caller can reflect the
+      // in-flight backfill on the message.
+      assert.strictEqual(result?.pending, true);
+
+      const savedJobs = await DataWriter.getNextAttachmentDownloadJobs({
+        limit: 100,
+      });
+      assert.strictEqual(savedJobs.length, 0);
+    });
+
+    it('does not request backfill for automatic downloads', async () => {
+      const requestBackfill = sandbox
+        .stub(AttachmentDownloadManager, 'requestBackfill')
+        .resolves();
+      const job = composeJob({
+        messageId: 'messageId',
+        receivedAt: Date.now(),
+        attachmentOverrides: noInfoOverrides,
+        jobOverrides: { isManualDownload: false },
+      });
+
+      await addJob(job, AttachmentDownloadUrgency.STANDARD);
+
+      assert.strictEqual(requestBackfill.callCount, 0);
+
+      const savedJobs = await DataWriter.getNextAttachmentDownloadJobs({
+        limit: 100,
+      });
+      assert.strictEqual(savedJobs.length, 1);
+    });
+
+    it('does not request backfill or queue when not backfillable', async () => {
+      const requestBackfill = sandbox
+        .stub(AttachmentDownloadManager, 'requestBackfill')
+        .resolves();
+      const job = composeJob({
+        messageId: 'messageId',
+        receivedAt: Date.now(),
+        attachmentOverrides: { ...noInfoOverrides, backfillError: true },
+        jobOverrides: { isManualDownload: true },
+      });
+
+      const result = await addJob(job, AttachmentDownloadUrgency.STANDARD);
+
+      assert.strictEqual(requestBackfill.callCount, 0);
+      assert.notStrictEqual(result?.pending, true);
 
       const savedJobs = await DataWriter.getNextAttachmentDownloadJobs({
         limit: 100,

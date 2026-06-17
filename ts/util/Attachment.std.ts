@@ -837,6 +837,7 @@ export function isDownloadable(
   { hasMediaBackups }: { hasMediaBackups: boolean }
 ): boolean {
   return (
+    hasRequiredInformationForLocalBackup(attachment) ||
     isDownloadableFromTransitTier(attachment) ||
     isDownloadableFromBackupTier(attachment, { hasMediaBackups })
   );

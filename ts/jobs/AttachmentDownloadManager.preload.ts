@@ -42,6 +42,7 @@ import {
   isIncremental,
   hasRequiredInformationForRemoteBackup,
   isDownloadableFromTransitTier,
+  isDownloadable,
 } from '../util/Attachment.std.ts';
 import type { ReadonlyMessageAttributesType } from '../model-types.d.ts';
 import { backupsService } from '../services/backups/index.preload.ts';
@@ -342,6 +343,37 @@ export class AttachmentDownloadManager extends JobManager<CoreAttachmentDownload
       if (isOlderThan(attachmentUploadedAt, this.#getMessageQueueTime() * 2)) {
         return attachment;
       }
+    }
+
+    // If there's insufficient information on the attachment (e.g. it was an imported
+    // errored attachment), we may not be able to identify it via
+    // `addAttachmentToMessage`, so instead we immediately request backfill if we can and
+    // skip queueing.
+    if (
+      isManualDownload &&
+      !isDownloadable(attachment, { hasMediaBackups: true })
+    ) {
+      const message = await getMessageById(messageId);
+      if (!message) {
+        log.warn(`${logId}: message not found, skipping queueing`);
+        return attachment;
+      }
+
+      if (
+        isBackfillable({
+          attachment,
+          attachmentType,
+          isStory: message.attributes.type === 'story',
+        })
+      ) {
+        log.info(`${logId}: Attachment is undownloadable, requesting backfill`);
+        await AttachmentDownloadManager.requestBackfill(message.attributes);
+        return { ...attachment, pending: true };
+      }
+      log.warn(
+        `${logId}: Attachment is undownloadable and unbackfillable; not queueing job`
+      );
+      return attachment;
     }
 
     const parseResult = safeParsePartial(coreAttachmentDownloadJobSchema, {
