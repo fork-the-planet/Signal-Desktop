@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "સ્ટીકર ઉમેરો"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal આર્ટિસ્ટ સિરીઝ"
@@ -2814,7 +2814,7 @@
     "messageformat": "ઇન્સ્ટોલ"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "ઇન્સ્ટોલ કરેલા"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "અનઇન્સ્ટોલ"
@@ -2823,16 +2823,16 @@
     "messageformat": "જો તમારી પાસે સોર્સ મેસેજ ન હોય તો તમે આ સ્ટીકર પેકને ફરીથી ઇન્સ્ટોલ કરી શકશો નહીં."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "બધા"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "ઉમેરો"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "દૂર કરો"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "સ્ટીકર પેક"
@@ -6461,7 +6461,7 @@
     "messageformat": "તમારી રિકવરી કી કોઈની સાથે શેર કરશો નહીં. આ તેમને તમારા એકાઉન્ટ પર કાબૂ મેળવવા દે છે. તમારી રિકવરી કી માટે <strong>Signal તમને ક્યારેય મેસેજ કરશે નહીં</strong>. Signal હોવાનો દાવો કરતી કોઈ ચેટનો ક્યારેય જવાબ આપશો નહીં."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "તમારી રિકવરી કી કોઈની સાથે શેર કરશો નહીં. આ તેમને તમારા એકાઉન્ટ પર કાબૂ મેળવવા દે છે. તમારી રિકવરી કી માટે <strong>Signal તમને ક્યારેય મેસેજ કરશે નહીં</strong>. Signal હોવાનો દાવો કરતી કોઈ ચેટનો ક્યારેય જવાબ આપશો નહીં. <learnMoreLink>વધુ જાણો.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "શેર ન કરશો"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "macOSમાં ડાર્ક આઇકન સ્ટાઇલ માટેનો સપોર્ટ."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

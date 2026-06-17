@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Pievienot uzlīmes"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Mākslas Sērija"
@@ -2814,7 +2814,7 @@
     "messageformat": "Instalēt"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Instalēts(-i)"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Atinstalēt"
@@ -2823,16 +2823,16 @@
     "messageformat": "Iespējams, nevarēsiet atkārtoti instalēt šo uzlīmju komplektu, ja jums vairs nebūs avota ziņojuma."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Visas"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Pievienot"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Noņemt"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Uzlīmju komplekts"
@@ -6461,7 +6461,7 @@
     "messageformat": "Nevienam neizpaudiet savu atkopšanas atslēgu. Tādējādi jūsu konts var tikt pārņemts. <strong>Signal darbinieki nekad jums nerakstīs</strong> un neprasīs jūsu atkopšanas atslēgu. Nekad neatbildiet uz sarunu, kurā lietotājs uzdodas par Signal darbinieku."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Nevienam neizpaudiet savu atkopšanas atslēgu. Tādējādi jūsu konts var tikt pārņemts. <strong>Signal darbinieki jums nekad nerakstīs</strong> un neprasīs atkopšanas atslēgu. Nekad neatbildiet uz sarunu, kurā lietotājs uzdodas par Signal darbinieku. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Nenorādīt"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Ja vēlaties atbrīvot savu iekšējo gotu, operētājsistēmā macOS tagad atbalstām arī tumšo ikonu stilu."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

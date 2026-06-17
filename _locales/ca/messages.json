@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Afegir stickers"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Sèries d'artistes de Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Instal·la"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Instal·lat"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Desinstal·la"
@@ -2823,16 +2823,16 @@
     "messageformat": "Potser no podreu reinstal·lar aquest paquet d'adhesius si ja no teniu el missatge original."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Tot"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Afegeix"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Eliminar"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Paquet d'adhesius"
@@ -6461,7 +6461,7 @@
     "messageformat": "No comparteixis la teva clau de recuperació amb ningú. Això li permetria prendre el control del teu compte. <strong>Signal no t'enviarà mai un missatge</strong> per demanar-te la teva clau de recuperació. No responguis mai a missatges que es facin passar per Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "No comparteixis la teva clau de recuperació amb ningú. Això li permetria prendre el control del teu compte. <strong>Signal no t'enviarà mai un missatge</strong> per demanar-te la teva clau de recuperació. No responguis mai a missatges que es facin passar per Signal. <learnMoreLink>Més informació.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "No compartir"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Compatibilitat amb macOS de les icones de mode fosc."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

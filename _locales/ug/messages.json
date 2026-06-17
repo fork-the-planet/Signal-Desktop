@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "چاپلاقلارنى قوشۇش"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal ئارتىس يۈرۈشلۈكى"
@@ -2814,7 +2814,7 @@
     "messageformat": "ئورنات"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "قاچىلانغانلار"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "سۆكۈش"
@@ -2823,16 +2823,16 @@
     "messageformat": "ئەگەر ئەسلى ئۇچۇر بولمىسا، بۇ چاپلاق بولىقىنى قايتا قاچىلىيالماسلىقىڭىز مۇمكىن."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "ھەممىسى"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "قوشۇش"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "ئۆچۈرۈش"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "چاپلاق بوغچىسى"
@@ -6461,7 +6461,7 @@
     "messageformat": "ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىزنى باشقىلار بىلەن ھەرگىز ئورتاقلاشماڭ. ئۇلار بۇ ئارقىلىق سىزنىڭ ھېساباتىڭىزنى ئوغۇرلاشقا ئۇرۇنىدۇ. <strong>Signal ھەرگىز سىزگە ئۇچۇر يوللىمايدۇ</strong> ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىزنى سوراپ. ھەرگىز Signal دىن كەلگەن قىياپەتكە كىرىۋالغان ئۇچۇرغا جاۋاپ قايتۇرماڭ."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىزنى باشقىلار بىلەن ھەرگىز ئورتاقلاشماڭ. ئۇلار بۇ ئارقىلىق سىزنىڭ ھېساباتىڭىزنى ئوغۇرلاشقا ئۇرۇنىدۇ. <strong>Signal ھەرگىز سىزگە ئۇچۇر يوللىمايدۇ</strong> ئەسلىگە كەلتۈرۈش ئاچقۇچىڭىزنى سوراپ. ھەرگىز Signal دىن كەلگەن قىياپەتكە كىرىۋالغان ئۇچۇرغا جاۋاپ قايتۇرماڭ. <learnMoreLink>تەپسىلاتى.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "ئورتاقلاشماسلىق"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "macOS قا قاراڭغۇ سىنبەلگە ئۇسلۇبىنى قوللاش ئىقتىدارىنى قوشتۇق. 8.15 نەشرنۇسخىسى ئۈچۈن."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

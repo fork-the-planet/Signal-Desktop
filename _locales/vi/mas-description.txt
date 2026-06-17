@@ -1,6 +1,6 @@
 Signal là một ứng dụng nhắn tin được xây dựng trên nền tảng quyền riêng tư. Ứng dụng miễn phí và dễ sử dụng, với khả năng mã hoá đầu cuối giúp đảm bảo sự riêng tư tuyệt đối cho các cuộc trò chuyện và cuộc gọi của bạn. Signal không thể đọc tin nhắn của bạn hoặc nghe cuộc gọi của bạn và cũng không ai khác có thể. 
 
-• Signal on MacOS links with Signal on your phone. 
+• Signal trên MacOS liên kết với Signal trên điện thoại của bạn. 
 
 • Gửi miễn phí tin nhắn văn bản, tin nhắn thoại, ảnh, video, GIF và tập tin được mã hóa đầu cuối. 
 

@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "സ്റ്റിക്കറുകൾ ചേർക്കുക"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal ആർട്ടിസ്റ്റ് സീരീസ്"
@@ -2814,7 +2814,7 @@
     "messageformat": "ഇൻസ്റ്റാൾ"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "ഇൻസ്റ്റാൾ ചെയ്‌തു"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "അൺഇൻസ്റ്റാൾ ചെയ്യുക"
@@ -2823,16 +2823,16 @@
     "messageformat": "നിങ്ങൾക്ക് ഇനി ഉറവിട സന്ദേശം ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സ്റ്റിക്കർ പായ്ക്ക് വീണ്ടും ഇൻസ്റ്റാൾ ചെയ്യാൻ കഴിഞ്ഞേക്കില്ല."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "എല്ലാം"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "ചേർക്കുക"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "നീക്കം ചെയ്യുക"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "സ്റ്റിക്കർ പാക്ക്"
@@ -6461,7 +6461,7 @@
     "messageformat": "നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീ ആരുമായും പങ്കിടരുത്. ഇത് നിങ്ങളുടെ അക്കൗണ്ട് കൈക്കലാക്കാൻ അവരെ അനുവദിക്കും. <strong>Signal ഒരിക്കലും നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീയ്ക്കായി നിങ്ങൾക്ക് സന്ദേശം അയയ്ക്കില്ല.</strong> Signal ആണെന്ന് നടിച്ച് വരുന്ന ചാറ്റുകളോട് ഒരിക്കലും പ്രതികരിക്കരുത്."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീ ആരുമായും പങ്കിടരുത്. ഇത് നിങ്ങളുടെ അക്കൗണ്ട് കൈക്കലാക്കാൻ അവരെ അനുവദിക്കും. <strong>Signal ഒരിക്കലും നിങ്ങളുടെ വീണ്ടെടുക്കൽ കീയ്ക്കായി നിങ്ങൾക്ക് സന്ദേശം അയയ്ക്കില്ല</strong>. Signal ആണെന്ന് നടിച്ച് വരുന്ന ചാറ്റുകളോട് ഒരിക്കലും പ്രതികരിക്കരുത്. <learnMoreLink>കൂടുതലറിയുക.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "പങ്കിടരുത്"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "നിങ്ങൾക്ക് ഡാർക്ക് തീം കൂടുതൽ ഇഷ്ടമാണെങ്കിൽ, macOS-ലെ ഡാർക്ക് ഐക്കൺ ശൈലിക്കുള്ള പിന്തുണയും ഞങ്ങൾ ഇതിൽ ചേർത്തിട്ടുണ്ട്."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "加貼圖"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal 藝術家系列"
@@ -2814,7 +2814,7 @@
     "messageformat": "安裝"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "已安裝"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "解除安裝"
@@ -2823,16 +2823,16 @@
     "messageformat": "如果你冇咗原本嗰個訊息，就可能裝唔返呢個貼圖包喇。"
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "全部"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "加入去"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "移除"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "貼圖包"
@@ -6461,7 +6461,7 @@
     "messageformat": "千祈唔好同任何人分享你嘅恢復金鑰。咁樣會令佢哋盜用你嘅帳戶。<strong>Signal 從來都唔會傳訊息</strong>問你攞恢復金鑰。千祈唔好回覆任何假扮 Signal 嘅聊天訊息。"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "千祈唔好同任何人分享你嘅恢復金鑰。咁樣會令佢哋盜用你嘅帳戶。<strong>Signal 從來都唔會傳訊息</strong>問你攞恢復金鑰。千祈唔好回覆任何假扮 Signal 嘅聊天訊息。<learnMoreLink>了解詳情。</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "唔好分享"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "我哋仲幫 macOS 新加咗支援深色圖示樣式，等你流露潛在喺內心嘅暗黑風格。"
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

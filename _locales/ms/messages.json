@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Tambah Pelekat"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Siri Artis Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Memasang"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Dipasang"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Nyahpasang"
@@ -2823,16 +2823,16 @@
     "messageformat": "Anda mungkin tidak dapat memasang semula pek pelekat ini jika anda tidak lagi mempunyai sumber mesej."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Semua"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Tambah"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Alih keluar"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Pek Pelekat"
@@ -2859,10 +2859,10 @@
     "messageformat": "Pelekat tanpa emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Pek Pelekat oleh {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Lihat Pek"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -6440,34 +6440,34 @@
     "messageformat": "Kunci ini diperlukan untuk memulihkan akaun dan data anda. Simpan kunci ini di tempat yang selamat. Jika anda kehilangannya, anda tidak akan dapat memulihkan akaun anda. <learnMoreLink>Ketahui lebih lanjut.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Kunci ini diperlukan untuk memulihkan akaun dan data anda. Simpannya di tempat yang selamat dan jangan pernah kongsikannya dengan sesiapa pun. Signal tidak akan menghantar mesej kepada anda untuk meminta kunci pemulihan. <learnMoreLink>Ketahui lebih lanjut.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Jangan kongsikan kunci pemulihan"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal tidak akan menghantar mesej kepada anda</strong> untuk meminta kunci pemulihan. Jangan pernah membalas sembang yang menyamar sebagai Signal. Simpan kunci pemulihan anda di tempat yang selamat dan jangan pernah kongsikannya dengan sesiapa pun. <learnMoreLink>Ketahui lebih lanjut.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "Faham"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Kongsi kunci"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Jangan kongsi kunci"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Jangan kongsikan kunci pemulihan anda dengan sesiapa. Ini akan membolehkan mereka mengambil alih akaun anda. <strong>Signal tidak akan menghantar mesej kepada anda</strong> untuk meminta kunci pemulihan. Jangan pernah membalas sembang yang menyamar sebagai Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Jangan kongsikan kunci pemulihan anda dengan sesiapa. Ini akan membolehkan mereka mengambil alih akaun anda. <strong>Signal tidak akan menghantar mesej kepada anda</strong> untuk meminta kunci pemulihan. Jangan pernah membalas sembang yang menyamar sebagai Signal. <learnMoreLink>Ketahui lebih lanjut.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Jangan kongsi"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Tampal kunci"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Sahkan kunci pemulihan anda"
@@ -6533,7 +6533,7 @@
     "messageformat": "Tindakan ini tidak dapat diselesaikan kerana pengesahan sistem gagal. Sila cuba lagi atau buka aplikasi Signal pada peranti mudah alih anda dan pergi ke Tetapan Sandaran untuk melihat kunci pemulihan anda."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Ralat berlaku semasa meminta pengesahan sistem untuk tindakan ini."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Lihat kunci"
@@ -8260,9 +8260,12 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Kami telah mengemas kini sambungan fail lalai bagi imej JPEG kepada .jpg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Sokongan untuk gaya ikon gelap dalam macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Legg til klistremerker"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Artist Serier"
@@ -2814,7 +2814,7 @@
     "messageformat": "Installer"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Installert"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Avinstaller"
@@ -2823,16 +2823,16 @@
     "messageformat": "Du vil kanskje ikke kunne installere denne klistremerkepakken på nytt hvis du ikke lenger har kildemeldingen."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Alle"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Legg til"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Fjern"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Klistremerkepakke"
@@ -6461,7 +6461,7 @@
     "messageformat": "Ikke del sikkerhetskoden din med noen. Det kan føre til at de tar over kontoen din. <strong>Signal kommer aldri</strong> til å be deg om å sende sikkerhetskoden din. Ikke svar på meldinger fra kontoer som utgir seg for å være Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Ikke del sikkerhetskoden din med noen. Det kan føre til at de tar over kontoen din. <strong>Signal kommer aldri </strong>til å be deg om å sende sikkerhetskoden din. Ikke svar på meldinger fra kontoer som utgir seg for å være Signal. <learnMoreLink>Les mer.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Ikke del"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Støtte for mørke ikoner i macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

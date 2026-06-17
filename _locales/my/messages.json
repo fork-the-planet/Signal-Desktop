@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "စတစ်ကာ ထည့်သွင်းရန်"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal အနုပညာရှင် စီးရီး"
@@ -2814,7 +2814,7 @@
     "messageformat": "ထည့်သွင်းပါ"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "ထည့်သွင်းပြီး"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "တပ်ဆင်ခြင်းမှ ဖယ်ရှားမယ်"
@@ -2823,16 +2823,16 @@
     "messageformat": "သင့်တွင် မူရင်းမက်ဆေ့ချ် မရှိတော့ပါက ဤစတစ်ကာတွဲကို ပြန်ထည့်သွင်းနိုင်မည် မဟုတ်ပါ။"
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "အားလုံး"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "ထည့်သွင်းမည်"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "ဖယ်ရှားရန်"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "စတစ်ကာတွဲ"
@@ -6461,7 +6461,7 @@
     "messageformat": "သင့် ပြန်လည်ရယူရေးကီးကို မည်သူနှင့်မျှ မျှဝေခြင်းမပြုပါနှင့်။ မျှဝေခြင်းသည် ၎င်းတို့အား သင့်အကောင့်ကို ရယူသွားစေနိုင်ပါလိမ့်မည်။ သင့် ပြန်လည်ရယူရေးကီးအတွက် <strong>Signal သည် မည််သည့်အခါမျှ မက်ဆေ့ချ်မပို့ပါ။</strong> Signal ဟန်ဆောင်ထားသည့် ချက်(တ်)ကို စာမပြန်ပါနှင့်။"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "သင့် ပြန်လည်ရယူရေးကီးကို မည်သူနှင့်မျှ မျှဝေခြင်းမပြုပါနှင့်။ မျှဝေခြင်းသည် ၎င်းတို့အား သင့်အကောင့်ကို ရယူသွားစေနိုင်ပါလိမ့်မည်။ သင့် ပြန်လည်ရယူရေးကီးအတွက် <strong>Signal သည် မည််သည့်အခါမျှ မက်ဆေ့ချ်မပို့ပါ။</strong> Signal ဟန်ဆောင်ထားသည့် ချက်(တ်)ကို စာမပြန်ပါနှင့်။ <learnMoreLink>ပိုမိုလေ့လာရန်။</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "မျှဝေခြင်းမပြုပါနှင့်"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "macOS တွင် အမှောင်အိုင်ကွန်ပုံစံကို ပံ့ပိုးပေးထားသည်။"
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

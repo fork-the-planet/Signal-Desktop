@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "اسٹیکرز شامل کریں"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal آرٹسٹ سیریز"
@@ -2814,7 +2814,7 @@
     "messageformat": "انسٹال"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "انسٹال ہو گیا"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "ان انسٹال"
@@ -2823,16 +2823,16 @@
     "messageformat": "اگر آپ کے پاس پیغام کا ذریعہ نہیں ہے تو آپ اس اسٹیکر پیک کو دوبارہ انسٹال نہیں کرسکتے ہیں۔"
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "تمام"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "شامل کریں"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "ہٹا دیں"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "اسٹیکر پیک"
@@ -6461,7 +6461,7 @@
     "messageformat": "اپنی بحالی کی کیی کسی کے ساتھ شیئر نہ کریں۔ اس سے وہ آپ کا اکاؤنٹ اپنے قبضے میں لے سکتے ہیں۔ <strong>Signal آپ کو آپ کی بحالی کی کیی کے لیے کبھی میسج نہیں</strong> کرے گا۔ ایسی چیٹ کا کبھی جواب نہ دیں جو Signal بننے کا ڈھونگ کر رہی ہو۔"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "اپنی بحالی کی کیی کسی کے ساتھ شیئر نہ کریں۔ اس سے وہ آپ کا اکاؤنٹ اپنے قبضے میں لے سکتے ہیں۔ <strong>Signal آپ کو آپ کی بحالی کی کیی کے لیے کبھی میسج نہیں</strong> کرے گا۔ ایسی چیٹ کا کبھی جواب نہ دیں جو Signal بننے کا ڈھونگ کر رہی ہو۔ <learnMoreLink>مزید جانیں۔</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "شیئر مت کریں"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "اگر آپ اپنے اندر کے گوتھ کو قبول کرنا چاہتے ہیں کہ تو ہم macOS میں گہرے آئیکن اسٹائل کے لیے سپورٹ بھی شامل کر دی ہے۔"
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

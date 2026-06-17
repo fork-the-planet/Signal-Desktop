@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Shto ngjitës"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Seritë Artis Signal-i"
@@ -2814,7 +2814,7 @@
     "messageformat": "Instaloje"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Instaluar"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Çinstaloje"
@@ -2823,16 +2823,16 @@
     "messageformat": "Nëse s’e keni më mesazhin burim, mund të mos jeni në gjendje të riinstaloni këtë paketë ngjitësish."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Të gjitha"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Shtoje"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Fshije"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Paketë Ngjitësish"
@@ -2859,10 +2859,10 @@
     "messageformat": "Ngjitës pa figurë emoxhi"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Paketa ngjitësesh nga {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Shiko paketën"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -6440,34 +6440,34 @@
     "messageformat": "Ky kod kërkohet për të rikuperuar llogarinë dhe të dhënat e tua. Ruaje kodin në një vend të sigurt. Nëse e humb, nuk do të mund të rikuperosh llogarinë. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Kodi kërkohet për të rikthyer llogarinë dhe të dhënat. Ruaje në një vend të sigurt dhe mos e ndaj kurrë me askënd. Signal nuk do të dërgojë kurrë mesazh për kodin e rikthimit. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Mos e ndaj kodin e rikthimit"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal nuk do të dërgojë kurrë mesazh</strong> për kodin e rikthimit. Mos iu përgjigj asnjëherë një bisede që hiqet si Signal. Ruaj kodin e rikthimit në një vend të sigurt dhe mos e ndaj kurrë me askënd. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "E kuptova"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Ndaj kodin"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Mos e ndaj kodin"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Mos e ndaj kodin e rikthimit me asnjë. Kjo do t'u lejojë atyre të marrin kontrollin e llogarisë. <strong>Signal nuk do të dërgojë kurrë mesazh</strong> për kodin e rikthimit. Mos iu përgjigj asnjëherë një bisede që hiqet si Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Mos e ndaj kodin e rikthimit me asnjë. Kjo do t'u lejojë atyre të marrin kontrollin e llogarisë. <strong>Signal nuk do të dërgojë kurrë mesazh</strong> për kodin e rikthimit. Mos iu përgjigj asnjëherë një bisede që hiqet si Signal. <learnMoreLink>Mëso më shumë.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Mos e ndaj"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Ngjit kodin"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Konfirmo kodin e rikthimit"
@@ -6533,7 +6533,7 @@
     "messageformat": "Ky veprim nuk arriti të përfundohej pasi autentikimi i sistemit dështoi. Të lutem, provo përsëri ose hap aplikacionin Signal në pajisjen celulare dhe shko te parametrat e kopjeruajtjes për të parë kodin e rikthimit."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Ndodhi një gabim gjatë kërkesës për autentifikimin e sistemit për këtë veprim."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Shiko kodin e kopjeruajtjes"
@@ -8260,9 +8260,12 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Përditësuam zgjerimin e parazgjedhur të skedarëve për imazhet JPEG në jpg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Mbështetje për stilin e ikonës së errët në macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

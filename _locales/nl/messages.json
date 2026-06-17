@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Stickers toevoegen"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Artist stickerpakketten"
@@ -2814,7 +2814,7 @@
     "messageformat": "Installeren"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Geïnstalleerd"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Verwijderen"
@@ -2823,16 +2823,16 @@
     "messageformat": "Je kunt dit stickerpakket mogelijk niet opnieuw installeren als je het bronbericht niet langer bezit."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Alle"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Toevoegen"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Verwijderen"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Stickerpakket"
@@ -6461,7 +6461,7 @@
     "messageformat": "Deel je herstelsleutel met niemand. Hiermee kan je account worden overgenomen. <strong>Signal zal je nooit een bericht sturen</strong> om je herstelsleutel te vragen. Reageer niet op chats die afkomstig zijn van Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Deel je herstelsleutel met niemand. Hiermee kan je account worden overgenomen. <strong>Signal zal je nooit een bericht sturen</strong> om je herstelsleutel te vragen. Reageer niet op chats die afkomstig zijn van Signal. <learnMoreLink>Meer informatie.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Niet delen"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Ondersteuning voor de donkere icoonstijl in macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Weka Vibandiko"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Mfululizo wa Sanaa za Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Simika"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Imesimikwa"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Sakinusha"
@@ -2823,16 +2823,16 @@
     "messageformat": "Unaweza shindwa kusimika upya pakiti hii ya vibandiko kama tena hauna chanzo cha ujumbe."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Zote"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Ongeza"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Ondoa"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Pakiti ya Vibandiko"
@@ -6461,7 +6461,7 @@
     "messageformat": "Usishiriki ufunguo wa kurejesha akaunti na mtu yeyote. Hii itawawezesha waidhibiti akaunti yako. <strong>Signal haiwezi kukutumia ujumbe</strong> kuhusu ufunguo wako wa kurejesha akaunti. Usijibu gumzo linaloiga kuwa Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Usishiriki ufunguo wa kurejesha akaunti na mtu yeyote. Hii itawawezesha waidhibiti akaunti yako. <strong>Signal haiwezi kukutumia ujumbe</strong>kuhusu ufunguo wako wa kurejesha akaunti. Usijibu gumzo linaloiga kuwa Signal. <learnMoreLink>Pata maelezo zaidi.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Usishiriki"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Ikiwa ungependa kuonyesha upande wako wa goth, pia tumeongeza uwezo wa kutumia mtindo wa aikoni za hali ya giza katika macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

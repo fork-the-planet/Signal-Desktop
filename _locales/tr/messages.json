@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Çıkartma Ekle"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Tarafından"
@@ -2814,7 +2814,7 @@
     "messageformat": "Yükle"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Yüklendi"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Kaldır"
@@ -2823,16 +2823,16 @@
     "messageformat": "Eğer iletinin aslı mevcut değil ise bu çıkartma paketini tekrar yükleyemeyebilirsiniz."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Tümü"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Ekle"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Kaldır"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Çıkartma Paketi"
@@ -6461,7 +6461,7 @@
     "messageformat": "Kurtarma anahtarını kimseyle paylaşma. Hesabını ele geçirmelerine izin verme. Signal kurtarma anahtarın için <strong>sana hiçbir zaman mesaj atmaz</strong>. Signal olduğunu iddia eden bir sohbeti hiçbir zaman yanıtlama."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Kurtarma anahtarını kimseyle paylaşma. Hesabını ele geçirmelerine izin verme. Signal kurtarma anahtarın için <strong>sana hiçbir zaman mesaj atmaz</strong>. Signal olduğunu iddia eden bir sohbeti hiçbir zaman yanıtlama. <learnMoreLink>Dahasını öğren.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Paylaşma"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "MacOS'ta koyu simge stili desteği"
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

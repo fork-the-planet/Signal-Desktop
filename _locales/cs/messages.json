@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Přidat nálepky"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Umělecká série Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Instalovat"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Instalované"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Odinstalovat"
@@ -2823,16 +2823,16 @@
     "messageformat": "Pravděpodobně nebudete moci přeinstalovat tento balíček nálepek, pokud již nemáte zdrojovou zprávu."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Vše"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Přidat"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Odebrat"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Balíček nálepek"
@@ -6461,7 +6461,7 @@
     "messageformat": "Svůj klíč pro obnovení s nikým nesdílejte. Útočník by pomocí něj mohl ovládnout váš účet. <strong>Signal od vás nikdy nebude ve zprávě</strong> vyžadovat váš klíč pro obnovení. Nikdy neodpovídejte na chat, který se tváří jako Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Svůj klíč pro obnovení s nikým nesdílejte. Útočník by pomocí něj mohl ovládnout váš účet. <strong>Signal od vás nikdy nebude ve zprávě</strong> vyžadovat váš klíč pro obnovení. Nikdy neodpovídejte na chat, který se tváří jako Signal. <learnMoreLink>Víc informací.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Nesdílet"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Aplikace nyní podporuje tmavý styl ikon v macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

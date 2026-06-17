@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "ஸ்டிக்கர்களைச் சேர்"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "சிக்னல் கலைஞர் தொடர்"
@@ -2814,7 +2814,7 @@
     "messageformat": "நிறுவு"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "நிறுவப்பட்டவை"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "நீக்குதல்"
@@ -2823,16 +2823,16 @@
     "messageformat": "உங்களிடம் இனி மூல செய்தி இல்லையென்றால் இந்த ஸ்டிக்கர் பேக்கை மீண்டும் நிறுவ முடியாது."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "அனைத்து"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "சேர்க்கவும்"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "அகற்று"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "ஸ்டிக்கர் பேக்"
@@ -6461,7 +6461,7 @@
     "messageformat": "உங்கள் மீட்புக் குறியீட்டை யாருடனும் பகிராதீர்கள். இது அவர்கள் உங்கள் கணக்கைக் கையகப்படுத்த அனுமதிக்கும். உங்கள் மீட்புக் குறியீட்டைக் கேட்டு <strong>சிக்னல் ஒருபோதும் உங்களுக்குச் செய்தி அனுப்பாது.</strong> சிக்னல் போல் ஆள்மாறாட்டம் செய்து வரும் உரையாடலுக்கு ஒருபோதும் பதிலளிக்காதீர்கள்."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "உங்கள் மீட்புக் குறியீட்டை யாருடனும் பகிராதீர்கள். இது அவர்கள் உங்கள் கணக்கைக் கையகப்படுத்த அனுமதிக்கும். உங்கள் மீட்புக் குறியீட்டைக் கேட்டு <strong>சிக்னல் ஒருபோதும் உங்களுக்குச் செய்தி அனுப்பாது.</strong> சிக்னல் போல் ஆள்மாறாட்டம் செய்து வரும் உரையாடலுக்கு ஒருபோதும் பதிலளிக்காதீர்கள். <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "பகிர வேண்டாம்"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "MacOSஇல் டார்க் ஐகான் ஸ்டைலுக்கான ஆதரவு."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "הוספת סטיקרים"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "סדרת אומנים Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "התקן"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "הותקן"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "הסר"
@@ -2823,16 +2823,16 @@
     "messageformat": "ייתכן שלא תוכל להתקין מחדש חבילת מדבקות זו אם אין לך עוד את הודעת המקור."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "הכל"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "הוסף"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "הסרה"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "חבילת מדבקות"
@@ -6461,7 +6461,7 @@
     "messageformat": "אין לשתף את מפתח השחזור שלך עם אף אחד. זה יאפשר השתלטות על החשבון שלך. <strong>Signal לעולם לא תשלח לך הודעה</strong> כדי לבקש את מפתח השחזור שלך. אף פעם אין להשיב לצ׳אט ממישהו שמתחזה ל–Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "אין לשתף את מפתח השחזור שלך עם אף אחד. זה יאפשר השתלטות על החשבון שלך. <strong>Signal לעולם לא תשלח לך הודעה</strong> כדי לבקש את מפתח השחזור שלך. אף פעם אין להשיב לצ׳אט ממישהו שמתחזה ל–Signal. <learnMoreLink>למידע נוסף.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "לא לשתף"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "תמיכה בעיצוב סמל כהה ב–macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

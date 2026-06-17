@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Aggiungi adesivi"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Serie artisti di Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Installa"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Installato"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Disinstalla"
@@ -2823,16 +2823,16 @@
     "messageformat": "Potresti non essere più in grado di reinstallare questo pacchetto di adesivi se non hai più il messaggio di origine."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Tutte"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Aggiungi"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Rimuovi"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Pacchetto di adesivi"
@@ -6461,7 +6461,7 @@
     "messageformat": "Non condividere la tua chiave di ripristino con altre persone. Se ne entrano in possesso, potranno prendere controllo del tuo account. <strong>Signal non ti invierà mai un messaggio</strong> per chiederti la chiave di ripristino. Non rispondere mai a una chat che cerca di impersonare il team di Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Non condividere la tua chiave di ripristino con altre persone. Se ne entrano in possesso, potranno prendere controllo del tuo account. <strong>Signal non ti invierà mai un messaggio</strong> per chiederti la chiave di ripristino. Non rispondere mai a una chat che cerca di impersonare il team di Signal. <learnMoreLink>Scopri di più.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Non condividere"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Se la tua fase \"goth\" adolescenziale non è mai finita, o se vorresti ritornarci per un po', puoi iniziare con l'icona di Signal, che ora supporta lo stile del tema scuro di macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Voeg Plakkers by"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Kunstenaarreeks"
@@ -2814,7 +2814,7 @@
     "messageformat": "Installeer"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Geïnstalleer"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Deïnstalleer"
@@ -2823,16 +2823,16 @@
     "messageformat": "Jy mag dalk nie in staat wees om hierdie plakkerpakket weer te installeer as jy nie meer die bronboodskap het nie."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Almal"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Voeg toe"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Verwyder"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Plakkerpakket"
@@ -6461,7 +6461,7 @@
     "messageformat": "Moenie jou herwinsleutel met enigiemand deel nie. Dit sal hulle toelaat om jou rekening oor te neem. <strong>Signal sal nooit vir jou 'n boodskap</strong> vir jou herwinsleutel stuur nie. Moet nooit reageer op 'n klets wat voorgee dat dit van Signal af is nie."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Moenie jou herwinsleutel met enigiemand deel nie. Dit sal hulle toelaat om jou rekening oor te neem. <strong>Signal sal nooit vir jou 'n boodskap</strong> vir jou herwinsleutel stuur nie. Moet nooit reageer op 'n klets wat voorgee dat dit van Signal af is nie. <learnMoreLink>Vind meer uit.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Moenie deel nie"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Ondersteuning vir die donker ikoonstyl in macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "დაამატე სტიკერები"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal-ის მხატვრების სტიკერების სერიები"
@@ -2814,7 +2814,7 @@
     "messageformat": "გადმოწერა"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "დაყენებული"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "წაშლა"
@@ -2823,16 +2823,16 @@
     "messageformat": "ამ სტიკერების ნაკრების ხელახლა გადმოწერა შეიძლება ვერ შეძლო, თუ მათი შემცველი შეტყობინება აღარ გაქვს."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "ყველა"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "დამატება"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "გათიშვა"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "სტიკერების ნაკრები"
@@ -6461,7 +6461,7 @@
     "messageformat": "არავის გაუზიარო აღდგენის გასაღები. ეს მათ საშუალებას მისცემს შენი ანგარიში დაისაკუთრონ. <strong>Signal-ი არასდროს მოგწერს</strong> შენი აღდგენის გასაღების მოთხოვნით. არასდროს უპასუხო ჩატს, რომელიც თავს Signal-ად ასაღებს."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "არავის გაუზიარო აღდგენის გასაღები. ეს მათ საშუალებას მისცემს შენი ანგარიში დაისაკუთრონ. <strong>Signal-ი არასდროს მოგწერს</strong> შენი აღდგენის გასაღების მოთხოვნით. არასდროს უპასუხო ჩატს, რომელიც თავს Signal-ად ასაღებს. <learnMoreLink>გაიგე მეტი.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "არ გააზიარო"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "თუ გსურს, შენი შინაგანი გოთი გააღვიძო, macOS-ზე მუქი ხატულების სტილის მხარდაჭერაც დავამატეთ."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

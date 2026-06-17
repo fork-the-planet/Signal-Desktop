@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Magdagdag ng Stickers"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Artist Series"
@@ -2814,7 +2814,7 @@
     "messageformat": "I-install"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Incoming voice call..."
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "I-uninstall"
@@ -2823,16 +2823,16 @@
     "messageformat": "Hindi mo pwedeng i-reinstall ang sticker pack na ito kung wala na sa'yo ang source message."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Lahat"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Mag-add"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Tanggalin"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Sticker Pack"
@@ -2859,10 +2859,10 @@
     "messageformat": "Sticker na walang emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Sticker Pack ni {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Tignan ang Pack"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -6440,34 +6440,34 @@
     "messageformat": "Kailangan ang key para ma-recover mo ang iyong account at data. Itago ang key na ito sa ligtas na lugar. Kapag nawala mo ito, hindi mo mare-recover ang iyong account. <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Kailangan ang key na ito para ma-recover mo ang iyong account at data. Ingatan ito sa isang ligtas na lugar at huwag itong i-share sa kahit na sino. Hindi ka ime-message ng Signal para makuha ang iyong recovery key. <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Huwag i-share ang recovery key"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Hindi ka ime-message ng Signal</strong> para makuha ang iyong recovery key. Huwag mag-reply sa chats na nagpapanggap na Signal o Signal Support. Ingatan ang iyong recovery key sa isang ligtas na lugar at huwag itong i-share sa kahit na sino. <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "OK"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "I-share ang key"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Huwag i-share ang key"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Huwag i-share ang iyong recovery key sa kahit kanino. Aangkinin nila ang account mo. <strong>Hindi ka ime-message ng Signal</strong> para makuha ang iyong recovery key. Huwag mag-reply sa chats na nagpapanggap na Signal o Signal Support."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Huwag i-share ang iyong recovery key sa kahit kanino. Aangkinin nila ang account mo. <strong>Hindi ka ime-message ng Signal</strong> para makuha ang iyong recovery key. Huwag mag-reply sa chats na nagpapanggap na Signal o Signal Support. <learnMoreLink>Matuto pa.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Huwag i-share"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "I-paste ang key"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Kumpirmahin ang iyong recovery key"
@@ -6533,7 +6533,7 @@
     "messageformat": "Hindi magawa ang action na ito dahil failed ang system authentication. Subukan ulit o buksan ang Signal app sa mobile device mo at pumunta sa Backup Settings para makita ang iyong recovery key."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Nagkaroon ng error habang hinihingi ang system authentication para sa action na ito."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Tignan ang key"
@@ -8260,9 +8260,12 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Magiging jpg na ang default file extension para sa JPEG images."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Suporta para sa dark icon style sa macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

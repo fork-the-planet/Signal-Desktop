@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Matricák hozzáadása"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Művészi Sorozat"
@@ -2814,7 +2814,7 @@
     "messageformat": "Telepítés"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Telepítve"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Eltávolítás"
@@ -2823,16 +2823,16 @@
     "messageformat": "Ha kitörlöd a matricákat tartalmazó eredeti üzeneteket, akkor már nem fogod tudni újratelepíteni ezt a matricacsomagot."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Összes"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Hozzáadás"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Eltávolítás"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Matricsacsomag"
@@ -6461,7 +6461,7 @@
     "messageformat": "Ne oszd meg senkivel a helyreállítási kulcsodat. Ezzel lehetővé teszed, hogy átvegyék az irányítást a fiókod felett. <strong>A Signal soha nem fog üzenetet küldeni</strong> a helyreállítási kulcsod miatt. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a Signal nevében írnának."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Ne oszd meg senkivel a helyreállítási kulcsodat. Ezzel lehetővé teszed, hogy átvegyék az irányítást a fiókod felett. <strong>A Signal soha nem fog üzenetet küldeni</strong> a helyreállítási kulcsod miatt. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a Signal nevében írnának. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Ne oszd meg"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Támogatás a sötét ikonstílushoz a macOS rendszerben."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

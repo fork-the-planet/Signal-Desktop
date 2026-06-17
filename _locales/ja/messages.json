@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "ステッカーを追加"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signalアーティストシリーズ"
@@ -2814,7 +2814,7 @@
     "messageformat": "インストール"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "インストール"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "アンインストール"
@@ -2823,16 +2823,16 @@
     "messageformat": "元のメッセージがない場合は、このステッカーパックを再インストールできないかもしれません。"
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "すべて"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "追加"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "削除"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "ステッカーパック"
@@ -6461,7 +6461,7 @@
     "messageformat": "回復キーは誰とも共有しないでください。共有するとアカウントが乗っ取られる可能性があります。回復キーについて、<strong>Signalは決して皆さんにメッセージしません</strong>。Signalを装ったチャットには返信しないでください。"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "回復キーは誰とも共有しないでください。共有するとアカウントが乗っ取られる可能性があります。回復キーについて、<strong>Signalは決して皆さんにメッセージしません</strong>。Signalを装ったチャットには返信しないでください。<learnMoreLink>さらに詳しく。</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "やめる"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "macOSのダークアイコンスタイルに対応しました。"
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

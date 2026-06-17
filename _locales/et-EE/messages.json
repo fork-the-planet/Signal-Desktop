@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Lisa kleebiseid"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signali artisti seeria"
@@ -2814,7 +2814,7 @@
     "messageformat": "Paigalda"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Paigaldatud"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Eemalda"
@@ -2823,16 +2823,16 @@
     "messageformat": "Sa ei saa seda kleebisepakki uuesti paigaldada, kui sul pole enam algsõnumit."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Kõik"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Lisa"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Eemalda"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Kleebisepakk"
@@ -6461,7 +6461,7 @@
     "messageformat": "Ära jaga oma taastevõtit mitte kellegagi. Selle abil on teistel isikutel võimalik su konto üle võtta. <strong>Signal ei palu sinult kunagi sõnumi teel</strong> taastevõtit. Ära vasta kunagi sõnumitele, milles väidetakse, et need on Signalilt."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Ära jaga oma taastevõtit mitte kellegagi. Selle abil on teistel isikutel võimalik su konto üle võtta. <strong>Signal ei palu sinult kunagi sõnumi teel</strong> taastevõtit. Ära vasta kunagi sõnumitele, milles väidetakse, et need on Signalilt. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Ära jaga"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Nüüd toetab macOS ikooni tumedat stiili."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

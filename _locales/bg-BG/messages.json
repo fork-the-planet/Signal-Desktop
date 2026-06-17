@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Добавяне на стикери"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Artist серии"
@@ -2814,7 +2814,7 @@
     "messageformat": "Инсталирай"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Инсталиран"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Деинсталиране"
@@ -2823,16 +2823,16 @@
     "messageformat": "Възможно е да не можете да преинсталирате този пакет със стикери, ако нямате изходящото съобщение."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Всички"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Добавяне"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Премахване"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Пакет стикери"
@@ -2859,10 +2859,10 @@
     "messageformat": "Стикер без емоджи"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Пакет със стикери от {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Преглед на пакета"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Емоджи"
@@ -6440,34 +6440,34 @@
     "messageformat": "Този ключ е необходим за възстановяване на акаунта и данните ви. Съхранявайте този ключ на сигурно място. Ако го изгубите, няма да можете да възстановите акаунта си. <learnMoreLink>Научете повече.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Този ключ е необходим за възстановяване на акаунта и данните ви. Съхранявайте го на сигурно място и никога не го споделяйте с никого. Signal никога няма да ви изпраща съобщения, за да иска вашия ключ за възстановяване. <learnMoreLink>Научете повече.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Не споделяйте ключа за възстановяване"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal никога няма да ви изпраща съобщения</strong>, за да иска вашия ключ за възстановяване. Никога не отговаряйте на чатове, в които някой се преструва за Signal. Съхранявайте своя ключ за възстановяване на сигурно място и никога не го споделяйте с никого. <learnMoreLink>Научете повече.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "Ясно"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Споделяне на ключа"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Не споделяйте ключа"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Не споделяйте своя ключ за възстановяване с никого. Това ще позволи на други хора да откраднат акаунта ви. <strong>Signal никога няма да ви изпраща съобщения</strong>, за да иска вашия ключ за възстановяване. Никога не отговаряйте на чатове, в които някой се преструва за Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Не споделяйте своя ключ за възстановяване с никого. Това ще позволи на други хора да откраднат акаунта ви. <strong>Signal никога няма да ви изпраща съобщения</strong>, за да иска вашия ключ за възстановяване. Никога не отговаряйте на чатове, в които някой се преструва за Signal. <learnMoreLink>Научете повече.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Не споделяйте"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Поставяне на ключа"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Потвърдете своя ключ за възстановяване"
@@ -6533,7 +6533,7 @@
     "messageformat": "Това действие не може да бъде извършено, защото автентикацията на системата беше неуспешна. Моля, опитайте отново или отворете приложението Signal на вашето мобилно устройство и отидете на „Настройки за архивиране“, за да видите своя ключ за възстановяване."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "При изпращането на заявка за автентикация на системата за това действие възникна грешка."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Преглед на ключа"
@@ -8260,9 +8260,12 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Актуализирахме разширението на файловете с JPEG изображенията на jpg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Ако искате да се отдадете на тъмната си страна, добавихме поддръжка за стила с тъмни икони на macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

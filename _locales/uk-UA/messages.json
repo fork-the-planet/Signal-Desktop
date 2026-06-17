@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Додати стікери"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Серія «Художники Signal»"
@@ -2814,7 +2814,7 @@
     "messageformat": "Установити"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Завантажені"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Видалити"
@@ -2823,16 +2823,16 @@
     "messageformat": "Можливо, ви не зможете встановити цей набір стікерів знову, якщо вже видалили повідомлення, з якого ви його отримали."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Усі"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Додати"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Вилучити"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Набір стікерів"
@@ -6461,7 +6461,7 @@
     "messageformat": "Нікому не повідомляйте свій ключ відновлення. Маючи ключ відновлення, інша людина може вкрасти ваш акаунт. <strong>Представники Signal ніколи</strong> не питатимуть у вас ключ відновлення. Ніколи не відповідайте на повідомлення нібито від Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Нікому не повідомляйте свій ключ відновлення. Маючи ключ відновлення, інша людина може вкрасти ваш акаунт. <strong>Представники Signal ніколи</strong> не питатимуть у вас ключ відновлення. Ніколи не відповідайте на повідомлення нібито від Signal. <learnMoreLink>Докладніше.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Не надсилати"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Якщо ви любите готичний стиль, то це оновлення для вас: тепер у macOS також підтримується значок у темному стилі."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

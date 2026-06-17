@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "స్టిక్కర్లను జోడించండి"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Singal కళాకారుడు సిరీస్"
@@ -2814,7 +2814,7 @@
     "messageformat": "వ్యవస్థాపన"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "ఇన్‌స్టాల్ చేయబడింది"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "అన్ఇన్స్టాల్"
@@ -2823,16 +2823,16 @@
     "messageformat": "మీకు ఇకపై మూల సందేశం లేకపోతే మీరు ఈ స్టిక్కర్ ప్యాక్‌ను తిరిగి ఇన్‌స్టాల్ చేయలేరు."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "అన్నీ"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "జోడించండి"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "తొలగించండి"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "స్టిక్కర్ ప్యాక్"
@@ -6461,7 +6461,7 @@
     "messageformat": "మీ రికవరీ కీని ఎవరితోనూ పంచుకోవద్దు. ఇది వారిని మీ ఖాతాను స్వాధీనం చేసుకునేందుకు అవకాశాన్ని ఇస్తుంది. మీ రికవరీ కీ కోసం <strong>Signal మీకు ఎప్పటికీ సందేశం పంపదు</strong>. Signal అని నటిస్తూ చేసే చాట్‌కు ఎప్పుడూ స్పందించవద్దు."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "మీ రికవరీ కీని ఎవరితోనూ పంచుకోవద్దు. ఇది వారిని మీ ఖాతాను స్వాధీనం చేసుకునేందుకు అవకాశాన్ని ఇస్తుంది. మీ రికవరీ కీ కోసం <strong>Signal మీకు ఎప్పటికీ సందేశం పంపదు</strong>. Signal అని నటిస్తూ చేసే చాట్‌కు ఎప్పుడూ స్పందించవద్దు. <learnMoreLink>మరింత తెలుసుకోండి.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "పంచుకోవద్దు"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "macOS లో డార్క్ ఐకాన్ శైలికి మద్దతు."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

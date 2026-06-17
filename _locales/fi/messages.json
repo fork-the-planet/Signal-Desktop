@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Lisää tarroja"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Artist -sarja"
@@ -2814,7 +2814,7 @@
     "messageformat": "Asenna"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Asennettu"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Poista"
@@ -2823,16 +2823,16 @@
     "messageformat": "Tarrapakettia ei voi asentaa uudelleen, jos sen lähdeviesti on poistettu."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Kaikki"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Lisää"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Poista"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Tarrapaketti"
@@ -6461,7 +6461,7 @@
     "messageformat": "Älä koskaan jaa palautusavaintasi kenellekään. Palautusavaimen avulla toinen voi ottaa tilisi hallintaansa. <strong>Signal ei koskaan lähetä viestejä</strong> pyytääkseen palautusavainta. Älä vastaa keskusteluihin, joissa lähettäjä esittää edustavansa Signalia."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Älä koskaan jaa palautusavaintasi kenellekään. Palautusavaimen avulla toinen voi ottaa tilisi hallintaansa. <strong>Signal ei koskaan lähetä viestejä</strong> pyytääkseen palautusavainta. Älä vastaa keskusteluihin, joissa lähettäjä esittää edustavansa Signalia. <learnMoreLink>Lue lisää.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Älä jaa"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Tuki tummille kuvakkeille macOS:ssa."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

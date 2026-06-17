@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Додајте налепници"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Серија уметници на Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Инсталирај"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Инсталирани"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Деинсталирај"
@@ -2823,16 +2823,16 @@
     "messageformat": "Можно е да не можете да го инсталирате овој пакет со стикери доколу ја немате оригиналната порака."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Сите"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Додај"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Отстрани"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Стикер пакет"
@@ -6461,7 +6461,7 @@
     "messageformat": "Не го споделувајте клучот за враќање резервни копии со никој. Ова ќе им овозможи да ја преземат вашата корисничка сметка. <strong>Signal никогаш нема да ви испрати порака</strong> за да ви го побара клучот за враќање резервни копии. Не одговарајте на пораки од некој кој се преправа дека е од Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Не го споделувајте клучот за враќање резервни копии со никој. Ова ќе им овозможи да ја преземат вашата корисничка сметка. <strong>Signal никогаш нема да ви испрати порака</strong> за да ви го побара клучот за враќање резервни копии. Не одговарајте на пораки од некој кој се преправа дека е од Signal. <learnMoreLink>Дознајте повеќе.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Не споделувај"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Поддршка за темните икони во macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

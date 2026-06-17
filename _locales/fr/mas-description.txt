@@ -1,6 +1,6 @@
 L'application de messagerie Signal est conçue pour protéger votre vie privée. Gratuite et facile à utiliser, elle assure un véritable chiffrement de bout en bout pour des communications vraiment confidentielles. Personne ne peut lire vos messages ni écouter vos appels. Pas même Signal. 
 
-• Signal on MacOS links with Signal on your phone. 
+• La version de Signal exécutée sous macOS est associée à l'appli Signal installée sur votre téléphone. 
 
 • Envoyez des messages texte ou vocaux, des photos, des vidéos, des GIF et des fichiers chiffrés de bout en bout. Le tout, gratuitement. 
 

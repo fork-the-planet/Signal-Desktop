@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "افزودن استیکر"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "سری های هنرمند سیگنال"
@@ -2814,7 +2814,7 @@
     "messageformat": "نصب"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "نصب شده است"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "حذف"
@@ -2823,16 +2823,16 @@
     "messageformat": "شاید نتوانید دوباره این پکیج استیکر را نصب کنید اگر پیام اصلی را دیگر ندارید."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "همه"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "افزودن"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "حذف"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "پک استیکر"
@@ -6461,7 +6461,7 @@
     "messageformat": "رمز بازیابی خود را با کسی به اشتراک نگذارید. با این کار می‌توانند کنترل حسابتان را به دست بگیرند. سیگنال هرگز برای رمز بازیابی <strong>به شما پیام نمی‌دهد.</strong> هیچ‌وقت به گفتگویی که وانمود می‌کند سیگنال است پاسخ ندهید."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "رمز بازیابی خود را با کسی به اشتراک نگذارید. با این کار می‌توانند کنترل حسابتان را به دست بگیرند. سیگنال هرگز برای رمز بازیابی <strong>به شما پیام نمی‌دهد.</strong> هیچ‌وقت به گفتگویی که وانمود می‌کند سیگنال است پاسخ ندهید. <learnMoreLink>اطلاعات بیشتر.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "لغو اشتراک‌گذاری"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "پشتیبانی از سبک آیکون تیره در macOS‏."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

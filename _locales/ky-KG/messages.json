@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Стикер кошуу"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal cүрөтчүлөрүнүн стикерлери"
@@ -2814,7 +2814,7 @@
     "messageformat": "Орнотуу"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Орнотулган"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Орнотууларды алып салуу"
@@ -2823,16 +2823,16 @@
     "messageformat": "Эгер сизде баштапкы билдирүү жок болсо, бул стикер топтомун кайра орното албай каласыз."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Баары"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Кошуу"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Алып салуу"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Стикерлер топтому"
@@ -2859,10 +2859,10 @@
     "messageformat": "Быйтыкчасы жок стикер"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Стикерлер топтомунун автору: {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Топтомду карап көрүү"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Быйтыкча"
@@ -6440,34 +6440,34 @@
     "messageformat": "Бул ачкыч менен аккаунтуңузду жана андагы нерселерди калыбына келтиресиз. Аны коопсуз жерде сактаңыз. Жоготуп алсаңыз, аккаунтуңузду калыбына келтире албай каласыз. <learnMoreLink>Кененирээк маалымат.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Бул ачкыч менен аккаунтуңузду жана андагы нерселерди калыбына келтиресиз. Аны коопсуз жерде сактап, эч ким менен бөлүшпөңүз. Signal эч качан сизден калыбына келтирүү ачкычын сурабайт. <learnMoreLink>Кененирээк маалымат.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Калыбына келтирүү ачкычын бөлүшпөңүз"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal эч качан сизден калыбына келтирүү ачкычын сурабайт</strong>. Өзүн Signal катары көрсөткөн маекке эч качан жооп бербеңиз. Калыбына келтирүүчү ачкычты коопсуз жерге сактап, эч кимге бербеңиз. <learnMoreLink>Кененирээк маалымат.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "Түшүндүм"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Бөлүшөм"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Ачкычты бөлүшпөйм"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Калыбына келтирүү ачкычын эч ким менен бөлүшпөңүз. Болбосо, аккаунтуңузга уруксатсыз кирип алышат. <strong>Signal эч качан сизден калыбына келтирүү ачкычын сурабайт</strong>. Өзүн Signal катары көрсөткөн маекке эч качан жооп бербеңиз."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Калыбына келтирүү ачкычын эч ким менен бөлүшпөңүз. Болбосо, аккаунтуңузга уруксатсыз кирип алышат. <strong>Signal эч качан сизден калыбына келтирүү ачкычын сурабайт</strong>. Өзүн Signal катары көрсөткөн маекке эч качан жооп бербеңиз. <learnMoreLink>Кененирээк маалымат.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Эч ким менен бөлүшпөйм"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Ачкычты чаптоо"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Камдык көчүрмөнүн ачкычын ырастаңыз"
@@ -6533,7 +6533,7 @@
     "messageformat": "Системдик аутентификация процесси ишке ашпай калгандыктан, бул аракет аягына чыкпайт. Кайталап көрүңүз же мобилдик түзмөгүңүздөгү Signal колдонмосун ачып, калыбына келтирүүчү ачкычты көрүү үчүн Камдык көчүрмөлөрдүн параметрлерине өтүңүз."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Бул аракетти системдик аутентификациядан өткөрүүдө ката кетти."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Ачкычты карап көрүү"
@@ -8260,9 +8260,12 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "«Бул ашыкча \"Е\" жинге тийип жатат» — дешти жакшы көргөн файлынын кеңейтүүсү үч тамга эмес, төрт тамгадан турганына нааразы болуп капаланган адамдар. Суроо-талаптарыңарды канааттандырганыбызга аябай кубанып жатабыз (оңой эле өзгөрттүк). Эми файл JPEG форматында сакталганда, анын аталышы демейкидей эле чекит jpg (.jpg) менен аяктайт."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Кара дизайнды сүйүүчүлөр үчүн macOS системасына кара түстөгү сүрөтчөлөрдү кошуп койдук."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

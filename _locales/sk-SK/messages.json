@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Pridať nálepky"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Zbierka od výtvarníkov Signalu"
@@ -2814,7 +2814,7 @@
     "messageformat": "Inštalovať"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Nainštalované"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Odinštalovať"
@@ -2823,16 +2823,16 @@
     "messageformat": "Ak viac nemáte zdrojovú správu, možno nebudete môcť preinštalovať balík nálepiek."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Všetky"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Pridať"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Odstrániť"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Balík nálepiek"
@@ -6461,7 +6461,7 @@
     "messageformat": "Nezdieľajte svoj kľúč na obnovenie s nikým. V opačnom prípade umožníte iným prevziať kontrolu nad vaším účtom. <strong>Signal vám nikdy nepošle správu</strong> s požiadavkou o poskytnutie kľúča na obnovenie. Nikdy neodpovedajte na správy, ktoré sa vydávajú za Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Nezdieľajte svoj kľúč na obnovenie s nikým. V opačnom prípade umožníte iným prevziať kontrolu nad vaším účtom. <strong>Signal vám nikdy nepošle správu</strong> s požiadavkou o poskytnutie kľúča na obnovenie. Nikdy neodpovedajte na správy, ktoré sa vydávajú za Signal. <learnMoreLink>Zistiť viac.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Nezdieľať"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Podpora pre tmavý režim ikon v systéme macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

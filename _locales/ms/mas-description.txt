@@ -1,6 +1,6 @@
 Signal ialah aplikasi pemesejan yang mengutamakan privasi. Ia percuma dan mudah digunakan, dengan penyulitan hujung ke hujung yang kukuh untuk memastikan sembang dan panggilan anda benar-benar peribadi. Signal tidak boleh membaca mesej anda atau mendengar panggilan anda, dan tiada orang lain yang boleh. 
 
-• Signal on MacOS links with Signal on your phone. 
+• Signal pada MacOS dipautkan dengan Signal pada telefon anda. 
 
 • Hantar teks, mesej suara, foto, video, GIF dan fail yang disulitkan hujung ke hujung secara percuma. 
 

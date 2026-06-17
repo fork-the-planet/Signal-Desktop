@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Добавить стикеры"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Стикеры от художников Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Установить"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Установлено"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Удалить"
@@ -2823,16 +2823,16 @@
     "messageformat": "Возможно, вы не сможете установить этот набор стикеров снова, если у вас уже нет исходного сообщения."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Все"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Добавить"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Удалить"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Набор стикеров"
@@ -6461,7 +6461,7 @@
     "messageformat": "Ни с кем не делитесь вашим ключом восстановления. Это позволит им завладеть вашей учётной записью. <strong>Signal никогда не посылает вам сообщения</strong> для получения вашего ключа восстановления. Никогда не отвечайте на чаты, притворяющиеся Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Ни с кем не делитесь вашим ключом восстановления. Это позволит им завладеть вашей учётной записью. <strong>Signal никогда не посылает вам сообщения</strong> для получения вашего ключа восстановления. Никогда не отвечайте на чаты, притворяющиеся Signal. <learnMoreLink>Узнать больше.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Не делиться"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "А если ваш внутренний гот вдруг захочет проявить себя, мы также добавили поддержку тёмного стиля для значков в macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

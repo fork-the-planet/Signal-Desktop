@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "បញ្ចូលស្ទីកគ័រ"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "សេ៊រីសិល្បករ Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "ដំឡើង"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "បានដំឡើង"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "លុបចេញ"
@@ -2823,16 +2823,16 @@
     "messageformat": "អ្នកប្រហែលមិនអាចដំឡើងកញ្ចប់ស្ទីកគ័រនេះឡើងវិញ ប្រសិនបើអ្នកមិនមានសារដើម។"
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "ទាំងអស់"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "បញ្ចូល"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "ដកចេញ"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "កញ្ចប់ស្ទីកគ័រ"
@@ -6461,7 +6461,7 @@
     "messageformat": "កុំចែករំលែកសោស្តាររបស់អ្នកជាមួយនរណាម្នាក់។ ព្រោះវានឹងអាចឱ្យពួកគេគ្រប់គ្រងគណនីរបស់អ្នកបាន។ <strong>Signal នឹងមិនផ្ញើសារមកអ្នក</strong>ដើម្បីសួររកសោស្តាររបស់អ្នកជាដាច់ខាត។ កុំឆ្លើយតបទៅនឹងការជជែកដែលតាំងខ្លួនជា Signal។"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "កុំចែករំលែកសោស្តាររបស់អ្នកជាមួយនរណាម្នាក់។ ព្រោះវានឹងអាចឱ្យពួកគេគ្រប់គ្រងគណនីរបស់អ្នកបាន។ <strong>Signal នឹងមិនផ្ញើសារមកអ្នក</strong>ដើម្បីសួររកសោស្តាររបស់អ្នកជាដាច់ខាត។ កុំឆ្លើយតបទៅនឹងការជជែកដែលតាំងខ្លួនជា Signal។ <learnMoreLink>ស្វែងយល់បន្ថែម។</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "កុំចែករំលែក"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "ប្រសិនបើអ្នកចង់យករចនាបថហ្គោធិកខាងក្នុងរបស់អ្នកមកប្រើ យើងក៏បានបន្ថែមការគាំទ្រដើម្បីឱ្យស្គាល់រចនាបថរូបងងឹតនៅក្នុង macOS ដែរ។"
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

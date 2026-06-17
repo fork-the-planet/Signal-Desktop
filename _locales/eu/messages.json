@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Gehitu eranskailuak"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal artisten serieak"
@@ -2814,7 +2814,7 @@
     "messageformat": "Instalatu"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Instalatua"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Desinstalatu"
@@ -2823,16 +2823,16 @@
     "messageformat": "Agian ezingo duzu eranskailu pakete hau berrinstalatu ez baduzu jatorrizko mezua."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Denak"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Gehitu"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Kendu"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Eranskailuen Paketea"
@@ -6461,7 +6461,7 @@
     "messageformat": "Ez partekatu berreskuratze-gakoa inorekin. Partekatuz gero, kontua lapurtu ahalko dizute. <strong>Signal-ek ez dizu inoiz mezurik bidaliko</strong> berreskuratze-gakoa eskatzeko. Ez erantzun Signal izatearen plantak egiten dituzten txatei."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Ez partekatu berreskuratze-gakoa inorekin. Partekatuz gero, kontua lapurtu ahalko dizute. <strong>Signal-ek ez dizu inoiz mezurik bidaliko</strong> berreskuratze-gakoa eskatzeko. Ez erantzun Signal izatearen plantak egiten dituzten txatei. <learnMoreLink>Lortu informazio gehiago</learnMoreLink>."
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Ez partekatu"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Ikono ilunen estiloa erabiltzeko aukera macOS-n."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

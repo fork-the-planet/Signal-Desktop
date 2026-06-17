@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Προσθήκη αυτοκόλλητων"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Σειρά καλλιτεχνών Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Εγκατάσταση"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Έχει εγκατασταθεί"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Απεγκατάσταση"
@@ -2823,16 +2823,16 @@
     "messageformat": "Ίσως να μη μπορέσεις να επανεγκαταστήσεις αυτό το πακέτο αυτοκολλήτων αν δεν έχεις πια το αρχικό μήνυμα."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Όλα"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Προσθήκη"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Αφαίρεση"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Πακέτο αυτοκολλήτων"
@@ -6461,7 +6461,7 @@
     "messageformat": "Μην κοινοποιείς το κλειδί ανάκτησής σου σε κανέναν. Αυτό θα τους επιτρέψει να αποκτήσουν πρόσβαση στον λογαριασμό σου <strong>Το Signal δεν θα επικοινωνήσει ποτέ μαζί σου</strong> για το κλειδί ανάκτησής σου. Μην απαντάς ποτέ σε μηνύματα από το Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Μην κοινοποιείς το κλειδί ανάκτησής σου σε κανέναν. Αυτό θα τους επιτρέψει να αποκτήσουν πρόσβαση στον λογαριασμό σου <strong>Το Signal δεν θα επικοινωνήσει ποτέ μαζί σου</strong> για το κλειδί ανάκτησής σου. Μην απαντάς ποτέ σε μηνύματα από το Signal. <learnMoreLink>Μάθε περισσότερα.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Μην το κοινοποιείς"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Υποστήριξη για το στυλ «σκοτεινά εικονίδια» στο macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

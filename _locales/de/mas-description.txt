@@ -1,6 +1,6 @@
 Signal ist eine Messaging-App, bei der Datenschutz und Privatsphäre im Mittelpunkt stehen. Sie ist kostenlos und einfach zu benutzen, mit einer starken Ende-zu-Ende-Verschlüsselung, die deine Chats und Anrufe absolut vertraulich macht. Weder Signal noch irgendjemand sonst kann deine Nachrichten lesen oder deine Anrufe mithören. 
 
-• Signal on MacOS links with Signal on your phone. 
+• Signal auf MacOS verbindet sich mit Signal auf deinem Telefon. 
 
 • Versende kostenlos Ende-zu-Ende-verschlüsselte Text- und Sprachnachrichten, Fotos, Videos, GIFs und sonstige Dateien. 
 

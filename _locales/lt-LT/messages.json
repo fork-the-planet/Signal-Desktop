@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Pridėti lipdukų"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal menininkų serija"
@@ -2814,7 +2814,7 @@
     "messageformat": "Įdiegti"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Įdiegtas"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Pašalinti"
@@ -2823,16 +2823,16 @@
     "messageformat": "Jei neturite pradinės žinutės, gali būti, kad negalėsite iš naujo įdiegti šio lipdukų paketo."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Visi"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Pridėti"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Šalinti"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Lipdukų paketas"
@@ -6461,7 +6461,7 @@
     "messageformat": "Su niekuo nesidalinkite savo atkūrimo raktu. Antraip šie asmenys galės perimti jūsų paskyrą. <strong>„Signal“ niekada neprašys jūsų</strong> pateikti atkūrimo raktą. Niekada neatsakykite į pokalbius, kuriuose apsimetama „Signal“."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Su niekuo nesidalinkite savo atkūrimo raktu. Antraip šie asmenys galės perimti jūsų paskyrą. <strong>„Signal“ niekada neprašys jūsų</strong> pateikti atkūrimo raktą. Niekada neatsakykite į pokalbius, kuriuose apsimetama „Signal“. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Nesidalinkite"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Tamsaus piktogramų stiliaus palaikymas „macOS“."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

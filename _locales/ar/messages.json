@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "إضافة مُلصَقات"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "المُلصَقات الفنية على سيجنال"
@@ -2814,7 +2814,7 @@
     "messageformat": "تثبيت"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "مُثبَّتة"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "إلغاء التثبيت"
@@ -2823,16 +2823,16 @@
     "messageformat": "قد يتعذَّر عليك إعادة تثبيت هذه المجموعة من المُلصَقات إذا لم تعد لديك الرسالة الأصلية."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "الجميع"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "إضافة"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "إزالة"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "مجموعة المُلصَقات"
@@ -6461,7 +6461,7 @@
     "messageformat": "لا تشارِك مفتاح الاستعادة الخاص بك مع أي أحد. سيمكنه هذا من الاستيلاء على حسابك. <strong>لن يُرسِل لك سيجنال أبدًا رسالة</strong> يطلب فيها مفتاح الاستعادة. تجنَّب الرد نهائيًا على الدردشات التي تدعي أنها مُرسَلة من طرف سيجنال."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "لا تشارِك مفتاح الاستعادة الخاص بك مع أي أحد. سيمكنه هذا من الاستيلاء على حسابك. <strong>لن يُرسِل لك سيجنال أبدًا رسالة</strong> يطلب فيها مفتاح الاستعادة. تجنَّب الرد نهائيًا على الدردشات التي تدعي أنها مُرسَلة من طرف سيجنال. <learnMoreLink>اعرف المزيد.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "لا تشارِك"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "إذا كُنتَ ترغب في إظهار دعمك للألوان الداكنة، فقد أضفنا أيضًا دعمًا لنمط الأيقونات الداكنة في نظام macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

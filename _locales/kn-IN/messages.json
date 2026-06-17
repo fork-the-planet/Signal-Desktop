@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "ಸ್ಟಿಕ್ಕರ್‌ಗಳನ್ನು ಸೇರಿಸಿ"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal ಕಲಾವಿದ ಸರಣಿ"
@@ -2814,7 +2814,7 @@
     "messageformat": "ಸ್ಥಾಪಿಸಿ"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "ಸ್ಥಾಪಿಸಲಾಗಿದೆ"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "ಅನ್‌‌ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ"
@@ -2823,16 +2823,16 @@
     "messageformat": "ನೀವು ಇನ್ನು ಮೂಲ ಸಂದೇಶವನ್ನು ಹೊಂದಿಲ್ಲದಿದ್ದರೆ ಈ ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್ ಅನ್ನು ನೀವು ಪುನಃ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "ಎಲ್ಲವೂ"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "ಸೇರಿಸಿ"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "ತೆಗೆದುಹಾಕಿ"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "ಸ್ಟಿಕ್ಕರ್ ಪ್ಯಾಕ್"
@@ -6461,7 +6461,7 @@
     "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀ ಅನ್ನು ಯಾರೊಂದಿಗೂ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ. ಇದು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅವರ ನಿಯಂತ್ರಣಕ್ಕೆ ತೆಗೆದುಕೊಳ್ಳಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ. ನಿಮ್ಮ ರಿಕವರಿ ಕೀಗಾಗಿ <strong>Signal ಎಂದಿಗೂ ನಿಮಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದಿಲ್ಲ</strong>. Signal ಎಂದು ಸೋಗುಹಾಕುವ ಚಾಟ್‌ಗೆ ಎಂದಿಗೂ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "ನಿಮ್ಮ ರಿಕವರಿ ಕೀ ಅನ್ನು ಯಾರೊಂದಿಗೂ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ. ಇದು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅವರ ನಿಯಂತ್ರಣಕ್ಕೆ ತೆಗೆದುಕೊಳ್ಳಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ. ನಿಮ್ಮ ರಿಕವರಿ ಕೀಗಾಗಿ <strong>Signal ಎಂದಿಗೂ ನಿಮಗೆ ಮೆಸೇಜ್ ಮಾಡುವುದಿಲ್ಲ</strong>. Signal ಎಂದು ಸೋಗುಹಾಕುವ ಚಾಟ್‌ಗೆ ಎಂದಿಗೂ ಪ್ರತಿಕ್ರಿಯಿಸಬೇಡಿ. <learnMoreLink>ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "ಹಂಚಿಕೊಳ್ಳಬೇಡಿ"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "ನೀವು ಗಾಢ ಥೀಮ್‌ಗಳನ್ನು ಇಷ್ಟಪಡುವವರಾಗಿದ್ದರೆ, macOS ನಲ್ಲಿ ಡಾರ್ಕ್ ಐಕಾನ್ ಶೈಲಿಯ ಬೆಂಬಲವನ್ನೂ ನಾವು ಸೇರಿಸಿದ್ದೇವೆ."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

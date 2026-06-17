@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Engadir stickers"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Serie de artistas de Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Instalar"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Instalados"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Desinstalar"
@@ -2823,16 +2823,16 @@
     "messageformat": "Pode que non poidas volver instalar este paquete de stickers se non tes a mensaxe fonte."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Todo"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Engadir"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Eliminar"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Paquete de stickers"
@@ -6461,7 +6461,7 @@
     "messageformat": "Non compartas a clave de recuperación con ninguén porque poderían facerse coa túa conta. <strong>Signal nunca che enviará unha mensaxe</strong> para solicitala. Nunca respondas a unha mensaxe de alguén que di ser Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Non compartas a clave de recuperación con ninguén porque poderían facerse coa túa conta. <strong>Signal nunca che enviará unha mensaxe</strong> para solicitala. Nunca respondas a unha mensaxe de alguén que di ser Signal. <learnMoreLink>Máis información.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Non compartir"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Compatibilidade coas iconas escuras en macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

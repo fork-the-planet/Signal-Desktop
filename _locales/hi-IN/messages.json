@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "स्टिकर जोड़ें"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal की आर्टिस्ट सीरीज़"
@@ -2814,7 +2814,7 @@
     "messageformat": "इंस्टॉल करें"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "इंस्टॉल किया गया"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "अनइंस्टॉल करें"
@@ -2823,16 +2823,16 @@
     "messageformat": "अगर आपके पास मूल मैसेज नहीं है, तो आपके पास इस स्टिकर पैक को दोबारा इंस्टॉल करने का विकल्प नहीं होगा।"
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "सभी"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "जोड़ें"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "हटाएं"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "स्टिकर पैक"
@@ -2859,10 +2859,10 @@
     "messageformat": "बिना इमोजी वाला स्टिकर"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "{author} द्वारा स्टिकर पैक"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "पैक देखें"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "इमोजी"
@@ -6440,34 +6440,34 @@
     "messageformat": "आपके अकाउंट और डेटा को रिकवर करने के लिए यह 'की' ज़रूरी है। इस 'की' को किसी सुरक्षित जगह पर स्टोर करें। इसके खोने पर आपको अकाउंट रिकवर करने में परेशानी होगी। <learnMoreLink>और जानें।</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "आपके अकाउंट और डेटा को रिकवर करने के लिए यह 'की' ज़रूरी है। इसे किसी सुरक्षित जगह पर स्टोर करें और कभी किसी के साथ शेयर न करें। Signal आपकी 'रिकवरी की' मांगने के लिए आपको कभी मैसेज नहीं करता है। <learnMoreLink>और जानें।</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "'रिकवरी की' किसी को न बताएं"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal आपको कभी मैसेज नहीं करता</strong> कि आप अपनी 'रिकवरी की' बताएं। Signal के नाम पर भेजी गई ऐसी किसी भी चैट का जवाब न दें। अपनी 'रिकवरी की' को किसी सुरक्षित जगह पर स्टोर करें और इसे कभी किसी के साथ शेयर न करें। <learnMoreLink>और जानें।</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "ठीक है"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "'की' शेयर करें"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "'की' किसी को न बताएं"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "अपनी 'रिकवरी की' किसी को न बताएं। इससे वे आपके अकाउंट पर कब्ज़ा कर सकते हैं। <strong>Signal आपको कभी मैसेज नहीं करता</strong> कि आप अपनी 'रिकवरी की' बताएं। Signal के नाम पर भेजी गई ऐसी किसी भी चैट का जवाब न दें।"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "अपनी 'रिकवरी की' किसी को न बताएं। इससे वे आपके अकाउंट पर कब्ज़ा कर सकते हैं। <strong>Signal आपको कभी मैसेज नहीं करता</strong> कि आप अपनी 'रिकवरी की' बताएं। Signal के नाम पर भेजी गई ऐसी किसी भी चैट का जवाब न दें। <learnMoreLink>और जानें।</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "शेयर न करें"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "'की' पेस्ट करें"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "अपनी 'रिकवरी की' की पुष्टि करें"
@@ -6533,7 +6533,7 @@
     "messageformat": "यह कार्रवाई पूरी नहीं की जा सकी, क्योंकि सिस्टम ऑथेंटिकेशन नहीं हो पाया। कृपया फिर से कोशिश करें या अपने मोबाइल डिवाइस पर Signal ऐप खोलें और अपनी 'रिकवरी की' देखने के लिए बैकअप सेटिंग पर जाएं।"
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "इस एक्शन के लिए सिस्टम ऑथेंटिकेशन का अनुरोध करते समय कोई गड़बड़ी हुई है।"
   },
   "icu:Preferences__view-key": {
     "messageformat": "'की' देखें"
@@ -8260,9 +8260,12 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "\"इस फालतू 'E' ने मुझे तंग कर रखा है,\" यह नाराज़गी हमारे उन तमाम यूज़र ने जताई थी जो इस बात से नाखुश थे कि उनका पसंदीदा फ़ाइल एक्सटेंशन तीन अक्षरों के बजाय चार अक्षरों का है। आपकी बात हमने सिर आंखों पर ली है (वैसे यह बदलाव चुटकी बजाते ही हो गया)। अब आपको दिखेगा कि JPEG सेव करते समय डिफ़ॉल्ट फ़ाइलनेम के आखिर में वही अक्षर होंगे जो होने चाहिए, यानी आपको डॉट jpg लिखा दिखेगा।"
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "अगर आपको डार्क थीम या ब्लैक लुक पसंद है, तो हमने macOS में डार्क आइकन स्टाइल का सपोर्ट भी जोड़ दिया है।"
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

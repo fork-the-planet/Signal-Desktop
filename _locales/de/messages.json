@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Sticker hinzufügen"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal-Artist-Serie"
@@ -2814,7 +2814,7 @@
     "messageformat": "Installieren"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Installiert"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Deinstallieren"
@@ -2823,16 +2823,16 @@
     "messageformat": "Du wirst dieses Sticker-Set eventuell nicht erneut installieren können, falls du die Quellnachricht nicht mehr hast."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Alle"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Hinzufügen"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Entfernen"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Sticker-Set"
@@ -2859,10 +2859,10 @@
     "messageformat": "Sticker ohne Emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Sticker-Set von {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Set anzeigen"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -6359,7 +6359,7 @@
     "messageformat": "{cost} pro Monat"
   },
   "icu:Preferences--backup-messages-plan__description": {
-    "messageformat": "{mediaDayCount, plural, one {Text- und Medien-Backup von {mediaDayCount,number} Tag} other {Text- und Medien-Backup der letzten {mediaDayCount,number} Tage}}"
+    "messageformat": "{mediaDayCount, plural, one {Vollständiges Text- sowie Medien-Backup von {mediaDayCount,number} Tag} other {Vollständiges Text- sowie Medien-Backup der letzten {mediaDayCount,number} Tage}}"
   },
   "icu:Preferences--backup-messages-plan__cost-description": {
     "messageformat": "Dein Backup-Abo ist kostenlos"
@@ -6440,34 +6440,34 @@
     "messageformat": "Dieser Schlüssel wird benötigt, um dein Konto und deine Daten wiederherzustellen. Bewahre diesen Schlüssel sicher auf. Wenn du ihn verlierst, kannst du dein Konto nicht wiederherstellen. <learnMoreLink>Mehr erfahren.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Dieser Schlüssel wird benötigt, um dein Konto und deine Daten wiederherzustellen. Speichere ihn an einem sicheren Ort und gib ihn an niemanden weiter. Signal wird dich nie per Nachricht nach deinem Wiederherstellungsschlüssel fragen. <learnMoreLink>Mehr erfahren.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Gib den Wiederherstellungsschlüssel nicht weiter"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Signal wird dich nie per Nachricht</strong> nach deinem Wiederherstellungsschlüssel fragen. Reagiere niemals auf eine Chat-Nachricht, die vorgibt, von Signal zu sein. Speichere deinen Wiederherstellungsschlüssel an einem sicheren Ort und gib ihn an niemanden weiter. <learnMoreLink>Mehr erfahren.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "Verstanden"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Schlüssel weitergeben"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Schlüssel nicht weitergeben"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Gib deinen Wiederherstellungsschlüssel an niemanden weiter. Dadurch könnte jemand die Kontrolle über dein Konto übernehmen. <strong>Signal wird dich nie per Nachricht</strong> nach deinem Wiederherstellungsschlüssel fragen. Reagiere niemals auf eine Chat-Nachricht, die vorgibt, von Signal zu sein."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Gib deinen Wiederherstellungsschlüssel an niemanden weiter. Dadurch könnte jemand die Kontrolle über dein Konto übernehmen. <strong>Signal wird dich nie per Nachricht</strong> nach deinem Wiederherstellungsschlüssel fragen. Reagiere niemals auf eine Chat-Nachricht, die vorgibt, von Signal zu sein. <learnMoreLink>Mehr erfahren.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Nicht weitergeben"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Schlüssel einfügen"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Bestätige deinen Wiederherstellungsschlüssel"
@@ -6533,7 +6533,7 @@
     "messageformat": "Dieser Vorgang konnte nicht abgeschlossen werden, da die Systemauthentifizierung fehlgeschlagen ist. Bitte versuche es erneut oder öffne die Signal-App auf deinem Mobilgerät und rufe die Backup-Einstellungen auf, um deinen Wiederherstellungsschlüssel anzuzeigen."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Bei der Systemauthentifizierung für diese Aktion ist ein Fehler aufgetreten."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Schlüssel anzeigen"
@@ -8260,9 +8260,12 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "»Dieses zusätzliche E nervt«, beklagten sich die Leute, die es störte, dass ihre Lieblingsdatei-Endung vier statt drei Buchstaben hatte. Wir haben das gerne behoben (die Änderung war kinderleicht) – und jetzt kannst du sehen, dass der Standard-Dateiname beim Speichern eines JPEG wie gewünscht auf ».jpg« endet."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Wenn du deinen inneren Goth ausleben möchtest: Wir unterstützen jetzt auch den dunklen Icon-Stil in MacOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

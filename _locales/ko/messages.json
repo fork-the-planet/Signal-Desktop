@@ -39,7 +39,7 @@
     "messageformat": "취소"
   },
   "icu:RecordingComposer__send": {
-    "messageformat": "보내기"
+    "messageformat": "전송"
   },
   "icu:GroupListItem__message-default": {
     "messageformat": "{count, plural, other {멤버 {count,number}명}}"
@@ -528,7 +528,7 @@
     "messageformat": "그냥 보내기"
   },
   "icu:safetyNumberChangeDialog_send": {
-    "messageformat": "보내기"
+    "messageformat": "전송"
   },
   "icu:safetyNumberChangeDialog_done": {
     "messageformat": "확인"
@@ -1233,7 +1233,7 @@
     "messageformat": "복수 투표 허용"
   },
   "icu:PollCreateModal__sendButton": {
-    "messageformat": "보내기"
+    "messageformat": "전송"
   },
   "icu:PollCreateModal__Error--RequiresQuestion": {
     "messageformat": "설문조사 질문이 필요합니다."
@@ -1845,7 +1845,7 @@
     "messageformat": "통화 알림"
   },
   "icu:calling__call-is-full": {
-    "messageformat": "통화 최대 참가자 수 도달"
+    "messageformat": "통화 정원 도달"
   },
   "icu:calling__cant-join": {
     "messageformat": "통화에 참여할 수 없습니다."
@@ -1881,7 +1881,7 @@
     "messageformat": "이 통화에 대한 최대 참가자 수에 도달했습니다. 나중에 다시 시도하세요."
   },
   "icu:calling__has-max-devices--title": {
-    "messageformat": "통화 최대 참가자 수 도달"
+    "messageformat": "통화 정원 도달"
   },
   "icu:CallingLobby__CallLinkNotice": {
     "messageformat": "이 링크로 통화에 참여하는 모든 사람이 나의 이름과 사진을 볼 수 있습니다."
@@ -1899,7 +1899,7 @@
     "messageformat": "시작"
   },
   "icu:CallingLobbyJoinButton--call-full": {
-    "messageformat": "통화 최대 참가자 수 도달"
+    "messageformat": "통화 정원 도달"
   },
   "icu:CallingLobbyJoinButton--ask-to-join": {
     "messageformat": "참여 요청"
@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "스티커 추가"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal 아티스트 시리즈"
@@ -2814,7 +2814,7 @@
     "messageformat": "설치"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "설치됨"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "제거"
@@ -2823,16 +2823,16 @@
     "messageformat": "원본 메시지가 없을 경우 이 스티커 팩을 다시 설치할 수 없게 됩니다."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "전체"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "추가"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "삭제"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "스티커 팩"
@@ -2859,10 +2859,10 @@
     "messageformat": "이모지 없는 스티커"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "{author} 님의 스티커 팩"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "팩 보기"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "이모지"
@@ -3615,7 +3615,7 @@
     "messageformat": "Signal이 운영하는 유일한 공식 채널. 최신 소식과 릴리스 노트를 확인하세요."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Signal이 운영하는 유일한 공식 채널."
+    "messageformat": "Signal이 운영하는 유일한 공식 채널입니다."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "최신 소식과 릴리스 노트를 확인하세요."
@@ -6440,34 +6440,34 @@
     "messageformat": "이 키는 계정과 데이터를 복원하는 데 필요합니다. 안전한 곳에 보관해 두세요. 키를 분실하면 계정을 복원할 수 없습니다. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "이 키는 계정과 데이터를 복원하는 데 필요합니다. 안전한 곳에 보관해 두고 다른 사람과 절대 공유하지 마세요. Signal은 사용자에게 복구 키를 요구하는 메시지를 절대 보내지 않습니다. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "복구 키를 공유하지 마세요"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Signal은 사용자에게 복구 키를 요구하는 메시지를 <strong>절대</strong> 보내지 않습니다. Signal을 사칭하는 채팅에 절대 답장하지 마세요. 또한, 복구 키는 안전한 곳에 보관해 두고 다른 사람과 절대 공유하지 마세요. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "확인"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "복구 키 공유하기"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "복구 키 공유하지 않기"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "다른 사람과 복구 키를 공유하지 마세요. 복구 키를 공유하면 다른 사람이 내 계정을 탈취할 수 있습니다. Signal은 사용자에게 복구 키를 요구하는 메시지를 <strong>절대</strong> 보내지 않습니다. Signal을 사칭하는 채팅에 절대 답장하지 마세요."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "다른 사람과 복구 키를 공유하지 마세요. 복구 키를 공유하면 다른 사람이 내 계정을 탈취할 수 있습니다. Signal은 사용자에게 복구 키를 요구하는 메시지를 <strong>절대</strong> 보내지 않습니다. Signal을 사칭하는 채팅에 절대 답장하지 마세요. <learnMoreLink>자세히 알아보기.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "공유하지 않기"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "복구 키 붙여넣기"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "복구 키를 확인하세요"
@@ -6533,7 +6533,7 @@
     "messageformat": "시스템 인증에 실패하여 작업을 완료할 수 없습니다. 다시 시도하거나, 모바일 기기에서 Signal 앱을 열고 '백업 설정'으로 이동하여 복구 키를 확인하세요."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "이 작업에 필요한 시스템 인증을 요청하는 중에 오류가 발생했습니다."
   },
   "icu:Preferences__view-key": {
     "messageformat": "키 보기"
@@ -6770,7 +6770,7 @@
     "messageformat": "Signal이 작동 중단 후 다시 실행되었습니다. Signal이 해당 문제를 검토할 수 있도록 작동 중단 보고서를 제출해 주세요."
   },
   "icu:CrashReportDialog__submit": {
-    "messageformat": "보내기"
+    "messageformat": "전송"
   },
   "icu:CrashReportDialog__erase": {
     "messageformat": "보내지 않음"
@@ -7536,7 +7536,7 @@
     "messageformat": "메시지 추가"
   },
   "icu:DraftGifMessageSendModal__SendButtonLabel": {
-    "messageformat": "보내기"
+    "messageformat": "전송"
   },
   "icu:EditHistoryMessagesModal__title": {
     "messageformat": "수정 기록"
@@ -8260,9 +8260,12 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "JPEG 이미지의 기본 파일 확장자를 jpg로 변경했습니다. 이제 JPEG 이미지를 저장할 때 기본 파일명이 .jpg 확장자로 저장됩니다."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "macOS에서 다크 아이콘 스타일을 지원하도록 개선했습니다."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

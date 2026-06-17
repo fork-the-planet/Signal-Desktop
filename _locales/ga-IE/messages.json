@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Cuir Greamáin Leis"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Sraith Ealaíontóirí Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Suiteáil"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Suiteáilte"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Díshuiteáil"
@@ -2823,16 +2823,16 @@
     "messageformat": "Seans nach mbeidh tú in ann an beart greamán seo a athshuiteáil mura bhfuil an teachtaireacht fhoinseach agat a thuilleadh."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Iad uile"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Cuir leis"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Bain de é"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Beart Greamán"
@@ -2859,10 +2859,10 @@
     "messageformat": "Greamán gan emoji"
   },
   "icu:stickers--StickerPackLinkPreviewDescription": {
-    "messageformat": "Sticker Pack by {author}"
+    "messageformat": "Beart Greamán le {author}"
   },
   "icu:stickers--ViewPack": {
-    "messageformat": "View Pack"
+    "messageformat": "Féach ar an mBeart"
   },
   "icu:FunPicker__Tab--Emojis": {
     "messageformat": "Emoji"
@@ -6440,34 +6440,34 @@
     "messageformat": "Tá an eochair seo ag teastáil chun do chuntas agus do shonraí a athshlánú. Stóráil an eochair in áit shábháilte. Má chailleann tú í, ní bheidh tú in ann do chuntas a athshlánú. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Tá an eochair seo ag teastáil chun do chuntas agus do shonraí a athshlánú. Stóráil in áit shlán shábháilte í agus ná comhroinn choíche le duine ar bith í. Ní sheolfaidh Signal teachtaireacht chugat choíche chun d'eochair athshlánaithe a iarraidh ort. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
-    "messageformat": "Do not share recovery key"
+    "messageformat": "Ná comhroinn an eochair athshlánaithe"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "<strong>Ní sheolfaidh Signal teachtaireacht chugat choíche</strong> chun d'eochair athshlánaithe a iarraidh ort. Ná freagair comhrá choíche a ligeann gur Signal atá ann. Stóráil d'eochair athshlánaithe in áit shlán shábháilte agus ná comhroinn choíche le duine ar bith í. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "Tuigim"
   },
   "icu:CompositionInput__recovery-key-paste__share-key": {
-    "messageformat": "Share key"
+    "messageformat": "Comhroinn an eochair"
   },
   "icu:CompositionInput__recovery-key-paste__do-not-share-key": {
-    "messageformat": "Do not share key"
+    "messageformat": "Ná comhroinn an eochair"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+    "messageformat": "Ná comhroinn d'eochair athshlánaithe le haon duine. Óir beidh an duine sin in ann teacht i gceannas ar do chuntas. <strong>Ní sheolfaidh Signal teachtaireacht chugat choíche</strong> chun d'eochair athshlánaithe a iarraidh ort. Ná freagair comhrá choíche a ligeann gur Signal atá ann."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Ná comhroinn d'eochair athshlánaithe le haon duine. Óir beidh an duine sin in ann teacht i gceannas ar do chuntas. <strong>Ní sheolfaidh Signal teachtaireacht chugat choíche</strong> chun d'eochair athshlánaithe a iarraidh ort. Ná freagair comhrá choíche a ligeann gur Signal atá ann. <learnMoreLink>Tuilleadh faisnéise.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
-    "messageformat": "Don't share"
+    "messageformat": "Ná comhroinn"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-paste": {
-    "messageformat": "Paste key"
+    "messageformat": "Greamaigh an eochair"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Deimhnigh d'eochair athshlánaithe"
@@ -6533,7 +6533,7 @@
     "messageformat": "Níorbh fhéidir an gníomh sin a chur i gcrích toisc gur theip ar fhíordheimhniú an chórais. Triail arís é nó oscail an aip Signal ar do ghléas móibíleach agus téigh chuig Socruithe Cúltacaí le féachaint ar d'eochair athshlánaithe."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
-    "messageformat": "An error occurred while requesting system authentication for this action."
+    "messageformat": "Tharla earráid agus fíordheimhniú córais á iarraidh don ghníomh seo."
   },
   "icu:Preferences__view-key": {
     "messageformat": "Féach ar an eochair"
@@ -8260,9 +8260,12 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+    "messageformat": "Rinneamar an iarmhír chomhadainm réamhshocraithe le haghaidh íomhánna JPEG a nuashonrú chuig jpeg."
   },
   "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+    "messageformat": "Tacaíocht don stíl deilbhín dhorcha in macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

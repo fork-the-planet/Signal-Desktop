@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Lägg till klistermärken"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal-artistserier"
@@ -2814,7 +2814,7 @@
     "messageformat": "Installera"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Installerad"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Avinstallera"
@@ -2823,16 +2823,16 @@
     "messageformat": "Du kanske inte kan installera om det här klistermärkespaketet om du inte längre har källmeddelandet."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Alla"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Lägg till"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Ta bort"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Klistermärkepaket"
@@ -6461,7 +6461,7 @@
     "messageformat": "Dela inte din återställningsnyckel med någon. Det gör att de kan ta över ditt konto. <strong>Signal kommer aldrig att skicka meddelanden till dig</strong> för att be om din återställningsnyckel. Svara aldrig på en chatt som utger sig för att vara Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Dela inte din återställningsnyckel med någon. Det gör att de kan ta över ditt konto. <strong>Signal kommer aldrig att skicka meddelanden till dig</strong> för att be om din återställningsnyckel. Svara aldrig på en chatt som utger sig för att vara Signal. <learnMoreLink>Läs mer.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Dela inte"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Stöd för den mörka ikonstilen i macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

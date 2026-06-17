@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Стикерлерді қосу"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signal Artist топтамасы"
@@ -2814,7 +2814,7 @@
     "messageformat": "Орнату"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Орнатылды"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Орнатылғанды жою"
@@ -2823,16 +2823,16 @@
     "messageformat": "Бастапқы хат болмаса, бұл стикерлер жинағын қайта орната алмауыңыз мүмкін."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Барлығы"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Қосу"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Өшіру"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Стикерлер жинағы"
@@ -6461,7 +6461,7 @@
     "messageformat": "Қалпына келтіру кілтін ешкіммен бөліспеңіз. Әйтпесе аккаунтыңызды басқалар иеленіп алуы мүмкін. <strong>Signal ешқашан сізге хабарласып,</strong> қалпына келтіру кілтін сұрамайды. Signal-дың атын жамылған чаттарға ешқашан жауап бермеңіз."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Қалпына келтіру кілтін ешкіммен бөліспеңіз. Әйтпесе аккаунтыңызды басқалар иеленіп алуы мүмкін. <strong>Signal ешқашан сізге хабарласып,</strong> қалпына келтіру кілтін сұрамайды. Signal-дың атын жамылған чаттарға ешқашан жауап бермеңіз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Бөліспеу"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Қараңғы түстер стилін ұнататын болсаңыз, енді macOS-тағы қараңғы белгіше стилін де пайдалана аласыз."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

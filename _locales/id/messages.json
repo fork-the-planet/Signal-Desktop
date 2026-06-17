@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Tambahkan Stiker"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Seri Seniman Signal"
@@ -2814,7 +2814,7 @@
     "messageformat": "Pasang"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Terinstal"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Mencopot pemasangan"
@@ -2823,16 +2823,16 @@
     "messageformat": "Anda mungkin tidak bisa untuk memasang ulang paket stiker ini jika Anda tidak lagi memiliki sumber pesannya."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Semua"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Tambahkan"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Hapus"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Paket Stiker"
@@ -6461,7 +6461,7 @@
     "messageformat": "Jangan bagikan kunci pemulihan Anda kepada siapa pun. Ini memungkinkan orang lain mengambil alih akun Anda. <strong>Signal tidak akan pernah mengirimi Anda pesan</strong> untuk meminta kunci pemulihan. Jangan pernah membalas chat yang mengatasnamakan Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Jangan bagikan kunci pemulihan Anda kepada siapa pun. Ini memungkinkan orang lain mengambil alih akun Anda. <strong>Signal tidak akan pernah mengirimi Anda pesan</strong> untuk meminta kunci pemulihan. Jangan pernah membalas chat yang mengatasnamakan Signal. <learnMoreLink>Pelajari selengkapnya.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Jangan bagikan"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Mendukung gaya ikon gelap di macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }

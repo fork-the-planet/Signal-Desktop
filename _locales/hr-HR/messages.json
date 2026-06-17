@@ -2790,7 +2790,7 @@
     "messageformat": "No sticker packs, add stickers to send to your friends."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Add stickers"
+    "messageformat": "Dodaj naljepnice"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Signalova umjetnička serija"
@@ -2814,7 +2814,7 @@
     "messageformat": "Instaliraj"
   },
   "icu:stickers--StickerManager--Installed": {
-    "messageformat": "Installed"
+    "messageformat": "Instalirano"
   },
   "icu:stickers--StickerManager--Uninstall": {
     "messageformat": "Deinstaliraj"
@@ -2823,16 +2823,16 @@
     "messageformat": "Ovaj paket naljepnica možda nećete moći ponovno instalirati ako više nemate izvornu poruku."
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "All"
+    "messageformat": "Svi"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
     "messageformat": "My Stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
-    "messageformat": "Add"
+    "messageformat": "Dodaj"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Remove"
+    "messageformat": "Ukloni"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Paket naljepnica"
@@ -6461,7 +6461,7 @@
     "messageformat": "Ne dijelite svoj ključ za oporavak ni s kim. Dijeljenjem ključa omogućit ćete drugima da preuzmu vaš račun. <strong>Signal vas nikada neće kontaktirati putem poruke</strong> da pita za vaš ključ za oporavak. Nikada ne odgovarajte na poruke koje se predstavljaju kao da su od Signala."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+    "messageformat": "Ne dijelite svoj ključ za oporavak ni s kim. Dijeljenjem ključa omogućit ćete drugima da preuzmu vaš račun. <strong>Signal vas nikada neće kontaktirati putem poruke</strong> da pita za vaš ključ za oporavak. Nikada ne odgovarajte na poruke koje se predstavljaju kao da su od Signala. <learnMoreLink>Saznajte više.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Ne dijeli"
@@ -8264,5 +8264,8 @@
   },
   "icu:WhatsNew__8.15--1": {
     "messageformat": "Podrška za tamnu temu za ikone u sustavu macOS."
+  },
+  "icu:WhatsNew__8.16--0": {
+    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
   }
 }
