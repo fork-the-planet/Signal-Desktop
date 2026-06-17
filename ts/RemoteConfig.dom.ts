@@ -293,7 +293,10 @@ export const _refreshRemoteConfig = async ({
       `Remote Config: Flags ${[...changedKeys].join(', ')} have changed`
     );
 
-    if (isEnabled('desktop.loggingErrorToasts')) {
+    if (
+      isEnabled('desktop.loggingErrorToasts') &&
+      Object.keys(oldConfig ?? {}).length > 0
+    ) {
       window.reduxActions.toast.showToast({
         toastType: ToastType.RemoteConfigChanged,
         changes: changeDescriptions,
