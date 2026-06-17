@@ -382,7 +382,7 @@ async function getBackgroundColor(
   throw missingCaseError(theme);
 }
 
-async function getLocaleOverrideSetting(): Promise<string | null> {
+function getLocaleOverrideSetting(): string | null {
   const value = ephemeralConfig.get('localeOverride');
   // oxlint-disable-next-line eqeqeq -- Checking for null explicitly
   if (typeof value === 'string' || value === null) {
@@ -2026,6 +2026,30 @@ function loadPreferredSystemLocales(): Array<string> {
   return app.getPreferredSystemLanguages();
 }
 
+function resolveTranslationsLocale() {
+  if (!resolvedTranslationsLocale) {
+    preferredSystemLocales = resolveCanonicalLocales(
+      loadPreferredSystemLocales()
+    );
+
+    localeOverride = getLocaleOverrideSetting();
+
+    const hourCyclePreference = getHourCyclePreference();
+    log.info(`app.ready: hour cycle preference: ${hourCyclePreference}`);
+
+    log.info('app.ready: preferred system locales:', preferredSystemLocales);
+    resolvedTranslationsLocale = loadLocale({
+      rootDir,
+      hourCyclePreference,
+      isPackaged: app.isPackaged,
+      localeDirectionTestingOverride,
+      localeOverride,
+      logger: log,
+      preferredSystemLocales,
+    });
+  }
+}
+
 async function getDefaultLoginItemSettings(): Promise<Settings> {
   if (!OS.isWindows()) {
     return {};
@@ -2052,6 +2076,9 @@ const featuresToDisable = `HardwareMediaKeyHandling,${app.commandLine.getSwitchV
   'disable-features'
 )}`;
 app.commandLine.appendSwitch('disable-features', featuresToDisable);
+
+resolveTranslationsLocale();
+app.commandLine.appendSwitch('lang', getResolvedMessagesLocale().name);
 
 // This has to run before the 'ready' event.
 electronProtocol.registerSchemesAsPrivileged([
@@ -2120,27 +2147,7 @@ app.on('ready', async () => {
   // ERROR-level logging is sufficient for main process.
   trackHeapSize();
 
-  if (!resolvedTranslationsLocale) {
-    preferredSystemLocales = resolveCanonicalLocales(
-      loadPreferredSystemLocales()
-    );
-
-    localeOverride = await getLocaleOverrideSetting();
-
-    const hourCyclePreference = getHourCyclePreference();
-    log.info(`app.ready: hour cycle preference: ${hourCyclePreference}`);
-
-    log.info('app.ready: preferred system locales:', preferredSystemLocales);
-    resolvedTranslationsLocale = loadLocale({
-      rootDir,
-      hourCyclePreference,
-      isPackaged: app.isPackaged,
-      localeDirectionTestingOverride,
-      localeOverride,
-      logger: log,
-      preferredSystemLocales,
-    });
-  }
+  resolveTranslationsLocale();
 
   sqlInitPromise = initializeSQL(userDataPath);
 
@@ -2266,7 +2273,7 @@ app.on('ready', async () => {
     );
   }
 
-  GlobalErrors.updateLocale(resolvedTranslationsLocale);
+  GlobalErrors.updateLocale(getResolvedMessagesLocale());
 
   // If the sql initialization takes more than three seconds to complete, we
   // want to notify the user that things are happening
@@ -2392,7 +2399,7 @@ app.on('ready', async () => {
   setupMenu();
 
   systemTrayService = new SystemTrayService({
-    i18n: resolvedTranslationsLocale.i18n,
+    i18n: getResolvedMessagesLocale().i18n,
   });
   systemTrayService.setMainWindow(mainWindow);
   systemTrayService.setEnabled(

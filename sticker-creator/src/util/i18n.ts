@@ -111,6 +111,8 @@ export async function loadLocale(
     }
   }
 
+  document.documentElement.setAttribute('lang', locale);
+
   debug('using %j locale', locale);
   return { locale, messages };
 }
