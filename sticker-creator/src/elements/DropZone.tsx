@@ -11,8 +11,9 @@ import { useStickerDropzone } from '../util/useStickerDropzone';
 export type Props = {
   readonly inner?: boolean;
   readonly label: string;
-  onDrop(files: ReadonlyArray<File>): unknown;
-  onDragActive?(active: boolean): unknown;
+  onDrop: (files: ReadonlyArray<File>) => void;
+  onDragActive?: (active: boolean) => void;
+  onDropRejected: () => void;
 };
 
 const getClassName = ({ inner }: Props, isDragActive: boolean) => {
@@ -28,7 +29,7 @@ const getClassName = ({ inner }: Props, isDragActive: boolean) => {
 };
 
 export function DropZone(props: Props): JSX.Element {
-  const { inner, label, onDrop, onDragActive } = props;
+  const { inner, label, onDrop, onDragActive, onDropRejected } = props;
   const i18n = useI18n();
 
   const handleDrop = useCallback(
@@ -40,8 +41,10 @@ export function DropZone(props: Props): JSX.Element {
     [onDrop]
   );
 
-  const { getRootProps, getInputProps, isDragActive } =
-    useStickerDropzone(handleDrop);
+  const { getRootProps, getInputProps, isDragActive } = useStickerDropzone(
+    handleDrop,
+    onDropRejected
+  );
 
   useEffect(() => {
     if (onDragActive) {

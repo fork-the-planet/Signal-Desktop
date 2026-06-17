@@ -11,7 +11,13 @@ import { useStickerDropzone } from '../../util/useStickerDropzone';
 import { H2, Text } from '../../elements/Typography';
 import { LabeledInput } from '../../elements/LabeledInput';
 import { ConfirmModal } from '../../components/ConfirmModal';
-import { setCover, removeImage, setTitle, setAuthor } from '../../slices/art';
+import {
+  setCover,
+  removeImage,
+  setTitle,
+  setAuthor,
+  addToast,
+} from '../../slices/art';
 import {
   useArtType,
   useAllDataValid,
@@ -47,8 +53,14 @@ export function MetaStage(): JSX.Element {
     [dispatch, artType]
   );
 
-  const { getRootProps, getInputProps, isDragActive } =
-    useStickerDropzone(onDrop);
+  const onDropRejected = useCallback(() => {
+    dispatch(addToast({ key: 'StickerCreator--Toasts--errorProcessing' }));
+  }, [dispatch]);
+
+  const { getRootProps, getInputProps, isDragActive } = useStickerDropzone(
+    onDrop,
+    onDropRejected
+  );
 
   const onNext = useCallback(() => {
     setConfirming(true);

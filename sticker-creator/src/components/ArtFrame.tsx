@@ -38,7 +38,7 @@ export type OnPickEmojiOptions = Readonly<{
   emoji: EmojiData;
 }>;
 
-export type Props = Partial<Pick<DropZoneProps, 'onDrop'>> &
+export type Props = Partial<Pick<DropZoneProps, 'onDrop' | 'onDropRejected'>> &
   Readonly<{
     artType: ArtType;
     id?: string;
@@ -65,6 +65,7 @@ export const ArtFrame = memo(function ArtFrame({
   onRemove,
   onPickEmoji,
   onDrop,
+  onDropRejected,
 }: Props) {
   const i18n = useI18n();
   const [emojiPickerOpen, setEmojiPickerOpen] = useState(false);
@@ -187,10 +188,11 @@ export const ArtFrame = memo(function ArtFrame({
           onMouseLeave={handleMouseEnter}
         />
       ) : null}
-      {mode === 'add' && onDrop ? (
+      {mode === 'add' && onDrop && onDropRejected ? (
         <DropZone
           label={i18n(`StickerCreator--DropStage--dragDrop--${artType}`)}
           onDrop={onDrop}
+          onDropRejected={onDropRejected}
           inner
           onDragActive={setDragActive}
         />

@@ -124,12 +124,17 @@ export function ArtGrid({ mode, showGuide }: Props): JSX.Element {
     [dispatch, artType]
   );
 
+  const handleDropRejected = useCallback(() => {
+    dispatch(addToast({ key: 'StickerCreator--Toasts--unsupportedFormat' }));
+  }, [dispatch]);
+
   if (list.length === 0) {
     return (
       <div className={styles.drop}>
         <DropZone
           label={i18n('StickerCreator--DropStage--dragDrop')}
           onDrop={handleDrop}
+          onDropRejected={handleDropRejected}
         />
       </div>
     );
@@ -144,6 +149,7 @@ export function ArtGrid({ mode, showGuide }: Props): JSX.Element {
           showGuide={showGuide}
           mode="add"
           onDrop={handleDrop}
+          onDropRejected={handleDropRejected}
         />
       );
     }
