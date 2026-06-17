@@ -2028,29 +2028,44 @@ export async function mergeAccountRecord(
 
   applyAvatarColor(ourConversation, accountRecord.avatarColor);
 
+  if (releaseNotesChatArchived != null) {
+    signalConversation.set({
+      isArchived: releaseNotesChatArchived,
+    });
+  }
+  if (releaseNotesChatMarkedUnread != null) {
+    signalConversation.set({
+      markedUnread: releaseNotesChatMarkedUnread,
+    });
+  }
+
   signalConversation.set({
-    isArchived: releaseNotesChatArchived,
-    markedUnread: releaseNotesChatMarkedUnread,
     storageID,
     storageVersion,
     needsStorageServiceSync: false,
   });
-  await applyMessageRequestState(
-    {
-      blocked: releaseNotesChatBlocked,
-      whitelisted: !releaseNotesChatBlocked,
-    },
-    signalConversation
-  );
-  signalConversation.setMuteExpiration(
-    getTimestampFromLong(
-      releaseNotesChatMutedUntilTimestamp,
-      Number.MAX_SAFE_INTEGER
-    ),
-    {
-      viaStorageServiceSync: true,
-    }
-  );
+
+  if (releaseNotesChatBlocked != null) {
+    await applyMessageRequestState(
+      {
+        blocked: releaseNotesChatBlocked,
+        whitelisted: !releaseNotesChatBlocked,
+      },
+      signalConversation
+    );
+  }
+
+  if (releaseNotesChatMutedUntilTimestamp != null) {
+    signalConversation.setMuteExpiration(
+      getTimestampFromLong(
+        releaseNotesChatMutedUntilTimestamp,
+        Number.MAX_SAFE_INTEGER
+      ),
+      {
+        viaStorageServiceSync: true,
+      }
+    );
+  }
 
   updatedConversations.push(ourConversation);
   updatedConversations.push(signalConversation);
