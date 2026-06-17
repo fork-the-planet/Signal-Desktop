@@ -353,7 +353,6 @@ export async function queueAttachmentDownloads(
         const data = await copyStickerToAttachments({
           packId,
           stickerId,
-          messageId,
         });
         // Refresh sticker attachment since we had to await above
         const freshSticker = message.get('sticker');

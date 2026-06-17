@@ -302,7 +302,10 @@ import type {
 } from '../types/Colors.std.ts';
 import { sqlLogger } from './sqlLogger.node.ts';
 import { permissiveMessageAttachmentSchema } from './server/messageAttachments.std.ts';
-import { getFilePathsReferencedByMessage } from '../util/messageFilePaths.std.ts';
+import {
+  getFilePathsReferencedByAttachment,
+  getFilePathsReferencedByMessage,
+} from '../util/messageFilePaths.std.ts';
 import { createMessagesOnInsertTrigger } from './migrations/1500-search-polls.std.ts';
 import { isValidPlaintextHash } from '../types/Crypto.std.ts';
 import { Emoji } from '../axo/emoji.std.ts';
@@ -2916,6 +2919,10 @@ function saveMessageAttachment({
 
     logger.info('Recovered from invalid message_attachment save');
   }
+
+  if (attachment.reuseToken != null) {
+    releaseAttachmentPathProtections(db, attachment);
+  }
 }
 
 function getAndProtectExistingAttachmentPath(
@@ -2924,14 +2931,12 @@ function getAndProtectExistingAttachmentPath(
     plaintextHash,
     version,
     contentType,
-    messageId,
   }: {
     plaintextHash: string;
     version: number;
     contentType: string;
-    messageId: string;
   }
-): ExistingAttachmentData | undefined {
+): (ExistingAttachmentData & { reuseToken: string }) | undefined {
   if (!isValidPlaintextHash(plaintextHash)) {
     logger.error('getAndProtectExistingAttachmentPath: Invalid plaintextHash');
     return;
@@ -2971,40 +2976,71 @@ function getAndProtectExistingAttachmentPath(
     LIMIT 1;
   `;
 
-  const existingData = db.prepare(query).get<ExistingAttachmentData>(params);
+  return db.transaction(() => {
+    const existingData = db.prepare(query).get<ExistingAttachmentData>(params);
 
-  if (!existingData) {
-    return undefined;
-  }
+    if (!existingData) {
+      return undefined;
+    }
 
-  const [protectQuery, protectParams] = sql`
+    const reuseToken = randomBytes(16).toString('hex');
+
+    const [protectQuery, protectParams] = sql`
       WITH existingMessageAttachmentPaths(path) AS (
         VALUES
           (${existingData.path}),
           (${existingData.thumbnailPath}),
           (${existingData.screenshotPath})
       )
-      INSERT OR REPLACE INTO attachments_protected_from_deletion(path, messageId)
-      SELECT path, ${messageId}
+      INSERT OR REPLACE INTO attachments_protected_from_deletion(path, reuseToken)
+      SELECT path, ${reuseToken}
       FROM existingMessageAttachmentPaths
       WHERE path IS NOT NULL;
     `;
-  db.prepare(protectQuery).run(protectParams);
+    db.prepare(protectQuery).run(protectParams);
 
-  return existingData;
+    return { ...existingData, reuseToken };
+  })();
 }
 
 function _protectAttachmentPathFromDeletion(
   db: WritableDB,
-  { path, messageId }: { path: string; messageId: string }
-): void {
+  { path }: { path: string }
+): string {
+  const reuseToken = randomBytes(16).toString('hex');
   const [protectQuery, protectParams] = sql`
     INSERT OR REPLACE INTO attachments_protected_from_deletion
-      (path, messageId)
+      (path, reuseToken)
     VALUES
-      (${path}, ${messageId});
+      (${path}, ${reuseToken});
   `;
   db.prepare(protectQuery).run(protectParams);
+  return reuseToken;
+}
+
+function releaseAttachmentPathProtections(
+  db: WritableDB,
+  attachment: AttachmentType
+): void {
+  const { reuseToken } = attachment;
+
+  if (!reuseToken) {
+    return;
+  }
+
+  const { externalAttachments } =
+    getFilePathsReferencedByAttachment(attachment);
+
+  if (!externalAttachments.size) {
+    return;
+  }
+
+  const [query, params] = sql`
+    DELETE FROM attachments_protected_from_deletion
+    WHERE reuseToken = ${reuseToken}
+    AND path IN (${sqlJoin([...externalAttachments])});
+  `;
+  db.prepare(query).run(params);
 }
 
 function resetProtectedAttachmentPaths(db: WritableDB): void {
@@ -3013,7 +3049,7 @@ function resetProtectedAttachmentPaths(db: WritableDB): void {
 
 function getAllProtectedAttachmentPaths(db: ReadableDB): Array<string> {
   return db
-    .prepare('SELECT path FROM attachments_protected_from_deletion', {
+    .prepare('SELECT DISTINCT path FROM attachments_protected_from_deletion', {
       pluck: true,
     })
     .all<string>();

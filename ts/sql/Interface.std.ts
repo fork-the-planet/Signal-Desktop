@@ -1484,20 +1484,12 @@ type WritableInterface = {
     plaintextHash,
     version,
     contentType,
-    messageId,
   }: {
     plaintextHash: string;
     version: number;
     contentType: MIMEType;
-    messageId: string;
-  }) => ExistingAttachmentData | undefined;
-  _protectAttachmentPathFromDeletion: ({
-    path,
-    messageId,
-  }: {
-    path: string;
-    messageId: string;
-  }) => void;
+  }) => (ExistingAttachmentData & { reuseToken: string }) | undefined;
+  _protectAttachmentPathFromDeletion: ({ path }: { path: string }) => string;
   resetProtectedAttachmentPaths: () => void;
 
   removeAll: () => void;

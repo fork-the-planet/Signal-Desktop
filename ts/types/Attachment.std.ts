@@ -27,6 +27,12 @@ export type BackupThumbnailType = WithOptionalProperties<ThumbnailType, 'size'>;
 export type EphemeralAttachmentFields = {
   totalDownloaded?: number;
   data?: Uint8Array<ArrayBuffer>;
+  /**
+   * Identifies this attachment's claim on reused paths in
+   * attachments_protected_from_deletion; saveMessageAttachments releases the claim when
+   * the attachment is saved.
+   */
+  reuseToken?: string;
   /** Not included in protobuf, needs to be pulled from flags */
   isVoiceMessage?: boolean;
   /** For messages not already on disk, this will be a data url */

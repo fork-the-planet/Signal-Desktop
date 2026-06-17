@@ -277,7 +277,6 @@ describe('cleanupOrphanedAttachments', () => {
 
       await DataWriter._protectAttachmentPathFromDeletion({
         path: `attachment${attachmentIndex + 1}`,
-        messageId: 'messageId',
       });
       await DataWriter.cleanupOrphanedAttachments({ _block: true });
 

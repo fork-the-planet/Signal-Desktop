@@ -149,6 +149,7 @@ import updateToSchemaVersion1690 from './1690-poll-terminate-notification-timest
 import updateToSchemaVersion1700 from './1700-trim-profile-names.std.ts';
 import updateToSchemaVersion1710 from './1710-emoji-skin-tone-default.std.ts';
 import updateToSchemaVersion1720 from './1720-update-recent-emoji.std.ts';
+import updateToSchemaVersion1730 from './1730-protected-attachments-dedupe-token.std.ts';
 
 import { DataWriter } from '../Server.node.ts';
 import { strictAssert } from '../../util/assert.std.ts';
@@ -1660,6 +1661,7 @@ export const SCHEMA_VERSIONS: ReadonlyArray<SchemaUpdateType> = [
   { version: 1700, update: updateToSchemaVersion1700 },
   { version: 1710, update: updateToSchemaVersion1710 },
   { version: 1720, update: updateToSchemaVersion1720 },
+  { version: 1730, update: updateToSchemaVersion1730 },
 ];
 
 class DBVersionFromFutureError extends Error {

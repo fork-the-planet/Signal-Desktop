@@ -215,10 +215,19 @@ CREATE TABLE attachment_downloads_backup_stats (
 ```sql
 CREATE TABLE attachments_protected_from_deletion (
   path TEXT NOT NULL,
-  messageId TEXT NOT NULL,
-  PRIMARY KEY (path, messageId)
+  reuseToken TEXT NOT NULL,
+  PRIMARY KEY (path, reuseToken)
 ) STRICT
 ```
+
+<details>
+<summary>Index: attachments_protected_from_deletion → attachments_protected_from_deletion_reuseToken</summary>
+
+```sql
+CREATE INDEX attachments_protected_from_deletion_reuseToken ON attachments_protected_from_deletion (reuseToken)
+```
+
+</details>
 
 <details>
 <summary>Index: attachments_protected_from_deletion → sqlite_autoindex_attachments_protected_from_deletion_1</summary>
@@ -1165,53 +1174,6 @@ CREATE INDEX message_attachments_thumbnailPath ON message_attachments (thumbnail
 
 ```text
 (404: SQL Not Found)
-```
-
-</details>
-
-<details>
-<summary>Trigger: message_attachments → stop_protecting_attachments_after_insert</summary>
-
-```sql
-CREATE TRIGGER stop_protecting_attachments_after_insert AFTER INSERT ON message_attachments BEGIN
-DELETE FROM attachments_protected_from_deletion
-WHERE
-  messageId IS NEW.messageId
-  AND path IN (
-    NEW.path,
-    NEW.thumbnailPath,
-    NEW.screenshotPath,
-    NEW.backupThumbnailPath
-  );
-
-END
-```
-
-</details>
-
-<details>
-<summary>Trigger: message_attachments → stop_protecting_attachments_after_update</summary>
-
-```sql
-CREATE TRIGGER stop_protecting_attachments_after_update AFTER
-UPDATE OF path,
-thumbnailPath,
-screenshotPath,
-backupThumbnailPath ON message_attachments WHEN OLD.path IS NOT NEW.path
-OR OLD.thumbnailPath IS NOT NEW.thumbnailPath
-OR OLD.screenshotPath IS NOT NEW.screenshotPath
-OR OLD.backupThumbnailPath IS NOT NEW.backupThumbnailPath BEGIN
-DELETE FROM attachments_protected_from_deletion
-WHERE
-  messageId IS NEW.messageId
-  AND path IN (
-    NEW.path,
-    NEW.thumbnailPath,
-    NEW.screenshotPath,
-    NEW.backupThumbnailPath
-  );
-
-END
 ```
 
 </details>
