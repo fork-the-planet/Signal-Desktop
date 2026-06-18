@@ -161,7 +161,7 @@ describe('emojiCompletion', () => {
         });
 
         const blot = {
-          value: () => ':smi',
+          value: () => ':soc',
         };
         mockQuill.getLeaf.returns([blot, 4]);
 
