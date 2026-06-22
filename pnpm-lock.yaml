@@ -715,14 +715,14 @@ importers:
   packages/windows-ucv:
     dependencies:
       bindings:
-        specifier: ^1.5.0
+        specifier: 1.5.0
         version: 1.5.0
       node-addon-api:
-        specifier: '*'
-        version: 8.5.0
+        specifier: 8.8.0
+        version: 8.8.0
     devDependencies:
       '@types/bindings':
-        specifier: ^1.5.5
+        specifier: 1.5.5
         version: 1.5.5
       '@types/node':
         specifier: 24.12.0
@@ -8542,6 +8542,10 @@ packages:
     resolution: {integrity: sha512-/bRZty2mXUIFY/xU5HLvveNHlswNJej+RnxBjOMkidWfwZzgTbPG1E3K5TOxRLOR+5hX7bSofy8yf1hZevMS8A==, tarball: https://registry.npmjs.org/node-addon-api/-/node-addon-api-8.5.0.tgz}
     engines: {node: ^18 || ^20 || >= 21}
 
+  node-addon-api@8.8.0:
+    resolution: {integrity: sha512-c5Ko1fZJIJmzhFIkhRN76WTq+fC6tWnGy9CXA0fA+XygsWZmEwG8vmbkNqxMyoaa0Tin4djul49NzdVcJJcjeA==, tarball: https://registry.npmjs.org/node-addon-api/-/node-addon-api-8.8.0.tgz}
+    engines: {node: ^18 || ^20 || >= 21}
+
   node-api-version@0.2.1:
     resolution: {integrity: sha512-2xP/IGGMmmSQpI1+O/k72jF/ykvZ89JeuKX3TLJAYPDVLUalrshrLHkeVcCCZqG/eEa635cr8IBYzgnDvM2O8Q==, tarball: https://registry.npmjs.org/node-api-version/-/node-api-version-0.2.1.tgz}
 
@@ -10439,12 +10443,12 @@ packages:
   undici-types@7.16.0:
     resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==, tarball: https://registry.npmjs.org/undici-types/-/undici-types-7.16.0.tgz}
 
-  undici@6.26.0:
-    resolution: {integrity: sha512-4yqz8a3n5HmGTlsbADNtr/dJlhkh/55Rq798G6ibiULcXbDtaLpTl1pvdqcbFfeoj3iSi52lePFM7h9H21cw/A==, tarball: https://registry.npmjs.org/undici/-/undici-6.26.0.tgz}
+  undici@6.27.0:
+    resolution: {integrity: sha512-YmfV3YnEDzXRC5lZ2jWtWWHKGUm1zIt8AhesR1tens+HTNv+YZlN/dp6G727LOvMJ8xjP9Be7Y2Sdr96LDm+pg==, tarball: https://registry.npmjs.org/undici/-/undici-6.27.0.tgz}
     engines: {node: '>=18.17'}
 
-  undici@7.25.0:
-    resolution: {integrity: sha512-xXnp4kTyor2Zq+J1FfPI6Eq3ew5h6Vl0F/8d9XU5zZQf1tX9s2Su1/3PiMmUANFULpmksxkClamIZcaUqryHsQ==, tarball: https://registry.npmjs.org/undici/-/undici-7.25.0.tgz}
+  undici@7.28.0:
+    resolution: {integrity: sha512-cRZYrTDwWznlnRiPjggAGxZXanty6M8RV1ff8Wm4LWXBp7/IG8v5DnOm74DtUBp9OONpK75YlPnIjQqX0dBDtA==, tarball: https://registry.npmjs.org/undici/-/undici-7.28.0.tgz}
     engines: {node: '>=20.18.1'}
 
   unicorn-magic@0.3.0:
@@ -11367,7 +11371,7 @@ snapshots:
       semver: 7.7.4
       sumchecker: 3.0.1
     optionalDependencies:
-      undici: 7.25.0
+      undici: 7.28.0
     transitivePeerDependencies:
       - supports-color
 
@@ -11834,7 +11838,7 @@ snapshots:
   '@indutny/mac-screen-share@1.0.13':
     dependencies:
       bindings: 1.5.0
-      node-addon-api: 8.5.0
+      node-addon-api: 8.8.0
 
   '@indutny/parallel-prettier@3.0.0(prettier@3.8.3)':
     dependencies:
@@ -11866,7 +11870,7 @@ snapshots:
   '@indutny/simple-windows-notifications@2.0.16':
     dependencies:
       bindings: 1.5.0
-      node-addon-api: 8.5.0
+      node-addon-api: 8.8.0
 
   '@indutny/sneequals@4.0.0': {}
 
@@ -14605,7 +14609,7 @@ snapshots:
 
   '@signalapp/sqlcipher@3.3.9':
     dependencies:
-      node-addon-api: 8.5.0
+      node-addon-api: 8.8.0
       node-gyp-build: 4.8.4
 
   '@sinclair/typebox@0.27.8': {}
@@ -19728,6 +19732,8 @@ snapshots:
 
   node-addon-api@8.5.0: {}
 
+  node-addon-api@8.8.0: {}
+
   node-api-version@0.2.1:
     dependencies:
       semver: 7.7.4
@@ -19767,7 +19773,7 @@ snapshots:
       semver: 7.7.4
       tar: 7.5.15
       tinyglobby: 0.2.17
-      undici: 6.26.0
+      undici: 6.27.0
       which: 6.0.1
 
   node-int64@0.4.0: {}
@@ -21933,9 +21939,9 @@ snapshots:
 
   undici-types@7.16.0: {}
 
-  undici@6.26.0: {}
+  undici@6.27.0: {}
 
-  undici@7.25.0:
+  undici@7.28.0:
     optional: true
 
   unicorn-magic@0.3.0: {}
