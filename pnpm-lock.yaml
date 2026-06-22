@@ -38,11 +38,11 @@ importers:
   .:
     dependencies:
       '@indutny/mac-screen-share':
-        specifier: 1.0.13
-        version: 1.0.13
+        specifier: 1.2.5
+        version: 1.2.5
       '@indutny/simple-windows-notifications':
-        specifier: 2.0.16
-        version: 2.0.16
+        specifier: 2.0.21
+        version: 2.0.21
       '@signalapp/libsignal-client':
         specifier: 0.95.0
         version: 0.95.0
@@ -1733,8 +1733,8 @@ packages:
   '@indutny/inflate@1.0.5':
     resolution: {integrity: sha512-dZObKXR6i2uQnHmXLyGEpQh/+AHwBQI4pbCRYQaI7qd6krNrN8a8GksoPSg/C6mSpjWsfXMBYpHiwnl5l/B5Jg==, tarball: https://registry.npmjs.org/@indutny/inflate/-/inflate-1.0.5.tgz}
 
-  '@indutny/mac-screen-share@1.0.13':
-    resolution: {integrity: sha512-fCOYWGaIuZAwfk/eUUjqPKge4+PKKCwTsuH9SSoaBZMP8IsWQtyyrTVpeuq84oDren4b9EUgRGgh2t950sQA0w==, tarball: https://registry.npmjs.org/@indutny/mac-screen-share/-/mac-screen-share-1.0.13.tgz}
+  '@indutny/mac-screen-share@1.2.5':
+    resolution: {integrity: sha512-k+w3/kRXubx2bPEmgNXblRbjJp+ofk3b5oFbBrTeAFOboV6ZrBJE4vgoHWWyAaT6L/RthWzxrpFPFCpJ2rVX8g==, tarball: https://registry.npmjs.org/@indutny/mac-screen-share/-/mac-screen-share-1.2.5.tgz}
 
   '@indutny/parallel-prettier@3.0.0':
     resolution: {integrity: sha512-v6WkYfLUYfDELBsynhrMpDxLMZZ7LRhfB1hfeb4ERoViW5zb7aovfAsNjiZrWH4k0KZcCi3iMNF+d9i8h0UmzA==, tarball: https://registry.npmjs.org/@indutny/parallel-prettier/-/parallel-prettier-3.0.0.tgz}
@@ -1757,8 +1757,8 @@ packages:
     resolution: {integrity: sha512-h0Y+bFkVSalOYfprzUGUdwsB0A9JJ7g7XZAsUInMxIn8SnRa1xPFmAdHks/Q9gCCOA+THHaDo/SF54+dUTHR6Q==, tarball: https://registry.npmjs.org/@indutny/rezip-electron/-/rezip-electron-3.0.2.tgz}
     hasBin: true
 
-  '@indutny/simple-windows-notifications@2.0.16':
-    resolution: {integrity: sha512-twYOSz8l/bJkYumNiOE6vkdPXr6pmoR0fq6OBLaxVoGRz404mWLjFVMaRcVD2zVzzaQBXIUyaxfLbVjxnM5M4A==, tarball: https://registry.npmjs.org/@indutny/simple-windows-notifications/-/simple-windows-notifications-2.0.16.tgz}
+  '@indutny/simple-windows-notifications@2.0.21':
+    resolution: {integrity: sha512-qJEd8Ly34cEB2Vy5qvtaTAA/BzCdFZkW4cYE8gBgxksMONhTgXhvdL0Fs8ljbXyiAzxbwQpzODEQcxzSvpjedw==, tarball: https://registry.npmjs.org/@indutny/simple-windows-notifications/-/simple-windows-notifications-2.0.21.tgz}
 
   '@indutny/sneequals@4.0.0':
     resolution: {integrity: sha512-kQUBQtcm4aVqJil+KRfA7SycJqcWlFEa7MJTYyl4XAahHOPXnzgqvlzUPQOw1tRFlvnzxRpXNUpJxej2fdAPjg==, tarball: https://registry.npmjs.org/@indutny/sneequals/-/sneequals-4.0.0.tgz}
@@ -11835,7 +11835,7 @@ snapshots:
 
   '@indutny/inflate@1.0.5': {}
 
-  '@indutny/mac-screen-share@1.0.13':
+  '@indutny/mac-screen-share@1.2.5':
     dependencies:
       bindings: 1.5.0
       node-addon-api: 8.8.0
@@ -11867,7 +11867,7 @@ snapshots:
       functional-red-black-tree: 1.0.1
       yauzl: 3.4.0
 
-  '@indutny/simple-windows-notifications@2.0.16':
+  '@indutny/simple-windows-notifications@2.0.21':
     dependencies:
       bindings: 1.5.0
       node-addon-api: 8.8.0
