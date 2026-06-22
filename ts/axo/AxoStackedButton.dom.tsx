@@ -101,7 +101,7 @@ export namespace AxoStackedButton {
             'outline-none select-none'
           )}
           aria-disabled={(pending || disabled) ?? undefined}
-          aria-label={pending ? intl.get('AxoButton.Pending') : label}
+          aria-label={pending ? intl.get('AxoButton.Pending') : undefined}
           onClick={handleClick}
           {...rest}
         >
@@ -129,8 +129,9 @@ export namespace AxoStackedButton {
           </span>
           <span
             className={tw(
-              'w-full truncate contain-inline-size',
+              'line-clamp-2 w-full contain-inline-size',
               'text-center type-caption font-medium',
+              'text-pretty wrap-break-word [word-break:auto-phrase] hyphens-auto',
               disabled
                 ? 'text-label-disabled forced-colors:text-[GrayText]'
                 : 'text-label-primary'
@@ -170,7 +171,7 @@ export namespace AxoStackedButton {
         <div
           className={tw(
             // Position items
-            'flex w-full items-center justify-center',
+            'flex w-full items-start justify-center',
             RowSpacings.get(props.spacing),
             // Allow items to wrap
             'flex-wrap',

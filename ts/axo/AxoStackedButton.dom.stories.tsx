@@ -81,7 +81,10 @@ export function Row(): ReactNode {
     <AxoStackedButton.Row spacing="md">
       <AxoStackedButton.Root symbol="camera" label="Video" />
       <AxoStackedButton.Root symbol="phone" label="Audio" />
-      <AxoStackedButton.Root symbol="bell" label="Mute" />
+      <AxoStackedButton.Root
+        symbol="bell"
+        label="Hippopotomonstrosesquippedaliophobia"
+      />
       <AxoStackedButton.Root symbol="search" label="Search" />
     </AxoStackedButton.Row>
   );
