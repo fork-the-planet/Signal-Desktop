@@ -367,7 +367,7 @@
           "minOSVersion": "21.0.1"
         }
       },
-      "singleArchFiles": "node_modules/@signalapp/{libsignal-client/prebuilds/**,ringrtc/build/**,sqlcipher/prebuilds/**}",
+      "singleArchFiles": "node_modules/{@signalapp,@indutny}/{libsignal-client/prebuilds/**,ringrtc/build/**,sqlcipher/prebuilds/**,mac-screen-share/prebuilds/**}",
       "target": [
         {
           "target": "zip",
