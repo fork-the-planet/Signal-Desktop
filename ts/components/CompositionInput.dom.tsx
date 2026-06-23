@@ -360,7 +360,9 @@ export function CompositionInput(props: Props): ReactElement {
       canSendRef.current = true;
       quill.setContents(delta);
       if (cursorToEnd) {
-        quill.setSelection(quill.getLength(), 0);
+        // Waiting a tick here helps cursor positioning with custom blots
+        // that do not have surrounding guards
+        setTimeout(() => quill.setSelection(quill.getLength(), 0), 0);
       }
     },
     []
@@ -593,6 +595,15 @@ export function CompositionInput(props: Props): ReactElement {
     const offset = leaf[1];
 
     if (!blotToDelete) {
+      return true;
+    }
+
+    // If the cursor is at the beginning of a line, getLeaf() returns the blot that starts
+    // that line, even though the cursor is actually before it (offset === 0)
+    if (
+      (isMentionBlot(blotToDelete) || isEmojiBlot(blotToDelete)) &&
+      offset === 0
+    ) {
       return true;
     }
 
