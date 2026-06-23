@@ -85,7 +85,7 @@ const ScalarKeys = [
   'global.nicknames.min',
   'global.normalDeleteMaxAgeInSeconds',
   'global.pinnedChatLimit',
-  'global.pinned_message_limit',
+  'global.pinnedMessageLimit',
   'global.textAttachmentLimitBytes',
   'global.videoAttachments.transcodeTargetBytes',
 ] as const;
