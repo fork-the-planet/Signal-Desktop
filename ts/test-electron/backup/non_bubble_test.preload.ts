@@ -392,6 +392,57 @@ describe('backup/non-bubble messages', () => {
     ]);
   });
 
+  it('drops empty embedded contact name on export', async () => {
+    await asymmetricRoundtripHarness(
+      [
+        {
+          conversationId: contactA.id,
+          id: generateGuid(),
+          type: 'incoming',
+          received_at: 1,
+          received_at_ms: 1,
+          sent_at: 1,
+          timestamp: 1,
+          sourceServiceId: CONTACT_A,
+          sourceDevice: 1,
+          readStatus: ReadStatus.Unread,
+          seenStatus: SeenStatus.Unseen,
+          unidentifiedDeliveryReceived: true,
+          contact: [
+            {
+              name: {
+                givenName: '',
+                familyName: undefined,
+              },
+              organization: 'Signal',
+            },
+          ],
+        },
+      ],
+      [
+        {
+          conversationId: contactA.id,
+          id: generateGuid(),
+          type: 'incoming',
+          received_at: 1,
+          received_at_ms: 1,
+          sent_at: 1,
+          timestamp: 1,
+          sourceServiceId: CONTACT_A,
+          sourceDevice: 1,
+          readStatus: ReadStatus.Unread,
+          seenStatus: SeenStatus.Unseen,
+          unidentifiedDeliveryReceived: true,
+          contact: [
+            {
+              organization: 'Signal',
+            },
+          ],
+        },
+      ]
+    );
+  });
+
   it('roundtrips sticker', async () => {
     await symmetricRoundtripHarness([
       {
@@ -516,6 +567,30 @@ describe('backup/non-bubble messages', () => {
         },
       },
     ]);
+  });
+
+  it('drops title transition notification without username or e164', async () => {
+    await asymmetricRoundtripHarness(
+      [
+        {
+          conversationId: contactA.id,
+          id: generateGuid(),
+          type: 'title-transition-notification',
+          received_at: 1,
+          sent_at: 1,
+          timestamp: 1,
+          readStatus: ReadStatus.Read,
+          seenStatus: SeenStatus.Seen,
+          sourceServiceId: CONTACT_A,
+          titleTransition: {
+            renderInfo: {
+              type: 'private',
+            },
+          },
+        },
+      ],
+      []
+    );
   });
 
   it('roundtrips thread merge', async () => {
