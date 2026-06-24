@@ -781,6 +781,7 @@ const CHAT_CALLS = {
   createBoost: 'v1/subscription/boost/create',
   createPaypalBoost: 'v1/subscription/boost/paypal/create',
   confirmPaypalBoost: 'v1/subscription/boost/paypal/confirm',
+  donationPermits: 'v1/donation/permit',
   deliveryCert: 'v1/certificate/delivery',
   devices: 'v1/devices',
   directoryAuthV2: 'v2/directory/auth',
@@ -1202,6 +1203,7 @@ export type CreateBoostOptionsType = Readonly<{
   amount: StripeDonationAmount;
   level: number;
   paymentMethod: string;
+  donationPermitBase64: string;
 }>;
 const CreateBoostResultSchema = z.object({
   clientSecret: z.string(),
@@ -1295,6 +1297,16 @@ const ConfirmPaypalBoostResultSchema = z.object({
 });
 export type ConfirmPaypalBoostResultType = z.infer<
   typeof ConfirmPaypalBoostResultSchema
+>;
+
+export type CreateDonationPermitsOptionsType = Readonly<{
+  permitRequest: string;
+}>;
+const CreateDonationPermitsResultSchema = z.object({
+  permitResponse: z.string(),
+});
+export type CreateDonationPermitsResultType = z.infer<
+  typeof CreateDonationPermitsResultSchema
 >;
 
 export type RedeemReceiptOptionsType = Readonly<{
@@ -4654,12 +4666,23 @@ export async function getGroupAvatar(
 export function createBoostPaymentIntent(
   options: CreateBoostOptionsType
 ): Promise<CreateBoostResultType> {
+  const { currency, amount, level, paymentMethod, donationPermitBase64 } =
+    options;
+
   return _ajax({
     unauthenticated: true,
     host: 'chatService',
     call: 'createBoost',
     httpType: 'POST',
-    jsonData: options,
+    jsonData: {
+      currency,
+      amount,
+      level,
+      paymentMethod,
+    },
+    headers: {
+      'Donation-Permit': donationPermitBase64,
+    },
     responseType: 'json',
     zodSchema: CreateBoostResultSchema,
   });
@@ -4782,6 +4805,19 @@ export function confirmPaypalBoostPayment(
     jsonData: options,
     responseType: 'json',
     zodSchema: ConfirmPaypalBoostResultSchema,
+  });
+}
+
+export async function createDonationPermits(
+  options: CreateDonationPermitsOptionsType
+): Promise<CreateDonationPermitsResultType> {
+  return _ajax({
+    host: 'chatService',
+    call: 'donationPermits',
+    httpType: 'POST',
+    jsonData: options,
+    responseType: 'json',
+    zodSchema: CreateDonationPermitsResultSchema,
   });
 }
 

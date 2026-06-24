@@ -135,6 +135,7 @@ export type StorageAccessType = {
   linkPreviews: boolean;
   universalExpireTimer: number;
   retryPlaceholders: ReadonlyArray<RetryItemType>;
+  donationPermits: string;
   donationWorkflow: string;
   chromiumRegistrationDoneEver: '';
   chromiumRegistrationDone: '';
@@ -469,6 +470,7 @@ const STORAGE_KEYS_TO_REMOVE_AFTER_UNLINK = [
   'useRingrtcAdm',
   'linkPreviews',
   'retryPlaceholders',
+  'donationPermits',
   'donationWorkflow',
   'chromiumRegistrationDone',
   'typingIndicators',
