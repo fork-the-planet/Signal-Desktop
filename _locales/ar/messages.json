@@ -453,7 +453,7 @@
     "messageformat": "يمكنك تثبيت فقط حتى أربع دردشات."
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, zero {يمكنك تثبيت ما يصل إلى {maxPinnedConversations,number} دردشات فقط} one {يمكنك تثبيت ما يصل إلى {maxPinnedConversations,number} دردشة فقط} two {يمكنك تثبيت ما يصل إلى {maxPinnedConversations,number} دردشتين فقط} few {يمكنك تثبيت ما يصل إلى {maxPinnedConversations,number} دردشات فقط} many {يمكنك تثبيت ما يصل إلى {maxPinnedConversations,number} دردشة فقط} other {يمكنك تثبيت ما يصل إلى {maxPinnedConversations,number} دردشة فقط}}"
   },
   "icu:view": {
     "messageformat": "عرض"
@@ -2787,7 +2787,7 @@
     "messageformat": "لا توجد مُلصقَات مُثبَّتة"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "لا توجد حزم مُلصَقات. قُم بإضافة مُلصَقات لإرسالها لأصدقائك."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "إضافة مُلصَقات"
@@ -2802,10 +2802,10 @@
     "messageformat": "المُلصَقات المستلَمة"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "تمَّت مشاركتها معك"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "عندما تستلم مُلصَق من شخص ما، ستظهر حزمة المُلصَقات هنا."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "ستظهر هنا المُلصَقات القادمة من الرسائل الواردة"
@@ -2826,7 +2826,7 @@
     "messageformat": "الجميع"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "مُلصَقاتي"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "إضافة"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "تمَّ تنزيل التحديث"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "افتح تطبيق سيجنال على هاتفك"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "إذا كُنتَ ترغب في إظهار دعمك للألوان الداكنة، فقد أضفنا أيضًا دعمًا لنمط الأيقونات الداكنة في نظام macOS."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "أصلحنا خطًأ في مُنشِئ المُلصَقات كان يتسبَّب في عرض الواجهة بلغة خاطئة. على الرغم من أن المُلصَقات عبارة عن صور (أي أنها تُعبِّر عن ألف كلمة)، إلّا أنه لا يزال من المهم اختيار الكلمات المناسبة أيضًا."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

@@ -453,7 +453,7 @@
     "messageformat": "Jy kan slegs tot 4 kletse merk met 'n speld"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Jy kan slegs {maxPinnedConversations,number} klets met 'n speld merk} other {Jy kan slegs tot soveel as {maxPinnedConversations,number} kletse met 'n speld merk}}"
   },
   "icu:view": {
     "messageformat": "Bekyk"
@@ -2787,7 +2787,7 @@
     "messageformat": "Geen plakkers geïnstalleer nie"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "Geen plakkerpakkette nie, voeg plakkers by om aan jou vriende te stuur."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "Voeg Plakkers by"
@@ -2802,10 +2802,10 @@
     "messageformat": "Plakkers wat jy ontvang het"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Met jou gedeel"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "As jy 'n plakker van iemand ontvang, sal die plakkerpakket hier verskyn."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Plakkers van inkomende boodskappe sal hier verskyn"
@@ -2826,7 +2826,7 @@
     "messageformat": "Almal"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "My plakkers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Voeg toe"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Bywerking afgelaai"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Maak Signal op jou foon oop"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "Ondersteuning vir die donker ikoonstyl in macOS."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "Ons het 'n fout in die plakkerpakket-skepper wat die koppelvlak in die verkeerde taal vertoon het, herstel."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

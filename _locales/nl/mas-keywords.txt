@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,messenger,bericht,versleuteld,privé,veilig,privacy,groep,gratis,chat,video,bellen,oproep

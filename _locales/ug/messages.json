@@ -453,7 +453,7 @@
     "messageformat": "كۆپ بولغاندا 4 پاراڭنى مخلىيالايسىز"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, other {كۆپ بولغاندا {maxPinnedConversations,number} چاقىرىقلارنى مىقلىيالايسىز}}"
   },
   "icu:view": {
     "messageformat": "كۆرسەت"
@@ -2787,7 +2787,7 @@
     "messageformat": "چىراي ئىپادىسى ئورنىتىلمىغان"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "چىراي ئىپادە چاپلاق بولاقلىرى يوق، دوستلىرىڭىزغا يوللايدىغان بولاقلىرىنى قوشۇڭ."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "چاپلاقلارنى قوشۇش"
@@ -2802,10 +2802,10 @@
     "messageformat": "تاپشۇرۇۋالغان چىراي ئىپادىلىرى"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "سىز بىلەن ھەمبەھىرلىگەن"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "باشقىلار سىزگە بىر چىراي ئىپادە چاپلىقى ئەۋەتكەندە، چاپلاق بولىقى مۇشۇ يەردە كۆرۈنىدۇ."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "بۇ جايدا كەلگەن ئۇچۇرلاردىكى چىراي ئىپادىلىرى كۆرۈنىدۇ"
@@ -2826,7 +2826,7 @@
     "messageformat": "ھەممىسى"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "چىراي ئىپادە چاپلاقلىرىم"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "قوشۇش"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "يېڭىلانما چۈشۈرۈلدى"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "تېلېفونىڭىزدا Signal نى ئېچىڭ"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "macOS قا قاراڭغۇ سىنبەلگە ئۇسلۇبىنى قوللاش ئىقتىدارىنى قوشتۇق. 8.15 نەشرنۇسخىسى ئۈچۈن."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "بىز چىراي ئىپادە ياساش قورالىدىكى كۆرۈنمە يۈزنىڭ خاتا تىلدا كۆرسىتىلىشىگە سەۋەب بولغان بىر خاتالىقنى تۈزەتتۇق .8.16 نەشر نۇسخىسى ئۈچۈن تارقىتىلدى. گەرچە چىراي ئىپادىلىرى رەسىم بولغاچقا «مىڭ سۆزنىڭ قىممىتىگە ئىگە» دەپ قارالسىمۇ، سۆزلەرنىمۇ توغرا ئىشلىتىش يەنىلا ناھايىتى مۇھىم."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

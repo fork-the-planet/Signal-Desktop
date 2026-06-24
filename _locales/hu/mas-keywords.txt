@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,üzenet,messenger,hívás,hang,titkosított,privát,biztonságos,adatvédelem,csoport,történetek

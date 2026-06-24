@@ -453,7 +453,7 @@
     "messageformat": "Ní féidir leat ach suas le 4 chomhrá a phionnáil"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Ní féidir leat ach suas le {maxPinnedConversations,number} chomhrá a phionnáil} two {Ní féidir leat ach suas le {maxPinnedConversations,number} chomhrá a phionnáil} few {Ní féidir leat ach suas le {maxPinnedConversations,number} chomhrá a phionnáil} many {Ní féidir leat ach suas le {maxPinnedConversations,number} gcomhrá a phionnáil} other {Ní féidir leat ach suas le {maxPinnedConversations,number} comhrá a phionnáil}}"
   },
   "icu:view": {
     "messageformat": "Amharc ar"
@@ -2787,10 +2787,10 @@
     "messageformat": "Níl aon ghreamáin suiteáilte"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "Níl aon bheart greamán ann, cuir greamáin leis le seoladh chuig do chairde."
   },
   "icu:stickers--StickerManager--AddStickers": {
-    "messageformat": "Cuir Greamáin Leis"
+    "messageformat": "Cuir greamáin leis"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
     "messageformat": "Sraith Ealaíontóirí Signal"
@@ -2802,10 +2802,10 @@
     "messageformat": "Greamáin a bhFuair Tú"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Comhroinnte Leat"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "Nuair a fhaigheann tú greamán ó dhuine, taispeánfar an beart greamán anseo."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Taispeánfar greamáin ó theachtaireachtaí isteach anseo"
@@ -2826,13 +2826,13 @@
     "messageformat": "Iad uile"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "Mo Ghreamáin"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Cuir leis"
   },
   "icu:stickers--StickerManagerPackContextMenu--Remove": {
-    "messageformat": "Bain de é"
+    "messageformat": "Bain de"
   },
   "icu:stickers--StickerPreview--Title": {
     "messageformat": "Beart Greamán"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Nuashonrú Íoslódáilte"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Oscail Signal ar do ghuthán"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "Tacaíocht don stíl deilbhín dhorcha in macOS."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "Réitíomar fabht sa chruthaitheoir greamán a thaispeáin an comhéadan sa teanga chontráilte."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

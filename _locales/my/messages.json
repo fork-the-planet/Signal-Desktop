@@ -453,7 +453,7 @@
     "messageformat": "ချက်(တ်) 4 ခုအထိသာ ပင်တွဲနိုင်ပါသည်"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, other {အများဆုံး ချက်(တ်) {maxPinnedConversations,number} ခုကို ပင်တွဲနိုင်သည်}}"
   },
   "icu:view": {
     "messageformat": "ကြည့်ရန်"
@@ -2787,7 +2787,7 @@
     "messageformat": "မည်သည့် စတစ်ကာများကို ထည့်သွင်းခြင်းမရှိပါ"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "စတစ်ကာတွဲများ မရှိပါ၊ သင့်သူငယ်ချင်းများထံ ပို့ရန် စတစ်ကာများ ထည့်သွင်းပါ။"
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "စတစ်ကာ ထည့်သွင်းရန်"
@@ -2802,10 +2802,10 @@
     "messageformat": "သင် လက်ခံရရှိထားသော စတစ်ကာများ"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "သင်နှင့် မျှဝေထားသောအရာများ"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "တစ်စုံတစ်ယောက်ထံမှ စတစ်ကာတစ်ခုကို လက်ခံရရှိသောအခါ ထိုစတစ်ကာတွဲသည် ဤနေရာတွင် ပေါ်လာပါမည်။"
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "အဝင်မက်ဆေ့ချ်များမှ စတစ်ကာများသည် ၎င်းနေရာတွင် ပေါ်ပါမည်"
@@ -2826,7 +2826,7 @@
     "messageformat": "အားလုံး"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "ကျွန်ုပ်၏ စတစ်ကာ"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "ထည့်သွင်းမည်"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "အပ်ဒိတ် ဒေါင်းလုဒ်လုပ်ပြီး"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "သင့်ဖုန်းတွင် Signal ကို ဖွင့်ရန်"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "macOS တွင် အမှောင်အိုင်ကွန်ပုံစံကို ပံ့ပိုးပေးထားသည်။"
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "စတစ်ကာဖန်တီးရေးတွင် Interface ကို မှားယွင်းသော ဘာသာစကားဖြင့် ပြသနေသည့် ချွတ်ယွင်းချက်တစ်ခုကို ပြင်ဆင်ပြီးဖြစ်ပါသည်။"
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

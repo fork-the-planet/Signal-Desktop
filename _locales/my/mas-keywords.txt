@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,မက်ဆေ့ချ်,မက်ဆင်ဂျာ,ကောလ်,အသံ,ကုဒ်ဝှက်,သီးသန့်,လုံခြုံ,ကိုယ်ရေး,အဖွဲ့,ဗီဒီယို,ချက်(တ်),စတိုရီ

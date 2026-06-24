@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+سىگنال،ئۇچۇر،ئۇچۇر يوللىغۇچ،تېلېفون،ئاۋاز،شىفىرلانغان،شەخسىي،بىخەتەر،مەخپىي،گۇرۇپپا،سىن،پاراڭ،ھېكايە

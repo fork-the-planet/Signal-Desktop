@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+سيجنال،رسالة،تطبيق،دردشة،مكالمة،صوت،مشفر،خاص،آمن،خصوصية،مجموعة،فيديو،دردشة،قصص

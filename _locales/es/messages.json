@@ -453,7 +453,7 @@
     "messageformat": "Solo puedes fijar un máximo de 4 chats"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Solo puedes fijar un máximo de {maxPinnedConversations,number} chat} other {Solo puedes fijar un máximo de {maxPinnedConversations,number} chats}}"
   },
   "icu:view": {
     "messageformat": "Ver"
@@ -2787,7 +2787,7 @@
     "messageformat": "No hay ningún paquete de stickers instalado"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "No hay paquetes de stickers. Añade stickers para enviar a tus amigos."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "Añadir stickers"
@@ -2802,10 +2802,10 @@
     "messageformat": "Stickers recibidos"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Compartido contigo"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "Cuando recibas un sticker de alguien, el paquete de stickers aparecerá aquí."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Aquí se mostrarán los stickers de tus mensajes recibidos."
@@ -2826,7 +2826,7 @@
     "messageformat": "Todos"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "Mis stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Añadir"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Actualización descargada"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Abre Signal en tu teléfono"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "Además, los iconos de modo oscuro ya son compatibles con macOS, por si te apetece invocar un poco de tinieblas en tu escritorio."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "Hemos solucionado un error en el creador de stickers que hacía que la interfaz se mostrase en el idioma incorrecto. Aunque los stickers sean imágenes (y ya por sí solos valgan más que mil palabras), sigue siendo importante encontrar las palabras adecuadas."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

@@ -453,7 +453,7 @@
     "messageformat": "최대 4개의 대화만 고정할 수 있습니다."
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, other {최대 {maxPinnedConversations,number}개의 채팅만 고정할 수 있습니다.}}"
   },
   "icu:view": {
     "messageformat": "보기"
@@ -1167,16 +1167,16 @@
     "messageformat": "고정 해제"
   },
   "icu:Poll__end-poll": {
-    "messageformat": "설문조사 종료"
+    "messageformat": "투표 종료"
   },
   "icu:PollMessage--SelectOne": {
-    "messageformat": "설문조사 · 하나 선택"
+    "messageformat": "투표 · 1개 선택"
   },
   "icu:PollMessage--SelectMultiple": {
-    "messageformat": "설문조사 · 하나 이상 선택"
+    "messageformat": "투표 · 복수 선택 가능"
   },
   "icu:PollMessage--FinalResults": {
-    "messageformat": "설문조사 · 최종 결과"
+    "messageformat": "투표 · 최종 결과"
   },
   "icu:PollMessage__ViewVotesButton": {
     "messageformat": "투표 결과 보기"
@@ -1185,16 +1185,16 @@
     "messageformat": "투표했습니다."
   },
   "icu:PollTerminate--you": {
-    "messageformat": "\"{poll}\" 설문조사를 종료했습니다."
+    "messageformat": "\"{poll}\" 투표를 종료했습니다."
   },
   "icu:PollTerminate--other": {
-    "messageformat": "{name} 님이 \"{poll}\" 설문조사를 종료했습니다."
+    "messageformat": "{name} 님이 \"{poll}\" 투표를 종료했습니다."
   },
   "icu:PollTerminate__view-poll": {
-    "messageformat": "설문조사 보기"
+    "messageformat": "투표 보기"
   },
   "icu:PollVotesModal__title": {
-    "messageformat": "설문조사 세부 정보"
+    "messageformat": "투표 세부 정보"
   },
   "icu:PollVotesModal__questionLabel": {
     "messageformat": "질문"
@@ -1212,10 +1212,10 @@
     "messageformat": "고정된 메시지를 찾을 수 없습니다."
   },
   "icu:Toast--PollNotFound": {
-    "messageformat": "설문조사를 찾을 수 없습니다."
+    "messageformat": "투표를 찾을 수 없습니다."
   },
   "icu:PollCreateModal__title": {
-    "messageformat": "새 설문조사"
+    "messageformat": "새 투표"
   },
   "icu:PollCreateModal__questionLabel": {
     "messageformat": "질문"
@@ -1236,10 +1236,10 @@
     "messageformat": "전송"
   },
   "icu:PollCreateModal__Error--RequiresQuestion": {
-    "messageformat": "설문조사 질문이 필요합니다."
+    "messageformat": "투표 질문을 입력해 주세요."
   },
   "icu:PollCreateModal__Error--RequiresTwoOptions": {
-    "messageformat": "설문조사에는 옵션이 2개 이상 필요합니다."
+    "messageformat": "투표는 최소 2개의 선택지가 필요합니다."
   },
   "icu:PollCreateModal__Error--QuestionTooLong": {
     "messageformat": "질문이 너무 깁니다."
@@ -1353,7 +1353,7 @@
     "messageformat": "결제"
   },
   "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Poll": {
-    "messageformat": "설문조사"
+    "messageformat": "투표"
   },
   "icu:PinnedMessagesBar__MessagePreview__SymbolLabel--Sticker": {
     "messageformat": "스티커"
@@ -2235,7 +2235,7 @@
     "messageformat": "{sender} 님이 \"{message}\" 메시지에 {emoji} 이모지로 공감했어요"
   },
   "icu:notificationPollVoteMessage": {
-    "messageformat": "{sender} 님이 \"{pollQuestion}\" 설문조사에 투표했습니다."
+    "messageformat": "{sender} 님이 \"{pollQuestion}\" 투표에 참여했습니다."
   },
   "icu:sendFailed": {
     "messageformat": "전송 실패"
@@ -2667,7 +2667,7 @@
     "messageformat": "스티커 메시지"
   },
   "icu:Poll--preview": {
-    "messageformat": "설문조사: {pollQuestion}"
+    "messageformat": "투표: {pollQuestion}"
   },
   "icu:message--getNotificationText--text-with-emoji": {
     "messageformat": "{emoji} {text}"
@@ -2787,7 +2787,7 @@
     "messageformat": "설치된 스티커 없음"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "보관 중인 스티커 팩이 없습니다. 스티커를 추가해 친구들에게 보내보세요."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "스티커 추가"
@@ -2802,10 +2802,10 @@
     "messageformat": "받은 스티커"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "공유받은 스티커"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "누군가로부터 스티커 팩을 받으면 스티커 팩이 여기에 표시됩니다."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "받은 메시지의 스티커가 여기에 표시됩니다"
@@ -2826,7 +2826,7 @@
     "messageformat": "전체"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "내 스티커"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "추가"
@@ -4755,10 +4755,10 @@
     "messageformat": "파일"
   },
   "icu:CompositionArea__AttachMenu__Poll": {
-    "messageformat": "설문조사"
+    "messageformat": "투표"
   },
   "icu:CompositionArea--attach-plus": {
-    "messageformat": "첨부 파일 또는 설문조사 추가"
+    "messageformat": "첨부 파일 또는 투표 추가"
   },
   "icu:CompositionArea--sms-only__title": {
     "messageformat": "상대방이 Signal을 사용하지 않습니다."
@@ -5275,7 +5275,7 @@
     "messageformat": "업데이트"
   },
   "icu:AddGroupMembersModal--confirm-title--one": {
-    "messageformat": "{person} 님을' {group}'에 추가할까요?"
+    "messageformat": "{person} 님을 ''{group}'에 추가할까요?"
   },
   "icu:AddGroupMembersModal--confirm-title--many": {
     "messageformat": "{count,number}명의 멤버를 {group}에 추가할까요?"
@@ -6699,6 +6699,9 @@
   },
   "icu:DialogUpdate__downloaded": {
     "messageformat": "업데이트 다운로드 완료"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "휴대전화에서 Signal을 여세요."
@@ -8266,6 +8269,12 @@
     "messageformat": "macOS에서 다크 아이콘 스타일을 지원하도록 개선했습니다."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "스티커 제작 도구에서 인터페이스 언어가 잘못 표시되던 오류를 수정했어요. 스티커가 백 마디 말보다 나은 그림이긴 하지만, 정확한 글로 표시하는 것도 역시 중요하니까요."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

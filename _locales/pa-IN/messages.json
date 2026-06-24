@@ -453,7 +453,7 @@
     "messageformat": "ਤੁਸੀਂ ਵੱਧ ਤੋਂ ਵੱਧ 4 ਚੈਟਾਂ ਨੂੰ ਹੀ ਪਿੰਨ ਕਰ ਸਕਦੇ ਹੋ"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {ਤੁਸੀਂ ਵੱਧ ਤੋਂ ਵੱਧ {maxPinnedConversations,number} ਚੈਟ ਪਿੰਨ ਕਰ ਸਕਦੇ ਹੋ} other {ਤੁਸੀਂ ਵੱਧ ਤੋਂ ਵੱਧ {maxPinnedConversations,number} ਚੈਟਾਂ ਪਿੰਨ ਕਰ ਸਕਦੇ ਹੋ}}"
   },
   "icu:view": {
     "messageformat": "ਦੇਖੋ"
@@ -2787,7 +2787,7 @@
     "messageformat": "ਕੋਈ ਸਟਿੱਕਰ ਸਥਾਪਤ ਨਹੀਂ ਕੀਤੇ ਗਏ"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "ਕੋਈ ਸਟਿੱਕਰ ਪੈਕ ਨਹੀਂ ਹੈ, ਆਪਣੇ ਦੋਸਤਾਂ ਨੂੰ ਭੇਜਣ ਲਈ ਸਟਿੱਕਰ ਸ਼ਾਮਲ ਕਰੋ।"
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "ਸਟਿੱਕਰ ਸ਼ਾਮਲ ਕਰੋ"
@@ -2802,10 +2802,10 @@
     "messageformat": "ਤੁਹਾਨੂੰ ਪ੍ਰਾਪਤ ਹੋਏ ਸਟਿੱਕਰ"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "ਤੁਹਾਡੇ ਨਾਲ ਸਾਂਝੇ ਕੀਤੇ ਗਏ"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "ਜਦੋਂ ਤੁਸੀਂ ਕਿਸੇ ਤੋਂ ਸਟਿੱਕਰ ਪ੍ਰਾਪਤ ਕਰਦੇ ਹੋ, ਤਾਂ ਉਹ ਸਟਿੱਕਰ ਪੈਕ ਇੱਥੇ ਦਿਖਾਈ ਦੇਵੇਗਾ।"
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "ਆ ਰਹੇ ਸੁਨੇਹਿਆਂ ਤੋਂ ਸਟਿੱਕਰ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੇ"
@@ -2823,10 +2823,10 @@
     "messageformat": "ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਹੁਣ ਸ੍ਰੋਤ ਸੁਨੇਹਾ ਨਹੀਂ ਰਿਹਾ ਤਾਂ ਤੁਸੀਂ ਸ਼ਾਇਦ ਇਸ ਸਟਿੱਕਰ ਪੈਕ ਨੂੰ ਦੁਬਾਰਾ ਸਥਾਪਤ ਨਾ ਕਰ ਸਕੋ।"
   },
   "icu:stickers--StickerManagerHeader--All": {
-    "messageformat": "ਸਾਰੀਆਂ"
+    "messageformat": "ਸਾਰੇ"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "ਮੇਰੇ ਸਟਿੱਕਰ"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "ਸ਼ਾਮਲ ਕਰੋ"
@@ -6461,7 +6461,7 @@
     "messageformat": "ਆਪਣੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਨੂੰ ਕਿਸੇ ਨਾਲ ਵੀ ਸਾਂਝਾ ਨਾ ਕਰੋ। ਅਜਿਹਾ ਕਰਨ ਨਾਲ ਉਹ ਤੁਹਾਡੇ ਖਾਤੇ 'ਤੇ ਕਬਜ਼ਾ ਕਰ ਲੈਣਗੇ। <strong>Signal ਕਦੇ ਵੀ ਤੁਹਾਡੇ ਤੋਂ ਰਿਕਵਰੀ ਕੁੰਜੀ ਪੁੱਛਣ ਲਈ ਤੁਹਾਨੂੰ ਸੁਨੇਹਾ ਨਹੀਂ ਭੇਜੇਗਾ।</strong> ਕਦੇ ਵੀ Signal ਹੋਣ ਦਾ ਦਿਖਾਵਾ ਕਰਨ ਵਾਲੀਆਂ ਚੈਟਾਂ ਦਾ ਜਵਾਬ ਨਾ ਦਿਓ।"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "ਆਪਣੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਨੂੰ ਕਿਸੇ ਨਾਲ ਵੀ ਸਾਂਝਾ ਨਾ ਕਰੋ। ਅਜਿਹਾ ਕਰਨ ਨਾਲ ਉਹ ਤੁਹਾਡੇ ਖਾਤੇ 'ਤੇ ਕਬਜ਼ਾ ਕਰ ਲੈਣਗੇ। <strong>Signal ਕਦੇ ਵੀ ਤੁਹਾਡੇ ਤੋਂ ਰਿਕਵਰੀ ਕੁੰਜੀ ਪੁੱਛਣ ਲਈ ਤੁਹਾਨੂੰ ਸੁਨੇਹਾ ਨਹੀਂ ਭੇਜੇਗਾ।</strong> ਕਦੇ ਵੀ Signal ਹੋਣ ਦਾ ਦਿਖਾਵਾ ਕਰਨ ਵਾਲੀਆਂ ਚੈਟਾਂ ਦਾ ਜਵਾਬ ਨਾ ਦਿਓ। <learnMoreLink>ਹੋਰ ਜਾਣੋ।</learnMoreLink>"
+    "messageformat": "ਆਪਣੀ ਰਿਕਵਰੀ ਕੁੰਜੀ ਨੂੰ ਕਿਸੇ ਨਾਲ ਵੀ ਸਾਂਝਾ ਨਾ ਕਰੋ। ਅਜਿਹਾ ਕਰਨ ਨਾਲ ਉਹ ਤੁਹਾਡੇ ਖਾਤੇ 'ਤੇ ਕਬਜ਼ਾ ਕਰ ਲੈਣਗੇ। ਤੁਹਾਡੇ ਤੋਂ ਰਿਕਵਰੀ ਕੁੰਜੀ ਪੁੱਛਣ ਲਈ <strong>Signal ਕਦੇ ਵੀ ਤੁਹਾਨੂੰ ਸੁਨੇਹਾ ਨਹੀਂ ਭੇਜੇਗਾ</strong>। ਕਦੇ ਵੀ Signal ਹੋਣ ਦਾ ਦਿਖਾਵਾ ਕਰਨ ਵਾਲੀਆਂ ਚੈਟਾਂ ਦਾ ਜਵਾਬ ਨਾ ਦਿਓ। <learnMoreLink>ਹੋਰ ਜਾਣੋ।</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "ਸਾਂਝੀ ਨਾ ਕਰੋ"
@@ -6699,6 +6699,9 @@
   },
   "icu:DialogUpdate__downloaded": {
     "messageformat": "ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਕੀਤੀ ਗਈ"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "ਆਪਣੇ ਫ਼ੋਨ ਉੱਤੇ Signal ਖੋਲ੍ਹੋ"
@@ -8266,6 +8269,12 @@
     "messageformat": "macOS ਵਿੱਚ ਡਾਰਕ ਆਈਕਨ ਸਟਾਈਲ ਦਾ ਇਸਤੇਮਾਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "ਅਸੀਂ ਸਟਿੱਕਰ ਕ੍ਰੀਏਟਰ ਵਿੱਚ ਇੱਕ ਬੱਗ ਠੀਕ ਕੀਤਾ ਹੈ ਜਿਸ ਵਿੱਚ ਇੰਟਰਫੇਸ ਗਲਤ ਭਾਸ਼ਾ ਵਿੱਚ ਦਿਖਾਈ ਦਿੰਦਾ ਸੀ।"
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

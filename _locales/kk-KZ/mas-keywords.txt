@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,хабар,мессенджер,қоңырау,дауыс,шифрланған,жеке,қауіпсіз,құпиялық,топ,бейне,чат,сторис

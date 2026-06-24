@@ -453,7 +453,7 @@
     "messageformat": "你最多只能釘選 4 個聊天"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, other {你僅可釘選最多 {maxPinnedConversations,number} 個聊天}}"
   },
   "icu:view": {
     "messageformat": "查看"
@@ -2787,7 +2787,7 @@
     "messageformat": "未安裝任何貼圖"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "沒有貼圖包，請新增貼圖以傳送給朋友。"
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "新增貼圖"
@@ -2802,10 +2802,10 @@
     "messageformat": "你收到的貼圖"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "分享給你"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "當你收到他人送的貼圖時，該貼圖包會顯示在此處。"
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "你收到的貼圖訊息將顯示在這裡"
@@ -2826,7 +2826,7 @@
     "messageformat": "全部"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "我的貼圖"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "新增"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "更新已下載"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "在手機上開啟 Signal"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "如果你想展現內心的哥德風格，我們也在 macOS 中新增了深色圖示風格的支援。"
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "我們修正了貼圖製作器中會導致介面不能顯示正確語言的錯誤。儘管貼圖是圖像（所謂「一圖勝千言」），但文字也要寫對。"
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

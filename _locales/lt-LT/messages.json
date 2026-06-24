@@ -453,7 +453,7 @@
     "messageformat": "Gali prisegti daugiausiai 4 pokalbius"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Galite prisegti daugiausia {maxPinnedConversations,number} pokalbį} few {Galite prisegti daugiausia {maxPinnedConversations,number} pokalbius} many {Galite prisegti daugiausia {maxPinnedConversations,number} pokalbio} other {Galite prisegti daugiausia {maxPinnedConversations,number} pokalbių}}"
   },
   "icu:view": {
     "messageformat": "Žiūrėti"
@@ -2787,7 +2787,7 @@
     "messageformat": "Nėra jokių įdiegtų lipdukų"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "Lipdukų paketų nėra. Pridėkite lipdukų siųsti draugams."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "Pridėti lipdukų"
@@ -2802,10 +2802,10 @@
     "messageformat": "Jūsų gauti lipdukai"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Pasidalino su jumis"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "Iš kieno nors gavus lipduką, lipdukų paketas bus rodomas čia."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Čia bus rodomi lipdukai iš gaunamų žinučių"
@@ -2826,7 +2826,7 @@
     "messageformat": "Visi"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "Mano lipdukai"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Pridėti"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Naujinys atsisiųstas"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Atverkite savo telefone Signal programėlę"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "Tamsaus piktogramų stiliaus palaikymas „macOS“."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "Ištaisėme lipdukų kūrimo priemonės klaidą, dėl kurios sąsaja buvo rodoma neteisinga kalba."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

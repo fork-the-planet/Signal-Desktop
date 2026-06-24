@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,ziņa,ziņapmaiņa,zvans,balss,šifrēts,privāts,drošs,privātums,grupa,video,saruna,stāsti

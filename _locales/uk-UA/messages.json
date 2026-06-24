@@ -453,7 +453,7 @@
     "messageformat": "Ви можете закріпити до 4 чатів"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Ви можете закріпити максимум {maxPinnedConversations,number} чат} few {Ви можете закріпити максимум {maxPinnedConversations,number} чати} many {Ви можете закріпити максимум {maxPinnedConversations,number} чатів} other {Ви можете закріпити максимум {maxPinnedConversations,number} чату}}"
   },
   "icu:view": {
     "messageformat": "Переглянути"
@@ -2787,7 +2787,7 @@
     "messageformat": "Немає встановлених стікерів"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "Немає наборів стікерів. Додайте стікери, щоб надсилати їх друзям."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "Додати стікери"
@@ -2802,10 +2802,10 @@
     "messageformat": "Отримані cтікери"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Отримані від інших"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "Коли хтось надсилає вам стікер, тут з'являється відповідний набір стікерів."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Тут будуть стікери зі вхідних повідомлень"
@@ -2826,7 +2826,7 @@
     "messageformat": "Усі"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "Мої стікери"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Додати"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Оновлення завантажено"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Відкрийте Signal на телефоні"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "Якщо ви любите готичний стиль, то це оновлення для вас: тепер у macOS також підтримується значок у темному стилі."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "Ми виправили помилку під час вибору стікерів, коли інтерфейс показувався іншою мовою. Хоч це й зображення (і вони самі по собі варті тисячі слів), все ж важливо добирати правильні слова."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

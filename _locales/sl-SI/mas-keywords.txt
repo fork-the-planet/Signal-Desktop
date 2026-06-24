@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,sporočilo,messenger,klic,glas,šifrirano,zasebno,varno,zasebnost,skupina,video,klepet,zgodbe

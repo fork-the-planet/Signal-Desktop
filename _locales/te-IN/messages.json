@@ -453,7 +453,7 @@
     "messageformat": "మీరు 4 చాట్‌ల వరకు మాత్రమే పిన్ చేయగలరు"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {మీరు {maxPinnedConversations,number} చాట్ వరకు మాత్రమే పిన్ చేయవచ్చు} other {మీరు {maxPinnedConversations,number} చాట్‌ల వరకు మాత్రమే పిన్ చేయవచ్చు}}"
   },
   "icu:view": {
     "messageformat": "వీక్షించండి"
@@ -2787,7 +2787,7 @@
     "messageformat": "స్టిక్కర్లు వ్యవస్థాపించబడలేదు"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "స్టిక్కర్ ప్యాక్‌లు లేవు, మీ స్నేహితులకు పంపడానికి స్టిక్కర్‌లను జోడించండి."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "స్టిక్కర్లను జోడించండి"
@@ -2802,10 +2802,10 @@
     "messageformat": "మీరు అందుకున్న స్టిక్కర్లు"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "మీతో పంచుకోబడింది"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "మీకు ఎవరి నుండైనా స్టిక్కర్ అందినప్పుడు, స్టిక్కర్ ప్యాక్ ఇక్కడ కనిపిస్తుంది."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "ఇన్కమింగ్ సందేశాల నుండి స్టిక్కర్లు ఇక్కడ కనిపిస్తాయి"
@@ -2826,7 +2826,7 @@
     "messageformat": "అన్నీ"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "నా స్టిక్కర్‌లు"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "జోడించండి"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "అప్‌డేట్ డౌన్‌లోడ్ చేయబడింది"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "మీ ఫోన్‌పై Signal ని ఓపెన్ చేయండి"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "macOS లో డార్క్ ఐకాన్ శైలికి మద్దతు."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "స్టిక్కర్ క్రియేటర్‌లో ఇంటర్‌ఫేస్‌ను తప్పు భాషలో ప్రదర్శించిన ఒక బగ్‌ను మేము సరిచేశాము. స్టిక్కర్‌లు చిత్రాలే అయినప్పటికీ (అందువల్లనే వెయ్యి మాటలతో సమానం), పదాలను సరిగ్గా ఎంచుకోవడం కూడా ఇప్పటికీ ముఖ్యమే."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

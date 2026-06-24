@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,mezua,deia,ahotsa,enkriptatua,pribatua,segurua,pribatutasuna,taldea,bideoa,txata,istorioak

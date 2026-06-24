@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+Signal,സന്ദേശം,മെസഞ്ചർ,കോൾ,വോയ്സ്,എൻക്രിപ്റ്റഡ്,സ്വകാര്യം,സുരക്ഷിതം,സ്വകാര്യത,ഗ്രൂപ്പ്,വീഡിയോ,ചാറ്റ്

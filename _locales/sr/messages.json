@@ -453,7 +453,7 @@
     "messageformat": "Можете да закачите највише 4 ћаскања"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Могуће је закачити највише {maxPinnedConversations,number} ћаскање} other {Могуће је закачити највише {maxPinnedConversations,number} ћаскања}}"
   },
   "icu:view": {
     "messageformat": "Прикажи"
@@ -2787,7 +2787,7 @@
     "messageformat": "Нема инсталираних налепница"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "Нема пакета налепница. Додајте налепнице и шаљите их пријатељима."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "Додај налепнице"
@@ -2802,10 +2802,10 @@
     "messageformat": "Налепнице које сте добили"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Дели се с вама"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "Када примите налепницу од некога, тај пакет налепница ће се појавити овде."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Налепнице из долазних порука ће бити приказане овде"
@@ -2826,7 +2826,7 @@
     "messageformat": "Све"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "Моје налепнице"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Додај"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Нова верзија је преузета"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Отворите Signal на телефону"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "Подршка за тамне иконе у систему macOS."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "Поправили смо грешку у креатору налепница која је интерфејс приказивала на погрешном језику."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,ujumbe,messenger,simu,sauti,imesimbwa,faragha,salama, faragha,kikundi,video,gumzo,stories

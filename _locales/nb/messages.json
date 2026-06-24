@@ -453,7 +453,7 @@
     "messageformat": "Du kan feste opptil fire samtaler"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Du kan feste opptil {maxPinnedConversations,number} samtale} other {Du kan feste opptil {maxPinnedConversations,number} samtaler}}"
   },
   "icu:view": {
     "messageformat": "Vis"
@@ -2787,7 +2787,7 @@
     "messageformat": "Ingen klistremerker installert"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "Ingen klistremerkepakker – legg til klistremerker for å sende dem til vennene dine."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "Legg til klistremerker"
@@ -2802,10 +2802,10 @@
     "messageformat": "Klistremerker du mottok"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Delt med deg"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "Når du får tilsendt et klistremerke, dukker klistremerkepakken opp her."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Klistremerker fra innkommende meldinger vises her"
@@ -2826,7 +2826,7 @@
     "messageformat": "Alle"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "Mine klistremerker"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Legg til"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Oppdateringen er lastet ned"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Åpne Signal på telefonen"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "Støtte for mørke ikoner i macOS."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "Vi har rettet opp i en feil som førte til at brukergrensesnittet for klistremerker ble vist på feil språk."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

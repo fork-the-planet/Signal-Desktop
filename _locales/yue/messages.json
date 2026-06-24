@@ -453,7 +453,7 @@
     "messageformat": "你最多只可以釘選 4 個聊天"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, other {你淨係可以將最多 {maxPinnedConversations,number} 個聊天置頂}}"
   },
   "icu:view": {
     "messageformat": "睇吓"
@@ -2787,7 +2787,7 @@
     "messageformat": "冇安裝任何貼圖"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "冇貼圖包，加啲貼圖嚟傳俾朋友。"
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "加貼圖"
@@ -2802,10 +2802,10 @@
     "messageformat": "你收到嘅貼圖"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "收過嘅貼圖"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "當你收到其他人送嘅貼圖，嗰啲貼圖包會顯示喺呢度。"
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "嚟自傳入訊息嘅貼圖會喺呢度顯示"
@@ -2826,7 +2826,7 @@
     "messageformat": "全部"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "我嘅貼圖"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "加入去"
@@ -6461,7 +6461,7 @@
     "messageformat": "千祈唔好同任何人分享你嘅恢復金鑰。咁樣會令佢哋盜用你嘅帳戶。<strong>Signal 從來都唔會傳訊息</strong>問你攞恢復金鑰。千祈唔好回覆任何假扮 Signal 嘅聊天訊息。"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "千祈唔好同任何人分享你嘅恢復金鑰。咁樣會令佢哋盜用你嘅帳戶。<strong>Signal 從來都唔會傳訊息</strong>問你攞恢復金鑰。千祈唔好回覆任何假扮 Signal 嘅聊天訊息。<learnMoreLink>了解詳情。</learnMoreLink>"
+    "messageformat": "千祈唔好同任何人分享你嘅恢復金鑰。咁樣佢哋就有機會盜用你嘅帳戶。<strong>Signal 從來都唔會傳訊息</strong>問你攞恢復金鑰。千祈唔好回覆任何假扮 Signal 嘅聊天訊息。<learnMoreLink>了解詳情。</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "唔好分享"
@@ -6699,6 +6699,9 @@
   },
   "icu:DialogUpdate__downloaded": {
     "messageformat": "已經下載咗更新"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "喺手機度打開 Signal"
@@ -8266,6 +8269,12 @@
     "messageformat": "我哋仲幫 macOS 新加咗支援深色圖示樣式，等你流露潛在喺內心嘅暗黑風格。"
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "我們修正咗貼圖製作器入面攪到介面顯示嘅語言唔啱嘅錯誤。就算貼圖係圖（所謂「一圖勝千言」），但文字都要寫啱至得㗎。"
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

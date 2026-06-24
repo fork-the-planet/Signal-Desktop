@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+سیگنال،پیام،پیام‌رسان،تماس،صدا،رمزگذاری‌شده،خصوصی،امن،حریم خصوصی،گروه،ویدیو،چت،استوری‌ها

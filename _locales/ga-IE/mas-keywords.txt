@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,teachtaireacht,teachtaire,glao,guth,criptithe,príobháideach,slán,príobháid,físghrúpa,scéalta

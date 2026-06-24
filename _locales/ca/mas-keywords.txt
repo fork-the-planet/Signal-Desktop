@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,missatge,messenger,trucada,veu,xifrat,privat,segur,privacitat,grup,vídeo,xat,històries

@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,správa,messenger,hovor,hlasový,šifrované,súkromné,bezpečné,súkromie,skupina,video,čet,príbehy

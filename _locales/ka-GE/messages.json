@@ -453,7 +453,7 @@
     "messageformat": "მაქსიმუმ 4 ჩატის აპინვა შეგიძლია"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {მაქსიმუმ {maxPinnedConversations,number} ჩატის აპინვა შეგიძლია} other {მაქსიმუმ {maxPinnedConversations,number} ჩატის აპინვა შეგიძლია}}"
   },
   "icu:view": {
     "messageformat": "ნახვა"
@@ -2787,7 +2787,7 @@
     "messageformat": "გადმოწერილი სტიკერები ვერ მოიძებნა"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "სტიკერების ნაკრები ვერ მოიძებნა, დაამატე სტიკერები, რომ მეგობრებს გაუგზავნო."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "დაამატე სტიკერები"
@@ -2802,10 +2802,10 @@
     "messageformat": "მიღებული სტიკერები"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "შენთან გაზიარებული"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "როცა ვინმესგან სტიკერს მიიღებ, სტიკერების ნაკრები აქ გამოჩნდება."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "სტიკერები შემომავალი შეტყობინებებიდან აქ გამოჩნდება"
@@ -2826,7 +2826,7 @@
     "messageformat": "ყველა"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "ჩემი სტიკერები"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "დამატება"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "განახლება გადმოწერილია"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "გახსენი Signal-ი შენს ტელეფონში"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "თუ გსურს, შენი შინაგანი გოთი გააღვიძო, macOS-ზე მუქი ხატულების სტილის მხარდაჭერაც დავამატეთ."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "სტიკერების შემქმნელის ბაგი გამოვასწორეთ, რომლის გამოც ინტერფეისი არასწორ ენაზე ჩანდა. მიუხედავად იმისა, რომ სტიკერი სურათია, სათაურიც სწორად უნდა ჩანდეს."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

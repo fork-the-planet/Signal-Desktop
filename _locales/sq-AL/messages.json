@@ -453,7 +453,7 @@
     "messageformat": "Mund të fiksoni deri në 4 biseda"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Mund të fiksosh maksimumi{maxPinnedConversations,number} bisedë} other {Mund të fiksosh maksimum{maxPinnedConversations,number} biseda}}"
   },
   "icu:view": {
     "messageformat": "Shih"
@@ -2787,7 +2787,7 @@
     "messageformat": "S’ka ngjitës të instaluar"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "Nuk ka paketa ngjitësesh. Shto ngjitëse që t’ua dërgosh miqve."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "Shto ngjitës"
@@ -2802,10 +2802,10 @@
     "messageformat": "Ngjitës Që Keni Marrë"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Ndarë me ty"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "Kur merr një ngjitëse nga dikush, paketa e ngjitëseve do të shfaqet këtu."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Këtu do të shfaqen ngjitësit prej mesazhesh të marrë"
@@ -2826,7 +2826,7 @@
     "messageformat": "Të gjitha"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "Ngjitëset e mia"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Shtoje"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Përditësimi u shkarkua"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Hap Signal në telefonin tënd"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "Mbështetje për stilin e ikonës së errët në macOS."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "Rregulluam një gabim në krijuesin e ngjitëseve që e shfaqte ndërfaqen në gjuhën e gabuar."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

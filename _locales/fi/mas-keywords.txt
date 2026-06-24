@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,viesti,messenger,puhelu,ääni,salattu,yksityinen,turvallinen,ryhmä,video,chat,tarinoita

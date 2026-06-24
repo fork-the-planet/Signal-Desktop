@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,मैसेज,मैसेंजर,कॉल,वॉइस,एनक्रिप्टेड,प्राइवेट,सिक्योर,प्राइवेसी,ग्रुप,वीडियो,चैट,स्टोरी

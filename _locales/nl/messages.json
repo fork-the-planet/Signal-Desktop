@@ -453,7 +453,7 @@
     "messageformat": "Je kunt niet meer dan 4 chats vastzetten"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Je kunt niet meer dan {maxPinnedConversations,number} chat vastzetten} other {Je kunt niet meer dan {maxPinnedConversations,number} chats vastzetten}}"
   },
   "icu:view": {
     "messageformat": "Weergeven"
@@ -2787,7 +2787,7 @@
     "messageformat": "Geen stickerpakketten geïnstalleerd"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "Geen stickerpakketten. Voeg stickers toe om aan je vrienden te sturen."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "Stickers toevoegen"
@@ -2802,10 +2802,10 @@
     "messageformat": "Ontvangen stickerpakketten"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Met jou gedeeld"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "Als je een sticker van iemand ontvangt, verschijnt hier het stickerpakket."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Stickerpakketten uit binnenkomende berichten zullen hier verschijnen"
@@ -2826,7 +2826,7 @@
     "messageformat": "Alle"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "Mijn stickers"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Toevoegen"
@@ -3399,7 +3399,7 @@
     "messageformat": "Reageer niet op chats van Signal"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal zal je nooit een bericht sturen om je registratiecode, pincode of herstelsleutel te vragen. Reageer niet op chats die afkomstig zijn van Signal."
+    "messageformat": "Signal zal je nooit een bericht sturen om je registratiecode, pincode of herstelsleutel te vragen. Reageer niet op chats die afkomstig lijken te zijn van Signal."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Controleer namen en profielfoto's"
@@ -3417,7 +3417,7 @@
     "messageformat": "Reageer niet op chats van Signal"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal zal je nooit een bericht sturen om je registratiecode, pincode of herstelsleutel te vragen. Reageer niet op chats die afkomstig zijn van Signal of Signal-ondersteuning (Signal Support). Kwaadwillenden zetten nepchats op en proberen je account over te nemen."
+    "messageformat": "Signal zal je nooit een bericht sturen om je registratiecode, pincode of herstelsleutel te vragen. Reageer niet op chats die afkomstig lijken te zijn van Signal of Signal-ondersteuning (Signal Support). Kwaadwillenden zetten nepchats op en proberen je account over te nemen."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Controleer namen en profielfoto's"
@@ -6446,7 +6446,7 @@
     "messageformat": "Deel je herstelsleutel niet"
   },
   "icu:Preferences__recovery-key__do-not-share-description": {
-    "messageformat": "<strong>Signal zal je nooit een bericht sturen</strong> om je herstelsleutel te vragen. Reageer niet op chats die afkomstig zijn van Signal. Bewaar je herstelsleutel op een veilige manier en deel deze niet met anderen. <learnMoreLink>Meer informatie.</learnMoreLink>"
+    "messageformat": "<strong>Signal zal je nooit een bericht sturen</strong> om je herstelsleutel te vragen. Reageer niet op chats die afkomstig lijken te zijn van Signal. Bewaar je herstelsleutel op een veilige manier en deel deze niet met anderen. <learnMoreLink>Meer informatie.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-confirm": {
     "messageformat": "Begrepen"
@@ -6458,10 +6458,10 @@
     "messageformat": "Sleutel niet delen"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-description": {
-    "messageformat": "Deel je herstelsleutel met niemand. Hiermee kan je account worden overgenomen. <strong>Signal zal je nooit een bericht sturen</strong> om je herstelsleutel te vragen. Reageer niet op chats die afkomstig zijn van Signal."
+    "messageformat": "Deel je herstelsleutel met niemand. Hiermee kan je account worden overgenomen. <strong>Signal zal je nooit een bericht sturen</strong> om je herstelsleutel te vragen. Reageer niet op chats die afkomstig lijken te zijn van Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Deel je herstelsleutel met niemand. Hiermee kan je account worden overgenomen. <strong>Signal zal je nooit een bericht sturen</strong> om je herstelsleutel te vragen. Reageer niet op chats die afkomstig zijn van Signal. <learnMoreLink>Meer informatie.</learnMoreLink>"
+    "messageformat": "Deel je herstelsleutel met niemand. Hiermee kan je account worden overgenomen. <strong>Signal zal je nooit een bericht sturen</strong> om je herstelsleutel te vragen. Reageer niet op chats die afkomstig lijken te zijn van Signal. <learnMoreLink>Meer informatie.</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Niet delen"
@@ -6699,6 +6699,9 @@
   },
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Update gedownload"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Open Signal op je telefoon"
@@ -8266,6 +8269,12 @@
     "messageformat": "Ondersteuning voor de donkere icoonstijl in macOS."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "We hebben een fout opgelost in de stickerpakketmaker waardoor de interface in de verkeerde taal werd weergegeven. Ook al zegt een sticker meer dan duizend woorden, de juiste woorden maken het verschil."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

@@ -1,1 +1,1 @@
-signal,message,messenger,call,voice,encrypted,private,secure,privacy,group,video,chat,stories
+signal,порака,повик,глас,шифриран,приватно,безбедно,приватност,група,видео,разговор,приказни

@@ -453,7 +453,7 @@
     "messageformat": "آپ صرف 4 چیٹس تک پن کر سکتے ہیں"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {آپ صرف {maxPinnedConversations,number} تک چیٹ کو پن کر سکتے ہیں} other {آپ صرف {maxPinnedConversations,number} تک چیٹس کو پن کر سکتے ہیں}}"
   },
   "icu:view": {
     "messageformat": "ویو"
@@ -2787,7 +2787,7 @@
     "messageformat": "اسٹیکر انسٹال نہیں ہوئے"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "کوئی اسٹیکر پیکس نہیں ہیں، اپنے دوستوں کو بھیجنے کے لیے اسٹیکرز شامل کریں۔"
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "اسٹیکرز شامل کریں"
@@ -2802,10 +2802,10 @@
     "messageformat": "اسٹیکرز جو آپ کو ملے ہیں"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "آپ کے ساتھ شیئر کردہ"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "جب آپ کو کسی کی جانب سے اسٹیکر موصول ہوتا ہے، تو اسٹیکر پیک یہاں ظاہر ہو گا۔"
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "آنے والے پیغامات سے اسٹیکرز یہاں ظاہر ہونگے"
@@ -2826,7 +2826,7 @@
     "messageformat": "تمام"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "میرے اسٹیکرز"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "شامل کریں"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "اپ ڈیٹ ڈاؤن لوڈ ہو گئی ہے"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "اپنے فون پر Signal کھولیں"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "اگر آپ اپنے اندر کے گوتھ کو قبول کرنا چاہتے ہیں کہ تو ہم macOS میں گہرے آئیکن اسٹائل کے لیے سپورٹ بھی شامل کر دی ہے۔"
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "ہم نے اسٹیکر کے تخلیق کار میں ایک نقص کی درستگی کی جس کی وجہ سے انٹرفیس غلط زبان میں ظاہر ہو رہا تھا۔ اگرچہ اسٹیکر تصویریں ہوتے ہیں (اس لیے ہزاروں الفاظ کا متبادل بھی ہیں) اس لیے ضروری ہے کہ الفاظ درست ہوں۔"
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

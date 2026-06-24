@@ -453,7 +453,7 @@
     "messageformat": "Připnout lze nejvýše 4 chaty"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Můžete připnout nanejvýš {maxPinnedConversations,number} chat} few {Můžete připnout nanejvýš {maxPinnedConversations,number} chaty} many {Můžete připnout nanejvýš {maxPinnedConversations,number} chatů} other {Můžete připnout nanejvýš {maxPinnedConversations,number} chatů}}"
   },
   "icu:view": {
     "messageformat": "Zobrazit"
@@ -2787,7 +2787,7 @@
     "messageformat": "Nejsou instalovány žádné nálepky"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "Žádné nainstalované balíčky nálepek. Přidejte si nálepky, abyste je mohli posílat přátelům."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "Přidat nálepky"
@@ -2802,10 +2802,10 @@
     "messageformat": "Přijaté nálepky"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Sdíleno s vámi"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "Jakmile od někoho dostanete nálepku, její balíček se zobrazí zde."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Nálepky z příchozích zpráv se objeví zde"
@@ -2826,7 +2826,7 @@
     "messageformat": "Vše"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "Moje nálepky"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Přidat"
@@ -6461,7 +6461,7 @@
     "messageformat": "Svůj klíč pro obnovení s nikým nesdílejte. Útočník by pomocí něj mohl ovládnout váš účet. <strong>Signal od vás nikdy nebude ve zprávě</strong> vyžadovat váš klíč pro obnovení. Nikdy neodpovídejte na chat, který se tváří jako Signal."
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Svůj klíč pro obnovení s nikým nesdílejte. Útočník by pomocí něj mohl ovládnout váš účet. <strong>Signal od vás nikdy nebude ve zprávě</strong> vyžadovat váš klíč pro obnovení. Nikdy neodpovídejte na chat, který se tváří jako Signal. <learnMoreLink>Víc informací.</learnMoreLink>"
+    "messageformat": "Svůj klíč pro obnovení s nikým nesdílejte. Útočník by pomocí něj mohl ovládnout váš účet. <strong>Signal od vás nikdy nebude ve zprávě</strong> vyžadovat váš klíč pro obnovení. Nikdy neodpovídejte na chat, který se tváří jako Signal. <learnMoreLink>Zjistit více</learnMoreLink>"
   },
   "icu:CompositionInput__recovery-key-paste__confirm-dont-share": {
     "messageformat": "Nesdílet"
@@ -6699,6 +6699,9 @@
   },
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Aktualizace stažena"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Otevřete Signal na svém telefonu"
@@ -8266,6 +8269,12 @@
     "messageformat": "Aplikace nyní podporuje tmavý styl ikon v macOS."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "Opravili jsme chybu v nástroji na tvorbu nálepek, kvůli které se rozhraní zobrazovalo v nesprávném jazyce."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }

@@ -453,7 +453,7 @@
     "messageformat": "Poți fixa până la 4 conversații"
   },
   "icu:pinnedConversations--max": {
-    "messageformat": "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+    "messageformat": "{maxPinnedConversations, plural, one {Poți fixa până la {maxPinnedConversations,number} conversație} few {Poți fixa până la {maxPinnedConversations,number} conversații} other {Poți fixa până la {maxPinnedConversations,number} de conversații}}"
   },
   "icu:view": {
     "messageformat": "Vizualizare"
@@ -2787,7 +2787,7 @@
     "messageformat": "Nici un autocolant instalat"
   },
   "icu:stickers--StickerManager--MyStickers--None": {
-    "messageformat": "No sticker packs, add stickers to send to your friends."
+    "messageformat": "Nu ai pachete de abțibilduri; adaugă abțibilduri de trimis prietenilor tăi."
   },
   "icu:stickers--StickerManager--AddStickers": {
     "messageformat": "Adaugă Abțibilduri"
@@ -2802,10 +2802,10 @@
     "messageformat": "Autocolante primite"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
-    "messageformat": "Shared With You"
+    "messageformat": "Împărtășite cu tine"
   },
   "icu:stickers--StickerManager--ReceivedPacksDescription": {
-    "messageformat": "When you receive a sticker from someone, the sticker pack will appear here."
+    "messageformat": "Când primești un abțibild de la cineva, pachetul de abțibilduri va apărea aici."
   },
   "icu:stickers--StickerManager--ReceivedPacks--Empty": {
     "messageformat": "Autocolantele de la mesajele primite se vor afișa aici"
@@ -2826,7 +2826,7 @@
     "messageformat": "Toate"
   },
   "icu:stickers--StickerManagerHeader--MyStickers": {
-    "messageformat": "My Stickers"
+    "messageformat": "Abțibildurile mele"
   },
   "icu:stickers--StickerManagerPackContextMenu--Add": {
     "messageformat": "Adaugă"
@@ -6700,6 +6700,9 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Actualizare Descărcată"
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Deschide Signal pe telefonul tău"
   },
@@ -8266,6 +8269,12 @@
     "messageformat": "Dacă vrei să-ți exprimi latura gotică, am adăugat și asistență pentru modul întunecat de pictograme din macOS."
   },
   "icu:WhatsNew__8.16--0": {
-    "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+    "messageformat": "Am reparat un bug în creatorul de abțibilduri care afișa interfața în limba greșită. Deși abțibildurile sunt imagini (deci valorează o mie de cuvinte) este important totuși să nimerești cuvintele potrivite."
+  },
+  "icu:WhatsNew__8.17--0": {
+    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+  },
+  "icu:WhatsNew__8.17--1": {
+    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
   }
 }
