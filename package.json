@@ -112,7 +112,8 @@
     "electron:install-app-deps": "electron-builder install-app-deps",
     "check-upgradeable-deps": "node scripts/check-upgradeable-deps.mjs",
     "react-devtools": "react-devtools",
-    "run-with-devtools": "cross-env REACT_DEVTOOLS=1 run-p --print-label react-devtools start"
+    "run-with-devtools": "cross-env REACT_DEVTOOLS=1 run-p --print-label react-devtools start",
+    "update-signal-symbols": "node scripts/update-signal-symbols.mjs"
   },
   "optionalDependencies": {
     "fs-xattr": "0.4.0"
