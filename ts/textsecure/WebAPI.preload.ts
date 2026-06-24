@@ -1149,7 +1149,6 @@ const subscriptionConfigurationResultZod = z.object({
   levels: z.record(
     z.string(),
     z.object({
-      name: z.string(),
       badge: badgeFromServerSchema,
     })
   ),
