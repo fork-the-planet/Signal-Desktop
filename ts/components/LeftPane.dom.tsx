@@ -133,6 +133,7 @@ export type PropsType = {
   getServerAlertToShow: (alerts: ServerAlertsType) => ServerAlert | null;
   i18n: LocalizerType;
   isMacOS: boolean;
+  isMAS: boolean;
   isNotificationProfileActive: boolean;
   preferredWidthFromStorage: number;
   selectedChatFolder: ChatFolder | null;
@@ -249,6 +250,7 @@ export function LeftPane({
   i18n,
   lookupConversationWithoutServiceId,
   isMacOS,
+  isMAS,
   isNotificationProfileActive,
   isOnline,
   isUpdateDownloaded,
@@ -689,7 +691,10 @@ export function LeftPane({
       ...commonDialogProps,
     });
   } else if (hasExpiredDialog) {
-    maybeRedDialog = renderExpiredBuildDialog(commonDialogProps);
+    maybeRedDialog = renderExpiredBuildDialog({
+      ...commonDialogProps,
+      isMAS,
+    });
   }
 
   const dialogs = new Array<{ key: string; dialog: JSX.Element }>();

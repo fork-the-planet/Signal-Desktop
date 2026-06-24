@@ -119,6 +119,7 @@ import {
   pauseBackupMediaDownload,
   resumeBackupMediaDownload,
 } from '../../util/backupMediaDownload.preload.ts';
+import OS from '../../util/os/osPreload.preload.ts';
 import { useNavActions } from '../ducks/nav.std.ts';
 import { SmartLeftPaneChatFolders } from './LeftPaneChatFolders.preload.tsx';
 import { SmartLeftPaneConversationListItemContextMenu } from './LeftPaneConversationListItemContextMenu.preload.tsx';
@@ -466,6 +467,7 @@ export const SmartLeftPane = memo(function SmartLeftPane({
       hasUpdateDialog={hasUpdateDialog}
       i18n={i18n}
       isMacOS={isMacOS}
+      isMAS={OS.isMAS()}
       isOnline={isOnline}
       isNotificationProfileActive={isNotificationProfileActive}
       isUpdateDownloaded={isUpdateDownloaded}

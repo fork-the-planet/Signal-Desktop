@@ -192,6 +192,7 @@ const useProps = (overrideProps: OverridePropsType = {}): PropsType => {
     hasPendingUpdate: false,
     i18n,
     isMacOS: false,
+    isMAS: false,
     isOnline: true,
     preferredWidthFromStorage: 320,
     challengeStatus: 'idle',

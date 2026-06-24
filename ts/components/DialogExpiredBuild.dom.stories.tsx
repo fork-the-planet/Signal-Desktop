@@ -25,6 +25,20 @@ export function Basic(): JSX.Element {
       <DialogExpiredBuild
         containerWidthBreakpoint={containerWidthBreakpoint}
         i18n={i18n}
+        isMAS={false}
+      />
+    </FakeLeftPaneContainer>
+  );
+}
+export function MAS(): JSX.Element {
+  const containerWidthBreakpoint = WidthBreakpoint.Wide;
+
+  return (
+    <FakeLeftPaneContainer containerWidthBreakpoint={containerWidthBreakpoint}>
+      <DialogExpiredBuild
+        containerWidthBreakpoint={containerWidthBreakpoint}
+        i18n={i18n}
+        isMAS
       />
     </FakeLeftPaneContainer>
   );

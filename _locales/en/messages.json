@@ -8908,6 +8908,10 @@
     "messageformat": "Update Downloaded",
     "description": "The title of update dialog when update download is completed."
   },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Click to go to the App Store",
+    "description": "The action text of build expiration dialog when app is installed from the App Store"
+  },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Open Signal on your phone",
     "description": "Title of a banner alerting users if their primary device (e.g. phone) has not been logged into recently."

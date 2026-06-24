@@ -12,20 +12,30 @@ import { openLinkInWebBrowser } from '../util/openLinkInWebBrowser.dom.ts';
 export type PropsType = {
   containerWidthBreakpoint: WidthBreakpoint;
   i18n: LocalizerType;
+  isMAS: boolean;
 };
+
+const WEBSITE_URL = 'https://signal.org/download/';
+const APP_STORE_URL =
+  'https://apps.apple.com/app/signal-private-messenger/id1230208093';
 
 export function DialogExpiredBuild({
   containerWidthBreakpoint,
   i18n,
+  isMAS,
 }: PropsType): JSX.Element | null {
   return (
     <LeftPaneDialog
       containerWidthBreakpoint={containerWidthBreakpoint}
       type="error"
       onClick={() => {
-        openLinkInWebBrowser('https://signal.org/download/');
+        openLinkInWebBrowser(isMAS ? APP_STORE_URL : WEBSITE_URL);
       }}
-      clickLabel={i18n('icu:upgrade')}
+      clickLabel={
+        isMAS
+          ? i18n('icu:DialogExpiredBuild__upgrade-mas')
+          : i18n('icu:upgrade')
+      }
       hasAction
     >
       {i18n('icu:expiredWarning')}{' '}
