@@ -176,7 +176,11 @@ let packsToDownload: DownloadMap | undefined;
 const downloadQueue = new Queue({ concurrency: 1, timeout: MINUTE * 30 });
 const downloadQueueData = new Map<
   string,
-  { depth: number; finalStatus: StickerPackStatusType | undefined }
+  {
+    depth: number;
+    finalStatus: StickerPackStatusType | undefined;
+    position: number | undefined;
+  }
 >();
 
 export async function load(): Promise<void> {
@@ -672,6 +676,7 @@ export async function downloadEphemeralPack(
 export type DownloadStickerPackOptions = Readonly<{
   actionSource: ActionSourceType;
   finalStatus?: StickerPackStatusType;
+  position?: number;
   suppressError?: boolean;
 }>;
 
@@ -683,9 +688,18 @@ export async function downloadStickerPack(
   // Store finalStatus. When we click on a sticker we want to redownload with priority
   // while retaining the finalStatus, so we need a way to look up the last finalStatus.
   const data = downloadQueueData.get(packId);
+  const prevFinalStatus = data?.finalStatus;
+
+  // Prevent going from installed to downloaded, which can happen after linking
+  // if default packs are queued after packs from syncMessages and storage.
+  if (prevFinalStatus === 'installed' && options.finalStatus === 'downloaded') {
+    return;
+  }
+
   const finalStatus = options.finalStatus ?? data?.finalStatus;
   const depth = data ? data.depth + 1 : 1;
-  downloadQueueData.set(packId, { depth, finalStatus });
+  const position = options.position ?? data?.position;
+  downloadQueueData.set(packId, { depth, finalStatus, position });
 
   const queueOptions = {
     priority:
@@ -697,7 +711,11 @@ export async function downloadStickerPack(
   // This will ensure that only one download process is in progress at any given time
   return downloadQueue.add(async () => {
     try {
-      await doDownloadStickerPack(packId, packKey, { ...options, finalStatus });
+      await doDownloadStickerPack(packId, packKey, {
+        ...options,
+        finalStatus,
+        position,
+      });
     } catch (error) {
       log.error(
         'doDownloadStickerPack threw an error:',
@@ -726,6 +744,7 @@ async function doDownloadStickerPack(
     finalStatus = 'downloaded',
     actionSource,
     suppressError = false,
+    position,
   }: DownloadStickerPackOptions
 ): Promise<void> {
   const {
@@ -758,7 +777,7 @@ async function doDownloadStickerPack(
     );
 
     if (existing && existing.status !== 'error') {
-      await DataWriter.updateStickerPackStatus(packId, 'error');
+      await DataWriter.updateStickerPackStatusAndPosition(packId, 'error');
       stickerPackUpdated(
         packId,
         {
@@ -786,6 +805,7 @@ async function doDownloadStickerPack(
       attemptedStatus: finalStatus,
       downloadAttempts,
       status: 'pending' as const,
+      position,
     };
     stickerPackAdded(placeholder);
 
@@ -834,6 +854,7 @@ async function doDownloadStickerPack(
       downloadAttempts,
       stickerCount,
       status: 'pending',
+      position,
       createdAt: Date.now(),
       stickers: {},
       title: proto.title ?? '',
@@ -858,6 +879,7 @@ async function doDownloadStickerPack(
       attemptedStatus: finalStatus,
       downloadAttempts,
       status: 'error' as const,
+      position,
     };
     await DataWriter.createOrUpdateStickerPack(pack);
     stickerPackAdded(pack, { suppressError });
@@ -910,16 +932,20 @@ async function doDownloadStickerPack(
 
     // Allow for the user marking this pack as installed in the middle of our download;
     //   don't overwrite that status.
-    const existingStatus = getStickerPackStatus(packId);
+    const { status: existingStatus, position: existingPosition } =
+      getStickerPack(packId) ?? {};
     if (existingStatus === 'installed') {
       // No-op
     } else if (finalStatus === 'installed') {
+      // Handling a sticker sync message or attempting to reinstall a pending pack where
+      // download is in progress.
       installStickerPack(packId, packKey, {
         actionSource,
+        position: position ?? existingPosition ?? undefined,
       });
     } else {
       // Mark the pack as complete
-      await DataWriter.updateStickerPackStatus(packId, finalStatus);
+      await DataWriter.updateStickerPackStatusAndPosition(packId, finalStatus);
       stickerPackUpdated(packId, {
         status: finalStatus,
       });
@@ -933,7 +959,7 @@ async function doDownloadStickerPack(
     );
 
     const errorStatus = 'error';
-    await DataWriter.updateStickerPackStatus(packId, errorStatus);
+    await DataWriter.updateStickerPackStatusAndPosition(packId, errorStatus);
     if (stickerPackUpdated) {
       stickerPackUpdated(
         packId,

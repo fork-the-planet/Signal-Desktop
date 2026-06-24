@@ -1365,10 +1365,10 @@ type WritableInterface = {
   createOrUpdateStickerPack: (pack: StickerPackType) => void;
   createOrUpdateStickerPacks: (packs: ReadonlyArray<StickerPackType>) => void;
   // Returns previous sticker pack status
-  updateStickerPackStatus: (
+  updateStickerPackStatusAndPosition: (
     id: string,
     status: StickerPackStatusType,
-    options?: { timestamp: number }
+    options?: { timestamp?: number; position?: number }
   ) => StickerPackStatusType | null;
   updateStickerPackInfo: (info: StickerPackInfoType) => void;
   createOrUpdateSticker: (sticker: StickerType) => void;
@@ -1390,8 +1390,12 @@ type WritableInterface = {
   addUninstalledStickerPacks: (
     pack: ReadonlyArray<UninstalledStickerPackType>
   ) => void;
-  // Returns `true` if sticker pack was previously uninstalled
-  installStickerPack: (packId: string, timestamp: number) => boolean;
+  // Returns wasPreviouslyUninstalled: `true` if sticker pack was previously uninstalled
+  installStickerPack: (
+    packId: string,
+    timestamp: number,
+    position?: number
+  ) => { wasPreviouslyUninstalled: boolean; position?: number };
   // Returns `true` if sticker pack was not previously uninstalled
   uninstallStickerPack: (packId: string, timestamp: number) => boolean;
   clearAllErrorStickerPackAttempts: () => void;

@@ -140,12 +140,14 @@ export const getInstalledStickerPacks = createSelector(
     packs: Dictionary<StickerPackDBType>,
     blessedPacks: Dictionary<boolean>
   ): Array<StickerPackType> => {
-    return filterAndTransformPacks(
-      packs,
-      pack => pack.status === 'installed',
-      pack => pack.installedAt,
-      blessedPacks
+    const list = filter(packs, pack => pack.status === 'installed');
+    const sorted = orderBy<StickerPackDBType>(
+      list,
+      ['position', 'installedAt'],
+      ['asc', 'asc']
     );
+
+    return sorted.map(pack => translatePackFromDB(pack, packs, blessedPacks));
   }
 );
 

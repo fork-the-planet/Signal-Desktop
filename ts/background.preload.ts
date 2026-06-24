@@ -2361,6 +2361,8 @@ async function startApp(): Promise<void> {
             actionSource: 'syncMessage',
           });
         } else {
+          // Sync message from other desktops or primary to download packs. Note,
+          // sticker sync messages do not contain position but storage records do.
           void Stickers.downloadStickerPack(id, key, {
             finalStatus: 'installed',
             actionSource: 'syncMessage',

@@ -728,7 +728,7 @@ export const DataWriter: ServerWritableInterface = {
 
   createOrUpdateStickerPack,
   createOrUpdateStickerPacks,
-  updateStickerPackStatus,
+  updateStickerPackStatusAndPosition,
   updateStickerPackInfo,
   createOrUpdateSticker,
   createOrUpdateStickers,
@@ -6981,14 +6981,15 @@ function createOrUpdateStickerPacks(
     }
   })();
 }
-function updateStickerPackStatus(
+function updateStickerPackStatusAndPosition(
   db: WritableDB,
   id: string,
   status: StickerPackStatusType,
-  options?: { timestamp: number }
+  options?: { timestamp?: number; position?: number }
 ): StickerPackStatusType | null {
   const timestamp = options ? options.timestamp || Date.now() : Date.now();
   const installedAt = status === 'installed' ? timestamp : null;
+  const position = options?.position;
 
   return db.transaction(() => {
     const [select, selectParams] = sql`
@@ -7002,13 +7003,37 @@ function updateStickerPackStatus(
         })
         .get<StickerPackRow['status']>(selectParams) ?? null;
 
-    const [update, updateParams] = sql`
-      UPDATE sticker_packs
-      SET status = ${status}, installedAt = ${installedAt}
-      WHERE id IS ${id}
-    `;
-
-    db.prepare(update).run(updateParams);
+    if (position != null) {
+      db.prepare(
+        `
+        UPDATE sticker_packs
+        SET
+          status = $status,
+          installedAt = $installedAt,
+          position = $position
+        WHERE id = $id;
+        `
+      ).run({
+        id,
+        status,
+        installedAt,
+        position,
+      });
+    } else {
+      db.prepare(
+        `
+        UPDATE sticker_packs
+        SET
+          status = $status,
+          installedAt = $installedAt
+        WHERE id = $id;
+        `
+      ).run({
+        id,
+        status,
+        installedAt,
+      });
+    }
 
     return oldStatus;
   })();
@@ -7515,30 +7540,56 @@ function getStickerPackInfo(
     return undefined;
   })();
 }
+
 function installStickerPack(
   db: WritableDB,
   packId: string,
-  timestamp: number
-): boolean {
+  timestamp: number,
+  position?: number
+): { wasPreviouslyUninstalled: boolean; position?: number } {
   return db.transaction(() => {
-    const status = 'installed';
     removeUninstalledStickerPack(db, packId);
-    const oldStatus = updateStickerPackStatus(db, packId, status, {
-      timestamp,
-    });
+
+    // Default position to the end of the list
+    const newPosition: number =
+      position ??
+      db
+        .prepare(
+          `
+          SELECT IFNULL(MAX(position) + 1, 0)
+          FROM sticker_packs
+          WHERE id != $packId
+        `,
+          {
+            pluck: true,
+          }
+        )
+        .get({ packId }) ??
+      0;
+
+    const oldStatus = updateStickerPackStatusAndPosition(
+      db,
+      packId,
+      'installed',
+      {
+        position: newPosition,
+        timestamp,
+      }
+    );
 
     const wasPreviouslyUninstalled = oldStatus !== 'installed';
-
-    if (wasPreviouslyUninstalled) {
-      const [query, params] = sql`
-        UPDATE sticker_packs SET
-          storageNeedsSync = 1
-        WHERE id IS ${packId};
-      `;
-      db.prepare(query).run(params);
+    if (!wasPreviouslyUninstalled) {
+      return { wasPreviouslyUninstalled: false };
     }
 
-    return wasPreviouslyUninstalled;
+    const [query, params] = sql`
+      UPDATE sticker_packs SET
+        storageNeedsSync = 1
+      WHERE id IS ${packId};
+    `;
+    db.prepare(query).run(params);
+
+    return { wasPreviouslyUninstalled: true, position: newPosition };
   })();
 }
 function uninstallStickerPack(
@@ -7548,7 +7599,7 @@ function uninstallStickerPack(
 ): boolean {
   return db.transaction(() => {
     const status = 'downloaded';
-    const oldStatus = updateStickerPackStatus(db, packId, status);
+    const oldStatus = updateStickerPackStatusAndPosition(db, packId, status);
 
     const wasPreviouslyInstalled = oldStatus === 'installed';
 

@@ -253,7 +253,7 @@ describe('stickers', function (this: Mocha.Suite) {
       );
       assert.strictEqual(
         stickerPack.record.stickerPack.position,
-        12,
+        11,
         'Wrong sticker pack position'
       );
     }

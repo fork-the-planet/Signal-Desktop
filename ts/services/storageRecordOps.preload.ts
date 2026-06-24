@@ -2306,11 +2306,12 @@ export async function mergeStickerPackRecord(
   const wasUninstalled = Boolean(localStickerPack?.uninstalledAt);
   const isUninstalled = Boolean(stickerPack.uninstalledAt);
 
+  const newPosition = stickerPack.position ?? undefined;
   details.push(
     `wasUninstalled=${wasUninstalled}`,
     `isUninstalled=${isUninstalled}`,
     `oldPosition=${localStickerPack?.position ?? '?'}`,
-    `newPosition=${stickerPack.position ?? '?'}`
+    `newPosition=${newPosition ?? '?'}`
   );
 
   if (!wasUninstalled && isUninstalled) {
@@ -2341,13 +2342,17 @@ export async function mergeStickerPackRecord(
         stickerPack.key,
         {
           actionSource: 'storageService',
+          position: newPosition,
         }
       );
     } else {
-      void Stickers.downloadStickerPack(stickerPack.id, stickerPack.key, {
-        finalStatus: 'installed',
-        actionSource: 'storageService',
-      });
+      drop(
+        Stickers.downloadStickerPack(stickerPack.id, stickerPack.key, {
+          finalStatus: 'installed',
+          actionSource: 'storageService',
+          position: newPosition,
+        })
+      );
     }
   }
 

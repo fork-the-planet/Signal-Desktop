@@ -86,6 +86,7 @@ type InstallStickerPackPayloadType = ReadonlyDeep<{
   actionSource: ActionSourceType;
   status: 'installed';
   installedAt: number;
+  position: number | undefined;
   recentStickers: Array<RecentStickerType>;
 }>;
 type InstallStickerPackAction = ReadonlyDeep<{
@@ -237,20 +238,27 @@ function downloadStickerPack(
 function installStickerPack(
   packId: string,
   packKey: string,
-  { actionSource }: { actionSource: ActionSourceType }
+  {
+    actionSource,
+    position,
+  }: { actionSource: ActionSourceType; position?: number }
 ): InstallStickerPackAction {
   return {
     type: 'stickers/INSTALL_STICKER_PACK',
-    payload: doInstallStickerPack(packId, packKey, { actionSource }),
+    payload: doInstallStickerPack(packId, packKey, { actionSource, position }),
   };
 }
 async function doInstallStickerPack(
   packId: string,
   packKey: string,
-  { actionSource }: { actionSource: ActionSourceType }
+  {
+    actionSource,
+    position,
+  }: { actionSource: ActionSourceType; position?: number }
 ): Promise<InstallStickerPackPayloadType> {
   const timestamp = Date.now();
-  const changed = await DataWriter.installStickerPack(packId, timestamp);
+  const { wasPreviouslyUninstalled, position: newPosition } =
+    await DataWriter.installStickerPack(packId, timestamp, position);
 
   if (actionSource === 'ui') {
     // Kick this off, but don't wait for it
@@ -262,7 +270,7 @@ async function doInstallStickerPack(
     actionSource !== 'storageService' &&
     // Stickers downloaded on startup should already be synced
     actionSource !== 'startup' &&
-    changed
+    wasPreviouslyUninstalled
   ) {
     storageServiceUploadJob({ reason: 'doInstallServicePack' });
   }
@@ -274,6 +282,7 @@ async function doInstallStickerPack(
     actionSource,
     status: 'installed',
     installedAt: timestamp,
+    position: newPosition,
     recentStickers: recentStickers.map(item => ({
       packId: item.packId,
       stickerId: item.id,
@@ -429,7 +438,10 @@ export function reducer(
     if (isInstallingPack) {
       newPack = {
         ...payload,
-        stickerCount: oldPack.stickerCount,
+        stickerCount:
+          oldPack.stickerCount !== 0
+            ? oldPack.stickerCount
+            : payload.stickerCount,
         title: payload.title === '' ? oldPack.title : payload.title,
         author: payload.author === '' ? oldPack.author : payload.author,
         // TODO: Ephemeral stickers are stored at a different path then downloaded stickers
@@ -499,6 +511,8 @@ export function reducer(
     const { packs } = state;
     const existingPack = packs[packId];
 
+    const position = 'position' in payload ? payload.position : undefined;
+
     // A pack might be deleted as part of the uninstall process
     if (!existingPack) {
       return {
@@ -521,6 +535,7 @@ export function reducer(
           ...existingPack,
           status,
           installedAt,
+          position: position ?? existingPack.position,
         },
       },
       recentStickers,
