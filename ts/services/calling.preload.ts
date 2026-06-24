@@ -3707,7 +3707,7 @@ class CallingClass {
         this.videoRenderer.enable(call);
         if (this.#cameraEnabled) {
           // Start sending video from the camera (if not already).
-          await this.enableCaptureAndSend(call);
+          drop(this.enableCaptureAndSend(call));
         }
       }
       if (call.state === CallState.Ended) {
