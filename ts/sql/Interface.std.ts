@@ -984,6 +984,7 @@ type ReadableInterface = {
     conversationId: string;
   }) => MessageType | undefined;
   getAllCallHistory: () => ReadonlyArray<CallHistoryDetails>;
+  getCallHistoryUnreadCallConversationIds: () => ReadonlyArray<string>;
   getCallHistoryUnreadCount: () => number;
   getCallHistoryMessageByCallId: (options: {
     conversationId: string;
@@ -1231,6 +1232,11 @@ type WritableInterface = {
     readAt?: number;
     storyId?: string;
   }) => GetUnreadByConversationAndMarkReadResultType;
+  getUnreadCallMessagesAndMarkRead: (options: {
+    conversationId: string;
+    readMessageReceivedAt: number;
+    activeCallIds: Set<string>;
+  }) => GetUnreadByConversationAndMarkReadResultType;
   getUnreadEditedMessagesAndMarkRead: (options: {
     conversationId: string;
     readMessageReceivedAt: number;
@@ -1275,8 +1281,16 @@ type WritableInterface = {
   markCallHistoryDeleted: (callId: string) => void;
   cleanupCallHistoryMessages: () => void;
   markCallHistoryRead: (callId: string) => void;
-  markAllCallHistoryRead: (target: CallLogEventTarget) => number;
-  markAllCallHistoryReadInConversation: (target: CallLogEventTarget) => number;
+  markAllCallHistoryRead: (
+    target: CallLogEventTarget,
+    readAt: number,
+    activeCallIds: Set<string>
+  ) => number;
+  markAllCallHistoryReadInConversation: (
+    target: CallLogEventTarget,
+    readAt: number,
+    activeCallIds: Set<string>
+  ) => number;
   saveCallHistory: (callHistory: CallHistoryDetails) => void;
   markCallHistoryMissed: (callIds: ReadonlyArray<string>) => void;
   getRecentStaleRingsAndMarkOlderMissed: () => ReadonlyArray<MaybeStaleCallHistory>;

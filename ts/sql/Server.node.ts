@@ -486,6 +486,7 @@ export const DataReader: ServerReadableInterface = {
   getConversationMessageStats,
   getLastConversationMessage,
   getAllCallHistory,
+  getCallHistoryUnreadCallConversationIds,
   getCallHistoryUnreadCount,
   getCallHistoryMessageByCallId,
   getCallHistory,
@@ -646,6 +647,8 @@ export const DataWriter: ServerWritableInterface = {
   updateAllConversationColors,
   removeAllProfileKeyCredentials,
   getUnreadByConversationAndMarkRead,
+  getUnreadCallMessagesAndMarkRead,
+  getUnreadEditedMessagesAndMarkRead,
   getUnreadReactionsAndMarkRead,
   getUnreadPollVotesAndMarkRead,
 
@@ -664,7 +667,6 @@ export const DataWriter: ServerWritableInterface = {
   _removeAllReactions,
   _removeAllMessages,
   _removeMessage: removeMessage,
-  getUnreadEditedMessagesAndMarkRead,
   clearCallHistory,
   _removeAllCallHistory,
   markCallHistoryDeleted,
@@ -3620,7 +3622,8 @@ function getUnreadByConversationAndMarkRead(
   }
 ): GetUnreadByConversationAndMarkReadResultType {
   return db.transaction(() => {
-    const expirationStartTimestamp = Math.min(now, readAt ?? Infinity);
+    const expirationStartTimestamp =
+      readAt != null ? Math.min(now, readAt) : now;
 
     const { predicate: storyReplyFilter, isFilteringOnStoryId } =
       _storyIdPredicateAndInfo(storyId, includeStoryReplies);
@@ -3634,6 +3637,7 @@ function getUnreadByConversationAndMarkRead(
         conversationId = ${conversationId} AND
         ${storyReplyFilter} AND
         type IS NOT 'outgoing' AND
+        type IS NOT 'call-history' AND
         hasExpireTimer IS 1 AND
         received_at <= ${readMessageReceivedAt}
     `;
@@ -4842,13 +4846,25 @@ const CALL_STATUS_INCOMING = sqlConstant(CallDirection.Incoming);
 const CALL_MODE_ADHOC = sqlConstant(CallMode.Adhoc);
 const FOUR_HOURS_IN_MS = sqlConstant(4 * 60 * 60 * 1000);
 
+function getCallHistoryUnreadCallConversationIds(
+  db: ReadableDB
+): ReadonlyArray<string> {
+  const [query, params] = sql`
+    SELECT DISTINCT(messages.conversationId) FROM messages
+    INNER JOIN callsHistory ON callsHistory.callId = messages.callId
+    WHERE messages.type IS 'call-history'
+      AND messages.seenStatus IS ${SEEN_STATUS_UNSEEN}
+      AND callsHistory.direction IS ${CALL_STATUS_INCOMING}
+  `;
+  return db.prepare(query, { pluck: true }).all<string>(params);
+}
+
 function getCallHistoryUnreadCount(db: ReadableDB): number {
   const [query, params] = sql`
     SELECT count(*) FROM messages
     INNER JOIN callsHistory ON callsHistory.callId = messages.callId
     WHERE messages.type IS 'call-history'
       AND messages.seenStatus IS ${SEEN_STATUS_UNSEEN}
-      AND callsHistory.status IS ${CALL_STATUS_MISSED}
       AND callsHistory.direction IS ${CALL_STATUS_INCOMING}
   `;
   const row = db
@@ -5017,6 +5033,8 @@ function getMessageReceivedAtForCall(
 export function markAllCallHistoryRead(
   db: WritableDB,
   target: CallLogEventTarget,
+  readAt: number,
+  activeCallIds: Set<string>,
   inConversation = false
 ): number {
   return db.transaction(() => {
@@ -5089,15 +5107,32 @@ export function markAllCallHistoryRead(
     `;
 
     const result = db.prepare(updateQuery).run(updateParams);
+
+    const [updateExpirationQuery, updateExpirationParams] = sql`
+      UPDATE messages
+      SET
+        expirationStartTimestamp = ${readAt}
+      WHERE messages.type IS 'call-history'
+        AND ${predicate}
+        AND messages.seenStatus IS ${SEEN_STATUS_SEEN}
+        AND messages.received_at <= ${receivedAt}
+        AND hasExpireTimer IS 1
+        AND expirationStartTimestamp IS NULL
+        AND messages.callId NOT IN (${sqlJoin(Array.from(activeCallIds))})
+    `;
+    db.prepare(updateExpirationQuery).run(updateExpirationParams);
+
     return result.changes;
   })();
 }
 
 function markAllCallHistoryReadInConversation(
   db: WritableDB,
-  target: CallLogEventTarget
+  target: CallLogEventTarget,
+  readAt: number,
+  activeCallIds: Set<string>
 ): number {
-  return markAllCallHistoryRead(db, target, true);
+  return markAllCallHistoryRead(db, target, readAt, activeCallIds, true);
 }
 
 function getCallHistoryGroupData(
@@ -9476,6 +9511,40 @@ function _getAllEditedMessages(
       `
     )
     .all({});
+}
+
+function getUnreadCallMessagesAndMarkRead(
+  db: WritableDB,
+  {
+    conversationId,
+    readMessageReceivedAt,
+    activeCallIds,
+  }: {
+    conversationId: string;
+    readMessageReceivedAt: number;
+    activeCallIds: Set<string>;
+  }
+): GetUnreadByConversationAndMarkReadResultType {
+  const [query, params] = sql`
+    UPDATE messages
+    SET
+      expirationStartTimestamp = ${readMessageReceivedAt}
+    WHERE type IS 'call-history'
+      AND messages.conversationId IS ${conversationId}
+      AND messages.seenStatus IS ${SEEN_STATUS_SEEN}
+      AND messages.received_at <= ${readMessageReceivedAt}
+      AND messages.hasExpireTimer IS 1
+      AND messages.expirationStartTimestamp IS NULL
+      AND messages.callId NOT IN (${sqlJoin(Array.from(activeCallIds))})
+    RETURNING *
+  `;
+
+  const rows = db.prepare(query).all<MessageTypeUnhydrated>(params);
+  const messages = hydrateMessages(db, rows);
+
+  return messages.map(message => {
+    return { ...message, originalReadStatus: undefined };
+  });
 }
 
 function getUnreadEditedMessagesAndMarkRead(

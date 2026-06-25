@@ -197,6 +197,10 @@ export class App extends EventEmitter {
     return this.#app.firstWindow();
   }
 
+  public async waitForWindow(): Promise<Page> {
+    return this.#app.waitForEvent('window');
+  }
+
   public async openSignalRoute(url: URL | string): Promise<void> {
     const window = await this.getWindow();
     await window.evaluate(

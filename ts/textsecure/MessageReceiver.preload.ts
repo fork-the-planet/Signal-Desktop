@@ -3493,7 +3493,8 @@ export default class MessageReceiver
 
     const callEventDetails = getCallEventForProto(
       callEvent,
-      'MessageReceiver.handleCallEvent'
+      'MessageReceiver.handleCallEvent',
+      envelope.timestamp
     );
 
     const callEventSync = new CallEventSyncEvent(
@@ -3563,7 +3564,10 @@ export default class MessageReceiver
 
     const { receivedAtCounter } = envelope;
 
-    const callLogEventDetails = getCallLogEventForProto(callLogEvent);
+    const callLogEventDetails = getCallLogEventForProto(
+      callLogEvent,
+      envelope.timestamp
+    );
     const callLogEventSync = new CallLogEventSyncEvent(
       {
         callLogEventDetails,

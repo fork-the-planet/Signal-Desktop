@@ -1255,6 +1255,31 @@ class CallingClass {
     return call instanceof GroupCall ? call : undefined;
   }
 
+  public getActiveCallIds(): Set<string> {
+    const callIds = new Set<string>();
+
+    for (const call of Object.values(this.#callsLookup)) {
+      if (call instanceof Call) {
+        callIds.add(call.callId.toString());
+      } else if (call instanceof GroupCall) {
+        const callId = call.getCallId();
+        if (callId != null) {
+          callIds.add(callId.toString());
+        }
+      } else {
+        throw missingCaseError(call);
+      }
+    }
+    return callIds;
+  }
+
+  public isCallActive(conversationId: string): boolean {
+    return (
+      this.#getDirectCall(conversationId) != null ||
+      this.#getGroupCall(conversationId) != null
+    );
+  }
+
   #getGroupCallMembers(conversationId: string) {
     return getMembershipList(conversationId).map(
       member =>
@@ -3172,19 +3197,21 @@ class CallingClass {
         Proto.CallMessage.Offer.Type.OFFER_VIDEO_CALL;
 
       const peerId = getPeerIdFromConversation(conversation.attributes);
-      const callDetails = getCallDetailsFromEndedDirectCall(
-        callId.toString(),
+      const eventTimestamp = envelope.timestamp;
+      const callDetails = getCallDetailsFromEndedDirectCall({
+        callId,
         peerId,
-        remoteUserId, // Incoming call
+        ringerId: remoteUserId, // Incoming call
         wasVideoCall,
-        envelope.timestamp
-      );
+        eventTimestamp,
+      });
       const localCallEvent = LocalCallEvent.Missed;
-      const callEvent = getCallEventDetails(
+      const callEvent = getCallEventDetails({
         callDetails,
-        localCallEvent,
-        'CallingClass.handleCallingMessage'
-      );
+        event: localCallEvent,
+        eventSource: 'CallingClass.handleCallingMessage',
+        eventTimestamp,
+      });
       const {
         receivedAtCounter,
         receivedAtDate: receivedAtMS,
@@ -3459,9 +3486,14 @@ class CallingClass {
     const localEventFromRing = getLocalCallEventFromRingUpdate(update);
     if (localEventFromRing != null) {
       const callId = getCallIdFromRing(ringId);
-      const callDetails = getCallDetailsFromGroupCallMeta(groupId, {
-        callId,
-        ringerId: ringerAci,
+      const eventTimestamp = Date.now();
+      const callDetails = getCallDetailsFromGroupCallMeta({
+        peerId: groupId,
+        groupCallMeta: {
+          callId,
+          ringerId: ringerAci,
+        },
+        eventTimestamp,
       });
       let localEventForCall;
       if (localEventFromRing === LocalCallEvent.Missed) {
@@ -3471,11 +3503,12 @@ class CallingClass {
           ? LocalCallEvent.Ringing
           : LocalCallEvent.Started;
       }
-      const callEvent = getCallEventDetails(
+      const callEvent = getCallEventDetails({
         callDetails,
-        localEventForCall,
-        'CallingClass.handleGroupCallRingUpdate'
-      );
+        event: localEventForCall,
+        eventSource: 'CallingClass.handleGroupCallRingUpdate',
+        eventTimestamp,
+      });
       await updateCallHistoryFromLocalEvent({
         callEvent,
       });
@@ -3567,12 +3600,18 @@ class CallingClass {
 
         const localCallEvent = LocalCallEvent.Missed;
         const peerId = getPeerIdFromConversation(conversation.attributes);
-        const callDetails = getCallDetailsFromDirectCall(peerId, call);
-        const callEvent = getCallEventDetails(
+        const eventTimestamp = Date.now();
+        const callDetails = getCallDetailsFromDirectCall({
+          peerId,
+          call,
+          eventTimestamp,
+        });
+        const callEvent = getCallEventDetails({
           callDetails,
-          localCallEvent,
-          'CallingClass.handleIncomingCall'
-        );
+          event: localCallEvent,
+          eventSource: 'CallingClass.handleIncomingCall',
+          eventTimestamp,
+        });
         await updateCallHistoryFromLocalEvent({
           callEvent,
         });
@@ -3604,7 +3643,7 @@ class CallingClass {
   }
 
   async #handleRejectedIncomingCallRequest(
-    callIdValue: CallId,
+    callId: CallId,
     remoteUserId: UserId,
     callRejectReason: CallRejectReason,
     ageInSeconds: number,
@@ -3629,7 +3668,6 @@ class CallingClass {
     const callEndedReason =
       this.#convertRingRtcCallRejectReason(callRejectReason);
 
-    const callId = callIdValue.toString();
     const peerId = getPeerIdFromConversation(conversation.attributes);
 
     // This is extra defensive, just in case RingRTC passes us a bad value. (It probably
@@ -3638,22 +3676,23 @@ class CallingClass {
       isNormalNumber(ageInSeconds) && ageInSeconds >= 0
         ? ageInSeconds * durations.SECOND
         : 0;
-    const timestamp = Date.now() - ageInMilliseconds;
+    const eventTimestamp = Date.now() - ageInMilliseconds;
 
-    const callDetails = getCallDetailsFromEndedDirectCall(
+    const callDetails = getCallDetailsFromEndedDirectCall({
       callId,
       peerId,
-      remoteUserId,
+      ringerId: remoteUserId,
       wasVideoCall,
-      timestamp
-    );
+      eventTimestamp,
+    });
 
     // We classify all of the call rejection events as 'Missed'.
-    const callEvent = getCallEventDetails(
+    const callEvent = getCallEventDetails({
       callDetails,
-      LocalCallEvent.Missed,
-      'CallingClass.handleRejectedIncomingCallRequest'
-    );
+      event: LocalCallEvent.Missed,
+      eventSource: 'CallingClass.handleRejectedIncomingCallRequest',
+      eventTimestamp,
+    });
 
     if (callRejectReason === CallRejectReason.ReceivedOfferWhileActive) {
       // This is a special case where we won't update our local call, because we have
@@ -3731,12 +3770,18 @@ class CallingClass {
       );
       if (localCallEvent != null) {
         const peerId = getPeerIdFromConversation(conversation.attributes);
-        const callDetails = getCallDetailsFromDirectCall(peerId, call);
-        const callEvent = getCallEventDetails(
+        const eventTimestamp = Date.now();
+        const callDetails = getCallDetailsFromDirectCall({
+          peerId,
+          call,
+          eventTimestamp,
+        });
+        const callEvent = getCallEventDetails({
           callDetails,
-          localCallEvent,
-          'call.handleStateChanged'
-        );
+          event: localCallEvent,
+          eventSource: 'call.handleStateChanged',
+          eventTimestamp,
+        });
         await updateCallHistoryFromLocalEvent({
           callEvent,
         });
@@ -4104,12 +4149,18 @@ class CallingClass {
         return;
       }
 
-      const callDetails = getCallDetailsForAdhocCall(roomId, callId);
-      const callEvent = getCallEventDetails(
+      const eventTimestamp = Date.now();
+      const callDetails = getCallDetailsForAdhocCall({
+        peerId: roomId,
+        callId,
+        eventTimestamp,
+      });
+      const callEvent = getCallEventDetails({
         callDetails,
-        localCallEvent,
-        'CallingClass.updateCallHistoryForAdhocCall'
-      );
+        event: localCallEvent,
+        eventSource: 'CallingClass.updateCallHistoryForAdhocCall',
+        eventTimestamp: callDetails.timestamp,
+      });
       await updateAdhocCallHistory(callEvent);
     } catch (error) {
       log.error(
@@ -4146,15 +4197,18 @@ class CallingClass {
       );
       const peerId = getPeerIdFromConversation(conversation.attributes);
 
-      const callDetails = getCallDetailsFromGroupCallMeta(
+      const eventTimestamp = Date.now();
+      const callDetails = getCallDetailsFromGroupCallMeta({
         peerId,
-        groupCallMeta
-      );
-      const callEvent = getCallEventDetails(
+        groupCallMeta,
+        eventTimestamp,
+      });
+      const callEvent = getCallEventDetails({
         callDetails,
-        localCallEvent,
-        'CallingClass.updateCallHistoryForGroupCallOnLocalChanged'
-      );
+        event: localCallEvent,
+        eventSource: 'CallingClass.updateCallHistoryForGroupCallOnLocalChanged',
+        eventTimestamp,
+      });
       await updateCallHistoryFromLocalEvent({
         callEvent,
       });
@@ -4202,16 +4256,19 @@ class CallingClass {
         groupCallMeta
       );
       if (localCallEvent != null) {
+        const eventTimestamp = Date.now();
         const peerId = getPeerIdFromConversation(conversation.attributes);
-        const callDetails = getCallDetailsFromGroupCallMeta(
+        const callDetails = getCallDetailsFromGroupCallMeta({
           peerId,
-          groupCallMeta
-        );
-        const callEvent = getCallEventDetails(
+          groupCallMeta,
+          eventTimestamp,
+        });
+        const callEvent = getCallEventDetails({
           callDetails,
-          localCallEvent,
-          'CallingClass.updateCallHistoryForGroupCallOnPeek'
-        );
+          event: localCallEvent,
+          eventSource: 'CallingClass.updateCallHistoryForGroupCallOnPeek',
+          eventTimestamp,
+        });
         await updateCallHistoryFromLocalEvent({
           callEvent,
         });

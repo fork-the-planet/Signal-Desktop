@@ -970,7 +970,7 @@ export class Bootstrap {
       serverUrl: url,
       storageUrl: `${url}/storageService`,
       resourcesUrl: `${url}/updates2`,
-      sfuUrl: url,
+      sfuUrl: `${url}/callingService`,
       cdn: {
         '0': url,
         '2': url,

@@ -23,7 +23,8 @@ describe('SQL/updateToSchemaVersion1100', () => {
     db = createDB();
     // index updated in 1170
     // columns updated in 1210
-    updateToVersion(db, 1210);
+    // query now needs hasExpireTimer from 1530
+    updateToVersion(db, 1530);
   });
 
   afterEach(() => {
@@ -88,8 +89,16 @@ describe('SQL/updateToSchemaVersion1100', () => {
         peerId: latestCallInConversation.peerId,
       };
 
+      const readAt = target.timestamp + 1;
+
       const start = performance.now();
-      const changes = markAllCallHistoryRead(db, target, true);
+      const changes = markAllCallHistoryRead(
+        db,
+        target,
+        readAt,
+        new Set(),
+        true
+      );
       const end = performance.now();
       assert.equal(changes, Math.ceil(COUNT / CONVERSATIONS));
       assert.isBelow(end - start, 50);

@@ -28,6 +28,7 @@ import { isAciString } from './isAciString.std.ts';
 import type { MessageModel } from '../models/messages.preload.ts';
 import { postSaveUpdates } from './cleanup.preload.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
+import { calling } from '../services/calling.preload.ts';
 
 const { isNumber, pick } = lodash;
 
@@ -47,6 +48,7 @@ export async function markConversationRead(
 
   const [
     unreadMessages,
+    unreadCallMessages,
     unreadEditedMessages,
     unreadReactions,
     unreadPollVotes,
@@ -56,6 +58,11 @@ export async function markConversationRead(
       readMessageReceivedAt: readMessage.received_at,
       readAt: options.readAt,
       includeStoryReplies: !isGroup(conversationAttrs),
+    }),
+    DataWriter.getUnreadCallMessagesAndMarkRead({
+      conversationId,
+      readMessageReceivedAt: readMessage.received_at,
+      activeCallIds: calling.getActiveCallIds(),
     }),
     DataWriter.getUnreadEditedMessagesAndMarkRead({
       conversationId,
@@ -80,12 +87,15 @@ export async function markConversationRead(
       receivedAt: readMessage.received_at,
     },
     unreadMessages: unreadMessages.length,
+    unreadCallMessages: unreadCallMessages.length,
+    unreadEditedMessages: unreadEditedMessages.length,
     unreadReactions: unreadReactions.length,
     unreadPollVotes: unreadPollVotes.length,
   });
 
   if (
     !unreadMessages.length &&
+    !unreadCallMessages.length &&
     !unreadEditedMessages.length &&
     !unreadReactions.length &&
     !unreadPollVotes.length
@@ -138,7 +148,11 @@ export async function markConversationRead(
     });
   });
 
-  const allUnreadMessages = [...unreadMessages, ...unreadEditedMessages];
+  const allUnreadMessages = [
+    ...unreadMessages,
+    ...unreadCallMessages,
+    ...unreadEditedMessages,
+  ];
 
   const updatedMessages: Array<MessageModel> = [];
 

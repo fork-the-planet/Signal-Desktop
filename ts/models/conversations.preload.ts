@@ -5087,7 +5087,7 @@ export class ConversationModel {
   ): Promise<void> {
     await markConversationRead(this.attributes, readMessage, options);
     this.throttledUpdateUnread();
-    window.reduxActions.callHistory.updateCallHistoryUnreadCount();
+    window.reduxActions.callHistory.updateCallHistoryUnreadCount([]);
   }
 
   async #updateUnread(): Promise<void> {

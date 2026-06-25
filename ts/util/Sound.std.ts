@@ -1,6 +1,7 @@
 // Copyright 2020 Signal Messenger, LLC
 // SPDX-License-Identifier: AGPL-3.0-only
 
+import { isTestOrMockEnvironment } from '../environment.std.ts';
 import { createLogger } from '../logging/log.std.ts';
 import { missingCaseError } from './missingCaseError.std.ts';
 
@@ -59,6 +60,11 @@ export class Sound {
     const volumeNode = this.#context.createGain();
     soundNode.connect(volumeNode);
     volumeNode.connect(this.#context.destination);
+
+    if (isTestOrMockEnvironment()) {
+      // Mute sounds in tests
+      volumeNode.gain.setValueAtTime(0, this.#context.currentTime);
+    }
 
     soundNode.loop = this.#loop;
 
