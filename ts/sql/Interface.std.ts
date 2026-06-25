@@ -1003,6 +1003,10 @@ type ReadableInterface = {
     conversationId: string,
     eraId: string
   ) => boolean;
+  getPrevUnreadCallIdInConversation: (
+    conversationId: string,
+    receivedAt: number
+  ) => string | null;
   callLinkExists: (roomId: string) => boolean;
   defunctCallLinkExists: (roomId: string) => boolean;
   getAllCallLinks: () => ReadonlyArray<CallLinkType>;
@@ -1231,11 +1235,6 @@ type WritableInterface = {
     now?: number;
     readAt?: number;
     storyId?: string;
-  }) => GetUnreadByConversationAndMarkReadResultType;
-  getUnreadCallMessagesAndMarkRead: (options: {
-    conversationId: string;
-    readMessageReceivedAt: number;
-    activeCallIds: Set<string>;
   }) => GetUnreadByConversationAndMarkReadResultType;
   getUnreadEditedMessagesAndMarkRead: (options: {
     conversationId: string;

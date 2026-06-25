@@ -4,7 +4,7 @@
 import lodash from 'lodash';
 
 import type { ConversationAttributesType } from '../model-types.d.ts';
-import { DataWriter } from '../sql/Client.preload.ts';
+import { DataReader, DataWriter } from '../sql/Client.preload.ts';
 import { hasErrors } from '../state/selectors/message.preload.ts';
 import { readSyncJobQueue } from '../jobs/readSyncJobQueue.preload.ts';
 import { notificationService } from '../services/notifications.preload.ts';
@@ -28,7 +28,6 @@ import { isAciString } from './isAciString.std.ts';
 import type { MessageModel } from '../models/messages.preload.ts';
 import { postSaveUpdates } from './cleanup.preload.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
-import { calling } from '../services/calling.preload.ts';
 
 const { isNumber, pick } = lodash;
 
@@ -48,21 +47,16 @@ export async function markConversationRead(
 
   const [
     unreadMessages,
-    unreadCallMessages,
     unreadEditedMessages,
     unreadReactions,
     unreadPollVotes,
+    lastUnreadCallId,
   ] = await Promise.all([
     DataWriter.getUnreadByConversationAndMarkRead({
       conversationId,
       readMessageReceivedAt: readMessage.received_at,
       readAt: options.readAt,
       includeStoryReplies: !isGroup(conversationAttrs),
-    }),
-    DataWriter.getUnreadCallMessagesAndMarkRead({
-      conversationId,
-      readMessageReceivedAt: readMessage.received_at,
-      activeCallIds: calling.getActiveCallIds(),
     }),
     DataWriter.getUnreadEditedMessagesAndMarkRead({
       conversationId,
@@ -76,6 +70,10 @@ export async function markConversationRead(
       conversationId,
       readMessageReceivedAt: readMessage.received_at,
     }),
+    DataReader.getPrevUnreadCallIdInConversation(
+      conversationId,
+      readMessage.received_at
+    ),
   ]);
 
   const convoId = getConversationIdForLogging(conversationAttrs);
@@ -87,7 +85,6 @@ export async function markConversationRead(
       receivedAt: readMessage.received_at,
     },
     unreadMessages: unreadMessages.length,
-    unreadCallMessages: unreadCallMessages.length,
     unreadEditedMessages: unreadEditedMessages.length,
     unreadReactions: unreadReactions.length,
     unreadPollVotes: unreadPollVotes.length,
@@ -95,10 +92,10 @@ export async function markConversationRead(
 
   if (
     !unreadMessages.length &&
-    !unreadCallMessages.length &&
     !unreadEditedMessages.length &&
     !unreadReactions.length &&
-    !unreadPollVotes.length
+    !unreadPollVotes.length &&
+    lastUnreadCallId == null
   ) {
     return false;
   }
@@ -148,11 +145,7 @@ export async function markConversationRead(
     });
   });
 
-  const allUnreadMessages = [
-    ...unreadMessages,
-    ...unreadCallMessages,
-    ...unreadEditedMessages,
-  ];
+  const allUnreadMessages = [...unreadMessages, ...unreadEditedMessages];
 
   const updatedMessages: Array<MessageModel> = [];
 
@@ -272,6 +265,12 @@ export async function markConversationRead(
         receipts: allReadMessagesSync,
       });
     }
+  }
+
+  if (lastUnreadCallId != null) {
+    window.reduxActions.callHistory.markCallHistoryReadInConversation(
+      lastUnreadCallId
+    );
   }
 
   updateExpiringMessagesService();

@@ -493,6 +493,7 @@ export const DataReader: ServerReadableInterface = {
   getCallHistoryGroupsCount,
   getCallHistoryGroups,
   hasGroupCallHistoryMessage,
+  getPrevUnreadCallIdInConversation,
 
   hasMedia,
   getSortedMedia,
@@ -647,7 +648,6 @@ export const DataWriter: ServerWritableInterface = {
   updateAllConversationColors,
   removeAllProfileKeyCredentials,
   getUnreadByConversationAndMarkRead,
-  getUnreadCallMessagesAndMarkRead,
   getUnreadEditedMessagesAndMarkRead,
   getUnreadReactionsAndMarkRead,
   getUnreadPollVotesAndMarkRead,
@@ -5496,6 +5496,27 @@ function hasGroupCallHistoryMessage(
   return exists === 1;
 }
 
+function getPrevUnreadCallIdInConversation(
+  db: ReadableDB,
+  conversationId: string,
+  receivedAt: number
+): string | null {
+  const [query, params] = sql`
+    SELECT messages.callId FROM messages
+    INNER JOIN callsHistory ON callsHistory.callId = messages.callId
+    WHERE messages.conversationId = ${conversationId}
+      AND messages.type IS 'call-history'
+      AND messages.seenStatus IS ${SEEN_STATUS_UNSEEN}
+      AND callsHistory.direction IS ${CALL_STATUS_INCOMING}
+      AND messages.received_at <= ${receivedAt}
+    ORDER BY messages.received_at DESC, messages.sent_at DESC
+    LIMIT 1
+  `;
+
+  const callId = db.prepare(query, { pluck: true }).get<string>(params);
+  return callId ?? null;
+}
+
 function hasMedia(db: ReadableDB, conversationId: string): boolean {
   return db.transaction(() => {
     let hasAttachments: boolean;
@@ -9511,40 +9532,6 @@ function _getAllEditedMessages(
       `
     )
     .all({});
-}
-
-function getUnreadCallMessagesAndMarkRead(
-  db: WritableDB,
-  {
-    conversationId,
-    readMessageReceivedAt,
-    activeCallIds,
-  }: {
-    conversationId: string;
-    readMessageReceivedAt: number;
-    activeCallIds: Set<string>;
-  }
-): GetUnreadByConversationAndMarkReadResultType {
-  const [query, params] = sql`
-    UPDATE messages
-    SET
-      expirationStartTimestamp = ${readMessageReceivedAt}
-    WHERE type IS 'call-history'
-      AND messages.conversationId IS ${conversationId}
-      AND messages.seenStatus IS ${SEEN_STATUS_SEEN}
-      AND messages.received_at <= ${readMessageReceivedAt}
-      AND messages.hasExpireTimer IS 1
-      AND messages.expirationStartTimestamp IS NULL
-      AND messages.callId NOT IN (${sqlJoin(Array.from(activeCallIds))})
-    RETURNING *
-  `;
-
-  const rows = db.prepare(query).all<MessageTypeUnhydrated>(params);
-  const messages = hydrateMessages(db, rows);
-
-  return messages.map(message => {
-    return { ...message, originalReadStatus: undefined };
-  });
 }
 
 function getUnreadEditedMessagesAndMarkRead(

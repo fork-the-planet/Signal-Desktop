@@ -292,6 +292,7 @@ export const actions = {
   clearAllCallHistory,
   updateCallHistoryUnreadCount,
   markCallHistoryRead,
+  markCallHistoryReadInConversation,
   markCallsTabViewed,
 };
 

@@ -274,6 +274,7 @@ describe('calling/callHistoryExpiration', function (this: Mocha.Suite) {
 
   describe('1:1 calls', () => {
     it('expire missed call: read by opening chat', async () => {
+      const { phone } = bootstrap;
       const page = await app.getWindow();
       const chatListItem = $chatListItem(page, contact.device.aci);
       const unreadBadge = $unreadBadge(page, contact.device.aci);
@@ -311,6 +312,17 @@ describe('calling/callHistoryExpiration', function (this: Mocha.Suite) {
       await expect(unreadBadge).not.toBeVisible();
       await expect($navTabUnreadBadge(page, 'Calls')).not.toBeVisible();
       await expect($missedCall(page)).toBeVisible();
+
+      debug('waiting for sync message');
+      const syncMessage = await phone.waitForSyncMessage(entry => {
+        return (
+          entry.syncMessage.content?.callLogEvent?.type ===
+          Proto.SyncMessage.CallLogEvent.Type.MARKED_AS_READ_IN_CONVERSATION
+        );
+      });
+      expect(syncMessage.syncMessage.content?.callLogEvent?.callId).toBe(
+        BigInt(callTimestamp)
+      );
 
       debug('waiting for message to expire');
       await delay(EXPIRE_TIMER_MS);
