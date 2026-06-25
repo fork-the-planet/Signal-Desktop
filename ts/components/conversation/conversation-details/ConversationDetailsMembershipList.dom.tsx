@@ -159,7 +159,7 @@ export function ConversationDetailsMembershipList({
                       text={member.isMe ? i18n('icu:you') : member.title}
                     />
                     &nbsp;
-                    {isInSystemContacts(member) ? (
+                    {isInSystemContacts(member) && !member.isMe ? (
                       <AriaClickable.SubWidget>
                         <InContactsIcon i18n={i18n} />
                       </AriaClickable.SubWidget>
