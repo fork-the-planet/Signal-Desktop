@@ -3277,7 +3277,7 @@
     "description": "Shown if user's manual request to download attachment fails"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN",
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs",
     "description": "Shown for internal users for debugging backup attachments."
   },
   "icu:ToastManager__CannotAddMemberLabel": {

@@ -118,6 +118,9 @@ export async function downloadAttachment({
       maybeRethrowFatalError(error);
 
       if (
+        error instanceof HTTPError &&
+        error.code >= 400 &&
+        error.code < 500 &&
         RemoteConfig.isEnabled('desktop.internalUser') &&
         !expiresTooSoonForBackup({
           messageExpiresAt,
