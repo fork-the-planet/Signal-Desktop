@@ -157,7 +157,8 @@ export function Avatar({
     !hasValidImage &&
     conversationType === 'direct' &&
     Boolean(initials) &&
-    title !== i18n('icu:unknownContact');
+    title !== i18n('icu:unknownContact') &&
+    title !== i18n('icu:deletedAccount');
 
   let contentsChildren: ReactNode;
   if (loading) {

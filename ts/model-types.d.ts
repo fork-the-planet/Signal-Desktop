@@ -550,10 +550,12 @@ export type SettableConversationAttributesType = Omit<
 
 export type ConversationRenderInfoType = Pick<
   ConversationAttributesType,
+  | 'discoveredUnregisteredAt'
   | 'e164'
   | 'name'
   | 'profileFamilyName'
   | 'profileName'
+  | 'serviceId'
   | 'systemGivenName'
   | 'systemFamilyName'
   | 'systemNickname'

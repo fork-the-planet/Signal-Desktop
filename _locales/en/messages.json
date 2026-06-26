@@ -127,6 +127,10 @@
     "messageformat": "Unknown contact",
     "description": "Shown as the name of a contact if we don't have any displayable information about them"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account",
+    "description": "Shown as the name of a contact if they are no longer registered and we don't have any displayable information about them"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Unknown",
     "description": "Shown as the shortened name of a contact if we don't have any displayable information about them"
