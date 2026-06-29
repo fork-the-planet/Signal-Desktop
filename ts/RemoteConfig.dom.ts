@@ -52,6 +52,8 @@ const SemverKeys = [
   'desktop.retireAccessKeyGroupSend.prod',
   'desktop.sendMessageViaLibsignal.beta',
   'desktop.sendMessageViaLibsignal.prod',
+  'desktop.stickerReply.send.beta',
+  'desktop.stickerReply.send.prod',
 ] as const;
 
 export type SemverKeyType = ArrayValues<typeof SemverKeys>;

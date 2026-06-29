@@ -4012,7 +4012,11 @@ export class ConversationModel {
     return getQuoteAttachment(attachments, preview, sticker);
   }
 
-  async sendStickerMessage(packId: string, stickerId: number): Promise<void> {
+  async sendStickerMessage(
+    packId: string,
+    stickerId: number,
+    options?: { quote?: QuotedMessageType; extraReduxActions?: () => void }
+  ): Promise<void> {
     const packData = Stickers.getStickerPack(packId);
     const stickerData = Stickers.getSticker(packId, stickerId);
     if (!stickerData || !packData) {
@@ -4021,6 +4025,8 @@ export class ConversationModel {
       );
       return;
     }
+
+    const { quote, extraReduxActions } = options ?? {};
 
     const { key } = packData;
     const { emoji, width, height } = stickerData;
@@ -4067,9 +4073,13 @@ export class ConversationModel {
         {
           body: undefined,
           attachments: [],
+          quote,
           sticker,
         },
-        { dontClearDraft: true }
+        {
+          dontClearDraft: true,
+          extraReduxActions,
+        }
       )
     );
     window.reduxActions.stickers.useSticker(packId, stickerId);

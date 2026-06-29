@@ -1072,6 +1072,7 @@ export class Message extends PureComponent<Props, State> {
       isPinned,
       isSMS,
       isSticker,
+      quote,
       retryDeleteForEveryone,
       retryMessageSend,
       pushPanelForConversation,
@@ -1103,6 +1104,7 @@ export class Message extends PureComponent<Props, State> {
         }
         isShowingImage={this.isShowingImage()}
         isSticker={isStickerLike}
+        isStickerReply={isStickerLike && Boolean(quote)}
         onWidthMeasured={isInline ? this.#updateMetadataWidth : undefined}
         pushPanelForConversation={pushPanelForConversation}
         ref={this.#metadataRef}
@@ -1190,8 +1192,10 @@ export class Message extends PureComponent<Props, State> {
     const firstAttachment = attachments[0];
 
     // For attachments which aren't full-frame
+    const isStickerReply = Boolean(isSticker && quote);
     const withContentBelow = Boolean(text || attachmentDroppedDueToSize);
-    const withContentAbove = Boolean(quote) || this.#shouldRenderAuthor();
+    const withContentAbove =
+      !isStickerReply && (Boolean(quote) || this.#shouldRenderAuthor());
     const displayImage = canDisplayImage(attachments);
 
     // attachmentDroppedDueToSize is handled in renderAttachmentTooBig
@@ -3338,6 +3342,7 @@ export class Message extends PureComponent<Props, State> {
       isSelectMode,
       isSticker,
       isTapToView,
+      quote,
       renderMessageContextMenu,
       text,
       textDirection,
@@ -3351,7 +3356,8 @@ export class Message extends PureComponent<Props, State> {
       (isSticker &&
         attachments &&
         attachments[0] &&
-        !attachments[0].isPermanentlyUndownloadable);
+        !attachments[0].isPermanentlyUndownloadable &&
+        !quote);
 
     // If it's a mostly-normal gray incoming text box, we don't want to darken it as much
     const lighterSelect =

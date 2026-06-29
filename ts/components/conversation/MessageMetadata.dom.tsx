@@ -38,6 +38,7 @@ type PropsType = {
   isOutlineOnlyBubble?: boolean;
   isShowingImage: boolean;
   isSticker?: boolean;
+  isStickerReply?: boolean;
   onWidthMeasured?: (width: number) => unknown;
   pushPanelForConversation: PushPanelForConversationActionType;
   retryDeleteForEveryone: (messageId: string) => unknown;
@@ -71,6 +72,7 @@ export const MessageMetadata = forwardRef<HTMLDivElement, Readonly<PropsType>>(
       isInline,
       isShowingImage,
       isSticker,
+      isStickerReply,
       onWidthMeasured,
       pushPanelForConversation,
       retryDeleteForEveryone,
@@ -241,7 +243,7 @@ export const MessageMetadata = forwardRef<HTMLDivElement, Readonly<PropsType>>(
       isInline && 'module-message__metadata--inline',
       withImageNoCaption && 'module-message__metadata--with-image-no-caption',
       isOutlineOnlyBubble && 'module-message__metadata--outline-only-bubble',
-      isSticker && 'module-message__metadata--sticker'
+      isSticker && !isStickerReply && 'module-message__metadata--sticker'
     );
     const children = (
       <>
