@@ -71,6 +71,7 @@ import { MessageModel } from '../models/messages.preload.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
 import { update as updateExpiringMessagesService } from '../services/expiringMessagesDeletion.preload.ts';
 import type { DurationInSeconds } from './durations/duration-in-seconds.std.ts';
+import { isFeaturedEnabledNoRedux } from './isFeatureEnabled.dom.ts';
 
 const { isEqual } = lodash;
 
@@ -1245,11 +1246,18 @@ async function saveCallHistory({
 
   const { id: newId } = generateMessageId(counter);
 
+  const isDisappearingCallsEnabled = isFeaturedEnabledNoRedux({
+    betaKey: 'desktop.disappearingCalls.beta',
+    prodKey: 'desktop.disappearingCalls.prod',
+  });
+
   let expireTimer: DurationInSeconds | undefined;
-  if (prevMessage != null) {
-    expireTimer = prevMessage.expireTimer;
-  } else {
-    expireTimer = conversation.get('expireTimer');
+  if (isDisappearingCallsEnabled) {
+    if (prevMessage != null) {
+      expireTimer = prevMessage.expireTimer;
+    } else {
+      expireTimer = conversation.get('expireTimer');
+    }
   }
 
   let expirationStartTimestamp: number | null | undefined =

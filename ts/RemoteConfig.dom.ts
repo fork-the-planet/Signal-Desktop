@@ -36,6 +36,8 @@ const SemverKeys = [
   'desktop.adminDelete.send.prod',
   'desktop.binaryServiceId.beta',
   'desktop.binaryServiceId.prod',
+  'desktop.disappearingCalls.beta',
+  'desktop.disappearingCalls.prod',
   'desktop.groupMemberLabels.edit.beta',
   'desktop.groupMemberLabels.edit.prod',
   'desktop.groupTerminate.send.beta',
