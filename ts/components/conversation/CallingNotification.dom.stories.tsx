@@ -92,6 +92,8 @@ const getCommonProps = (options: {
     deviceCount,
     isSelectMode: false,
     isTargeted: false,
+    expireTimer: null,
+    expirationStartTimestamp: null,
   };
 };
 

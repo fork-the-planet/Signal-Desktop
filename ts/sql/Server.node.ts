@@ -107,6 +107,7 @@ import {
   DirectCallStatus,
   GroupCallStatus,
   callHistoryDetailsSchema,
+  callHistoryGroupChildSchema,
   callHistoryGroupSchema,
 } from '../types/CallDisposition.std.ts';
 import { redactGenericText } from '../util/privacy.node.ts';
@@ -5269,8 +5270,8 @@ function getCallHistoryGroupData(
             (
               SELECT JSON_GROUP_ARRAY(
                 JSON_OBJECT(
-                  'callId', callId,
-                  'timestamp', timestamp
+                  'callId', callsHistory.callId,
+                  'timestamp', callsHistory.timestamp
                 )
               )
               FROM callsHistory
@@ -5289,7 +5290,7 @@ function getCallHistoryGroupData(
                 -- Desktop Constraints:
                 AND callsHistory.status IS c.status
                 AND ${filterClause}
-              ORDER BY timestamp DESC
+              ORDER BY callsHistory.timestamp DESC
             ) as possibleChildren,
 
             -- 1c. 'inPeriod': This identifies all calls in a time period after the
@@ -5381,12 +5382,7 @@ const groupsDataSchema = z.array(
   })
 );
 
-const possibleChildrenSchema = z.array(
-  callHistoryDetailsSchema.pick({
-    callId: true,
-    timestamp: true,
-  })
-);
+const possibleChildrenSchema = z.array(callHistoryGroupChildSchema);
 
 function getCallHistoryGroups(
   db: ReadableDB,

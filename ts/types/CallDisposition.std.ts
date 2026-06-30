@@ -244,6 +244,11 @@ export const callHistoryDetailsSchema = callDetailsSchema.extend({
   status: callStatusSchema,
 }) satisfies z.ZodType<CallHistoryDetails>;
 
+export const callHistoryGroupChildSchema = z.object({
+  callId: z.string(),
+  timestamp: z.number(),
+});
+
 export const callHistoryGroupSchema = z.object({
   peerId: z.string(),
   mode: callModeSchema,
@@ -251,12 +256,7 @@ export const callHistoryGroupSchema = z.object({
   direction: callDirectionSchema,
   status: callStatusSchema,
   timestamp: z.number(),
-  children: z.array(
-    z.object({
-      callId: z.string(),
-      timestamp: z.number(),
-    })
-  ),
+  children: z.array(callHistoryGroupChildSchema),
 }) satisfies z.ZodType<CallHistoryGroup>;
 
 const conversationPeerIdInBytesSchema = z

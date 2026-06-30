@@ -91,6 +91,8 @@ export const CallingNotification: FC<PropsType> = memo(
         <div inert={props.isSelectMode}>
           <SystemMessage
             button={renderCallingNotificationButton(props)}
+            expireTimer={props.expireTimer}
+            expirationStartTimestamp={props.expirationStartTimestamp}
             contents={
               <>
                 {getCallingNotificationText(props, i18n)} &middot;{' '}

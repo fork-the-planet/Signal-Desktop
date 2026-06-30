@@ -1699,6 +1699,8 @@ const emptyCallNotification: CallingNotificationType = {
   deviceCount: 0,
   isSelectMode: false,
   isTargeted: false,
+  expireTimer: null,
+  expirationStartTimestamp: null,
 };
 
 export function getPropsForCallHistory(
@@ -1751,6 +1753,8 @@ export function getPropsForCallHistory(
       maxDevices: Infinity,
       isSelectMode,
       isTargeted: message.id === targetedMessageId,
+      expireTimer: message.expireTimer ?? null,
+      expirationStartTimestamp: message.expirationStartTimestamp ?? null,
     };
   }
 
@@ -1780,6 +1784,8 @@ export function getPropsForCallHistory(
     maxDevices,
     isSelectMode,
     isTargeted: message.id === targetedMessageId,
+    expireTimer: message.expireTimer ?? null,
+    expirationStartTimestamp: message.expirationStartTimestamp ?? null,
   };
 }
 
@@ -1799,6 +1805,8 @@ function getPropsForPinnedMessageNotification(
   return {
     sender: conversationSelector(message.sourceServiceId),
     pinMessage: message.pinMessage,
+    expireTimer: message.expireTimer ?? null,
+    expirationStartTimestamp: message.expirationStartTimestamp ?? null,
   };
 }
 
@@ -1836,8 +1844,13 @@ function getPropsForPollTerminate(
   message: MessageWithUIFieldsType,
   { conversationSelector }: GetPropsForBubbleOptions
 ): PollTerminateNotificationDataType {
-  const { pollTerminateNotification, sourceServiceId, conversationId } =
-    message;
+  const {
+    pollTerminateNotification,
+    sourceServiceId,
+    conversationId,
+    expireTimer,
+    expirationStartTimestamp,
+  } = message;
 
   if (!pollTerminateNotification) {
     throw new Error(
@@ -1853,6 +1866,8 @@ function getPropsForPollTerminate(
     pollQuestion: question,
     pollTimestamp,
     conversationId,
+    expireTimer: expireTimer ?? null,
+    expirationStartTimestamp: expirationStartTimestamp ?? null,
   };
 }
 

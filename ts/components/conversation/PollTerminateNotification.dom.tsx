@@ -12,12 +12,15 @@ import { I18n } from '../I18n.dom.tsx';
 import type { AciString } from '../../types/ServiceId.std.ts';
 import { strictAssert } from '../../util/assert.std.ts';
 import { isAciString } from '../../util/isAciString.std.ts';
+import type { DurationInSeconds } from '../../util/durations/duration-in-seconds.std.ts';
 
 export type PollTerminateNotificationDataType = {
   sender: ConversationType;
   pollQuestion: string;
   pollTimestamp: number;
   conversationId: string;
+  expireTimer: DurationInSeconds | null;
+  expirationStartTimestamp: number | null;
 };
 export type PollTerminateNotificationPropsType =
   PollTerminateNotificationDataType & {
@@ -36,6 +39,8 @@ export function PollTerminateNotification({
   conversationId,
   i18n,
   scrollToPollMessage,
+  expireTimer,
+  expirationStartTimestamp,
 }: PollTerminateNotificationPropsType): JSX.Element {
   const handleViewPoll = () => {
     strictAssert(
@@ -68,6 +73,8 @@ export function PollTerminateNotification({
     <SystemMessage
       symbol="poll"
       contents={message}
+      expireTimer={expireTimer}
+      expirationStartTimestamp={expirationStartTimestamp}
       button={
         <Button
           onClick={handleViewPoll}

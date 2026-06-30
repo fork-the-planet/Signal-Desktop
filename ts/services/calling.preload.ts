@@ -4243,12 +4243,14 @@ class CallingClass {
       return;
     }
 
-    const prevMessageId = await DataReader.getCallHistoryMessageByCallId({
-      conversationId: conversation.id,
-      callId: groupCallMeta.callId,
-    });
+    const peerId = getPeerIdFromConversation(conversation.attributes);
 
-    const isNewCall = prevMessageId == null;
+    const callHistory = await DataReader.getCallHistory(
+      groupCallMeta.callId,
+      peerId
+    );
+
+    const isNewCall = callHistory == null;
 
     if (isNewCall) {
       const localCallEvent = getLocalCallEventFromJoinState(
@@ -4257,7 +4259,6 @@ class CallingClass {
       );
       if (localCallEvent != null) {
         const eventTimestamp = Date.now();
-        const peerId = getPeerIdFromConversation(conversation.attributes);
         const callDetails = getCallDetailsFromGroupCallMeta({
           peerId,
           groupCallMeta,

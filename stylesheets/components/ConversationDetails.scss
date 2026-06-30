@@ -584,7 +584,13 @@
 }
 
 .ConversationDetails__CallHistoryGroup__ItemLabel {
+  display: flex;
+  align-items: center;
   flex: 1;
+
+  .module-expire-timer {
+    margin-bottom: 0;
+  }
 }
 
 .ConversationDetails__CallHistoryGroup__ItemTimestamp {
