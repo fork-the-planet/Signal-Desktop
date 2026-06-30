@@ -54,7 +54,7 @@ export function InstallScreenUpdateDialog({
         <UpdateRequiredModal
           i18n={i18n}
           onClose={onClose}
-          onForceUpdate={forceUpdate}
+          onAction={forceUpdate}
         />
       );
     }
@@ -64,6 +64,16 @@ export function InstallScreenUpdateDialog({
 
   if (dialogType === DialogType.UnsupportedOS) {
     return <UnsupportedOSModal i18n={i18n} onClose={onClose} OS={OS} />;
+  }
+
+  if (dialogType === DialogType.MASUpdate) {
+    return (
+      <UpdateRequiredModal
+        i18n={i18n}
+        onClose={onClose}
+        onAction={startUpdate}
+      />
+    );
   }
 
   if (dialogType === DialogType.DownloadedUpdate) {
@@ -133,7 +143,7 @@ export function InstallScreenUpdateDialog({
 export function UpdateRequiredModal(props: {
   i18n: LocalizerType;
   onClose: () => void;
-  onForceUpdate: () => void;
+  onAction: () => void;
 }): ReactNode {
   const { i18n } = props;
   return (
@@ -143,7 +153,7 @@ export function UpdateRequiredModal(props: {
       title={i18n('icu:InstallScreenUpdateDialog--update-required__title')}
       description={i18n('icu:InstallScreenUpdateDialog--update-required__body')}
     >
-      <AxoConfirmDialog.Action variant="primary" onClick={props.onForceUpdate}>
+      <AxoConfirmDialog.Action variant="primary" onClick={props.onAction}>
         {i18n('icu:InstallScreenUpdateDialog--update-required__action-update')}
       </AxoConfirmDialog.Action>
     </AxoConfirmDialog.Root>

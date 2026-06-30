@@ -217,6 +217,8 @@ export function DialogUpdate({
     type = 'warning';
   } else if (dialogType === DialogType.DownloadedUpdate) {
     title = i18n('icu:DialogUpdate__downloaded');
+  } else if (dialogType === DialogType.MASUpdate) {
+    clickLabel = i18n('icu:DialogUpdate__upgrade-mas');
   }
 
   let dismissOptions: DismissOptions = {

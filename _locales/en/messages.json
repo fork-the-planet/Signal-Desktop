@@ -8912,6 +8912,10 @@
     "messageformat": "Update Downloaded",
     "description": "The title of update dialog when update download is completed."
   },
+  "icu:DialogUpdate__upgrade-mas": {
+    "messageformat": "Click to go to the App Store",
+    "description": "The title of update dialog when a new app version is available in the App Store."
+  },
   "icu:DialogExpiredBuild__upgrade-mas": {
     "messageformat": "Click to go to the App Store",
     "description": "The action text of build expiration dialog when app is installed from the App Store"

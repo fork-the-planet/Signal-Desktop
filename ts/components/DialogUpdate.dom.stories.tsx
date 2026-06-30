@@ -211,6 +211,19 @@ export function UnsupportedOSWide(): JSX.Element {
   );
 }
 
+export function MASUpdate(): JSX.Element {
+  return (
+    <FakeLeftPaneContainer containerWidthBreakpoint={WidthBreakpoint.Wide}>
+      <DialogUpdate
+        {...defaultProps}
+        containerWidthBreakpoint={WidthBreakpoint.Wide}
+        currentVersion="5.24.0"
+        dialogType={DialogType.MASUpdate}
+      />
+    </FakeLeftPaneContainer>
+  );
+}
+
 export function UpdateNarrow(): JSX.Element {
   return (
     <FakeLeftPaneContainer containerWidthBreakpoint={WidthBreakpoint.Narrow}>
@@ -351,6 +364,19 @@ export function UnsupportedOSNarrow(): JSX.Element {
         containerWidthBreakpoint={WidthBreakpoint.Narrow}
         currentVersion="5.24.0"
         dialogType={DialogType.UnsupportedOS}
+      />
+    </FakeLeftPaneContainer>
+  );
+}
+
+export function MASUpdateNarrow(): JSX.Element {
+  return (
+    <FakeLeftPaneContainer containerWidthBreakpoint={WidthBreakpoint.Narrow}>
+      <DialogUpdate
+        {...defaultProps}
+        containerWidthBreakpoint={WidthBreakpoint.Narrow}
+        currentVersion="5.24.0"
+        dialogType={DialogType.MASUpdate}
       />
     </FakeLeftPaneContainer>
   );

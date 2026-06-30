@@ -24,7 +24,7 @@ export function UpdateRequired(): ReactNode {
     <UpdateRequiredModal
       i18n={i18n}
       onClose={action('onClose')}
-      onForceUpdate={action('onForceUpdate')}
+      onAction={action('onAction')}
     />
   );
 }
