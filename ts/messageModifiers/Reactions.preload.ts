@@ -439,6 +439,7 @@ export async function handleReaction(
       if (isFromSomeoneElse) {
         drop(
           maybeNotify({
+            kind: 'normalMessage',
             message: generatedMessage.attributes,
             conversation: targetConversation,
           })
@@ -517,6 +518,7 @@ export async function handleReaction(
         if (isOutgoing(message.attributes) && isFromSomeoneElse) {
           drop(
             maybeNotify({
+              kind: 'reaction',
               targetMessage: message.attributes,
               conversation,
               reaction,

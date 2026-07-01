@@ -484,6 +484,7 @@ export async function handlePollVote(
   if (shouldMarkAsUnread) {
     drop(
       maybeNotify({
+        kind: 'pollVote',
         pollVote: vote,
         targetMessage: message.attributes,
         conversation: conversationContainingThisPoll,
@@ -576,6 +577,7 @@ export async function handlePollTerminate(
   await conversation.addPollTerminateNotification({
     pollQuestion: poll.question,
     pollTimestamp: message.attributes.timestamp,
+    pollSource: terminate.source,
     terminatorId: terminate.fromConversationId,
     timestamp: terminate.timestamp,
     isMeTerminating: isMe(author.attributes),

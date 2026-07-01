@@ -277,6 +277,7 @@ import { isUsernameValid } from '../util/Username.dom.ts';
 import type { Emoji } from '../axo/emoji.std.ts';
 import { canConversationOnlyBeMutedAlways } from '../conversations/canConversationOnlyBeMutedAlways.dom.ts';
 import { keyTransparency } from '../services/keyTransparency.preload.ts';
+import type { PollSource } from '../messageModifiers/Polls.preload.ts';
 
 const { compact, isNumber, throttle, debounce } = lodash;
 
@@ -3349,7 +3350,11 @@ export class ConversationModel {
     drop(this.onNewMessage(message));
     this.throttledUpdateUnread();
 
-    await maybeNotify({ message: message.attributes, conversation: this });
+    await maybeNotify({
+      kind: 'deliveryIssue',
+      message: message.attributes,
+      conversation: this,
+    });
   }
 
   async addKeyChange(
@@ -3572,6 +3577,7 @@ export class ConversationModel {
   async addPollTerminateNotification(params: {
     pollQuestion: string;
     pollTimestamp: number;
+    pollSource: PollSource;
     terminatorId: string;
     timestamp: number;
     isMeTerminating: boolean;
@@ -3608,7 +3614,14 @@ export class ConversationModel {
     drop(this.onNewMessage(message));
 
     this.throttledUpdateUnread();
-    await maybeNotify({ message: message.attributes, conversation: this });
+
+    await maybeNotify({
+      kind: 'pollTerminate',
+      pollSource: params.pollSource,
+      pollTerminatorId: params.terminatorId,
+      message: message.attributes,
+      conversation: this,
+    });
   }
 
   async addPinnedMessageNotification(params: {
