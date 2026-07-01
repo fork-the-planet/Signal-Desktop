@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Teagmhálaí Anaithnid"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Anaithnid"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Theip ar íoslódáil"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Ní féidir ach le riarthóirí lipéid na mball a chur leis sa ghrúpa seo."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Nuashonrú Íoslódáilte"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Cliceáil le dul chuig an App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Oscail Signal ar do ghuthán"
@@ -8262,19 +8268,16 @@
     "messageformat": "Mionathruithe, paistí fabhtanna agus feabhsuithe ar fheidhmíocht. Go raibh maith agat as Signal a úsáid!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "Rinneamar an iarmhír chomhadainm réamhshocraithe le haghaidh íomhánna JPEG a nuashonrú chuig jpeg."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Tacaíocht don stíl deilbhín dhorcha in macOS."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Réitíomar fabht sa chruthaitheoir greamán a thaispeáin an comhéadan sa teanga chontráilte."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Tá riarthóirí grúpa in ann teachtaireachtaí a seoladh le déanaí a scriosadh i ngrúpchomhráite anois. Is féidir leat an uair a scriosadh teachtaireacht agus an te a bhain í a fheiceáil go héasca, díreach cosúil leis an ngné atá ann cheana \"Scrios do Gach Duine\"."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Rinneamar uaslíon na gcomhráite pionnáilte a mhéadú ó 4 cinn go 10 gcinn."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

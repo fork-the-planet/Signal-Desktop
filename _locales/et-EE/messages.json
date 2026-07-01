@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Tundmatu kontakt"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Tundmatu"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Allalaadimine nurjus"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Ainult administraatorid saavad selles grupis liikmesilte lisada."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Uuendus alla laaditud"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Klõpsa App Store'i sisenemiseks"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Ava Signal enda telefonis"
@@ -8262,19 +8268,16 @@
     "messageformat": "Väikesed muudatused, vigade parandused ja jõudluse täiustused. Aitäh, et kasutad Signalit!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "Uuendasime JPEG piltide vaikimisi faililaiendust, mis on nüüd jpg."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Nüüd toetab macOS ikooni tumedat stiili."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Parandasime kleebistelooja vea, mille tõttu kuvati liidest vales keeles."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Grupi administraatorid saavad nüüd grupivestlustes hiljuti saadetud sõnumeid kustutada. Saad hõlpsasti vaadata, millal sõnum kustutati ja kes seda tegi, täpselt nagu tuttava „Kustuta kõigi jaoks“ funktsiooni puhul."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Suurendasime ka maksimaalset kinnitatud vestluste arvu 4-lt 10-le."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

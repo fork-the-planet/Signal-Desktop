@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Kontakt i panjohur"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "I panjohur"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Shkarkimi dështoi"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Vetëm administratorët mund të caktojnë emërtimet e anëtarëve në këtë grup."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Përditësimi u shkarkua"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Kliko për të shkuar tek App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Hap Signal në telefonin tënd"
@@ -8262,19 +8268,16 @@
     "messageformat": "Rregullme të vogla, riparime të gabimeve dhe përmirësime të mbarëvajtjes.  Faleminderit që përdorni Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "Përditësuam zgjerimin e parazgjedhur të skedarëve për imazhet JPEG në jpg."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Mbështetje për stilin e ikonës së errët në macOS."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Rregulluam një gabim në krijuesin e ngjitëseve që e shfaqte ndërfaqen në gjuhën e gabuar."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Administratorët e grupit tani mund të fshijnë mesazhet e dërguara së fundmi në bisedat në grup. Mund ta shikosh lehtësisht kur një mesazh është fshirë dhe kush e ka fshirë, njësoj si te veçoria ekzistuese \"Fshi për të gjithë\"."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Gjithashtu e kemi rritur numrin maksimal të bisedave të fiksuara nga 4 në 10."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

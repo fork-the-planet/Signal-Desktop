@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "未知聯絡人"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "未知"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "下載失敗"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "只有管理員可以在此群組新增成員標籤。"
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "更新已下載"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "點擊前往 App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "在手機上開啟 Signal"
@@ -8262,19 +8268,16 @@
     "messageformat": "細微的調整、問題修復和效能改善。感謝各位使用 Signal！",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "「多出來的這個 E 真煩人。」人們不平地喊叫著，抱怨他們最喜歡的副檔名竟然從三個字母變成了四個。我們很樂意滿足這項需求（這個修改輕而易舉），現在你將會看到儲存 JPEG 檔案時的預設檔名，正確地以 .jpg 結尾。"
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "如果你想展現內心的哥德風格，我們也在 macOS 中新增了深色圖示風格的支援。"
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "我們修正了貼圖製作器中會導致介面不能顯示正確語言的錯誤。儘管貼圖是圖像（所謂「一圖勝千言」），但文字也要寫對。"
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "群組管理員現在可以刪除群組聊天中最近發送的訊息。如果有人在你的讀書會群組不小心爆雷，然後就放著手機不管，群組管理員可以將其刪除，以保持劇情轉折的完整性。你可以輕鬆查看訊息何時被刪除以及是由誰刪除的，就好像目前的「為所有人刪除」功能一樣。"
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "我們還將「釘選聊天」的上限從 4 個增加至 10 個，這樣你就能向另外 6 位朋友展現，你有多喜歡他們所說的話。"
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Неизвестный контакт"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Неизвестно"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Загрузка не удалась"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Только администраторы могут добавлять значки участников в этой группе."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Обновление загружено"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Нажмите, чтобы перейти в App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Откройте Signal на своем телефоне"
@@ -8262,19 +8268,16 @@
     "messageformat": "Небольшие изменения, исправления ошибок и улучшения производительности. Спасибо за то, что пользуетесь Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "«Как меня раздражает эта лишняя \"Е\"!», — раздавались крики и мольбы недовольных тем, что их любимое расширение файла состоит из четырёх букв вместо трёх. Мы рады вас успокоить (внести изменение было несложно), и теперь вы увидите, что имя файла при сохранении JPEG будет по умолчанию заканчиваться так, как и должно, — на jpg после точки."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "А если ваш внутренний гот вдруг захочет проявить себя, мы также добавили поддержку тёмного стиля для значков в macOS."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Мы исправили ошибку в создателе стикеров, из-за которой интерфейс отображался на неправильном языке. Несмотря на то, что стикеры представляют собой картинки (и, следовательно, стоят тысячи слов), правильно подбирать слова всё равно очень важно."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Администраторы групп теперь могут удалять недавно отправленные сообщения в групповом чате. Если кто-то случайно разместит спойлер в вашей группе «Книжный клуб», а затем отойдёт от телефона, администратор группы может удалить его сообщение и сохранить интригу для остальных. Вы легко можете посмотреть, кем и когда удалено сообщение, как и в существующей функции «Удалить для всех»."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Мы также увеличили максимальное количество прикреплённых чатов с 4 до 10."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

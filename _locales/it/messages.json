@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Contatto sconosciuto"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Sconosciuto"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Download non riuscito"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Solo gli admin possono aggiungere i ruoli degli utenti in questo gruppo."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Aggiornamento scaricato"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Clicca per andare sull'App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Apri Signal sul tuo telefono"
@@ -8262,19 +8268,16 @@
     "messageformat": "Altre piccole modifiche e correzioni di bug per far funzionare l'app senza problemi. Grazie per usare Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"Questa E di troppo mi rovina proprio la giornata\" - disse chiunque vedeva l'estensione preferita di un file con quattro lettere anziché tre, strappandosi i capelli dalla disperazione. Siamo quindi qui per riportare l'ordine e la pace nella vita quotidiana dei nostri utenti: da ora vedrai che l'estensione standard quando si salva un file JPEG terminerà con \"jpg.\""
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Se la tua fase \"goth\" adolescenziale non è mai finita, o se vorresti ritornarci per un po', puoi iniziare con l'icona di Signal, che ora supporta lo stile del tema scuro di macOS."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Abbiamo risolto un bug nello strumento per creare gli adesivi, dove a volte si vedeva l'interfaccia tradotta in una lingua diversa da quella impostata. Sì, un'immagine (e quindi un adesivo) vale più di mille parole, ma prima devi usare le giuste parole per trovarla."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Da ora gli admin dei gruppi possono eliminare i messaggi inviati da poco nelle chat di gruppo. Molto comodo se qualcuno scrive per sbaglio uno spoiler sul finale di quel film appena uscito o sull'ultimo capitolo del manga preferito del gruppo. Puoi vedere quando un messaggio viene eliminato e chi l'ha rimosso, proprio come per la funzione \"Elimina per tutti\"."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Abbiamo anche aumentato il numero massimo di chat che possono essere fissate da 4 a 10, così non ti perderai neanche una novità dalle chat che ti interessano di più."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

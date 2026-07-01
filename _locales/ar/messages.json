@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "جهة الاتصال غير معروفة"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "غير معروف"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "تعذَّر التنزيل"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "فقط المُشرِفون هم من يمكنهم تحديد أدوار الأعضاء في هذه المجموعة."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "تمَّ تنزيل التحديث"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "انقر للانتقال إلى متجر App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "افتح تطبيق سيجنال على هاتفك"
@@ -8262,19 +8268,16 @@
     "messageformat": "تعديلات صغيرة، وإصلاح أعطال، وتحسينات للأداء. شكرًا على استخدامك سيجنال!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"هذا الحرف الإضافي E يثير استيائي\"، هكذا كانت صرخات وتوسلات الناس المستائين من أن امتداد الملف المفضل لديهم كان مكونًا من أربعة أحرف بدلًا من ثلاثة. يسعدنا تلبية طلبكم (كان التغيير سهلًا للغاية)، وستلاحظون الآن أن اسم الملف الافتراضي عند حفظ صورة JPEG سينتهي بامتداد .jpg كما ينبغي."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "إذا كُنتَ ترغب في إظهار دعمك للألوان الداكنة، فقد أضفنا أيضًا دعمًا لنمط الأيقونات الداكنة في نظام macOS."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "أصلحنا خطًأ في مُنشِئ المُلصَقات كان يتسبَّب في عرض الواجهة بلغة خاطئة. على الرغم من أن المُلصَقات عبارة عن صور (أي أنها تُعبِّر عن ألف كلمة)، إلّا أنه لا يزال من المهم اختيار الكلمات المناسبة أيضًا."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "يمكن لمشرفي المجموعات الآن حذف الرسائل التي تم إرسالها مؤخرًا في محادثة جماعية. إذا نشر أحدهم عن غير قصد معلومة تكشف عن أحداث القصة في مجموعة نادي القراءة الخاصة بك ثم ابتعد عن هاتفه، فيمكن لمشرف المجموعة حذفها للحفاظ على عنصر المفاجأة في القصة. يمكنك بسهولة معرفة متى تم حذف رسالة ما ومن قام بحذفها، تمامًا مثل ميزة \"حذف للجميع\" الموجودة حاليًا."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "كما قمنا بزيادة الحد الأقصى لعدد الدردشات المثبتة من 4 إلى 10، حتى تتمكن من إظهار مدى تقديرك لما يقوله 6 أشخاص إضافيين."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

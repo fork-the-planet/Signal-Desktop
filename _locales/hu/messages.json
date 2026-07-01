@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Ismeretlen kontakt"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Ismeretlen"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Letöltés sikertelen"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Csak az adminisztrátorok állíthatnak be tagsági címkéket ebben a csoportban."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Frissítés letöltve"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Az App Store megnyitásához kattints"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Nyisd meg a Signalt a telefonodon!"
@@ -8262,19 +8268,16 @@
     "messageformat": "Apró finomítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a Signalt használod!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "A JPEG-képek alapértelmezett fájlkiterjesztését jpg-re módosítottuk. Örömmel teljesítettük a kérést (a módosítás gyerekjáték volt), és mostantól a JPEG-fájlok mentésekor az alapértelmezett fájlnév – ahogyan kell – .jpg kiterjesztéssel fog végződni."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Támogatás a sötét ikonstílushoz a macOS rendszerben."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Kijavítottunk egy hibát a matricakészítőben, amely miatt a felület rossz nyelven jelent meg."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "A csoport adminisztrátorai mostantól törölhetik a legutóbb elküldött üzeneteket a csoportos csevegésben. Könnyedén megláthatod, ha töröltek egy üzenetet, és hogy ki távolította el azt, akárcsak a meglévő „Törlés mindenkinek” funkció esetén."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "A rögzített csevegések maximális számát 4-ről 10-re növeltük."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

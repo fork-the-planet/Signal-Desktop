@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Contact inconnu"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Inconnu"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Échec du téléchargement"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Dans ce groupe, seuls les admins peuvent créer des étiquettes de membre."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Mise à jour téléchargée"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Cliquez pour accéder à l'App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Ouvrez Signal sur votre téléphone"
@@ -8262,19 +8268,16 @@
     "messageformat": "Au menu de cette version : quelques ajustements de plus, quelques petits bugs en moins et des gains de performance. Merci d'utiliser Signal !",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"Ce E est de trop\", criait la foule en délire, bien décidée à nous mettre les points sur les i. Et nous avons suivi ses consignes à la lettre : désormais, lorsque vous sauvegardez un JPEG, le nom de fichier par défaut finira bien par point jpg."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Réveillez le gothique qui sommeille en vous : les icônes sombres sont maintenant prises en charge sous macOS."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "L'outil de création de stickers s'affichait dans la mauvaise langue ? C'est de l'histoire ancienne. Même si les stickers sont des images et qu'une image vaut mille mots, nous n'allions pas laisser ce bug avoir le dernier mot."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Dans les conversations de groupe, les admins peuvent désormais supprimer les messages récents. Si un membre un peu étourdi de votre club de lecture dévoile un spoiler, l'admin peut vite supprimer le message pour préserver le mystère.  Vous savez donc si un message a été supprimé et par qui, exactement comme avec la fonctionnalité \"Supprimer pour tout le monde\". "
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Le nombre maximal de conversations épinglées passe quant à lui de 4 à 10. De quoi faire 6 heureux de plus !"
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

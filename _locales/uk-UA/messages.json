@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Невідомий контакт"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Невідомий користувач"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Помилка завантаження"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Додавати ролі учасників у цій групі можуть тільки адміністратори."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Оновлення завантажено"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Натисніть, щоб перейти в App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Відкрийте Signal на телефоні"
@@ -8262,19 +8268,16 @@
     "messageformat": "Дрібні поліпшення, виправлення помилок і покращення роботи застосунку. Дякуємо, що ви з Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "Для когось одна літера — це дрібниця, але комусь вона дійсно мозолила очі. Ми вас почули: тепер назва файлу зі збереженим зображенням JPEG закінчується саме так, як багато хто й очікує: на .jpg."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Якщо ви любите готичний стиль, то це оновлення для вас: тепер у macOS також підтримується значок у темному стилі."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Ми виправили помилку під час вибору стікерів, коли інтерфейс показувався іншою мовою. Хоч це й зображення (і вони самі по собі варті тисячі слів), все ж важливо добирати правильні слова."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Тепер адміністратори групи можуть видаляти нещодавні повідомлення в груповому чаті. Тож якщо в книжковому клубі хтось випадково напише спойлер і зникне в офлайн на кілька годин, адміністратор зможе видалити це повідомлення й зберегти для всіх інтригу. Ви завжди можете подивитися, коли й ким було видалено повідомлення, як і у випадку використання функції «Видалити для всіх»."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Крім того, ми збільшили максимальну дозволену кількість закріплених чатів з 4 до 10. Тепер ви зможете показати ще шістьом людям, як високо ви цінуєте їхню думку."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

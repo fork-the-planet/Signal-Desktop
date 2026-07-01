@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Белгисиз байланыш"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Белгисиз"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Жүктөлүп алынган жок"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Бул топто катышуучулардын энбелгилерин администраторлор гана кошо алышат."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Жаңы версия жүктөлүп алынды"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "App Store'го өтүү үчүн бул жерди басыңыз"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Телефонуңузда Signal'ды ачыңыз"
@@ -8262,19 +8268,16 @@
     "messageformat": "Майда-барат өзгөрүүлөрдү киргизип, мүчүлүштүктөрдү оңдоп, колдонмонун иштешин жакшыртып жатабыз. Signal'ды колдонгонуңуз үчүн чоң рахмат!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "«Бул ашыкча \"Е\" жинге тийип жатат» — дешти жакшы көргөн файлынын кеңейтүүсү үч тамга эмес, төрт тамгадан турганына нааразы болуп капаланган адамдар. Суроо-талаптарыңарды канааттандырганыбызга аябай кубанып жатабыз (оңой эле өзгөрттүк). Эми файл JPEG форматында сакталганда, анын аталышы демейкидей эле чекит jpg (.jpg) менен аяктайт."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Кара дизайнды сүйүүчүлөр үчүн macOS системасына кара түстөгү сүрөтчөлөрдү кошуп койдук."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Интерфейси туура эмес тилде көрүнгөн стикерлерди түзгүчтөгү мүчүлүштүктү оңдодук. Стикерлер сүрөт түрүндө болсо да, алардагы текст туура көрүнүшү керек."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Эми топтун администраторлору топтук маекте жакында жөнөтүлгөн билдирүүлөрдү өчүрө алышат. Эгер кимдир бирөө Китеп клубуңузга кокустан спойлер жарыялап алып, телефонунан алыстап кетсе, аны топтун администратору өчүрүп кое алат. Билдирүүнү ким качан өчүргөнүн \"Баары үчүн өчүрүү\" деген функция аркылуу биле аласыз.\n\n"
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Ошондой эле кадала турган маектердин санын 4төн 10го көбөйтүп койдук. Эми дагы 6 адамга алардын айткан сөздөрүн канчалык баалап барктаганыңызды көрсөтө аласыз."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

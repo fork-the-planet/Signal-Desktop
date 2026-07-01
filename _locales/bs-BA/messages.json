@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Nepoznat kontakt"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Nepoznato"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Preuzimanje nije uspjelo"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Samo administratori mogu dodavati oznake članova u ovoj grupi."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Ažuriranje je preuzeto"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Kliknite da otvorite App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Otvorite Signal na telefonu"
@@ -8262,19 +8268,16 @@
     "messageformat": "Mala podešavanja, otklanjanje grešaka i poboljšanja performansi. Hvala vam što koristite Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "Ažurirali smo zadanu ekstenziju datoteke za JPEG slike na jpg."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Podrška za tamni stil ikona u macOS-u."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Ispravili smo grešku u kreatoru naljepnica koja je prikazivala interfejs na pogrešnom jeziku."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Administratori grupa sada mogu izbrisati nedavno poslane poruke u grupnom razgovoru. Lako možete vidjeti kada je poruka izbrisana i ko ju je uklonio, baš kao i uz postojeću funkciju „Izbriši za sve”."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Povećali smo i maksimalan broj zakačenih razgovora sa 4 na 10."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

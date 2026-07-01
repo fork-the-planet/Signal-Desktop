@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Contacto desconhecido"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Desconhecido"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "A transferência falhou"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Apenas os administradores podem definir etiquetas de membros neste grupo."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Atualização descarregada"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Clique para ir à App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Abra o Signal no seu telemóvel"
@@ -8262,19 +8268,16 @@
     "messageformat": "Pequenos ajustes adicionais, correções de bugs e melhorias de desempenho. Obrigado por usar o Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "Atualizámos a extensão de ficheiro padrão de imagens JPEG para jpg."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Suporte para ícones de estilo escuro no macOS."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Corrigimos um erro no criador de autocolantes que mostrava a interface no idioma errado."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Os administradores dos grupos agora podem eliminar mensagens recentemente enviadas nos chats de grupo. Pode facilmente ver quando uma mensagem foi eliminada e quem o fez, tal como a funcionalidade existente \"Eliminar para todos\"."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Também aumentámos o número máximo de chats afixados de 4 para 10."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

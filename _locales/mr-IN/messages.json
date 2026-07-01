@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "अज्ञात संपर्क"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "अज्ञात"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "डाऊनलोड झाले नाही"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "या गटात फक्त अ‍ॅडमिनच सदस्य लेबल समाविष्ट करू शकतात."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "अपडेट डाउनलोड केली"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "ॲप स्टोरवर जाण्यासाठी क्लिक करा"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "आपल्या फोनवर Signal उघडा"
@@ -8262,19 +8268,16 @@
     "messageformat": "लहान ट्विक्स, दोष निवारण, आणि कामगिरी सुधारणा. Signal वापरल्याबद्दल आभारी आहोत!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "आम्ही JPEG प्रतिमांसाठीचे डीफॉल्ट फाईल एक्सटेन्शन अद्ययावत करून jpg केले."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "जर तुम्हाला तुमच्यातील गॉथला स्वीकारायचे असेल, तर आम्ही macOS मध्ये गडद आयकन स्टाईलसाठी सपोर्ट समाविष्ट केला आहे."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "आम्ही स्टिकर निर्मात्यामधील एक बग दुरुस्त केला जो चुकीच्या भाषेमध्ये इंटरफेस दाखवायचा. जरी स्टिकर ही चित्रं असली (आणि म्हणूनच प्रत्येकी 1000 शब्दांसारखी असली), तरी योग्य ते शब्द वापरणं गरजेचं असतंच."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "गट अॅडमिन आता गट चॅटमध्ये अलीकडेच पाठवलेले संदेश हटवू शकतात. जर कोणीतरी तुमच्या पुस्तक कट्ट्याच्या गटामध्ये चुकून स्पॉईलर टाकला आणि फोन बाजूला टाकून निघून गेले, तर गट अॅडमिन तो हटवून प्लॉट ट्विस्ट गुप्त ठेवू शकतात. एखादा संदेश हटवण्यात आला असेल तर आणि तो कोणी काढला हे तुम्ही सहज पाहू शकता, आत्ताच्या सगळ्यांसाठी हटवून टाका वैशिष्ट्याप्रमाणे."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "आम्ही चॅट्सची पिन करता येणाऱ्या संख्या 4 वरून 10 वर नेली, त्यामुळे तुम्हाला त्यांच्याशी बोलायला किती आवडते हे आता आणखी 6 लोकांना दाखवू शकता."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

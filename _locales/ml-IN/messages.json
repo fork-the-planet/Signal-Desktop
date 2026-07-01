@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "അജ്ഞാത കോൺടാക്ട്"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "അജ്ഞാതം"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "ഡൗൺലോഡ് പരാജയപ്പെട്ടു"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "ഈ ഗ്രൂപ്പിൽ മെമ്പര്‍ ലേബലുകൾ ചേർക്കാൻ അഡ്മിൻമാർക്ക് മാത്രമേ കഴിയൂ."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "അപ്ഡേറ്റ് ഡൗൺലോഡ് ചെയ്‌തു"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "App Store-ലേക്ക് പോകാൻ ക്ലിക്ക് ചെയ്യുക"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "നിങ്ങളുടെ ഫോണിൽ Signal തുറക്കുക"
@@ -8262,19 +8268,16 @@
     "messageformat": "ചെറിയ മാറ്റങ്ങളും ബഗ് പരിഹരിക്കലുകളും പ്രകടന മെച്ചപ്പെടുത്തലുകളും. Signal ഉപയോഗിക്കുന്നതിന് നന്ദി!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "തങ്ങൾക്ക് ഏറ്റവും പ്രിയപ്പെട്ട ഫയൽ എക്സ്റ്റൻഷൻ മൂന്ന് അക്ഷരങ്ങൾക്ക് പകരം നാല് അക്ഷരങ്ങളായതിൽ അതൃപ്തരായ ആളുകളുടെ പരാതികളും അഭ്യർത്ഥനകളും ആയിരുന്നു, \"ഈ അധികമായി വന്ന E എന്നെ അലോസരപ്പെടുത്തുന്നു\" എന്നത്. ആ ആഗ്രഹം നിറവേറ്റാൻ കഴിഞ്ഞതിൽ ഞങ്ങൾക്ക് സന്തോഷമുണ്ട് (ഈ മാറ്റം വളരെ എളുപ്പമായിരുന്നു), ഇനി മുതൽ ഒരു JPEG ഫയൽ സേവ് ചെയ്യുമ്പോൾ അതിന്റെ ഡിഫോൾട്ട് ഫയൽ നാമം പ്രതീക്ഷിക്കുന്നത് പോലെ തന്നെ .jpg എന്ന് അവസാനിക്കുന്നത് നിങ്ങൾക്ക് കാണാം."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "നിങ്ങൾക്ക് ഡാർക്ക് തീം കൂടുതൽ ഇഷ്ടമാണെങ്കിൽ, macOS-ലെ ഡാർക്ക് ഐക്കൺ ശൈലിക്കുള്ള പിന്തുണയും ഞങ്ങൾ ഇതിൽ ചേർത്തിട്ടുണ്ട്."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "സ്റ്റിക്കർ ക്രിയേറ്ററിലെ ഇന്റർഫേസ് തെറ്റായ ഭാഷയിൽ കാണിച്ചിരുന്ന ഒരു തകരാർ ഞങ്ങൾ പരിഹരിച്ചു. സ്റ്റിക്കറുകൾ ചിത്രങ്ങളാണെങ്കിലും (അതിനാൽ തന്നെ ആയിരം വാക്കുകൾക്ക് തുല്യമാണെങ്കിലും) വാക്കുകൾ കൃത്യമായിരിക്കുക എന്നതും പ്രധാനമാണ്."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "ഗ്രൂപ്പ് ചാറ്റുകളിൽ അടുത്തിടെ അയച്ചവ ഇല്ലാതാക്കാൻ ഇനി ഗ്രൂപ്പ് അഡ്മിൻമാർക്കാകും. ബുക്ക് ക്ലബ് ഗ്രൂപ്പിൽ ആരെങ്കിലും അബദ്ധത്തിൽ ഒരു സ്പോയിലർ പോസ്റ്റ് ചെയ്ത ശേഷം ഫോണുമായിപ്പോയാൽ, ട്വിസ്റ്റ് അതേപടി നിലനിർത്താൻ ഗ്രൂപ്പ് അഡ്മിന് അത് ഇല്ലാതാക്കാം. നിലവിലെ \"എല്ലാവർക്കും ഇല്ലാതാക്കുക\" ഫീച്ചർ പോലെ, ഒരു സന്ദേശം എപ്പോൾ, ആരാണ് ഇല്ലാതാക്കിയതെന്നും കാണാം."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "പിൻ ചെയ്ത ചാറ്റുകളുടെ പരമാവധി എണ്ണം 4-ൽ നിന്ന് 10 ആയി ഉയർത്തിയതിനാൽ അവർ പറയുന്നതിനെ നിങ്ങൾ എത്രത്തോളം ഇഷ്ടപ്പെടുന്നുവെന്ന് 6 പേരെക്കൂടി കാണിക്കാം."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Contact necunoscut"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Necunoscut"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "A eșuat descărcarea"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Doar administratorii pot seta roluri de membru în acest grup."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Actualizare Descărcată"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Dă clic și mergi la App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Deschide Signal pe telefonul tău"
@@ -8262,19 +8268,16 @@
     "messageformat": "Mici ajustări, soluționări de bug-uri și îmbunătățiri ale performanței. Mersi că folosești Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "„Acest E în plus mă deranjează”, se auzeau strigătele și plângerile celor nemulțumiți că extensia lor preferată avea patru litere în loc de trei. Ne bucurăm să îi mulțumim (modificarea a fost floare la ureche) și acum vei vedea că numele de fișier implicit la salvarea unui JPEG se va termina, așa cum trebuie, cu „.jpg”."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Dacă vrei să-ți exprimi latura gotică, am adăugat și asistență pentru modul întunecat de pictograme din macOS."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Am reparat un bug în creatorul de abțibilduri care afișa interfața în limba greșită. Deși abțibildurile sunt imagini (deci valorează o mie de cuvinte) este important totuși să nimerești cuvintele potrivite."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Administratorii grupurilor pot șterge acum mesajele trimise recent într-o conversație de grup. Dacă cineva postează din greșeală un spoiler în „Clubul de lectură”, un administrator al grupului îl poate șterge. Poți vedea când a fost șters un mesaj și cine l-a șters, la fel ca în cazul funcției existente „Șterge pentru toți”.\n\n"
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "• Am mărit și numărul maxim de conversații fixate, de la 4 la 10, astfel încât să poți arăta altor 6 persoane cât de mult îți plac."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Kenalan tidak diketahui"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Tidak diketahui"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Muat turun gagal"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Hanya pentadbir boleh menambah label ahli dalam kumpulan ini."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Kemas Kini Dimuat Turun"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Klik untuk pergi ke App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Buka Signal di telefon anda"
@@ -8262,19 +8268,16 @@
     "messageformat": "Sedikit pengubahsuaian, pembaikan pepijat dan peningkatan prestasi. Terima kasih kerana menggunakan Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "Kami telah mengemas kini sambungan fail lalai bagi imej JPEG kepada .jpg."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Sokongan untuk gaya ikon gelap dalam macOS."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Kami telah membetulkan pepijat dalam pencipta pelekat yang memaparkan antara muka dalam bahasa yang salah."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Pentadbir kumpulan kini boleh memadamkan mesej yang baru dihantar dalam sembang kumpulan. Anda boleh melihat dengan mudah apabila sesuatu mesej dipadamkan dan siapa yang memadamkannya, sama seperti ciri \"Padam untuk Semua\" yang sedia ada."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Kami juga telah meningkatkan bilangan maksimum sembang yang dipinkan daripada 4 kepada 10."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

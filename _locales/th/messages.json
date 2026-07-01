@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "ผู้ที่ติดต่อที่ไม่รู้จัก"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "ไม่ทราบ"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "ดาวน์โหลดไม่สำเร็จ"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "มีแค่ผู้ดูแลกลุ่มเท่านั้นที่จะสามารถเพิ่มป้ายกำกับสมาชิกในกลุ่มนี้"
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "ดาวน์โหลดการอัปเดตแล้ว"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "คลิกเพื่อไปยัง App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "เปิด Signal บนโทรศัพท์ของคุณ"
@@ -8262,19 +8268,16 @@
     "messageformat": "มีการปรับเปลี่ยนเล็กน้อย พร้อมแก้ไขบั๊ก และการพัฒนาประสิทธิภาพให้ดียิ่งขึ้น ขอขอบคุณที่เลือกใช้ Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "อัปเดตให้แอปบันทึกไฟล์ภาพ JPEG ด้วยนามสกุล jpg แบบอัตโนมัติ"
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "เพิ่มการรองรับไอคอนแบบมืดบน macOS"
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "แก้ไขบั๊กในศูนย์สร้างสรรค์ชุดสติกเกอร์ (Sticker Creator) ที่เคยแสดงผลผิดภาษา"
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "เพิ่มความสามารถให้ผู้ดูแลกลุ่มลบข้อความในแชทกลุ่มที่สมาชิกเพิ่งส่งได้ การใช้งานฟีเจอร์นี้ไม่ต่างจากการ \"ลบสำหรับทุกคน\" ที่ผู้ใช้จะเห็นว่าข้อความถูกลบและใครเป็นคนลบข้อความนั้น"
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "พร้อมเพิ่มจำนวนแชทที่คุณสามารถปักหมุดได้ จากเดิม 4 แชทเป็นสูงสุดถึง 10 แชท"
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

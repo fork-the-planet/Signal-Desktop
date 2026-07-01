@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "បញ្ជីទំនាក់ទំនងដែលមិនស្គាល់"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "មិនស្គាល់"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "ការទាញយកមិនបានជោគជ័យទេ"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "មានតែអ្នកគ្រប់គ្រងទេដែលអាចបញ្ចូលស្លាកសមាជិកនៅក្នុងក្រុមនេះបាន។"
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "កំណែថ្មីត្រូវបានទាញយក"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "ចុចដើម្បីចូលទៅកាន់ App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "បើក Signal នៅលើទូរសព្ទរបស់អ្នក"
@@ -8262,19 +8268,16 @@
     "messageformat": "ការកែប្រែបន្តិចបន្តួច ការដោះស្រាយបញ្ហា និងការបង្កើនប្រតិបត្តិការ។ សូមអរគុណចំពោះការប្រើប្រាស់ Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "“អក្សរ E បន្ថែមនេះគួរឱ្យរំខានណាស់” នេះជាសំឡេងត្អូញត្អែរ និងអង្វររបស់អ្នកប្រើទាំងឡាយដែលមិនពេញចិត្តនឹងកន្ទុយឯកសារដែលកែប្រែទៅជាបួនអក្សរ គឺមិនមែនបីអក្សរដែលពួកគេធ្លាប់តែចូលចិត្ត។ យើងខ្ញុំរីករាយនឹងជួយបំពេញតាមបំណង (ការផ្លាស់ប្តូរនេះគឺងាយស្រួលទេ) ហើយឥឡូវនេះអ្នកនឹងឃើញថា នៅពេលរក្សាទុកឯកសារ JPEG ឈ្មោះឯកសារលំនាំដើមនឹងបញ្ចប់ដោយ ដត jpg។"
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "ប្រសិនបើអ្នកចង់យករចនាបថហ្គោធិកខាងក្នុងរបស់អ្នកមកប្រើ យើងក៏បានបន្ថែមការគាំទ្រដើម្បីឱ្យស្គាល់រចនាបថរូបងងឹតនៅក្នុង macOS ដែរ។"
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "យើងបានដោះស្រាយបញ្ហាមួយនៅក្នុងមុខងារបង្កើតស្ទីកគ័រដែលបានបង្ហាញអ៊ីនធើហ្វេសខុសភាសា។ ទោះបីជាស្ទីកគ័រគឺជារូបភាព (ដែលមានអត្ថន័យរាប់ពាន់ពាក្យក៏ដោយ) ការសរសេរឱ្យត្រូវពាក្យក៏នៅតែមានសារៈសំខាន់ដែរ។"
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "អ្នកគ្រប់គ្រងក្រុមឥឡូវអាចលុបសារដែលបានផ្ញើថ្មីៗនៅក្នុងការជជែកជាក្រុមបាន។ ប្រសិនបើនរណាម្នាក់បង្ហោះដោយចៃដន្យនូវព័ត៌មានអំពីសាច់រឿងសំខាន់ៗនៅក្នុងក្រុមក្លឹបអានសៀវភៅរបស់អ្នក ហើយបន្ទាប់មកក៏ដើរចេញពីទូរសព្ទរបស់គាត់ អ្នកគ្រប់គ្រងក្រុមអាចលុបវាចេញបាន ដើម្បីកុំឱ្យប៉ះពាល់ដល់ការតាមដានដំណើរសាច់រឿង។ អ្នកអាចមើលឃើញយ៉ាងងាយស្រួលថាពេលណាសារត្រូវបានលុប និងនរណាបានលុបវាចេញ ដូចគ្នានឹងមុខងារ \"លុបសម្រាប់មនុស្សគ្រប់គ្នា\" ដែលមានស្រាប់ដែរ។"
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "យើងក៏បានបង្កើនចំនួនអតិបរមានៃការជជែកចំណាំទុកពី 4 ទៅ 10 ផងដែរ ដូច្នេះអ្នកអាចបង្ហាញមនុស្ស 6 នាក់បន្ថែមទៀតថាអ្នកពេញចិត្តនឹងអ្វីដែលពួកគេនិយាយខ្លាំងប៉ុនណា។"
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

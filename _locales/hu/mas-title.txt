@@ -1,1 +1,1 @@
-Signal Privát üzenetküldő
+Signal Üzenetküldő

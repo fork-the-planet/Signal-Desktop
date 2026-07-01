@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "უცნობი კონტაქტი"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "უცნობი"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "ჩამოტვირთვა ვერ მოხერხდა"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "ამ ჯგუფში წევრის იარლიყების დაყენება მხოლოდ ადმინისტრატორებს შეუძლიათ."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "განახლება გადმოწერილია"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "დააწკაპუნე App Store-ზე გადასასვლელად"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "გახსენი Signal-ი შენს ტელეფონში"
@@ -8262,19 +8268,16 @@
     "messageformat": "მცირე შესწორებები, ბაგების გამოსწორება და წარმადობის გაუმჯობესება. მადლობას გიხდით სიგნალის გამოყენებისთვის!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "JPEG სურათების ნაგულისხმევი ფაილის გაფართოება jpg-თი განვაახლეთ. ახლა უკვე ნახავ, რომ JPEG ფაილის შენახვისას ნაგულისხმევი ფაილის სახელი დასრულდება ისე, როგორც უნდა დასრულდეს .jpg ფორმატში."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "თუ გსურს, შენი შინაგანი გოთი გააღვიძო, macOS-ზე მუქი ხატულების სტილის მხარდაჭერაც დავამატეთ."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "სტიკერების შემქმნელის ბაგი გამოვასწორეთ, რომლის გამოც ინტერფეისი არასწორ ენაზე ჩანდა. მიუხედავად იმისა, რომ სტიკერი სურათია, სათაურიც სწორად უნდა ჩანდეს."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "ახლა ჯგუფის ადმინისტრატორებს შეუძლიათ ჯგუფის ჩატში ბოლოს გაგზავნილი წერილები წაშალონ. თუ შენი ლიტერატურული კლუბის ჩატში ვინმე შემთხვევით სპოილერს დაწერს და აპიდან გავა, შენი ჯგუფის ადმინისტრატორი შეძლებს წერილი წაშალოს, რომ ფლოთ ტვისტი არ გაიგოთ. მარტივად შეძლებ ნახო, როდის წაიშალა წერილი და ვის მიერ, როგორც არსებული \"ყველასთვის წაშლის\" ფუნქციის შემთხვევაში."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "ასევე, აპინული ჩატების მაქსიმალური რაოდენობა 4-დან 10-მდე გავზარდეთ."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

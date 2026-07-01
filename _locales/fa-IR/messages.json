@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "مخاطب ناشناس"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "ناشناخته"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "دانلود انجام نشد"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "فقط مدیران می‌توانند برچسب‌های عضو را به این گروه اضافه کنند."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "به‌روزرسانی بارگیری شد"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "برای رفتن به App Store کلیک کنید"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "باز کردن سیگنال روی گوشی"
@@ -8262,19 +8268,16 @@
     "messageformat": "تغییرات کوچک، رفع اشکالات و بهبود عملکرد. بابت استفاده از سیگنال سپاسگزاریم!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "ما پسوند پیش‌فرض فایل برای تصاویر JPEG را به jpg به‌روزرسانی کردیم."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "پشتیبانی از سبک آیکون تیره در macOS‏."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "اشکالی را در سازنده استیکر برطرف کردیم که رابط کاربری را به زبان اشتباه نمایش می‌داد."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "مدیران گروه اکنون می‌توانند پیام‌هایی را حذف کنند که اخیراً در گفتگوهای گروهی ارسال شده است. شما به راحتی می‌توانید ببینید که یک پیام چه زمانی حذف شده و چه کسی آن را حذف کرده است، درست مانند قابلیت «حذف برای همه»."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "ما همچنین حداکثر تعداد گفتگوهای سنجاق‌شده را از ۴ به ۱۰ افزایش دادیم."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

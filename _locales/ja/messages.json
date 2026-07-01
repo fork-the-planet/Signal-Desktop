@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "不明な連絡先"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "不明"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "ダウンロードできませんでした"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "このグループのメンバーラベルを追加できるのは管理者のみです。"
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "アップデートがダウンロードされました"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "クリックしてApp Storeへ移動"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "ご利用のスマートフォンでSignalを開いてください"
@@ -8262,19 +8268,16 @@
     "messageformat": "細かな微調整、バグ修正、パフォーマンスの向上。 Signalをご利用いただきありがとうございます。",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "JPEG画像のデフォルトのファイル拡張子をjpgにアップデートしました。"
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "macOSのダークアイコンスタイルに対応しました。"
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "ステッカークリエイターで、インターフェイスが誤った言語で表示されるバグを修正しました。"
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "グループ管理者は、グループチャット内の最近送信されたメッセージを消去できるようになりました。これまでの「全員に対して消去」機能と同様に、メッセージがいつ、誰によって消去されたかを簡単に確認できます。"
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "また、ピン留めできるチャットの数を4件から10件に増やしました。"
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

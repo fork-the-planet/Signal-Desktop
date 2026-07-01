@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Onbekende kontak"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Onbekend"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Aflaai het misluk"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Slegs admins kan lidfunksie-etikette in hierdie groep byvoeg."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Bywerking afgelaai"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Klik om na die Toepassingswinkel toe te gaan"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Maak Signal op jou foon oop"
@@ -8262,19 +8268,16 @@
     "messageformat": "Klein veranderings, foutregstellings en prestasieverbeterings. Dankie dat jy Signal gebruik!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "Ons het die verstek-lêeruitbreiding vir JPEG-beelde na jpg verander."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Ondersteuning vir die donker ikoonstyl in macOS."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Ons het 'n fout in die plakkerpakket-skepper wat die koppelvlak in die verkeerde taal vertoon het, herstel."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Groepadmins kan nou onlangs gestuurde boodskappe in 'n groepklets skrap. Jy kan maklik sien wanneer 'n boodskap geskrap is en wie dit geskrap het, net soos die bestaande \"Skrap vir Almal\"-kenmerk."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Ons het ook die maksimum getal kletse wat jy boaan die kletsstring kan plaas van vier na tien verhoog."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

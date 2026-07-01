@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "অজানা কন্ট্যাক্ট"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "অজানা"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "ডাউনলোড ব্যর্থ হয়েছে"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "এই গ্রুপে শুধুমাত্র অ্যাডমিনরাই সদস্যদের লেবেল যোগ করতে পারবেন।"
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "আপডেট ডাউনলোড হয়েছে"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "App Store-এ যেতে ক্লিক করুন"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "আপনার ফোনে সিগন্যাল খুলুন"
@@ -8262,19 +8268,16 @@
     "messageformat": "ছোট ছোট কিছু পরিবর্তন, বাগ সংশোধন এবং পারফর্মেন্স সমৃদ্ধ করা হয়েছে। Signal ব্যবহার করার জন্য ধন্যবাদ!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "আমরা JPEG ছবির ডিফল্ট ফাইল এক্সটেনশন পরিবর্তন করে jpg করেছি।"
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "macOS-এ গাঢ় আইকন স্টাইলের জন্য সমর্থন যোগ করা হয়েছে।"
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "আমরা স্টিকার ক্রিয়েটর-এর একটি বাগ সংশোধন করেছি, যার কারণে ইন্টারফেইসটি ভুল ভাষায় দেখানো হচ্ছিলো।"
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "গ্রুপ অ্যাডমিনরা এখন কোনো গ্রুপ চ্যাট থেকে সম্প্রতি পাঠানো মেসেজ মুছে ফেলতে পারবেন। বিদ্যমান 'সবার জন্য মুছে ফেলুন' ফিচারটির মতোই, আপনি সহজেই দেখতে পারবেন কখন একটি মেসেজ মুছে ফেলা হয়েছে এবং কে তা মুছে ফেলেছেন।"
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "আমরা পিন করা চ্যাটের সর্বোচ্চ সংখ্যাও 4টি থেকে বাড়িয়ে 10টি করেছি।"
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

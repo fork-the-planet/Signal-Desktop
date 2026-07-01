@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Tuntematon yhteystieto"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Tuntematon"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Lataus epäonnistui"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Vain ylläpitäjät voivat määrittää ryhmän jäsenroolit."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Päivitys ladattu"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Siirry App Storeen"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Avaa Signal puhelimessa"
@@ -8262,19 +8268,16 @@
     "messageformat": "Pieniä säätöjä, virheenkorjauksia ja suorituskykyparannuksia. Kiitos, että käytät Signalia!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "Päivitimme JPEG-kuvatiedostojen oletuspäätteen muotoon jpg."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Tuki tummille kuvakkeille macOS:ssa."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Korjasimme tarrojen luontisovelluksen virheen, joka näytti käyttöliittymän väärällä kielellä."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Ryhmän ylläpitäjät voivat nyt poistaa ryhmäkeskustelusta äskettäin lähetetyt viestit. Voit helposti nähdä, milloin viesti on poistettu ja kuka sen on poistanut, aivan kuten nykyisessä Poista kaikilta -toiminnossa."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Lisäksi nostimme kiinnitettyjen keskustelujen enimmäismäärää neljästä kymmeneen."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Contato desconhecido"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Desconhecido"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Falha no download"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Somente administradores podem adicionar rótulos de membros neste grupo."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Update concluído"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Clique para abrir a App Store. "
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Abra o Signal no seu celular"
@@ -8262,19 +8268,16 @@
     "messageformat": "Pequenas alterações adicionais, correções de bugs e melhorias de desempenho. Agradecemos por usar o Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "Atualizamos a extensão de arquivo padrão das imagens JPEG para .jpg. "
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Se você curte um visual mais sombrio, também adicionamos suporte ao ícone escuro no macOS. "
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Corrigimos um erro no criador de figurinhas que mostrava o idioma errado na interface. A gente sabe que as figurinhas são imagens e valem mais que mil palavras, mas também é importante usar as palavras certas, né?"
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Os administradores de grupos agora podem apagar mensagens enviadas recentemente em conversas em grupo.Você pode ver facilmente quando uma mensagem foi apagada e quem a removeu, assim como no recurso \"Apagar para todos\". "
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Também aumentamos o limite de conversas fixadas de 4 para 10. "
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

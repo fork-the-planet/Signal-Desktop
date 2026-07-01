@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "अनजान कॉन्टैक्ट"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "अनजान"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "डाउनलोड नहीं हो पाया"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "इस ग्रुप में सिर्फ़ ऐडमिन ही मेंबर लेबल जोड़ सकते हैं।"
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "अपडेट किया गया"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "App Store पर जाने के लिए क्लिक करें"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "अपने फ़ोन पर Signal खोलें"
@@ -8262,19 +8268,16 @@
     "messageformat": "कई छोटे सुधार किए गए हैं, बग हटाए गए हैं, और परफ़ॉर्मेंस बेहतर की गई है। Signal के साथ बने रहने के लिए धन्यवाद!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"इस फालतू 'E' ने मुझे तंग कर रखा है,\" यह नाराज़गी हमारे उन तमाम यूज़र ने जताई थी जो इस बात से नाखुश थे कि उनका पसंदीदा फ़ाइल एक्सटेंशन तीन अक्षरों के बजाय चार अक्षरों का है। आपकी बात हमने सिर आंखों पर ली है (वैसे यह बदलाव चुटकी बजाते ही हो गया)। अब आपको दिखेगा कि JPEG सेव करते समय डिफ़ॉल्ट फ़ाइलनेम के आखिर में वही अक्षर होंगे जो होने चाहिए, यानी आपको डॉट jpg लिखा दिखेगा।"
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "अगर आपको डार्क थीम या ब्लैक लुक पसंद है, तो हमने macOS में डार्क आइकन स्टाइल का सपोर्ट भी जोड़ दिया है।"
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "हमने स्टिकर क्रिएटर की एक गड़बड़ी को ठीक कर दिया है, जिसकी वजह से ऐप की स्क्रीन किसी दूसरी भाषा में दिख रही थी। यह बात ठीक है कि स्टिकर तस्वीरें हैं (और जैसा कहा जाता है कि एक तस्वीर हज़ार शब्दों के बराबर होती है), लेकिन शब्दों का सही तरीके से नज़र आना भी उतना ही ज़रूरी है।"
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "ग्रुप ऐडमिन अब ग्रुप चैट में हाल ही में भेजे गए मैसेज डिलीट कर सकते हैं। अगर आपके 'बुक क्लब' ग्रुप में कोई गलती से किसी सस्पेंस कहानी का अंत पोस्ट कर दे और उसे डिलीट करने से पहले ही अपने फ़ोन से दूर हो जाए, तो ग्रुप ऐडमिन के पास उसे डिलीट करने का विकल्प होता है, ताकि कहानी का ट्विस्ट बना रहे। आपको दिख जाएगा कि कोई मैसेज कब डिलीट किया गया और उसे किसने हटाया, ठीक वैसे ही जैसे मौजूदा 'सभी के लिए डिलीट करें' फ़ीचर में होता है।"
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "हमने पिन की गई चैट की अधिकतम संख्या को भी 4 से बढ़ाकर 10 कर दिया है, ताकि आप 6 और लोगों को दिखा सकें कि उनकी बातें आपको कितनी पसंद हैं।"
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

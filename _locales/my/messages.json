@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "မသိသော အဆက်အသွယ်"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "မသိရှိ"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "ဒေါင်းလုဒ် မအောင်မြင်ပါ"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "ဤအဖွဲ့တွင် အက်ဒ်မင်များသာ အဖွဲ့ဝင်အမှတ်တံဆိပ် သတ်မှတ်နိုင်သည်။"
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "အပ်ဒိတ် ဒေါင်းလုဒ်လုပ်ပြီး"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "App Store သို့သွားရန် နှိပ်ပါ"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "သင့်ဖုန်းတွင် Signal ကို ဖွင့်ရန်"
@@ -8262,19 +8268,16 @@
     "messageformat": "အနေအထား ပြုပြင်မှုလေးများ၊ ချို့ယွင်းချက် ပြင်ဆင်မှုများနှင့် စွမ်းဆောင်ရည် မြှင့်တင်မှုများ။ Signal ကို သုံးသည့်အတွက် ကျေးဇူးတင်ပါသည်။",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "JPEG ပုံများအတွက် မူရင်းဖိုင် Extension ကို jpg သို့ အပ်ဒိတ်လုပ်ထားပါသည်။"
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "macOS တွင် အမှောင်အိုင်ကွန်ပုံစံကို ပံ့ပိုးပေးထားသည်။"
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "စတစ်ကာဖန်တီးရေးတွင် Interface ကို မှားယွင်းသော ဘာသာစကားဖြင့် ပြသနေသည့် ချွတ်ယွင်းချက်တစ်ခုကို ပြင်ဆင်ပြီးဖြစ်ပါသည်။"
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "အဖွဲ့အက်ဒ်မင်များသည် ယခုအခါ အဖွဲ့ချက်(တ်)အတွင်း မကြာသေးမီက ပို့ထားသော မက်ဆေ့ချ်များကို ဖျက်နိုင်ပါပြီ။ ရှိပြီးသားဖြစ်သော “အားလုံးအတွက်ဖျက်မည်” အင်္ဂါရပ်ကဲ့သို့ပင် မက်ဆေ့ချ်တစ်ခုကို မည်သည့်အချိန်တွင် မည်သူက ဖျက်လိုက်သည်ကို အလွယ်တကူ မြင်နိုင်ပါသည်။"
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "အများဆုံးပင်တွဲနိုင်သည့် ချက်(တ်) အရေအတွက်ကိုလည်း 4 ခုမှ 10 ခုအထိ တိုးမြှင့်လိုက်ပါပြီ။"
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }

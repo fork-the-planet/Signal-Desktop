@@ -86,6 +86,9 @@
   "icu:unknownContact": {
     "messageformat": "Nezināma kontaktpersona"
   },
+  "icu:deletedAccount": {
+    "messageformat": "Deleted Account"
+  },
   "icu:unknownContactShort": {
     "messageformat": "Nezināms"
   },
@@ -2466,7 +2469,7 @@
     "messageformat": "Lejupielāde neizdevās"
   },
   "icu:Toast--unable-download-from-backup-tier": {
-    "messageformat": "Attachment missing from backup CDN"
+    "messageformat": "Attachment missing from backup CDN, please share desktop & primary logs"
   },
   "icu:ToastManager__CannotAddMemberLabel": {
     "messageformat": "Šajā grupā lietotāja emblēmas var pievienot tikai administratori."
@@ -6700,8 +6703,11 @@
   "icu:DialogUpdate__downloaded": {
     "messageformat": "Atjauninājums ir lejupielādēts"
   },
-  "icu:DialogExpiredBuild__upgrade-mas": {
+  "icu:DialogUpdate__upgrade-mas": {
     "messageformat": "Click to go to the App Store"
+  },
+  "icu:DialogExpiredBuild__upgrade-mas": {
+    "messageformat": "Klikšķiniet, lai dotos uz App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
     "messageformat": "Atveriet Signal tālrunī"
@@ -8262,19 +8268,16 @@
     "messageformat": "Nelielas izmaiņas, kļūdu labojumi un darbības uzlabojumi. Paldies, ka lietojat Signal!",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "“Šis liekais E burts mūs kaitina,” pikti sauca ļaudis, jo viņu iecienītākais faila paplašinājums sastāvēja no četriem burtiem, nevis trim. Mēs ar prieku to labojām (tas nebija sarežģīti), tāpēc tagad redzēsiet, ka noklusējuma faila nosaukums, saglabājot JPEG failu, beigsies tā, kā tam jābūt, proti, kā jpg."
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "Ja vēlaties atbrīvot savu iekšējo gotu, operētājsistēmā macOS tagad atbalstām arī tumšo ikonu stilu."
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "Mēs uzlīmju izveides programmā salabojām kļūdu, kuras dēļ saskarne tika rādīta nepareizā valodā. Lai gan uzlīmes ir attēli (un tāpēc tās ir tūkstoš vārdu vērtas), mums šķiet svarīgi uzrakstīt pareizi arī vārdus."
   },
   "icu:WhatsNew__8.17--0": {
-    "messageformat": "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
+    "messageformat": "Grupas administratori tagad var dzēst jaunākās ziņas grupas tērzētavā. Ja kāds jūsu grāmatu kluba grupā nejauši publicē spoileri un noliek telefonu malā, grupas administrators tagad var to izdzēst, lai nesabojātu citiem sižetu. Varat ērti redzēt, kad ziņa tika izdzēsta un kurš to izdzēsa, tāpat kā ar esošo funkciju ”Dzēst visiem”."
   },
   "icu:WhatsNew__8.17--1": {
-    "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
+    "messageformat": "Tāpat mēs palielinājām maksimālo piesprausto sarunu skaitu no 4 uz 10. Tagad jūs varat vēl 6 cilvēkiem parādīt, cik ļoti jums rūp viņu sakāmais."
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
   }
 }
