@@ -10993,14 +10993,6 @@
     "description": "Release notes for releases that only include bug fixes",
     "ignoreUnused": true
   },
-  "icu:WhatsNew__8.15--0": {
-    "messageformat": "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg.",
-    "description": "(Deleted 2026/06/17) Release notes for 8.15"
-  },
-  "icu:WhatsNew__8.15--1": {
-    "messageformat": "If you want to embrace your inner goth, we also added support for the dark icon style in macOS.",
-    "description": "(Deleted 2026/06/17) Release notes for 8.15"
-  },
   "icu:WhatsNew__8.16--0": {
     "messageformat": "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too.",
     "description": "(Deleted 2026/06/24) Release notes for 8.16"
@@ -11012,5 +11004,9 @@
   "icu:WhatsNew__8.17--1": {
     "messageformat": "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say.",
     "description": "Release notes for 8.17"
+  },
+  "icu:WhatsNew__8.18--0": {
+    "messageformat": "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll.",
+    "description": "Release notes for 8.18"
   }
 }
